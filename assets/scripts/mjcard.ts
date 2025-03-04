@@ -12,6 +12,12 @@ export class mjcard extends Component {
     moveDuration = 0.5;
     scaleDuration = 0.5;
 
+    levelPos1: number[][] = [
+        [1, 2],
+        [3, 4],
+        [5, 6]
+    ];
+
     start() {
 
     }

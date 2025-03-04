@@ -44,6 +44,7 @@ System.register(["cc"], function (_export, _context) {
           this.scale = 1.5;
           this.moveDuration = 0.5;
           this.scaleDuration = 0.5;
+          this.levelPos1 = [[1, 2], [3, 4], [5, 6]];
         }
 
         start() {}

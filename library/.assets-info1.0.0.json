@@ -12,14 +12,14 @@
       "uuid": "4aa2a649-6561-46b2-9d7d-c643cf3a11fe"
     },
     "/Users/zzx/Desktop/mygame/assets/scenes/main.scene": {
-      "time": 1740651073162.354,
+      "time": 1741092626432.929,
       "uuid": "3ffa4298-a72e-41a6-bd81-2077d6fc1512"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts.meta": {
       "time": 1740639220616.1418
     },
     "/Users/zzx/Desktop/mygame/assets/scripts": {
-      "time": 1741077504512.3318,
+      "time": 1741091102200.805,
       "uuid": "107a2a5c-fa94-4558-9ea0-54c97d1078c2"
     },
     "/Users/zzx/Desktop/mygame/assets/res.meta": {
@@ -54,7 +54,7 @@
       "time": 1740641469407.8064
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
-      "time": 1741083116782.1997,
+      "time": 1741091780308.9924,
       "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
     },
     "/Users/zzx/Desktop/mygame/assets/prefabs.meta": {
@@ -96,7 +96,7 @@
       "time": 1740661381225.3386
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts": {
-      "time": 1741082917238.6775,
+      "time": 1741092608519.6157,
       "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
     }
   },

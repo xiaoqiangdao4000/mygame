@@ -5,7 +5,8 @@
       "depends": [
         "3ffa4298-a72e-41a6-bd81-2077d6fc1512",
         "d0b507ce-0f17-4608-8a74-f630c3dc5629@f9941",
-        "3cf8679d-104d-4e70-9a2c-b84444a2a64d"
+        "3cf8679d-104d-4e70-9a2c-b84444a2a64d",
+        "8ba5fabd-a248-4d06-9e4b-bc650a6ef63d"
       ],
       "dependScripts": [
         "5e1aab3a-2778-41aa-96fd-ae448f88497b"

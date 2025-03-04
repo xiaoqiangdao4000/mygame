@@ -55,8 +55,11 @@ System.register(["cc"], function (_export, _context) {
         }
 
         //初始化图片总数量 20*3
-        start() {
-          this.initMj();
+        start() {// var card: number[][] = [[1, 2], [3, 4], [5, 6]];
+          // for (let i = 0; i < card.length; i++) {
+          //     console.log('card = ', card[i][0], card[i][1]);
+          // }
+          // this.initMj();
         }
 
         update(deltaTime) {}
@@ -79,10 +82,10 @@ System.register(["cc"], function (_export, _context) {
           const spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
           let mj = instantiate(this.mycard_prefab);
           mj.parent = this.node;
-          var mjscrpit = mj.getComponent("mjcard");
+          var mycard = mj.getComponent("mjcard");
           this.items.push(mj);
           var self = this;
-          mjscrpit.initMj(this.randomIndex, spriteFrame, this.level, function () {
+          mycard.initMj(this.randomIndex, spriteFrame, this.level, function () {
             if (refresh) {
               self.refreshState();
               console.log('发牌完毕：', self.curitem);

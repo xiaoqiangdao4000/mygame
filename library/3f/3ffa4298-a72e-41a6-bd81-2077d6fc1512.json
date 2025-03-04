@@ -403,6 +403,10 @@
       "__uuid__": "3cf8679d-104d-4e70-9a2c-b84444a2a64d",
       "__expectedType__": "cc.Prefab"
     },
+    "mjSpriteAtlas": {
+      "__uuid__": "8ba5fabd-a248-4d06-9e4b-bc650a6ef63d",
+      "__expectedType__": "cc.SpriteAtlas"
+    },
     "_id": "51ZlG7mn1DS5gzuGkQrdBX"
   },
   {
