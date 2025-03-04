@@ -49,17 +49,18 @@ System.register(["cc"], function (_export, _context) {
           //当前数量
           this.randomIndex = 0;
           //当前随机牌索引
-          this.level = 2;
+          this.level = 1;
           //当前关卡
           this.allitem = this.level * 30;
         }
 
         //初始化图片总数量 20*3
-        start() {// var card: number[][] = [[1, 2], [3, 4], [5, 6]];
+        start() {
+          // var card: number[][] = [[1, 2], [3, 4], [5, 6]];
           // for (let i = 0; i < card.length; i++) {
           //     console.log('card = ', card[i][0], card[i][1]);
           // }
-          // this.initMj();
+          this.initMj();
         }
 
         update(deltaTime) {}

@@ -14,10 +14,10 @@ export class mjNode extends Component {
     items = [];
     curitem = 0;        //当前数量
     randomIndex = 0;    //当前随机牌索引
-    level = 2;          //当前关卡
+    level = 1;          //当前关卡
     allitem = this.level * 30;        //初始化图片总数量 20*3
 
-   
+
 
     start() {
         // var card: number[][] = [[1, 2], [3, 4], [5, 6]];
@@ -27,7 +27,7 @@ export class mjNode extends Component {
         // }
 
 
-        // this.initMj();
+        this.initMj();
     }
 
     update(deltaTime: number) {
