@@ -1,0 +1,11 @@
+{
+    "systemInfo": {
+        "arch": "x64",
+        "cpu": "Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz",
+        "version": "Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:00 PST 2025; root:xnu-11215.81.4~3/RELEASE_X86_64"
+    },
+    "sceneListMap": {
+        "3ffa4298-a72e-41a6-bd81-2077d6fc1512": "/Users/zzx/Desktop/mygame/assets/scenes/main.scene"
+    },
+    "deviceMd5": "17f5d4a78ecba90a40cde67e399008e8"
+}
