@@ -1,7 +1,13 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Color, Component, NodeEventType, Sprite, _dec, _class, _crd, ccclass, property, mjcard;
+  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Color, Component, NodeEventType, Sprite, tween, Vec3, _dec, _dec2, _class, _class2, _descriptor, _crd, ccclass, property, mjcard;
+
+  function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
+
+  function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) { var desc = {}; Object.keys(descriptor).forEach(function (key) { desc[key] = descriptor[key]; }); desc.enumerable = !!desc.enumerable; desc.configurable = !!desc.configurable; if ('value' in desc || desc.initializer) { desc.writable = true; } desc = decorators.slice().reverse().reduce(function (desc, decorator) { return decorator(target, property, desc) || desc; }, desc); if (context && desc.initializer !== void 0) { desc.value = desc.initializer ? desc.initializer.call(context) : void 0; desc.initializer = undefined; } if (desc.initializer === void 0) { Object.defineProperty(target, property, desc); desc = null; } return desc; }
+
+  function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'transform-class-properties is enabled and runs after the decorators transform.'); }
 
   return {
     setters: [function (_cc) {
@@ -13,56 +19,88 @@ System.register(["cc"], function (_export, _context) {
       Component = _cc.Component;
       NodeEventType = _cc.NodeEventType;
       Sprite = _cc.Sprite;
+      tween = _cc.tween;
+      Vec3 = _cc.Vec3;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "fc62erwdOpHvLUJ46SH/0d5", "mjcard", undefined);
 
-      __checkObsolete__(['_decorator', 'CCInteger', 'CCString', 'Color', 'Component', 'EventTouch', 'Node', 'NodeEventType', 'Sprite', 'UITransform']);
+      __checkObsolete__(['_decorator', 'CCInteger', 'CCString', 'Color', 'Component', 'EventTouch', 'Node', 'NodeEventType', 'Sprite', 'tween', 'UITransform', 'Vec3']);
 
       ({
         ccclass,
         property
       } = _decorator);
 
-      _export("mjcard", mjcard = (_dec = ccclass('mjcard'), _dec(_class = class mjcard extends Component {
+      _export("mjcard", mjcard = (_dec = ccclass('mjcard'), _dec2 = property(Sprite), _dec(_class = (_class2 = class mjcard extends Component {
         constructor(...args) {
           super(...args);
+
+          _initializerDefineProperty(this, "sprite", _descriptor, this);
+
           this._interaction = true;
-          this.sprite = void 0;
+          this.scale = 1.5;
+          this.moveDuration = 0.5;
+          this.scaleDuration = 0.5;
         }
 
         start() {}
-
-        onLoad() {}
 
         get interaction() {
           return this._interaction;
         }
 
         set interaction(v) {
-          this._interaction = v; // this.icon.setMaterial(0,!v ? cc.Material['getBuiltinMaterial']('2d-gray-sprite'): cc.Material['getBuiltinMaterial']('2d-sprite'));
-
+          this._interaction = v;
           let normalColor = new Color();
           normalColor.fromHEX('#FFFFFF');
           let grayColor = new Color();
           grayColor.fromHEX('#AC8D8D');
-          this.sprite.color = v ? normalColor : grayColor; //let z = this.node.getSiblingIndex();
-          //console.log('adffdfsdfd = ', z);
+          this.sprite.color = v ? normalColor : grayColor;
         }
 
-        initMj(num, indexRender, spriteFrame) {
-          var x = this.getRandomInt(-300, 300);
-          var y = this.getRandomInt(-200, 400); // var x = this.getRandomInt(-30, 30);
-          // var y = this.getRandomInt(-30, 30);
-
+        initMj(num, spriteFrame, animType, callback) {
           this.node.name = 'mj_' + num;
-          this.node.setPosition(x, y);
-          this.node.setScale(1.5, 1.5);
-          this.sprite = this.node.getComponent(Sprite);
           this.sprite.spriteFrame = spriteFrame;
+          this._interaction = true;
           this.node.on(NodeEventType.TOUCH_START, this.onTouchStart);
+          this.playAnimation(animType, callback);
+        } //播放发牌动画
+
+
+        playAnimation(animType, callback) {
+          var x = this.getRandomInt(-300, 300);
+          var y = this.getRandomInt(-200, 400);
+          this.node.setPosition(0, 0);
+          this.node.setScale(0, 0); //同事移动，缩放
+
+          if (animType == 1) {
+            let t1 = tween(this.node).to(this.moveDuration, {
+              position: new Vec3(x, y, 0)
+            });
+            let t2 = tween(this.node).to(this.moveDuration, {
+              scale: new Vec3(this.scale, this.scale, 0)
+            });
+            let t3 = tween(this.node).parallel(t1, t2);
+            let t4 = tween(this.node).call(() => {
+              callback();
+            });
+            tween(this.node).sequence(t3, t4).start(); //tween(this.node).parallel(t1, t2).start();
+
+            return;
+          } else if (animType == 2) //设置位置然后，缩放出现
+            {
+              this.node.setPosition(x, y);
+              let t1 = tween(this.node).to(this.scaleDuration, {
+                scale: new Vec3(this.scale, this.scale, 0)
+              });
+              let t4 = tween(this.node).call(() => {
+                callback();
+              });
+              tween(this.node).sequence(t1, t4).start();
+            }
         }
 
         onTouchStart(event) {
@@ -77,7 +115,12 @@ System.register(["cc"], function (_export, _context) {
           return Math.floor(Math.random() * (max - min + 1)) + min;
         }
 
-      }) || _class));
+      }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "sprite", [_dec2], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      })), _class2)) || _class));
 
       _cclegacy._RF.pop();
 

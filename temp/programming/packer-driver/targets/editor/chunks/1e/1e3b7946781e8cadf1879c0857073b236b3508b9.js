@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Prefab, Rect, resources, SpriteAtlas, _dec, _dec2, _class, _class2, _descriptor, _crd, ccclass, property, mjNode;
+  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Prefab, Rect, SpriteAtlas, tween, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -20,36 +20,41 @@ System.register(["cc"], function (_export, _context) {
       Intersection2D = _cc.Intersection2D;
       Prefab = _cc.Prefab;
       Rect = _cc.Rect;
-      resources = _cc.resources;
       SpriteAtlas = _cc.SpriteAtlas;
+      tween = _cc.tween;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "5e1aas6J3hBqpb9rkSPiEl7", "mjNode", undefined);
 
-      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Collider', 'Component', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Node', 'NodeEventType', 'Prefab', 'Rect', 'resources', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'UITransform']);
+      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Collider', 'Component', 'ConfigurableConstraint', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Node', 'NodeEventType', 'Prefab', 'Rect', 'resources', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'tween', 'UITransform', 'Vec3']);
 
       ({
         ccclass,
         property
       } = _decorator);
 
-      _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec(_class = (_class2 = class mjNode extends Component {
+      _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(SpriteAtlas), _dec(_class = (_class2 = class mjNode extends Component {
         constructor(...args) {
           super(...args);
 
           _initializerDefineProperty(this, "mycard_prefab", _descriptor, this);
 
-          this.mjSpriteAtlas = null;
+          _initializerDefineProperty(this, "mjSpriteAtlas", _descriptor2, this);
+
           this.refreshLock = false;
           this.items = [];
-          this.itemcount = 20;
-          //初始化图片总数量 20*3
-          this.curItem = 0;
+          this.curitem = 0;
+          //当前数量
+          this.randomIndex = 0;
+          //当前随机牌索引
+          this.level = 2;
+          //当前关卡
+          this.allitem = this.level * 30;
         }
 
-        //当前加载图片数量
+        //初始化图片总数量 20*3
         start() {
           this.initMj();
         }
@@ -57,37 +62,34 @@ System.register(["cc"], function (_export, _context) {
         update(deltaTime) {}
 
         initMj() {
-          resources.load("wzmj_card", SpriteAtlas, (err, atlas) => {
-            this.mjSpriteAtlas = atlas;
+          this.randomIndex = this.getRandomMjIndex(1, 37);
 
-            for (let i = 0; i < this.itemcount; i++) {
-              var randomInt = this.getRandomInt(1, 37);
-              this.createMj(randomInt);
-              this.createMj(randomInt);
-              this.createMj(randomInt);
-            }
-
-            this.refreshState();
-          });
+          for (let i = 0; i < this.allitem; i++) {
+            tween(this.node).delay(i * 0.1).call(() => {
+              i == this.allitem - 1 ? this.createMj(true) : this.createMj(false);
+            }).start();
+          }
         } //随机创建麻将
-        //pos = 0;
 
 
-        createMj(num) {
-          let randomInt = num;
-          if (randomInt == 10 || randomInt == 20 || randomInt == 30) randomInt += 1;
-          const spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + randomInt);
+        createMj(refresh) {
+          //发牌
+          console.log('发牌：', this.curitem);
+          if (this.curitem % 3 == 0) this.randomIndex = this.getRandomMjIndex(1, 37);
+          const spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
           let mj = instantiate(this.mycard_prefab);
           mj.parent = this.node;
           var mjscrpit = mj.getComponent("mjcard");
-          mjscrpit.initMj(randomInt, 1, spriteFrame);
-          mjscrpit.interaction = true; // mj.setPosition(0, this.pos);
-          // this.pos += 121;
-          // for (let i = 0; i < this.items.length; i++) {
-          //     this.refreshState(mj, this.items[i]);
-          // }
-
           this.items.push(mj);
+          var self = this;
+          mjscrpit.initMj(this.randomIndex, spriteFrame, this.level, function () {
+            if (refresh) {
+              self.refreshState();
+              console.log('发牌完毕：', self.curitem);
+              console.log('刷新牌！！！');
+            }
+          });
+          this.curitem += 1;
         } //刷新麻将状态
 
 
@@ -104,7 +106,6 @@ System.register(["cc"], function (_export, _context) {
               }
             }
 
-            console.log('yyyy = ', itemsXJ);
             var big = 0;
 
             if (itemsXJ.length > 1) {
@@ -119,28 +120,22 @@ System.register(["cc"], function (_export, _context) {
                   mjscrpit1.interaction = false;
                 }
               }
-            } // if (big > 0) {
-            //     var mjscrpit1 = itemsXJ[big].getComponent("mjcard");
-            //     mjscrpit1.interaction = true;
-            // }
-
+            }
           }
         }
 
         refreshStateMJ(node1, node2) {
           // 获取两个节点的边界框的世界坐标位置和大小
-          let pos1 = node1.getPosition(); //let size1 = node1.getComponent(UITransform).contentSize;
-
-          let pos2 = node2.getPosition(); //let size2 = node2.getComponent(UITransform).contentSize;
-          // 创建一个临时的矩形对象，用于检测相交
+          let pos1 = node1.getPosition();
+          let pos2 = node2.getPosition(); // 创建一个临时的矩形对象，用于检测相交
+          // let rect1 = new Rect(pos1.x, pos1.y, 67, 91);
+          // let rect2 = new Rect(pos2.x, pos2.y, 67, 91);
 
           let rect1 = new Rect(pos1.x, pos1.y, 90, 120);
-          let rect2 = new Rect(pos2.x, pos2.y, 90, 120);
-          var mjscrpit1 = node1.getComponent("mjcard");
-          var mjscrpit2 = node2.getComponent("mjcard"); // 判断是否相交
+          let rect2 = new Rect(pos2.x, pos2.y, 90, 120); // 判断是否相交
 
           if (Intersection2D.rectRect(rect1, rect2)) {
-            console.log("两个图片相交");
+            //console.log("两个图片相交");
             return true;
           }
 
@@ -151,7 +146,20 @@ System.register(["cc"], function (_export, _context) {
           return Math.floor(Math.random() * (max - min + 1)) + min;
         }
 
+        getRandomMjIndex(min, max) {
+          var randomInt = this.getRandomInt(1, 37);
+          if (randomInt == 10 || randomInt == 20 || randomInt == 30) randomInt += 1;
+          return randomInt;
+        }
+
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "mycard_prefab", [_dec2], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "mjSpriteAtlas", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,

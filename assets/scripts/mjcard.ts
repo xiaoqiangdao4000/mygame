@@ -1,47 +1,63 @@
-import { _decorator, CCInteger, CCString, Color, Component, EventTouch, Node, NodeEventType, Sprite, UITransform } from 'cc';
+import { _decorator, CCInteger, CCString, Color, Component, EventTouch, Node, NodeEventType, Sprite, tween, UITransform, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('mjcard')
 export class mjcard extends Component {
 
-    private _interaction = true;
-
+    @property(Sprite)
     sprite: Sprite;
 
+    private _interaction = true;
+    scale = 1.5;
+    moveDuration = 0.5;
+    scaleDuration = 0.5;
+
     start() {
-
-    }
-
-    onLoad(): void {
 
     }
 
     public get interaction() { return this._interaction; }
     public set interaction(v: boolean) {
         this._interaction = v;
-        // this.icon.setMaterial(0,!v ? cc.Material['getBuiltinMaterial']('2d-gray-sprite'): cc.Material['getBuiltinMaterial']('2d-sprite'));
-
         let normalColor = new Color();
         normalColor.fromHEX('#FFFFFF');
         let grayColor = new Color();
         grayColor.fromHEX('#AC8D8D');
-
         this.sprite.color = v ? normalColor : grayColor;
-        //let z = this.node.getSiblingIndex();
-        //console.log('adffdfsdfd = ', z);
     }
 
-    initMj(num, indexRender, spriteFrame) {
+    initMj(num, spriteFrame, animType, callback) {
+        this.node.name = 'mj_' + num;
+        this.sprite.spriteFrame = spriteFrame;
+        this._interaction = true;
+        this.node.on(NodeEventType.TOUCH_START, this.onTouchStart);
+        this.playAnimation(animType, callback);
+    }
+
+    //播放发牌动画
+    playAnimation(animType, callback) {
         var x = this.getRandomInt(-300, 300);
         var y = this.getRandomInt(-200, 400);
-        // var x = this.getRandomInt(-30, 30);
-        // var y = this.getRandomInt(-30, 30);
-        this.node.name = 'mj_' + num;
-        this.node.setPosition(x, y);
-        this.node.setScale(1.5, 1.5);
-        this.sprite = this.node.getComponent(Sprite)
-        this.sprite.spriteFrame = spriteFrame;
-        this.node.on(NodeEventType.TOUCH_START, this.onTouchStart);
+        this.node.setPosition(0, 0);
+        this.node.setScale(0, 0);
+
+        //同事移动，缩放
+        if (animType == 1) {
+            let t1 = tween(this.node).to(this.moveDuration, { position: new Vec3(x, y, 0) })
+            let t2 = tween(this.node).to(this.moveDuration, { scale: new Vec3(this.scale, this.scale, 0) })
+            let t3 = tween(this.node).parallel(t1, t2);
+            let t4 = tween(this.node).call(() => { callback(); });
+            tween(this.node).sequence(t3, t4).start();
+            //tween(this.node).parallel(t1, t2).start();
+            return;
+        }
+        else if (animType == 2)  //设置位置然后，缩放出现
+        {
+            this.node.setPosition(x, y);
+            let t1 = tween(this.node).to(this.scaleDuration, { scale: new Vec3(this.scale, this.scale, 0) })
+            let t4 = tween(this.node).call(() => { callback(); });
+            tween(this.node).sequence(t1, t4).start();
+        }
 
     }
 
