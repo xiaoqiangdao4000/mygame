@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Prefab, Rect, SpriteAtlas, tween, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, mjNode;
+  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Prefab, Rect, SpriteAtlas, tween, Vec3, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, eventTarget, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -22,18 +22,20 @@ System.register(["cc"], function (_export, _context) {
       Rect = _cc.Rect;
       SpriteAtlas = _cc.SpriteAtlas;
       tween = _cc.tween;
+      Vec3 = _cc.Vec3;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "5e1aas6J3hBqpb9rkSPiEl7", "mjNode", undefined);
 
-      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Collider', 'Component', 'ConfigurableConstraint', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Node', 'NodeEventType', 'Prefab', 'Rect', 'resources', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'tween', 'UITransform', 'Vec3']);
+      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Collider', 'Component', 'ConfigurableConstraint', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Node', 'NodeEventType', 'Prefab', 'Rect', 'resources', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'tween', 'UITransform', 'Vec2', 'Vec3']);
 
       ({
         ccclass,
         property
       } = _decorator);
+      eventTarget = new EventTarget();
 
       _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(SpriteAtlas), _dec(_class = (_class2 = class mjNode extends Component {
         constructor(...args) {
@@ -52,21 +54,55 @@ System.register(["cc"], function (_export, _context) {
           this.level = 1;
           //当前关卡
           this.allitem = this.level * 30;
+          //初始化图片总数量 20*3
+          this.mjItem = [{
+            node: null,
+            x: -294.764,
+            y: -573.635
+          }, {
+            node: null,
+            x: -197.881,
+            y: -573.635
+          }, {
+            node: null,
+            x: -100.211,
+            y: -573.635
+          }, {
+            node: null,
+            x: -2.572,
+            y: -573.635
+          }, {
+            node: null,
+            x: 94.539,
+            y: -573.635
+          }, {
+            node: null,
+            x: 190.994,
+            y: -573.635
+          }, {
+            node: null,
+            x: 290.353,
+            y: -573.635
+          }];
         }
 
-        //初始化图片总数量 20*3
+        //列表中的合集
         start() {
-          // var card: number[][] = [[1, 2], [3, 4], [5, 6]];
-          // for (let i = 0; i < card.length; i++) {
-          //     console.log('card = ', card[i][0], card[i][1]);
-          // }
+          this.node.on('clickmj', this.onClickMj, this);
           this.initMj();
+        }
+
+        onClickMj(event) {
+          console.log('麻将111111 = ', event);
+          this.deleteItems(event.target);
+          this.addMjItem(event.target);
         }
 
         update(deltaTime) {}
 
         initMj() {
           this.randomIndex = this.getRandomMjIndex(1, 37);
+          console.log('开始发牌!!!');
 
           for (let i = 0; i < this.allitem; i++) {
             tween(this.node).delay(i * 0.1).call(() => {
@@ -78,7 +114,6 @@ System.register(["cc"], function (_export, _context) {
 
         createMj(refresh) {
           //发牌
-          console.log('发牌：', this.curitem);
           if (this.curitem % 3 == 0) this.randomIndex = this.getRandomMjIndex(1, 37);
           const spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
           let mj = instantiate(this.mycard_prefab);
@@ -146,6 +181,16 @@ System.register(["cc"], function (_export, _context) {
           return false;
         }
 
+        deleteItems(mjNode) {
+          for (let i = 0; i < this.items.length; i++) {
+            if (mjNode.id == this.items[i].id) {
+              this.items.splice(i, 1);
+              console.log('麻将数量：', this.items.length);
+              return;
+            }
+          }
+        }
+
         getRandomInt(min, max) {
           return Math.floor(Math.random() * (max - min + 1)) + min;
         }
@@ -154,6 +199,25 @@ System.register(["cc"], function (_export, _context) {
           var randomInt = this.getRandomInt(1, 37);
           if (randomInt == 10 || randomInt == 20 || randomInt == 30) randomInt += 1;
           return randomInt;
+        } //添加到物品栏
+
+
+        addMjItem(event) {
+          for (let i = 0; i < this.mjItem.length; i++) {
+            if (this.mjItem[i].node == null) {
+              var self = this;
+              let t1 = tween(event).to(0.2, {
+                position: new Vec3(this.mjItem[i].x, this.mjItem[i].y, 0)
+              });
+              let t2 = tween(event).call(() => {
+                self.mjItem[i].node = event;
+              });
+              tween(event).sequence(t1, t2).start();
+              return;
+            }
+          }
+
+          return;
         }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "mycard_prefab", [_dec2], {

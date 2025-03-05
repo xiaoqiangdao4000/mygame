@@ -724,7 +724,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 19729754.453479,
+      "mTimestamp": 106811020.476704,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -852,6 +852,20 @@
               "column": 1371
             }
           }
+        },
+        {
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/myEvent.ts",
+          "resolved": "__unresolved_9",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1387
+            },
+            "end": {
+              "line": 5,
+              "column": 1447
+            }
+          }
         }
       ],
       "type": "esm",
@@ -916,6 +930,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/myEvent.ts"
           },
           "messages": []
         }
@@ -1544,7 +1565,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
       "mTimestamp": {
-        "mtime": 1741093801598.442,
+        "mtime": 1741180884031.9587,
         "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
       },
       "chunkId": "1e3b7946781e8cadf1879c0857073b236b3508b9",
@@ -1560,11 +1581,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 259
+              "column": 265
             },
             "end": {
               "line": 1,
-              "column": 263
+              "column": 269
             }
           }
         }
@@ -1700,7 +1721,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts": {
       "mTimestamp": {
-        "mtime": 1741093772068.6438,
+        "mtime": 1741169521366.0066,
         "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
       },
       "chunkId": "d9a5e3f9516b8c6eeae843734f33fa214af1fc8b",
@@ -1716,11 +1737,63 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 133
+              "column": 84
             },
             "end": {
               "line": 1,
-              "column": 137
+              "column": 88
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/zzx/Desktop/mygame/assets/scripts/myEvent.ts": {
+      "mTimestamp": {
+        "mtime": 1741167844695.7668,
+        "uuid": "f50584ca-b454-4a18-8502-b2967ea3f3e8"
+      },
+      "chunkId": "8c9b7f10e92940099f99c9a717c2899fbdbff648",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 22
+            },
+            "end": {
+              "line": 1,
+              "column": 26
             }
           }
         }

@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Color, Component, NodeEventType, Sprite, tween, Vec3, _dec, _dec2, _class, _class2, _descriptor, _crd, ccclass, property, mjcard;
+  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Color, Component, Node, Sprite, tween, Vec3, _dec, _dec2, _class, _class2, _descriptor, _crd, ccclass, property, mjcard;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -17,7 +17,7 @@ System.register(["cc"], function (_export, _context) {
       _decorator = _cc._decorator;
       Color = _cc.Color;
       Component = _cc.Component;
-      NodeEventType = _cc.NodeEventType;
+      Node = _cc.Node;
       Sprite = _cc.Sprite;
       tween = _cc.tween;
       Vec3 = _cc.Vec3;
@@ -27,7 +27,7 @@ System.register(["cc"], function (_export, _context) {
 
       _cclegacy._RF.push({}, "fc62erwdOpHvLUJ46SH/0d5", "mjcard", undefined);
 
-      __checkObsolete__(['_decorator', 'CCInteger', 'CCString', 'Color', 'Component', 'EventTouch', 'Node', 'NodeEventType', 'Sprite', 'tween', 'UITransform', 'Vec3']);
+      __checkObsolete__(['_decorator', 'Color', 'Component', 'EventTouch', 'Node', 'Sprite', 'tween', 'Vec3']);
 
       ({
         ccclass,
@@ -47,7 +47,9 @@ System.register(["cc"], function (_export, _context) {
           this.levelPos1 = [[1, 2], [3, 4], [5, 6]];
         }
 
-        start() {}
+        start() {
+          this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this);
+        }
 
         get interaction() {
           return this._interaction;
@@ -66,7 +68,6 @@ System.register(["cc"], function (_export, _context) {
           this.node.name = 'mj_' + num;
           this.sprite.spriteFrame = spriteFrame;
           this._interaction = true;
-          this.node.on(NodeEventType.TOUCH_START, this.onTouchStart);
           this.playAnimation(animType, callback);
         } //播放发牌动画
 
@@ -82,7 +83,7 @@ System.register(["cc"], function (_export, _context) {
               position: new Vec3(x, y, 0)
             });
             let t2 = tween(this.node).to(this.moveDuration, {
-              scale: new Vec3(this.scale, this.scale, 0)
+              scale: new Vec3(this.scale, this.scale, 1)
             });
             let t3 = tween(this.node).parallel(t1, t2);
             let t4 = tween(this.node).call(() => {
@@ -95,7 +96,7 @@ System.register(["cc"], function (_export, _context) {
             {
               this.node.setPosition(x, y);
               let t1 = tween(this.node).to(this.scaleDuration, {
-                scale: new Vec3(this.scale, this.scale, 0)
+                scale: new Vec3(this.scale, this.scale)
               });
               let t4 = tween(this.node).call(() => {
                 callback();
@@ -105,9 +106,12 @@ System.register(["cc"], function (_export, _context) {
         }
 
         onTouchStart(event) {
-          console.log('bbbbb = ', event.target.siblingIndex); // console.log(event.getLocation());  // Location on screen space
-          // console.log(event.getUILocation());  // Location on UI space
-          //this.getClickCurMj(event.target);
+          if (this._interaction == false) {
+            console.log('不可点击的麻将 = ', event.target.name);
+          } else {
+            // console.log('麻将 = ', event.target.name);
+            this.node.parent.emit('clickmj', event);
+          }
         }
 
         update(deltaTime) {}
