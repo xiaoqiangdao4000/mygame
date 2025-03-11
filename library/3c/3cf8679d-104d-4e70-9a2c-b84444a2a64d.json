@@ -116,9 +116,9 @@
       "__uuid__": "8ba5fabd-a248-4d06-9e4b-bc650a6ef63d@57923",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 1,
+    "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,

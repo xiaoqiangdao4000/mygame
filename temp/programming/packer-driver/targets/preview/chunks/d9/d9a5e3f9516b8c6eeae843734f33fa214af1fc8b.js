@@ -1,7 +1,7 @@
-System.register(["cc"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Color, Component, Node, Sprite, tween, Vec3, _dec, _dec2, _class, _class2, _descriptor, _crd, ccclass, property, mjcard;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Color, Component, Node, Sprite, tween, Vec3, tools, _dec, _dec2, _class, _class2, _descriptor, _crd, ccclass, property, mjcard;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -9,8 +9,14 @@ System.register(["cc"], function (_export, _context) {
 
   function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'transform-class-properties is enabled and runs after the decorators transform.'); }
 
+  function _reportPossibleCrUseOftools(extras) {
+    _reporterNs.report("tools", "./tools", _context.meta, extras);
+  }
+
   return {
-    setters: [function (_cc) {
+    setters: [function (_unresolved_) {
+      _reporterNs = _unresolved_;
+    }, function (_cc) {
       _cclegacy = _cc.cclegacy;
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
@@ -21,6 +27,8 @@ System.register(["cc"], function (_export, _context) {
       Sprite = _cc.Sprite;
       tween = _cc.tween;
       Vec3 = _cc.Vec3;
+    }, function (_unresolved_2) {
+      tools = _unresolved_2.default;
     }],
     execute: function () {
       _crd = true;
@@ -41,10 +49,10 @@ System.register(["cc"], function (_export, _context) {
           _initializerDefineProperty(this, "sprite", _descriptor, this);
 
           this._interaction = true;
+          this.cardId = 0;
           this.scale = 1.5;
           this.moveDuration = 0.5;
           this.scaleDuration = 0.5;
-          this.levelPos1 = [[1, 2], [3, 4], [5, 6]];
         }
 
         start() {
@@ -64,17 +72,24 @@ System.register(["cc"], function (_export, _context) {
           this.sprite.color = v ? normalColor : grayColor;
         }
 
-        initMj(num, spriteFrame, animType, callback) {
+        initMj(num, cardid, spriteFrame, animType, callback) {
           this.node.name = 'mj_' + num;
+          this.cardId = cardid;
           this.sprite.spriteFrame = spriteFrame;
-          this._interaction = true;
+          this.interaction = false;
           this.playAnimation(animType, callback);
         } //播放发牌动画
 
 
         playAnimation(animType, callback) {
-          var x = this.getRandomInt(-300, 300);
-          var y = this.getRandomInt(-200, 400);
+          var x = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).getRandomInt(-300, 300);
+          var y = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).getRandomInt(-200, 400); // var x = tools.getRandomInt(-30, 30);
+          // var y = tools.getRandomInt(-20, 40);
+
           this.node.setPosition(0, 0);
           this.node.setScale(0, 0); //同事移动，缩放
 
@@ -97,7 +112,7 @@ System.register(["cc"], function (_export, _context) {
               this.node.setPosition(x, y);
 
               var _t = tween(this.node).to(this.scaleDuration, {
-                scale: new Vec3(this.scale, this.scale)
+                scale: new Vec3(this.scale, this.scale, 1)
               });
 
               var _t2 = tween(this.node).call(() => {
@@ -112,16 +127,12 @@ System.register(["cc"], function (_export, _context) {
           if (this._interaction == false) {
             console.log('不可点击的麻将 = ', event.target.name);
           } else {
-            // console.log('麻将 = ', event.target.name);
-            this.node.parent.emit('clickmj', event);
+            //console.log('点击麻将 = ', event.target.name);
+            this.node.parent.emit('clickmj', event.target);
           }
         }
 
         update(deltaTime) {}
-
-        getRandomInt(min, max) {
-          return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "sprite", [_dec2], {
         configurable: true,

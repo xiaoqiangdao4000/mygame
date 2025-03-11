@@ -1,4 +1,5 @@
 import { _decorator, Color, Component, EventTouch, Node, Sprite, tween, Vec3 } from 'cc';
+import tools from './tools';
 const { ccclass, property } = _decorator;
 @ccclass('mjcard')
 export class mjcard extends Component {
@@ -7,16 +8,10 @@ export class mjcard extends Component {
     sprite: Sprite;
 
     private _interaction = true;
-
+    cardId = 0;
     scale = 1.5;
     moveDuration = 0.5;
     scaleDuration = 0.5;
-
-    levelPos1: number[][] = [
-        [1, 2],
-        [3, 4],
-        [5, 6]
-    ];
 
     start() {
         this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this);
@@ -32,17 +27,20 @@ export class mjcard extends Component {
         this.sprite.color = v ? normalColor : grayColor;
     }
 
-    initMj(num, spriteFrame, animType, callback) {
+    initMj(num, cardid, spriteFrame, animType, callback) {
         this.node.name = 'mj_' + num;
+        this.cardId = cardid;
         this.sprite.spriteFrame = spriteFrame;
-        this._interaction = true;
+        this.interaction = false;
         this.playAnimation(animType, callback);
     }
 
     //播放发牌动画
     playAnimation(animType, callback) {
-        var x = this.getRandomInt(-300, 300);
-        var y = this.getRandomInt(-200, 400);
+        var x = tools.getRandomInt(-300, 300);
+        var y = tools.getRandomInt(-200, 400);
+        // var x = tools.getRandomInt(-30, 30);
+        // var y = tools.getRandomInt(-20, 40);
         this.node.setPosition(0, 0);
         this.node.setScale(0, 0);
         //同事移动，缩放
@@ -60,7 +58,7 @@ export class mjcard extends Component {
         else if (animType == 2)  //设置位置然后，缩放出现
         {
             this.node.setPosition(x, y);
-            let t1 = tween(this.node).to(this.scaleDuration, { scale: new Vec3(this.scale, this.scale) })
+            let t1 = tween(this.node).to(this.scaleDuration, { scale: new Vec3(this.scale, this.scale, 1) })
             let t4 = tween(this.node).call(() => {
                 callback();
             });
@@ -74,18 +72,13 @@ export class mjcard extends Component {
             console.log('不可点击的麻将 = ', event.target.name);
         }
         else {
-            // console.log('麻将 = ', event.target.name);
-            this.node.parent.emit('clickmj', event);
+            //console.log('点击麻将 = ', event.target.name);
+            this.node.parent.emit('clickmj', event.target);
         }
     }
 
     update(deltaTime: number) {
 
     }
-
-    getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
 }
 

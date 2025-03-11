@@ -1,7 +1,7 @@
-System.register(["cc"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Prefab, Rect, SpriteAtlas, tween, Vec3, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, eventTarget, mjNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Prefab, Rect, SpriteAtlas, tween, Vec3, tools, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, eventTarget, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -9,8 +9,14 @@ System.register(["cc"], function (_export, _context) {
 
   function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'transform-class-properties is enabled and runs after the decorators transform.'); }
 
+  function _reportPossibleCrUseOftools(extras) {
+    _reporterNs.report("tools", "./tools", _context.meta, extras);
+  }
+
   return {
-    setters: [function (_cc) {
+    setters: [function (_unresolved_) {
+      _reporterNs = _unresolved_;
+    }, function (_cc) {
       _cclegacy = _cc.cclegacy;
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
@@ -23,6 +29,8 @@ System.register(["cc"], function (_export, _context) {
       SpriteAtlas = _cc.SpriteAtlas;
       tween = _cc.tween;
       Vec3 = _cc.Vec3;
+    }, function (_unresolved_2) {
+      tools = _unresolved_2.default;
     }],
     execute: function () {
       _crd = true;
@@ -46,196 +54,234 @@ System.register(["cc"], function (_export, _context) {
           _initializerDefineProperty(this, "mjSpriteAtlas", _descriptor2, this);
 
           this.refreshLock = false;
-          this.items = [];
-          this.curitem = 0;
+          this.desktopItems = [];
+          //桌面麻将
+          this.desktopCuritem = 0;
           //当前数量
           this.randomIndex = 0;
           //当前随机牌索引
           this.level = 1;
           //当前关卡
-          this.allitem = this.level * 30;
+          this.desktopItemCount = this.level * 9;
           //初始化图片总数量 20*3
-          this.mjItem = [{
-            node: null,
+          this.mjItemPos = [{
             x: -294.764,
             y: -573.635
           }, {
-            node: null,
             x: -197.881,
             y: -573.635
           }, {
-            node: null,
             x: -100.211,
             y: -573.635
           }, {
-            node: null,
             x: -2.572,
             y: -573.635
           }, {
-            node: null,
             x: 94.539,
             y: -573.635
           }, {
-            node: null,
             x: 190.994,
             y: -573.635
           }, {
-            node: null,
             x: 290.353,
             y: -573.635
           }];
+          //物品栏坐标
+          this.mjItem = [];
         }
 
-        //列表中的合集
+        //物品栏
         start() {
           this.node.on('clickmj', this.onClickMj, this);
-          this.initMj();
+          this.initDesktopMj();
         }
 
-        onClickMj(event) {
-          console.log('麻将111111 = ', event);
-          this.deleteItems(event.target);
-          this.addMjItem(event.target);
+        onClickMj(node) {
+          //是否可以插入
+          if (this.mjItem.length >= 7) //不可以插入,游戏结束
+            {
+              console.log('格子已经满了---游戏结束');
+              this.gameOver();
+              return;
+            } //可以插入
+
+
+          this.insertItem(node, insertCallBack); //插入回调，删除桌面麻将
+
+          var self = this;
+
+          function insertCallBack() {
+            self.deleteDesktopItems(node); //判断物品栏是否可以消除
+
+            var index = self.isTabCanDelete(node);
+            console.log('可以消除的下标---', index);
+
+            if (index.length < 3) {
+              self.refreshDeaktopMj();
+
+              if (self.mjItem.length == 7) {
+                console.log('游戏结束---');
+              }
+
+              return;
+            } //开始执行物品栏消除动画
+
+
+            self.deleteTabAnima(index, function () {
+              self.mjItem.splice(index[2], 1);
+              self.mjItem.splice(index[1], 1);
+              self.mjItem.splice(index[0], 1);
+              self.refreshDeaktopMj();
+              console.log('消除回调---');
+              self.restTopAnima();
+            });
+          }
         }
 
         update(deltaTime) {}
 
-        initMj() {
+        initDesktopMj() {
           var _this = this;
 
-          this.randomIndex = this.getRandomMjIndex(1, 37);
-          console.log('开始发牌!!!');
+          this.desktopCuritem = 0;
+          this.randomIndex = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).getRandomMjIndex(1, 37);
+          console.log('开始发牌---');
 
           var _loop = function _loop(i) {
             tween(_this.node).delay(i * 0.1).call(() => {
-              i == _this.allitem - 1 ? _this.createMj(true) : _this.createMj(false);
+              i == _this.desktopItemCount - 1 ? _this.createDesktopMj(true) : _this.createDesktopMj(false);
             }).start();
           };
 
-          for (var i = 0; i < this.allitem; i++) {
+          for (var i = 0; i < this.desktopItemCount; i++) {
             _loop(i);
           }
         } //随机创建麻将
 
 
-        createMj(refresh) {
+        createDesktopMj(refresh) {
           //发牌
-          if (this.curitem % 3 == 0) this.randomIndex = this.getRandomMjIndex(1, 37);
+          if (this.desktopCuritem % 3 == 0) this.randomIndex = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).getRandomMjIndex(1, 37); // this.randomIndex += 1;
+
           var spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
           var mj = instantiate(this.mycard_prefab);
           mj.parent = this.node;
           var mycard = mj.getComponent("mjcard");
-          this.items.push(mj);
+          this.desktopItems.push(mj);
           var self = this;
-          mycard.initMj(this.randomIndex, spriteFrame, this.level, function () {
+          mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, this.level, function () {
             if (refresh) {
-              self.refreshState();
-              console.log('发牌完毕：', self.curitem);
-              console.log('刷新牌！！！');
+              self.refreshDeaktopMj();
+              console.log('发牌完毕---', self.desktopCuritem);
             }
           });
-          this.curitem += 1;
+          this.desktopCuritem += 1;
         } //刷新麻将状态
 
 
-        refreshState() {
-          for (var i = 0; i < this.items.length; i++) {
+        refreshDeaktopMj() {
+          console.log('刷新牌---', this.desktopItems);
+
+          for (var i = 0; i < this.desktopItems.length; i++) {
             var itemsXJ = [];
-            itemsXJ.push(this.items[i]);
 
-            for (var j = 0; j < this.items.length; j++) {
-              if (this.items[i] != this.items[j]) {
-                if (this.refreshStateMJ(this.items[i], this.items[j])) {
-                  itemsXJ.push(this.items[j]);
-                }
+            for (var j = 0; j < this.desktopItems.length; j++) {
+              var pos1 = this.desktopItems[i].getPosition();
+              var pos2 = this.desktopItems[j].getPosition();
+              var rect1 = new Rect(pos1.x, pos1.y, 90, 120);
+              var rect2 = new Rect(pos2.x, pos2.y, 90, 120);
+
+              if (Intersection2D.rectRect(rect1, rect2)) {
+                itemsXJ.push(this.desktopItems[j]);
               }
             }
 
-            var big = 0;
+            if (itemsXJ.length < 1) return; //去除数组相同的麻将
 
-            if (itemsXJ.length > 1) {
-              for (var k = 0; k < itemsXJ.length; k++) {
-                var mjscrpit1 = itemsXJ[k].getComponent("mjcard");
-                mjscrpit1.interaction = false;
+            var itemsXJ1 = Array.from(new Set(itemsXJ)); //获取数组最大的麻将
 
-                if (itemsXJ[k].getSiblingIndex() > big) {
-                  big = itemsXJ[k].getSiblingIndex();
-                  mjscrpit1.interaction = true;
-                } else {
-                  mjscrpit1.interaction = false;
-                }
-              }
+            var maxNodeItem = itemsXJ1.reduce((a, b) => a.getSiblingIndex() > b.getSiblingIndex() ? a : b); //设置麻将渲染层级
+
+            for (var _i = 0; _i < itemsXJ1.length; _i++) {
+              var _mjscrpit = itemsXJ1[_i].getComponent("mjcard");
+
+              _mjscrpit.interaction = false;
             }
+
+            var mjscrpit = maxNodeItem.getComponent("mjcard");
+            mjscrpit.interaction = true;
           }
-        }
+        } //删除桌面麻将
 
-        refreshStateMJ(node1, node2) {
-          // 获取两个节点的边界框的世界坐标位置和大小
-          var pos1 = node1.getPosition();
-          var pos2 = node2.getPosition(); // 创建一个临时的矩形对象，用于检测相交
-          // let rect1 = new Rect(pos1.x, pos1.y, 67, 91);
-          // let rect2 = new Rect(pos2.x, pos2.y, 67, 91);
 
-          var rect1 = new Rect(pos1.x, pos1.y, 90, 120);
-          var rect2 = new Rect(pos2.x, pos2.y, 90, 120); // 判断是否相交
+        deleteDesktopItems(mjNode) {
+          var mjscrpit = mjNode.getComponent("mjcard");
 
-          if (Intersection2D.rectRect(rect1, rect2)) {
-            //console.log("两个图片相交");
-            return true;
-          }
+          for (var i = 0; i < this.desktopItems.length; i++) {
+            var desktopScript = this.desktopItems[i].getComponent("mjcard");
 
-          return false;
-        }
-
-        deleteItems(mjNode) {
-          for (var i = 0; i < this.items.length; i++) {
-            if (mjNode.id == this.items[i].id) {
-              this.items.splice(i, 1);
-              console.log('麻将数量：', this.items.length);
+            if (mjscrpit.cardId == desktopScript.cardId) {
+              this.desktopItems.splice(i, 1);
+              console.log('删除桌面成功---', this.desktopItems);
               return;
             }
           }
-        }
-
-        getRandomInt(min, max) {
-          return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        getRandomMjIndex(min, max) {
-          var randomInt = this.getRandomInt(1, 37);
-          if (randomInt == 10 || randomInt == 20 || randomInt == 30) randomInt += 1;
-          return randomInt;
-        } //添加到物品栏
+        } //判断是否可以消除,返回消除下标数组
 
 
-        addMjItem(event) {
-          var _this2 = this;
-
-          var _loop2 = function _loop2(i) {
-            if (_this2.mjItem[i].node == null) {
-              self = _this2;
-              var t1 = tween(event).to(0.2, {
-                position: new Vec3(_this2.mjItem[i].x, _this2.mjItem[i].y, 0)
-              });
-              var t2 = tween(event).call(() => {
-                self.mjItem[i].node = event;
-              });
-              tween(event).sequence(t1, t2).start();
-              return {
-                v: void 0
-              };
-            }
-          },
-              self,
-              _ret;
+        isTabCanDelete(node) {
+          var tempIndex = []; //判断否可以消除
 
           for (var i = 0; i < this.mjItem.length; i++) {
-            _ret = _loop2(i);
-            if (_ret) return _ret.v;
+            if (this.mjItem[i].name == node.name) {
+              tempIndex.push(i);
+            }
           }
 
-          return;
-        }
+          if (tempIndex.length != 3) tempIndex = [];
+          return tempIndex;
+        } //插入到物品栏
+
+
+        insertItem(node, callback) {
+          this.mjItem.push(node);
+          console.log('插入成功---');
+          var index = this.mjItem.length - 1;
+          var t1 = tween(node).to(0.2, {
+            position: new Vec3(this.mjItemPos[index].x, this.mjItemPos[index].y, 0)
+          });
+          var t2 = tween(node).call(() => {
+            callback();
+          });
+          node.setSiblingIndex(1000);
+          tween(node).sequence(t1, t2).start();
+        } //消除物品栏动画
+
+
+        deleteTabAnima(index, callback) {
+          var node2 = this.mjItem[index[2]];
+          var node1 = this.mjItem[index[1]];
+          var node0 = this.mjItem[index[0]];
+          tween(node2).delay(0.1).show().delay(0.1).hide().union().repeat(3).removeSelf().start();
+          tween(node1).delay(0.1).show().delay(0.1).hide().union().repeat(3).removeSelf().start();
+          tween(node0).delay(0.1).show().delay(0.1).hide().union().repeat(3).removeSelf().call(callback()).start();
+        } //整理物品栏
+
+
+        restTopAnima() {
+          for (var i = 0; i < this.mjItem.length; i++) {
+            tween(this.mjItem[i]).delay(0.5).show().to(0.3, {
+              position: new Vec3(this.mjItemPos[i].x, this.mjItemPos[i].y, 0)
+            }).start();
+          }
+        } //游戏结束
+
+
+        gameOver() {}
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "mycard_prefab", [_dec2], {
         configurable: true,
