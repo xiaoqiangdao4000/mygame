@@ -430,7 +430,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 10241619.686601,
+      "mTimestamp": 22940682.136134,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1261,7 +1261,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/main.ts": {
       "mTimestamp": {
-        "mtime": 1740641365819.9294,
+        "mtime": 1741786097952.5554,
         "uuid": "f84fe0a7-bc38-477d-b5b1-98df6d391d08"
       },
       "chunkId": "da380e0b02e313ebda337901eb8cb095d86ebace",
@@ -1277,11 +1277,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 44
+              "column": 57
             },
             "end": {
               "line": 1,
-              "column": 48
+              "column": 61
             }
           }
         }
@@ -1313,7 +1313,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
       "mTimestamp": {
-        "mtime": 1741772594938.7742,
+        "mtime": 1741785755750.5574,
         "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
       },
       "chunkId": "1e3b7946781e8cadf1879c0857073b236b3508b9",
@@ -1658,7 +1658,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts": {
       "mTimestamp": {
-        "mtime": 1741771175453.5933,
+        "mtime": 1741784978394.1177,
         "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
       },
       "chunkId": "081daf1f78749add18c62059d1c7e3a76fbdb7e8",
@@ -1680,11 +1680,15 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts": {
       "mTimestamp": {
-        "mtime": 1741773479431.0427,
+        "mtime": 1741786181157.0647,
         "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
       },
       "chunkId": "1a743102ec6f0466d7ce963c97d80152d07f58da",
       "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
         {
           "value": "cc"
         },
@@ -1696,11 +1700,39 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 65
+              "column": 93
             },
             "end": {
               "line": 1,
-              "column": 69
+              "column": 97
+            }
+          }
+        },
+        {
+          "value": "./tools",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 18
+            },
+            "end": {
+              "line": 2,
+              "column": 27
+            }
+          }
+        },
+        {
+          "value": "./main",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 21
+            },
+            "end": {
+              "line": 3,
+              "column": 29
             }
           }
         }
@@ -1710,7 +1742,7 @@
         {
           "resolved": {
             "type": "module",
-            "url": "cce:/internal/x/cc"
+            "url": "cce:/internal/code-quality/cr.mjs"
           },
           "messages": []
         },
@@ -1725,6 +1757,27 @@
           "resolved": {
             "type": "module",
             "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/main.ts"
           },
           "messages": []
         }
@@ -1732,7 +1785,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts": {
       "mTimestamp": {
-        "mtime": 1741769311835.8284,
+        "mtime": 1741784005434.4338,
         "uuid": "d8a57f4c-ed67-4111-bb3e-7186516beaec"
       },
       "chunkId": "8311f3af3de9109e422582610380b3575e75c9e2",
@@ -1748,11 +1801,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 59
+              "column": 66
             },
             "end": {
               "line": 1,
-              "column": 63
+              "column": 70
             }
           }
         }

@@ -1,7 +1,7 @@
-System.register(["cc"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Node, Prefab, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _class3, _crd, ccclass, property, gameStart;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Label, Node, Prefab, Sprite, tools, main, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _class3, _crd, ccclass, property, gameStart;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -9,127 +9,108 @@ System.register(["cc"], function (_export, _context) {
 
   function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'transform-class-properties is enabled and runs after the decorators transform.'); }
 
+  function _reportPossibleCrUseOftools(extras) {
+    _reporterNs.report("tools", "./tools", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfmain(extras) {
+    _reporterNs.report("main", "./main", _context.meta, extras);
+  }
+
   return {
-    setters: [function (_cc) {
+    setters: [function (_unresolved_) {
+      _reporterNs = _unresolved_;
+    }, function (_cc) {
       _cclegacy = _cc.cclegacy;
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
       _decorator = _cc._decorator;
       Component = _cc.Component;
       instantiate = _cc.instantiate;
+      Label = _cc.Label;
       Node = _cc.Node;
       Prefab = _cc.Prefab;
+      Sprite = _cc.Sprite;
+    }, function (_unresolved_2) {
+      tools = _unresolved_2.default;
+    }, function (_unresolved_3) {
+      main = _unresolved_3.main;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "88827lxtv5D9ZqgDdOG+R/q", "gameStart", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Node', 'Prefab']);
+      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Label', 'Node', 'Prefab', 'Sprite', 'SpriteFrame']);
 
       ({
         ccclass,
         property
       } = _decorator);
 
-      _export("gameStart", gameStart = (_dec = ccclass('gameStart'), _dec2 = property(Node), _dec3 = property(Prefab), _dec(_class = (_class2 = (_class3 = class gameStart extends Component {
+      _export("gameStart", gameStart = (_dec = ccclass('gameStart'), _dec2 = property(Node), _dec3 = property(Sprite), _dec4 = property(Prefab), _dec5 = property(Sprite), _dec6 = property(Label), _dec7 = property(Label), _dec(_class = (_class2 = (_class3 = class gameStart extends Component {
         constructor(...args) {
           super(...args);
 
           _initializerDefineProperty(this, "contentNode", _descriptor, this);
 
-          _initializerDefineProperty(this, "rank_prefab", _descriptor2, this);
+          _initializerDefineProperty(this, "mjsprite", _descriptor2, this);
 
-          this.data = [{
-            headIndex: 0,
-            userName: '大小姐驾到',
-            nickName: '无敌眼',
-            rank: 'No.1'
-          }, {
-            headIndex: 0,
-            userName: '烟雨流泽',
-            nickName: '天帝眼',
-            rank: 'No.2'
-          }, {
-            headIndex: 0,
-            userName: '花千骨',
-            nickName: '轮回眼',
-            rank: 'No.3'
-          }, {
-            headIndex: 0,
-            userName: '佐佐木',
-            nickName: '血轮眼',
-            rank: 'No.4'
-          }, {
-            headIndex: 0,
-            userName: '小泽玛丽',
-            nickName: '透视眼',
-            rank: 'No.5'
-          }, {
-            headIndex: 0,
-            userName: '井下川子',
-            nickName: '鹫之眼',
-            rank: 'No.6'
-          }, {
-            headIndex: 0,
-            userName: '美丽女人',
-            nickName: '鹰之眼',
-            rank: 'No.7'
-          }, {
-            headIndex: 0,
-            userName: '四川婆娘',
-            nickName: '正常眼',
-            rank: 'No.8'
-          }, {
-            headIndex: 0,
-            userName: '你妹妹的',
-            nickName: '斗鸡眼',
-            rank: 'No.9'
-          }, {
-            headIndex: 0,
-            userName: '海贼王',
-            nickName: '青光眼',
-            rank: 'No.10'
-          }, {
-            headIndex: 0,
-            userName: '东西南北',
-            nickName: '老花眼',
-            rank: 'No.11'
-          }, {
-            headIndex: 0,
-            userName: '姐妹来到',
-            nickName: '远视眼',
-            rank: 'No.12'
-          }, {
-            headIndex: 0,
-            userName: '打死也不投',
-            nickName: '近视眼',
-            rank: 'No.13'
-          }, {
-            headIndex: 0,
-            userName: '你啊啊啊',
-            nickName: '单眼瞎',
-            rank: 'No.14'
-          }, {
-            headIndex: 0,
-            userName: '擦擦啊啊',
-            nickName: '死瞎子',
-            rank: 'No.15'
-          }];
+          _initializerDefineProperty(this, "rank_prefab", _descriptor3, this);
+
+          _initializerDefineProperty(this, "headImg", _descriptor4, this);
+
+          _initializerDefineProperty(this, "headName", _descriptor5, this);
+
+          _initializerDefineProperty(this, "headRank", _descriptor6, this);
         }
 
         start() {
-          console.log('初始化gameStart类---------------------------');
-
           for (let i = 0; i < 12; i++) {
             let node = instantiate(this.rank_prefab);
             node.parent = this.contentNode;
             let script = node.getComponent("rankItem");
-            script.initRank(this.data[i].headIndex, this.data[i].userName, this.data[i].nickName, this.data[i].rank);
+            script.initRank((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).userData[i].headIndex, (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).userData[i].userName, (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).userData[i].nickName, (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).userData[i].rank);
             node.setPosition(-300.256, i * -125);
-          }
+          } //初始化用户数据
 
+
+          this.setUserData();
           gameStart.instant = this;
+        } //设置用户数据
+
+
+        setUserData() {
+          //this.headImg = null;
+          this.headName.string = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).userName;
+          this.headRank.string = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).userRank;
+        } //设置关卡按钮
+
+
+        setLevelBtn() {
+          const spriteFrame = (_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+            error: Error()
+          }), main) : main).getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).level);
+          (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).desktopItemCount = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).level * 9;
+          gameStart.instant.mjsprite.spriteFrame = spriteFrame;
         }
 
         static getInstant() {
@@ -155,13 +136,33 @@ System.register(["cc"], function (_export, _context) {
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "rank_prefab", [_dec3], {
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "mjsprite", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "rank_prefab", [_dec4], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "headImg", [_dec5], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "headName", [_dec6], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "headRank", [_dec7], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
       })), _class2)) || _class));
 
       _cclegacy._RF.pop();

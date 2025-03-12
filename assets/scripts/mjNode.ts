@@ -30,25 +30,31 @@ export class mjNode extends Component {
     mjItem: Node[] = [] //物品栏
 
     start() {
-        this.node.on('clickmj', this.onClickMj, this)
+        this.setLevelBtn();
+        this.node.on('clickmj', this.onClickMj, this);
+        //this.startGame();
     }
 
     //开始游戏
     startGame() {
+        gameStart.getInstant().hide()
         tools.desktopItemCount = tools.level * 9;
         this.initDesktopMj();
     }
 
     //按钮点击事件
     onBtnClick(event: Event, customEventData: string) {
-
-        gameStart.getInstant().hide()
         //游戏开始
         if (customEventData == 'gameStart') {
-            tools.level += 1;
             console.log('游戏开始---', tools.level)
             this.startGame();
         }
+    }
+
+    //设置关卡按钮
+    setLevelBtn() {
+        const spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + tools.level);
+        gameStart.getInstant().setLevelBtn(spriteFrame);
     }
 
     onClickMj(node: Node) {

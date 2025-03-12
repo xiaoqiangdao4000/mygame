@@ -13,6 +13,8 @@
         "8ba5fabd-a248-4d06-9e4b-bc650a6ef63d@57923",
         "274e8571-bd05-41c0-86e0-1eaba9ab51e1@f9941",
         "cdbac162-f2b0-4583-a749-c3ac77cf9a67@f9941",
+        "5c4e656b-07a1-4eb2-a4d6-2fa9e14c043e@f9941",
+        "ef516e4d-82af-4a8b-a3cb-7c941df9c0a8@f9941",
         "91037ed4-c88b-4ca6-a1f3-1a3c4b7f469d"
       ],
       "dependScripts": [
@@ -1664,6 +1666,7 @@
     "value": {
       "depends": [
         "ef516e4d-82af-4a8b-a3cb-7c941df9c0a8@f9941",
+        "5c4e656b-07a1-4eb2-a4d6-2fa9e14c043e@f9941",
         "897988c0-ebec-49b4-a974-578bd2424d43@f9941"
       ],
       "dependScripts": [

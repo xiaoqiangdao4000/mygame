@@ -12,7 +12,7 @@
       "uuid": "4aa2a649-6561-46b2-9d7d-c643cf3a11fe"
     },
     "/Users/zzx/Desktop/mygame/assets/scenes/main.scene": {
-      "time": 1741769025910.1611,
+      "time": 1741784383249.0022,
       "uuid": "3ffa4298-a72e-41a6-bd81-2077d6fc1512"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts.meta": {
@@ -47,14 +47,14 @@
       "time": 1740641365821.5898
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/main.ts": {
-      "time": 1740641365819.9294,
+      "time": 1741786097952.5554,
       "uuid": "f84fe0a7-bc38-477d-b5b1-98df6d391d08"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.meta": {
       "time": 1740641469407.8064
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
-      "time": 1741772594938.7742,
+      "time": 1741785755750.5574,
       "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
     },
     "/Users/zzx/Desktop/mygame/assets/prefabs.meta": {
@@ -341,7 +341,7 @@
       "time": 1741685230834.026
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/tools.ts": {
-      "time": 1741771175453.5933,
+      "time": 1741784978394.1177,
       "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
     },
     "/Users/zzx/Desktop/mygame/assets/res/score_bg.PNG.meta": {
@@ -397,21 +397,21 @@
       "time": 1741767652508.8713
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts": {
-      "time": 1741773479431.0427,
+      "time": 1741786181157.0647,
       "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.meta": {
       "time": 1741767737950.857
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts": {
-      "time": 1741769311835.8284,
+      "time": 1741784005434.4338,
       "uuid": "d8a57f4c-ed67-4111-bb3e-7186516beaec"
     },
     "/Users/zzx/Desktop/mygame/assets/prefabs/rankItem.prefab.meta": {
       "time": 1741767907711.5227
     },
     "/Users/zzx/Desktop/mygame/assets/prefabs/rankItem.prefab": {
-      "time": 1741770179304.807,
+      "time": 1741784048564.3716,
       "uuid": "91037ed4-c88b-4ca6-a1f3-1a3c4b7f469d"
     }
   },

@@ -94,11 +94,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
         //物品栏
         start() {
-          this.node.on('clickmj', this.onClickMj, this);
+          this.setLevelBtn();
+          this.node.on('clickmj', this.onClickMj, this); //this.startGame();
         } //开始游戏
 
 
         startGame() {
+          (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
+            error: Error()
+          }), gameStart) : gameStart).getInstant().hide();
           (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).desktopItemCount = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
@@ -109,19 +113,23 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
 
         onBtnClick(event, customEventData) {
-          (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
-            error: Error()
-          }), gameStart) : gameStart).getInstant().hide(); //游戏开始
-
+          //游戏开始
           if (customEventData == 'gameStart') {
-            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-              error: Error()
-            }), tools) : tools).level += 1;
             console.log('游戏开始---', (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).level);
             this.startGame();
           }
+        } //设置关卡按钮
+
+
+        setLevelBtn() {
+          var spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).level);
+          (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
+            error: Error()
+          }), gameStart) : gameStart).getInstant().setLevelBtn(spriteFrame);
         }
 
         onClickMj(node) {
