@@ -2,6 +2,7 @@ import { _decorator, BoxCollider2D, Collider, Component, ConfigurableConstraint,
 const { ccclass, property } = _decorator;
 const eventTarget = new EventTarget();
 import tools from './tools'
+import { gameStart } from './gameStart';
 @ccclass('mjNode')
 export class mjNode extends Component {
 
@@ -15,24 +16,39 @@ export class mjNode extends Component {
     desktopItems = [];          //桌面麻将
     desktopCuritem = 0;         //当前数量
     randomIndex = 0;            //当前随机牌索引
-    level = 1;                  //当前关卡
-    desktopItemCount = this.level * 9;        //初始化图片总数量 20*3
 
     mjItemPos = [
-        { x: -294.764, y: -573.635 },
-        { x: -197.881, y: -573.635 },
-        { x: -100.211, y: -573.635 },
-        { x: -2.572, y: -573.635 },
-        { x: 94.539, y: -573.635 },
-        { x: 190.994, y: -573.635 },
-        { x: 290.353, y: -573.635 },
+        { x: -294.764, y: -572 },
+        { x: -197.881, y: -572 },
+        { x: -100.211, y: -572 },
+        { x: -2.572, y: -572 },
+        { x: 94.539, y: -572 },
+        { x: 190.994, y: -572 },
+        { x: 290.353, y: -572 },
     ];    //物品栏坐标
 
     mjItem: Node[] = [] //物品栏
 
     start() {
         this.node.on('clickmj', this.onClickMj, this)
+    }
+
+    //开始游戏
+    startGame() {
+        tools.desktopItemCount = tools.level * 9;
         this.initDesktopMj();
+    }
+
+    //按钮点击事件
+    onBtnClick(event: Event, customEventData: string) {
+
+        gameStart.getInstant().hide()
+        //游戏开始
+        if (customEventData == 'gameStart') {
+            tools.level += 1;
+            console.log('游戏开始---', tools.level)
+            this.startGame();
+        }
     }
 
     onClickMj(node: Node) {
@@ -80,10 +96,10 @@ export class mjNode extends Component {
         this.desktopCuritem = 0;
         this.randomIndex = tools.getRandomMjIndex(1, 37);
         console.log('开始发牌---');
-        for (let i = 0; i < this.desktopItemCount; i++) {
+        for (let i = 0; i < tools.desktopItemCount; i++) {
             tween(this.node)
                 .delay(i * 0.1)
-                .call(() => { i == this.desktopItemCount - 1 ? this.createDesktopMj(true) : this.createDesktopMj(false); })
+                .call(() => { i == tools.desktopItemCount - 1 ? this.createDesktopMj(true) : this.createDesktopMj(false); })
                 .start()
         }
     }
@@ -99,7 +115,7 @@ export class mjNode extends Component {
         var mycard = mj.getComponent("mjcard");
         this.desktopItems.push(mj);
         var self = this;
-        mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, this.level, function () {
+        mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, tools.level, function () {
             if (refresh) {
                 self.refreshDeaktopMj();
                 console.log('发牌完毕---', self.desktopCuritem);

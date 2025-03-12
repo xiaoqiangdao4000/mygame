@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 7210.099072,
+      "mTimestamp": 7088.918659,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -724,7 +724,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 623482748.707181,
+      "mTimestamp": 10241577.936189,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -812,7 +812,7 @@
           }
         },
         {
-          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/main.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts",
           "resolved": "__unresolved_6",
           "loc": {
             "start": {
@@ -821,49 +821,77 @@
             },
             "end": {
               "line": 5,
-              "column": 1221
+              "column": 1226
+            }
+          }
+        },
+        {
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/main.ts",
+          "resolved": "__unresolved_7",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1242
+            },
+            "end": {
+              "line": 5,
+              "column": 1299
             }
           }
         },
         {
           "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts",
-          "resolved": "__unresolved_7",
+          "resolved": "__unresolved_8",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1237
+              "column": 1315
             },
             "end": {
               "line": 5,
-              "column": 1296
+              "column": 1374
             }
           }
         },
         {
           "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts",
-          "resolved": "__unresolved_8",
+          "resolved": "__unresolved_9",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1312
+              "column": 1390
             },
             "end": {
               "line": 5,
-              "column": 1371
+              "column": 1449
+            }
+          }
+        },
+        {
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts",
+          "resolved": "__unresolved_10",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1465
+            },
+            "end": {
+              "line": 5,
+              "column": 1526
             }
           }
         },
         {
           "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts",
-          "resolved": "__unresolved_9",
+          "resolved": "__unresolved_11",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1387
+              "column": 1542
             },
             "end": {
               "line": 5,
-              "column": 1445
+              "column": 1600
             }
           }
         }
@@ -915,6 +943,13 @@
         {
           "resolved": {
             "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
             "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/main.ts"
           },
           "messages": []
@@ -930,6 +965,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts"
           },
           "messages": []
         },
@@ -1505,7 +1547,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1741074073030,
+      "mTimestamp": 1741763243644,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -1565,7 +1607,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
       "mTimestamp": {
-        "mtime": 1741697186328.2764,
+        "mtime": 1741772594938.7742,
         "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
       },
       "chunkId": "1e3b7946781e8cadf1879c0857073b236b3508b9",
@@ -1606,6 +1648,20 @@
               "column": 27
             }
           }
+        },
+        {
+          "value": "./gameStart",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 26
+            },
+            "end": {
+              "line": 5,
+              "column": 39
+            }
+          }
         }
       ],
       "type": "esm",
@@ -1642,6 +1698,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts"
           },
           "messages": []
         }
@@ -1889,7 +1952,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts": {
       "mTimestamp": {
-        "mtime": 1741685519702.6726,
+        "mtime": 1741771175453.5933,
         "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
       },
       "chunkId": "081daf1f78749add18c62059d1c7e3a76fbdb7e8",
@@ -1900,6 +1963,110 @@
       ],
       "type": "esm",
       "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts": {
+      "mTimestamp": {
+        "mtime": 1741773479431.0427,
+        "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
+      },
+      "chunkId": "1a743102ec6f0466d7ce963c97d80152d07f58da",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 65
+            },
+            "end": {
+              "line": 1,
+              "column": 69
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts": {
+      "mTimestamp": {
+        "mtime": 1741769311835.8284,
+        "uuid": "d8a57f4c-ed67-4111-bb3e-7186516beaec"
+      },
+      "chunkId": "8311f3af3de9109e422582610380b3575e75c9e2",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 59
+            },
+            "end": {
+              "line": 1,
+              "column": 63
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
         {
           "resolved": {
             "type": "module",

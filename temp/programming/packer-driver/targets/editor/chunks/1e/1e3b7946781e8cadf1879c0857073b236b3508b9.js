@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Prefab, Rect, SpriteAtlas, tween, Vec3, tools, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, eventTarget, mjNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Prefab, Rect, SpriteAtlas, tween, Vec3, tools, gameStart, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, eventTarget, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -11,6 +11,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
   function _reportPossibleCrUseOftools(extras) {
     _reporterNs.report("tools", "./tools", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfgameStart(extras) {
+    _reporterNs.report("gameStart", "./gameStart", _context.meta, extras);
   }
 
   return {
@@ -31,6 +35,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       Vec3 = _cc.Vec3;
     }, function (_unresolved_2) {
       tools = _unresolved_2.default;
+    }, function (_unresolved_3) {
+      gameStart = _unresolved_3.gameStart;
     }],
     execute: function () {
       _crd = true;
@@ -60,31 +66,27 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           //当前数量
           this.randomIndex = 0;
           //当前随机牌索引
-          this.level = 1;
-          //当前关卡
-          this.desktopItemCount = this.level * 9;
-          //初始化图片总数量 20*3
           this.mjItemPos = [{
             x: -294.764,
-            y: -573.635
+            y: -572
           }, {
             x: -197.881,
-            y: -573.635
+            y: -572
           }, {
             x: -100.211,
-            y: -573.635
+            y: -572
           }, {
             x: -2.572,
-            y: -573.635
+            y: -572
           }, {
             x: 94.539,
-            y: -573.635
+            y: -572
           }, {
             x: 190.994,
-            y: -573.635
+            y: -572
           }, {
             x: 290.353,
-            y: -573.635
+            y: -572
           }];
           //物品栏坐标
           this.mjItem = [];
@@ -93,7 +95,33 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         //物品栏
         start() {
           this.node.on('clickmj', this.onClickMj, this);
+        } //开始游戏
+
+
+        startGame() {
+          (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).desktopItemCount = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).level * 9;
           this.initDesktopMj();
+        } //按钮点击事件
+
+
+        onBtnClick(event, customEventData) {
+          (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
+            error: Error()
+          }), gameStart) : gameStart).getInstant().hide(); //游戏开始
+
+          if (customEventData == 'gameStart') {
+            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).level += 1;
+            console.log('游戏开始---', (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).level);
+            this.startGame();
+          }
         }
 
         onClickMj(node) {
@@ -147,9 +175,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           }), tools) : tools).getRandomMjIndex(1, 37);
           console.log('开始发牌---');
 
-          for (let i = 0; i < this.desktopItemCount; i++) {
+          for (let i = 0; i < (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).desktopItemCount; i++) {
             tween(this.node).delay(i * 0.1).call(() => {
-              i == this.desktopItemCount - 1 ? this.createDesktopMj(true) : this.createDesktopMj(false);
+              i == (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).desktopItemCount - 1 ? this.createDesktopMj(true) : this.createDesktopMj(false);
             }).start();
           }
         } //随机创建麻将
@@ -167,7 +199,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           var mycard = mj.getComponent("mjcard");
           this.desktopItems.push(mj);
           var self = this;
-          mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, this.level, function () {
+          mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).level, function () {
             if (refresh) {
               self.refreshDeaktopMj();
               console.log('发牌完毕---', self.desktopCuritem);

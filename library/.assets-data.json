@@ -6,16 +6,18 @@
         "3ffa4298-a72e-41a6-bd81-2077d6fc1512",
         "d0b507ce-0f17-4608-8a74-f630c3dc5629@f9941",
         "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "a38a5996-8af0-44bc-8bde-de44011365ed@f9941",
         "3cf8679d-104d-4e70-9a2c-b84444a2a64d",
         "8ba5fabd-a248-4d06-9e4b-bc650a6ef63d",
+        "5a11637a-50ea-405f-a43a-cafed23eb9d6@f9941",
         "8ba5fabd-a248-4d06-9e4b-bc650a6ef63d@57923",
         "274e8571-bd05-41c0-86e0-1eaba9ab51e1@f9941",
-        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
-        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
-        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941"
+        "cdbac162-f2b0-4583-a749-c3ac77cf9a67@f9941",
+        "91037ed4-c88b-4ca6-a1f3-1a3c4b7f469d"
       ],
       "dependScripts": [
-        "5e1aab3a-2778-41aa-96fd-ae448f88497b"
+        "5e1aab3a-2778-41aa-96fd-ae448f88497b",
+        "88827971-b6fe-43f5-9aa0-0dd386f91fea"
       ]
     },
     "versionCode": 1
@@ -1456,6 +1458,225 @@
     "value": {
       "depends": [
         "274e8571-bd05-41c0-86e0-1eaba9ab51e1@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "cf5bf1ee-11e0-4981-ab12-078c0227b6a0": {
+    "url": "db://assets/res/main_bg.png",
+    "value": {},
+    "versionCode": 1
+  },
+  "5a11637a-50ea-405f-a43a-cafed23eb9d6": {
+    "url": "db://assets/res/slotbg.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5a11637a-50ea-405f-a43a-cafed23eb9d6@6c48a": {
+    "url": "db://assets/res/slotbg.png@6c48a",
+    "value": {
+      "depends": [
+        "5a11637a-50ea-405f-a43a-cafed23eb9d6"
+      ]
+    },
+    "versionCode": 1
+  },
+  "cf5bf1ee-11e0-4981-ab12-078c0227b6a0@6c48a": {
+    "url": "db://assets/res/main_bg.png@6c48a",
+    "value": {
+      "depends": [
+        "cf5bf1ee-11e0-4981-ab12-078c0227b6a0"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a38a5996-8af0-44bc-8bde-de44011365ed": {
+    "url": "db://assets/res/7qdlj_selKuang.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "ae3accbe-6020-4e0b-b99b-3e8731e2dec2": {
+    "url": "db://assets/res/task_bar2.png",
+    "value": {},
+    "versionCode": 1
+  },
+  "a38a5996-8af0-44bc-8bde-de44011365ed@6c48a": {
+    "url": "db://assets/res/7qdlj_selKuang.png@6c48a",
+    "value": {
+      "depends": [
+        "a38a5996-8af0-44bc-8bde-de44011365ed"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ae3accbe-6020-4e0b-b99b-3e8731e2dec2@6c48a": {
+    "url": "db://assets/res/task_bar2.png@6c48a",
+    "value": {
+      "depends": [
+        "ae3accbe-6020-4e0b-b99b-3e8731e2dec2"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a38a5996-8af0-44bc-8bde-de44011365ed@f9941": {
+    "url": "db://assets/res/7qdlj_selKuang.png@f9941",
+    "value": {
+      "depends": [
+        "a38a5996-8af0-44bc-8bde-de44011365ed@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "cf5bf1ee-11e0-4981-ab12-078c0227b6a0@f9941": {
+    "url": "db://assets/res/main_bg.png@f9941",
+    "value": {
+      "depends": [
+        "cf5bf1ee-11e0-4981-ab12-078c0227b6a0@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5a11637a-50ea-405f-a43a-cafed23eb9d6@f9941": {
+    "url": "db://assets/res/slotbg.png@f9941",
+    "value": {
+      "depends": [
+        "5a11637a-50ea-405f-a43a-cafed23eb9d6@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ae3accbe-6020-4e0b-b99b-3e8731e2dec2@f9941": {
+    "url": "db://assets/res/task_bar2.png@f9941",
+    "value": {
+      "depends": [
+        "ae3accbe-6020-4e0b-b99b-3e8731e2dec2@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "897988c0-ebec-49b4-a974-578bd2424d43": {
+    "url": "db://assets/res/task_bar2.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "897988c0-ebec-49b4-a974-578bd2424d43@6c48a": {
+    "url": "db://assets/res/task_bar2.png@6c48a",
+    "value": {
+      "depends": [
+        "897988c0-ebec-49b4-a974-578bd2424d43"
+      ]
+    },
+    "versionCode": 1
+  },
+  "897988c0-ebec-49b4-a974-578bd2424d43@f9941": {
+    "url": "db://assets/res/task_bar2.png@f9941",
+    "value": {
+      "depends": [
+        "897988c0-ebec-49b4-a974-578bd2424d43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ef516e4d-82af-4a8b-a3cb-7c941df9c0a8": {
+    "url": "db://assets/res/Dating_head1.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5644a249-398b-4c4e-b770-360027f056a0": {
+    "url": "db://assets/res/Dating_head13.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5c4e656b-07a1-4eb2-a4d6-2fa9e14c043e": {
+    "url": "db://assets/res/dating_PHB1.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5c4e656b-07a1-4eb2-a4d6-2fa9e14c043e@6c48a": {
+    "url": "db://assets/res/dating_PHB1.png@6c48a",
+    "value": {
+      "depends": [
+        "5c4e656b-07a1-4eb2-a4d6-2fa9e14c043e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ef516e4d-82af-4a8b-a3cb-7c941df9c0a8@6c48a": {
+    "url": "db://assets/res/Dating_head1.png@6c48a",
+    "value": {
+      "depends": [
+        "ef516e4d-82af-4a8b-a3cb-7c941df9c0a8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5644a249-398b-4c4e-b770-360027f056a0@6c48a": {
+    "url": "db://assets/res/Dating_head13.png@6c48a",
+    "value": {
+      "depends": [
+        "5644a249-398b-4c4e-b770-360027f056a0"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ef516e4d-82af-4a8b-a3cb-7c941df9c0a8@f9941": {
+    "url": "db://assets/res/Dating_head1.png@f9941",
+    "value": {
+      "depends": [
+        "ef516e4d-82af-4a8b-a3cb-7c941df9c0a8@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5644a249-398b-4c4e-b770-360027f056a0@f9941": {
+    "url": "db://assets/res/Dating_head13.png@f9941",
+    "value": {
+      "depends": [
+        "5644a249-398b-4c4e-b770-360027f056a0@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "88827971-b6fe-43f5-9aa0-0dd386f91fea": {
+    "url": "db://assets/scripts/gameStart.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "d8a57f4c-ed67-4111-bb3e-7186516beaec": {
+    "url": "db://assets/scripts/rankItem.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "91037ed4-c88b-4ca6-a1f3-1a3c4b7f469d": {
+    "url": "db://assets/prefabs/rankItem.prefab",
+    "value": {
+      "depends": [
+        "ef516e4d-82af-4a8b-a3cb-7c941df9c0a8@f9941",
+        "897988c0-ebec-49b4-a974-578bd2424d43@f9941"
+      ],
+      "dependScripts": [
+        "d8a57f4c-ed67-4111-bb3e-7186516beaec"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5c4e656b-07a1-4eb2-a4d6-2fa9e14c043e@f9941": {
+    "url": "db://assets/res/dating_PHB1.png@f9941",
+    "value": {
+      "depends": [
+        "5c4e656b-07a1-4eb2-a4d6-2fa9e14c043e@6c48a"
       ]
     },
     "versionCode": 1

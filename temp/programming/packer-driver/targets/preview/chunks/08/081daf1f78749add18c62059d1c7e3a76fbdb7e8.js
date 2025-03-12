@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, tools, _crd;
+  var _cclegacy, tools, _class, _crd;
 
   _export("default", void 0);
 
@@ -15,6 +15,7 @@ System.register(["cc"], function (_export, _context) {
       _cclegacy._RF.push({}, "8a205oDXPFARIhKMYUT4y5P", "tools", undefined);
 
       _export("default", tools = class tools {
+        //初始化图片总数量 1*9
         static getRandomInt(min, max) {
           return Math.floor(Math.random() * (max - min + 1)) + min;
         }
@@ -26,6 +27,11 @@ System.register(["cc"], function (_export, _context) {
         }
 
       });
+
+      _class = tools;
+      tools.level = 1;
+      //当前游戏关卡等级
+      tools.desktopItemCount = _class.level * 9;
 
       _cclegacy._RF.pop();
 

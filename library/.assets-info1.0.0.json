@@ -12,21 +12,21 @@
       "uuid": "4aa2a649-6561-46b2-9d7d-c643cf3a11fe"
     },
     "/Users/zzx/Desktop/mygame/assets/scenes/main.scene": {
-      "time": 1741698698737.9531,
+      "time": 1741769025910.1611,
       "uuid": "3ffa4298-a72e-41a6-bd81-2077d6fc1512"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts.meta": {
       "time": 1740639220616.1418
     },
     "/Users/zzx/Desktop/mygame/assets/scripts": {
-      "time": 1741685230828.5627,
+      "time": 1741767737949.8167,
       "uuid": "107a2a5c-fa94-4558-9ea0-54c97d1078c2"
     },
     "/Users/zzx/Desktop/mygame/assets/res.meta": {
       "time": 1740639229568.4285
     },
     "/Users/zzx/Desktop/mygame/assets/res": {
-      "time": 1741698005685.394,
+      "time": 1741766785846.725,
       "uuid": "8fb641b7-c972-462b-917f-4b5dbde15b03"
     },
     "/Users/zzx/Desktop/mygame/assets/res/bg.png.meta": {
@@ -37,7 +37,7 @@
       "uuid": "d0b507ce-0f17-4608-8a74-f630c3dc5629"
     },
     "/Users/zzx/Desktop/mygame/assets/res/item.PNG.meta": {
-      "time": 1740639575892.2253
+      "time": 1741765522037.055
     },
     "/Users/zzx/Desktop/mygame/assets/res/item.PNG": {
       "time": 1740559905531.7766,
@@ -54,14 +54,14 @@
       "time": 1740641469407.8064
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
-      "time": 1741697186328.2764,
+      "time": 1741772594938.7742,
       "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
     },
     "/Users/zzx/Desktop/mygame/assets/prefabs.meta": {
       "time": 1740644393633.3708
     },
     "/Users/zzx/Desktop/mygame/assets/prefabs": {
-      "time": 1740650938431.9255,
+      "time": 1741767907708.625,
       "uuid": "807e9675-5b4a-4736-acb3-2b710c0432d2"
     },
     "/Users/zzx/Desktop/mygame/assets/resources.meta": {
@@ -341,7 +341,7 @@
       "time": 1741685230834.026
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/tools.ts": {
-      "time": 1741685519702.6726,
+      "time": 1741771175453.5933,
       "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
     },
     "/Users/zzx/Desktop/mygame/assets/res/score_bg.PNG.meta": {
@@ -350,6 +350,69 @@
     "/Users/zzx/Desktop/mygame/assets/res/score_bg.PNG": {
       "time": 1741697940038.0469,
       "uuid": "274e8571-bd05-41c0-86e0-1eaba9ab51e1"
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/slotbg.png.meta": {
+      "time": 1741764967046.542
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/slotbg.png": {
+      "time": 1740559905698.9092,
+      "uuid": "5a11637a-50ea-405f-a43a-cafed23eb9d6"
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/7qdlj_selKuang.png.meta": {
+      "time": 1741764166912.98
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/7qdlj_selKuang.png": {
+      "time": 1569403951338.4956,
+      "uuid": "a38a5996-8af0-44bc-8bde-de44011365ed"
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/task_bar2.png.meta": {
+      "time": 1741766297488.9243
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/task_bar2.png": {
+      "time": 1569403951349.6638,
+      "uuid": "897988c0-ebec-49b4-a974-578bd2424d43"
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/Dating_head1.png.meta": {
+      "time": 1741766792112.3977
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/Dating_head13.png.meta": {
+      "time": 1741766797274.7512
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/dating_PHB1.png.meta": {
+      "time": 1741770246596.7766
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/dating_PHB1.png": {
+      "time": 1569403951324.4197,
+      "uuid": "5c4e656b-07a1-4eb2-a4d6-2fa9e14c043e"
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/Dating_head1.png": {
+      "time": 1494043960000,
+      "uuid": "ef516e4d-82af-4a8b-a3cb-7c941df9c0a8"
+    },
+    "/Users/zzx/Desktop/mygame/assets/res/Dating_head13.png": {
+      "time": 1494043960000,
+      "uuid": "5644a249-398b-4c4e-b770-360027f056a0"
+    },
+    "/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.meta": {
+      "time": 1741767652508.8713
+    },
+    "/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts": {
+      "time": 1741773479431.0427,
+      "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
+    },
+    "/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.meta": {
+      "time": 1741767737950.857
+    },
+    "/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts": {
+      "time": 1741769311835.8284,
+      "uuid": "d8a57f4c-ed67-4111-bb3e-7186516beaec"
+    },
+    "/Users/zzx/Desktop/mygame/assets/prefabs/rankItem.prefab.meta": {
+      "time": 1741767907711.5227
+    },
+    "/Users/zzx/Desktop/mygame/assets/prefabs/rankItem.prefab": {
+      "time": 1741770179304.807,
+      "uuid": "91037ed4-c88b-4ca6-a1f3-1a3c4b7f469d"
     }
   },
   "missing": {
@@ -402,6 +465,16 @@
       "path": "/Users/zzx/Desktop/mygame/assets/scripts/myEvent.ts",
       "time": 1741167844695.7668,
       "removeTime": 1741684373802
+    },
+    "cf5bf1ee-11e0-4981-ab12-078c0227b6a0": {
+      "path": "/Users/zzx/Desktop/mygame/assets/res/main_bg.png",
+      "time": 1740559905694.7651,
+      "removeTime": 1741764948492
+    },
+    "ae3accbe-6020-4e0b-b99b-3e8731e2dec2": {
+      "path": "/Users/zzx/Desktop/mygame/assets/res/task_bar2.png",
+      "time": 1569403951349.6638,
+      "removeTime": 1741765391382
     }
   }
 }
