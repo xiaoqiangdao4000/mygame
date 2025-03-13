@@ -28,6 +28,7 @@ export class gameStart extends Component {
 
 
     start() {
+        gameStart.instant = this;
         for (let i = 0; i < 12; i++) {
             let node = instantiate(this.rank_prefab);
             node.parent = this.contentNode;
@@ -37,8 +38,8 @@ export class gameStart extends Component {
         }
         //初始化用户数据
         this.setUserData();
+        this.setLevelBtn();
 
-        gameStart.instant = this;
     }
 
     //设置用户数据
@@ -50,9 +51,9 @@ export class gameStart extends Component {
 
     //设置关卡按钮
     setLevelBtn() {
-        const spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + tools.level);
+        let spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + tools.level);
         tools.desktopItemCount = tools.level * 9;
-        gameStart.instant.mjsprite.spriteFrame = spriteFrame;
+        this.mjsprite.spriteFrame = spriteFrame;
     }
 
     static getInstant() {

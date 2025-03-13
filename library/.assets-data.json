@@ -1683,5 +1683,55 @@
       ]
     },
     "versionCode": 1
+  },
+  "67b0c17f-bebe-45b4-be03-ebf842cdbaad": {
+    "url": "db://assets/res/progress001.PNG",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9568b8f5-4849-4013-8b2f-9c5400de6954": {
+    "url": "db://assets/res/slot.PNG",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9568b8f5-4849-4013-8b2f-9c5400de6954@6c48a": {
+    "url": "db://assets/res/slot.PNG@6c48a",
+    "value": {
+      "depends": [
+        "9568b8f5-4849-4013-8b2f-9c5400de6954"
+      ]
+    },
+    "versionCode": 1
+  },
+  "67b0c17f-bebe-45b4-be03-ebf842cdbaad@6c48a": {
+    "url": "db://assets/res/progress001.PNG@6c48a",
+    "value": {
+      "depends": [
+        "67b0c17f-bebe-45b4-be03-ebf842cdbaad"
+      ]
+    },
+    "versionCode": 1
+  },
+  "67b0c17f-bebe-45b4-be03-ebf842cdbaad@f9941": {
+    "url": "db://assets/res/progress001.PNG@f9941",
+    "value": {
+      "depends": [
+        "67b0c17f-bebe-45b4-be03-ebf842cdbaad@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9568b8f5-4849-4013-8b2f-9c5400de6954@f9941": {
+    "url": "db://assets/res/slot.PNG@f9941",
+    "value": {
+      "depends": [
+        "9568b8f5-4849-4013-8b2f-9c5400de6954@6c48a"
+      ]
+    },
+    "versionCode": 1
   }
 }

@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Prefab, Rect, SpriteAtlas, tween, Vec3, tools, gameStart, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, eventTarget, mjNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Label, Prefab, ProgressBar, Rect, tween, Vec3, tools, main, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _crd, ccclass, property, eventTarget, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -13,8 +13,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     _reporterNs.report("tools", "./tools", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfgameStart(extras) {
-    _reporterNs.report("gameStart", "./gameStart", _context.meta, extras);
+  function _reportPossibleCrUseOfmain(extras) {
+    _reporterNs.report("main", "./main", _context.meta, extras);
   }
 
   return {
@@ -28,22 +28,23 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       Component = _cc.Component;
       instantiate = _cc.instantiate;
       Intersection2D = _cc.Intersection2D;
+      Label = _cc.Label;
       Prefab = _cc.Prefab;
+      ProgressBar = _cc.ProgressBar;
       Rect = _cc.Rect;
-      SpriteAtlas = _cc.SpriteAtlas;
       tween = _cc.tween;
       Vec3 = _cc.Vec3;
     }, function (_unresolved_2) {
       tools = _unresolved_2.default;
     }, function (_unresolved_3) {
-      gameStart = _unresolved_3.gameStart;
+      main = _unresolved_3.main;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "5e1aas6J3hBqpb9rkSPiEl7", "mjNode", undefined);
 
-      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Collider', 'Component', 'ConfigurableConstraint', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Node', 'NodeEventType', 'Prefab', 'Rect', 'resources', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'tween', 'UITransform', 'Vec2', 'Vec3']);
+      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Collider', 'Component', 'ConfigurableConstraint', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Label', 'Node', 'NodeEventType', 'Prefab', 'ProgressBar', 'Rect', 'resources', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'tween', 'UITransform', 'Vec2', 'Vec3']);
 
       ({
         ccclass,
@@ -51,13 +52,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       } = _decorator);
       eventTarget = new EventTarget();
 
-      _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(SpriteAtlas), _dec(_class = (_class2 = class mjNode extends Component {
+      _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(ProgressBar), _dec4 = property(Label), _dec(_class = (_class2 = class mjNode extends Component {
         constructor() {
           super(...arguments);
 
           _initializerDefineProperty(this, "mycard_prefab", _descriptor, this);
 
-          _initializerDefineProperty(this, "mjSpriteAtlas", _descriptor2, this);
+          _initializerDefineProperty(this, "timeProgressBar", _descriptor2, this);
+
+          _initializerDefineProperty(this, "timeLabel", _descriptor3, this);
 
           this.refreshLock = false;
           this.desktopItems = [];
@@ -66,6 +69,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           //当前数量
           this.randomIndex = 0;
           //当前随机牌索引
+          this.desktopItemCount = 0;
+          this.time = 60;
+          this.allTime = this.time;
           this.mjItemPos = [{
             x: -294.764,
             y: -572
@@ -94,20 +100,23 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
         //物品栏
         start() {
-          this.setLevelBtn();
-          this.node.on('clickmj', this.onClickMj, this); //this.startGame();
+          this.node.on('clickmj', this.onClickMj, this);
+          this.startGame();
         } //开始游戏
 
 
         startGame() {
-          (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
+          this.time = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), gameStart) : gameStart).getInstant().hide();
-          (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+          }), tools) : tools).level * 20 + 30;
+          this.allTime = this.time;
+          this.timeLabel.string = '倒计时:' + this.time; //gameStart.getInstant().hide()
+
+          this.desktopItemCount = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), tools) : tools).desktopItemCount = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+          }), tools) : tools).level * (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), tools) : tools).level * 9;
+          }), tools) : tools).picNum;
           this.initDesktopMj();
         } //按钮点击事件
 
@@ -120,16 +129,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             }), tools) : tools).level);
             this.startGame();
           }
-        } //设置关卡按钮
-
-
-        setLevelBtn() {
-          var spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-            error: Error()
-          }), tools) : tools).level);
-          (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
-            error: Error()
-          }), gameStart) : gameStart).getInstant().setLevelBtn(spriteFrame);
         }
 
         onClickMj(node) {
@@ -169,6 +168,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
               self.mjItem.splice(index[0], 1);
               self.refreshDeaktopMj();
               console.log('消除回调---');
+              self.time += 2;
               self.restTopAnima();
             });
           }
@@ -187,16 +187,25 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
           var _loop = function _loop(i) {
             tween(_this.node).delay(i * 0.1).call(() => {
-              i == (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-                error: Error()
-              }), tools) : tools).desktopItemCount - 1 ? _this.createDesktopMj(true) : _this.createDesktopMj(false);
+              i == _this.desktopItemCount - 1 ? _this.createDesktopMj(true) : _this.createDesktopMj(false);
             }).start();
           };
 
-          for (var i = 0; i < (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-            error: Error()
-          }), tools) : tools).desktopItemCount; i++) {
+          for (var i = 0; i < this.desktopItemCount; i++) {
             _loop(i);
+          }
+        } //倒计时
+
+
+        countdown() {
+          if (this.time === 0) {
+            this.unschedule(this.countdown); // setTimeout(() => {
+            //     this.warningNode.active = false
+            // }, 1500)
+          } else {
+            this.time--;
+            this.timeLabel.string = '倒计时:' + this.time;
+            this.timeProgressBar.progress = this.time / this.allTime;
           }
         } //随机创建麻将
 
@@ -207,7 +216,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             error: Error()
           }), tools) : tools).getRandomMjIndex(1, 37); // this.randomIndex += 1;
 
-          var spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
+          var spriteFrame = (_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+            error: Error()
+          }), main) : main).getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
           var mj = instantiate(this.mycard_prefab);
           mj.parent = this.node;
           var mycard = mj.getComponent("mjcard");
@@ -219,6 +230,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             if (refresh) {
               self.refreshDeaktopMj();
               console.log('发牌完毕---', self.desktopCuritem);
+              self.schedule(self.countdown, 1);
             }
           });
           this.desktopCuritem += 1;
@@ -325,6 +337,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
         gameOver() {}
 
+        nextLevel() {}
+
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "mycard_prefab", [_dec2], {
         configurable: true,
         enumerable: true,
@@ -332,7 +346,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "mjSpriteAtlas", [_dec3], {
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "timeProgressBar", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "timeLabel", [_dec4], {
         configurable: true,
         enumerable: true,
         writable: true,

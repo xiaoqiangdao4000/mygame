@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, tools, _class, _crd;
+  var _cclegacy, tools, _crd;
 
   _export("default", void 0);
 
@@ -27,11 +27,10 @@ System.register(["cc"], function (_export, _context) {
 
       });
 
-      _class = tools;
       tools.level = 1;
       //当前游戏关卡等级
-      tools.desktopItemCount = _class.level * 9;
-      //初始化图片总数量 1*9
+      tools.picNum = 15;
+      //图片数量 level * picNum
       tools.userName = '张配配';
       tools.userHeadspr = null;
       tools.userRank = 'No.1';

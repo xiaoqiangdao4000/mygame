@@ -2,8 +2,7 @@
 export default class tools {
 
     static level: number = 1;       //当前游戏关卡等级
-    static desktopItemCount = tools.level * 9;        //初始化图片总数量 1*9
-
+    static picNum:number = 15;      //图片数量 level * picNum
     static userName = '张配配'
     static userHeadspr = null;
     static userRank = 'No.1';

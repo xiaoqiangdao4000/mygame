@@ -66,6 +66,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         }
 
         start() {
+          gameStart.instant = this;
+
           for (let i = 0; i < 12; i++) {
             let node = instantiate(this.rank_prefab);
             node.parent = this.contentNode;
@@ -84,7 +86,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
 
           this.setUserData();
-          gameStart.instant = this;
+          this.setLevelBtn();
         } //设置用户数据
 
 
@@ -100,7 +102,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
 
         setLevelBtn() {
-          const spriteFrame = (_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+          let spriteFrame = (_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
             error: Error()
           }), main) : main).getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
@@ -110,7 +112,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           }), tools) : tools).desktopItemCount = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).level * 9;
-          gameStart.instant.mjsprite.spriteFrame = spriteFrame;
+          this.mjsprite.spriteFrame = spriteFrame;
         }
 
         static getInstant() {

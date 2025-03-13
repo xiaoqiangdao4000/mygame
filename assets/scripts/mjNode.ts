@@ -1,21 +1,28 @@
-import { _decorator, BoxCollider2D, Collider, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Node, NodeEventType, Prefab, Rect, resources, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3 } from 'cc';
+import { _decorator, BoxCollider2D, Collider, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 const eventTarget = new EventTarget();
 import tools from './tools'
 import { gameStart } from './gameStart';
+import { main } from './main';
 @ccclass('mjNode')
 export class mjNode extends Component {
 
     @property(Prefab)
     mycard_prefab: Prefab | null = null;
 
-    @property(SpriteAtlas)
-    mjSpriteAtlas: SpriteAtlas = null;
+    @property(ProgressBar)
+    timeProgressBar: ProgressBar | null = null;
+
+    @property(Label)
+    timeLabel: Label | null = null;
 
     refreshLock = false;
     desktopItems = [];          //桌面麻将
     desktopCuritem = 0;         //当前数量
     randomIndex = 0;            //当前随机牌索引
+    desktopItemCount = 0;
+    time = 60;
+    allTime = this.time;
 
     mjItemPos = [
         { x: -294.764, y: -572 },
@@ -30,15 +37,17 @@ export class mjNode extends Component {
     mjItem: Node[] = [] //物品栏
 
     start() {
-        this.setLevelBtn();
         this.node.on('clickmj', this.onClickMj, this);
-        //this.startGame();
+        this.startGame();
     }
 
     //开始游戏
     startGame() {
-        gameStart.getInstant().hide()
-        tools.desktopItemCount = tools.level * 9;
+        this.time = tools.level * 20 + 30;
+        this.allTime = this.time;
+        this.timeLabel.string = '倒计时:' + this.time
+        //gameStart.getInstant().hide()
+        this.desktopItemCount = tools.level * tools.picNum;
         this.initDesktopMj();
     }
 
@@ -49,12 +58,6 @@ export class mjNode extends Component {
             console.log('游戏开始---', tools.level)
             this.startGame();
         }
-    }
-
-    //设置关卡按钮
-    setLevelBtn() {
-        const spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + tools.level);
-        gameStart.getInstant().setLevelBtn(spriteFrame);
     }
 
     onClickMj(node: Node) {
@@ -89,6 +92,7 @@ export class mjNode extends Component {
                 self.mjItem.splice(index[0], 1);
                 self.refreshDeaktopMj();
                 console.log('消除回调---')
+                self.time += 2;
                 self.restTopAnima()
             })
         }
@@ -102,11 +106,25 @@ export class mjNode extends Component {
         this.desktopCuritem = 0;
         this.randomIndex = tools.getRandomMjIndex(1, 37);
         console.log('开始发牌---');
-        for (let i = 0; i < tools.desktopItemCount; i++) {
+        for (let i = 0; i < this.desktopItemCount; i++) {
             tween(this.node)
                 .delay(i * 0.1)
-                .call(() => { i == tools.desktopItemCount - 1 ? this.createDesktopMj(true) : this.createDesktopMj(false); })
+                .call(() => { i == this.desktopItemCount - 1 ? this.createDesktopMj(true) : this.createDesktopMj(false); })
                 .start()
+        }
+    }
+
+    //倒计时
+    countdown() {
+        if (this.time === 0) {
+            this.unschedule(this.countdown)
+            // setTimeout(() => {
+            //     this.warningNode.active = false
+            // }, 1500)
+        } else {
+            this.time--;
+            this.timeLabel.string = '倒计时:' + this.time;
+            this.timeProgressBar.progress = this.time / this.allTime;
         }
     }
 
@@ -115,7 +133,7 @@ export class mjNode extends Component {
         //发牌
         if (this.desktopCuritem % 3 == 0) this.randomIndex = tools.getRandomMjIndex(1, 37);
         // this.randomIndex += 1;
-        const spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
+        const spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
         let mj = instantiate(this.mycard_prefab);
         mj.parent = this.node;
         var mycard = mj.getComponent("mjcard");
@@ -125,6 +143,7 @@ export class mjNode extends Component {
             if (refresh) {
                 self.refreshDeaktopMj();
                 console.log('发牌完毕---', self.desktopCuritem);
+                self.schedule(self.countdown, 1)
             }
         });
         this.desktopCuritem += 1;
@@ -250,6 +269,11 @@ export class mjNode extends Component {
     //游戏结束
     gameOver() {
 
+    }
+
+    nextLevel()
+    {
+        
     }
 }
 
