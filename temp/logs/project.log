@@ -1,829 +1,226 @@
-3-12-2025 14:07:23 - log: Load engine in /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine
-3-12-2025 14:07:23 - log: Profile changed: engine (modules.includeModules: 2d,animation,audio,base,custom-pipeline,dragon-bones,gfx-webgl,gfx-webgl2,intersection-2d,particle-2d,physics-2d-box2d,profiler,spine,tiled-map,tween,ui,video,webview)
-3-12-2025 14:07:23 - log: Register native engine in /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/native
-3-12-2025 14:07:23 - log: Request namespace: device-list
-3-12-2025 14:07:32 - log: [Scene] meshopt wasm decoder initialized
-3-12-2025 14:07:32 - log: [Scene] [bullet]:bullet wasm lib loaded.
-3-12-2025 14:07:32 - log: [Scene] [box2d]:box2d wasm lib loaded.
-3-12-2025 14:07:32 - log: [Scene] [PHYSICS]: using builtin.
-3-12-2025 14:07:32 - log: [Scene] Cocos Creator v3.8.5
-3-12-2025 14:07:32 - log: [Scene] Using custom pipeline: Builtin
-3-12-2025 14:07:32 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to box2d.
-3-12-2025 14:56:50 - error: [Scene] Can't add component 'cc.Sprite' to item because it conflicts with the existing 'cc.Label' derived component.Error: Can't add component 'cc.Sprite' to item because it conflicts with the existing 'cc.Label' derived component.
-    at Node._checkMultipleComp (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:64757:19)
-    at Node.addComponent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:68087:18)
-    at NodeManager.createComponent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/node/index.ccc:1:12195)
-    at GeneralSceneFacade.createComponent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/general-scene-facade.ccc:1:11455)
-    at SceneFacadeManager.createComponent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:14006)
-    at step (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:1:732)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:401
+2025-3-14 20:50:06 - log: Load engine in C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine
+2025-3-14 20:50:08 - log: Profile changed: engine (modules.includeModules: 2d,animation,audio,base,custom-pipeline,gfx-webgl,gfx-webgl2,intersection-2d,profiler,spine,tween,ui,video,webview)
+2025-3-14 20:50:08 - log: Register native engine in C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\native
+2025-3-14 20:50:08 - log: Request namespace: device-list
+2025-3-14 20:50:20 - warn: Request timeout, aborting...
+2025-3-14 20:50:20 - warn: Failed to connect to login server: socket hang up
+2025-3-14 20:51:02 - log: [Scene] meshopt wasm decoder initialized
+2025-3-14 20:51:02 - log: [Scene] [bullet]:bullet wasm lib loaded.
+2025-3-14 20:51:02 - log: [Scene] [box2d]:box2d wasm lib loaded.
+2025-3-14 20:51:02 - log: [Scene] [PHYSICS]: using builtin.
+2025-3-14 20:51:02 - log: [Scene] Cocos Creator v3.8.5
+2025-3-14 20:51:02 - log: [Scene] Using custom pipeline: Builtin
+2025-3-14 20:51:02 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to builtin.
+2025-3-14 20:56:30 - info: [PreviewInEditor] 预览环境初始化完毕
+2025-3-14 20:56:30 - log: [PreviewInEditor] meshopt wasm decoder initialized
+2025-3-14 20:56:31 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+2025-3-14 20:56:31 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+2025-3-14 20:56:31 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+2025-3-14 20:56:31 - log: [PreviewInEditor] Cocos Creator v3.8.5
+2025-3-14 20:56:31 - log: [PreviewInEditor] Using custom pipeline: Builtin
+2025-3-14 20:56:31 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to builtin.
+2025-3-14 20:56:33 - error: [Window] Cannot read properties of undefined (reading 'cancel')TypeError: Cannot read properties of undefined (reading 'cancel')
+    at Object.close (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\editor\inspector\contributions\node.js:648:34)
+    at Object.close (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\editor\inspector\contributions\node.js:2200:27)
+    at na._setPanel (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\creator-ui-kit\dist\renderer.ccc:168:24535)
+    at na.attributeChangedCallback (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\creator-ui-kit\dist\renderer.ccc:168:25134)
+    at Object.sceneClose (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\modules\editor-extensions\extensions\inspector\dist\panels\inspector\index.ccc:57:1017)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\panel\lib\element.ccc:1:5083
     at new Promise (<anonymous>)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:338
-    at IpcRenderer.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/webview.ccc:1:1004)
+    at EventEmitter.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\panel\lib\element.ccc:1:5044)
+    at EventEmitter.emit (node:events:519:28)
+    at IpcRenderer.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@base\electron-base-ipc\dist\renderer.ccc:1:3858)
     at IpcRenderer.emit (node:events:519:28)
     at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
-3-12-2025 20:24:04 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: /file:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts: Identifier 'spriteFrame' has already been declared. (51:16)
-
-  49 |
-  50 |     //设置关卡按钮
-> 51 |     setLevelBtn(spriteFrame: SpriteFrame) {
-     |                 ^
-  52 |         const spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + tools.level);
-  53 |         gameStart.getInstant().setLevelBtn(spriteFrame);
-  54 |         tools.desktopItemCount = tools.level * 9;
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/00/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameStart.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20%2Ffile%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameStart.ts%3A%20Identifier%20'spriteFrame'%20has%20already%20been%20declared.%20(51%3A16)%0A%0A%20%2049%20%7C%0A%20%2050%20%7C%20%20%20%20%20%2F%2F%E8%AE%BE%E7%BD%AE%E5%85%B3%E5%8D%A1%E6%8C%89%E9%92%AE%0A%3E%2051%20%7C%20%20%20%20%20setLevelBtn(spriteFrame%3A%20SpriteFrame)%20%7B%0A%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%2052%20%7C%20%20%20%20%20%20%20%20%20const%20spriteFrame%20%3D%20this.mjSpriteAtlas.getSpriteFrame('s_wzmj_'%20%2B%20tools.level)%3B%0A%20%2053%20%7C%20%20%20%20%20%20%20%20%20gameStart.getInstant().setLevelBtn(spriteFrame)%3B%0A%20%2054%20%7C%20%20%20%20%20%20%20%20%20tools.desktopItemCount%20%3D%20tools.level%20*%209%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: /file:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts: Identifier 'spriteFrame' has already been declared. (51:16)
-
-  49 |
-  50 |     //设置关卡按钮
-> 51 |     setLevelBtn(spriteFrame: SpriteFrame) {
-  54 |         tools.desktopItemCount = tools.level * 9;
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/00/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameStart.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20%2Ffile%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameStart.ts%3A%20Identifier%20'spriteFrame'%20has%20already%20been%20declared.%20(51%3A16)%0A%0A%20%2049%20%7C%0A%20%2050%20%7C%20%20%20%20%20%2F%2F%E8%AE%BE%E7%BD%AE%E5%85%B3%E5%8D%A1%E6%8C%89%E9%92%AE%0A%3E%2051%20%7C%20%20%20%20%20setLevelBtn(spriteFrame%3A%20SpriteFrame)%20%7B%0A%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%2052%20%7C%20%20%20%20%20%20%20%20%20const%20spriteFrame%20%3D%20this.mjSpriteAtlas.getSpriteFrame('s_wzmj_'%20%2B%20tools.level)%3B%0A%20%2053%20%7C%20%20%20%20%20%20%20%20%20gameStart.getInstant().setLevelBtn(spriteFrame)%3B%0A%20%2054%20%7C%20%20%20%20%20%20%20%20%20tools.desktopItemCount%20%3D%20tools.level%20*%209%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)
-    at Logger._logHandler (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:487)
-    at Logger.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1414)
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at ScriptManager._handleImportException (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:5408)
-    at Executor.importExceptionHandler [as _importExceptionHandler] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:3604)
-    at Executor._onModuleLoaded (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:401:22)
-    at SystemJS.onload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:99:18)
-    at triggerOnload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:270:10)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:538:7)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)
-3-12-2025 20:24:04 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at Object.classFinder (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:982)
-    at _Deserializer.classFinder [as _classFinder] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163942:34)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52666:30)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer.deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52592:42)
-    at deserializeDynamic (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52442:30)
-    at deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:53292:13)
-    at deserializeAsset (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163955:15)
-    at parseImport (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166168:22)
-    at Parser.parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166250:11)
-    at parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165698:20)
-    at Pipeline._flow (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166533:11)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166543:22)
-3-12-2025 20:24:04 - warn: [Scene] Missing class: 88827lxtv5D9ZqgDdOG+R/qError: [Scene] Missing class: 88827lxtv5D9ZqgDdOG+R/q
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at Object.classFinder (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:982)
-    at _Deserializer.classFinder [as _classFinder] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163942:34)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52666:30)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer.deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52592:42)
-    at deserializeDynamic (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52442:30)
-    at deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:53292:13)
-    at deserializeAsset (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163955:15)
-    at parseImport (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166168:22)
-    at Parser.parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166250:11)
-    at parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165698:20)
-    at Pipeline._flow (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166533:11)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166543:22)
-3-12-2025 20:24:04 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
-Node path: "Canvas/mjNode"
-Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
-Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
-Error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
-Node path: "Canvas/mjNode"
-Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
-Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
-
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at report (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:25)
-    at reportByWalker (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:127)
-3-12-2025 20:24:04 - error: [Scene] Script "88827lxtv5D9ZqgDdOG+R/q" attached to "gameStart" is missing or invalid. Detailed information:
-Node path: "Canvas/gameStart"
-Script UUID: "88827971-b6fe-43f5-9aa0-0dd386f91fea"
-Class ID: "88827lxtv5D9ZqgDdOG+R/q"
-Error: [Scene] Script "88827lxtv5D9ZqgDdOG+R/q" attached to "gameStart" is missing or invalid. Detailed information:
-Node path: "Canvas/gameStart"
-Script UUID: "88827971-b6fe-43f5-9aa0-0dd386f91fea"
-Class ID: "88827lxtv5D9ZqgDdOG+R/q"
-
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at report (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:25)
-    at reportByWalker (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:127)
-3-12-2025 20:27:55 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: /file:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts: Identifier 'spriteFrame' has already been declared. (51:16)
-
-  49 |
-  50 |     //设置关卡按钮
-> 51 |     setLevelBtn(spriteFrame: SpriteFrame) {
-     |                 ^
-  52 |         const spriteFrame = this.mjSpriteAtlas.getSpriteFrame('s_wzmj_' + tools.level);
-  53 |         gameStart.getInstant().setLevelBtn(spriteFrame);
-  54 |         tools.desktopItemCount = tools.level * 9;
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/00/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameStart.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20%2Ffile%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameStart.ts%3A%20Identifier%20'spriteFrame'%20has%20already%20been%20declared.%20(51%3A16)%0A%0A%20%2049%20%7C%0A%20%2050%20%7C%20%20%20%20%20%2F%2F%E8%AE%BE%E7%BD%AE%E5%85%B3%E5%8D%A1%E6%8C%89%E9%92%AE%0A%3E%2051%20%7C%20%20%20%20%20setLevelBtn(spriteFrame%3A%20SpriteFrame)%20%7B%0A%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%2052%20%7C%20%20%20%20%20%20%20%20%20const%20spriteFrame%20%3D%20this.mjSpriteAtlas.getSpriteFrame('s_wzmj_'%20%2B%20tools.level)%3B%0A%20%2053%20%7C%20%20%20%20%20%20%20%20%20gameStart.getInstant().setLevelBtn(spriteFrame)%3B%0A%20%2054%20%7C%20%20%20%20%20%20%20%20%20tools.desktopItemCount%20%3D%20tools.level%20*%209%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: /file:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts: Identifier 'spriteFrame' has already been declared. (51:16)
-
-  49 |
-  50 |     //设置关卡按钮
-> 51 |     setLevelBtn(spriteFrame: SpriteFrame) {
-  54 |         tools.desktopItemCount = tools.level * 9;
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/00/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameStart.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20%2Ffile%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameStart.ts%3A%20Identifier%20'spriteFrame'%20has%20already%20been%20declared.%20(51%3A16)%0A%0A%20%2049%20%7C%0A%20%2050%20%7C%20%20%20%20%20%2F%2F%E8%AE%BE%E7%BD%AE%E5%85%B3%E5%8D%A1%E6%8C%89%E9%92%AE%0A%3E%2051%20%7C%20%20%20%20%20setLevelBtn(spriteFrame%3A%20SpriteFrame)%20%7B%0A%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%2052%20%7C%20%20%20%20%20%20%20%20%20const%20spriteFrame%20%3D%20this.mjSpriteAtlas.getSpriteFrame('s_wzmj_'%20%2B%20tools.level)%3B%0A%20%2053%20%7C%20%20%20%20%20%20%20%20%20gameStart.getInstant().setLevelBtn(spriteFrame)%3B%0A%20%2054%20%7C%20%20%20%20%20%20%20%20%20tools.desktopItemCount%20%3D%20tools.level%20*%209%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)
-    at Logger._logHandler (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:487)
-    at Logger.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1414)
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at ScriptManager._handleImportException (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:5408)
-    at Executor.importExceptionHandler [as _importExceptionHandler] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:3604)
-    at Executor._onModuleLoaded (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:401:22)
-    at SystemJS.onload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:99:18)
-    at triggerOnload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:270:10)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:538:7)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)
-3-12-2025 20:27:55 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at Object.classFinder (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:982)
-    at _Deserializer.classFinder [as _classFinder] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163942:34)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52666:30)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer.deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52592:42)
-    at deserializeDynamic (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52442:30)
-    at deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:53292:13)
-    at deserializeAsset (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163955:15)
-    at parseImport (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166168:22)
-    at Parser.parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166250:11)
-    at parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165698:20)
-    at Pipeline._flow (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166533:11)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166543:22)
-3-12-2025 20:27:55 - warn: [Scene] Missing class: 88827lxtv5D9ZqgDdOG+R/qError: [Scene] Missing class: 88827lxtv5D9ZqgDdOG+R/q
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at Object.classFinder (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:982)
-    at _Deserializer.classFinder [as _classFinder] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163942:34)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52666:30)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer.deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52592:42)
-    at deserializeDynamic (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52442:30)
-    at deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:53292:13)
-    at deserializeAsset (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163955:15)
-    at parseImport (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166168:22)
-    at Parser.parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166250:11)
-    at parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165698:20)
-    at Pipeline._flow (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166533:11)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166543:22)
-3-12-2025 20:27:55 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
-Node path: "Canvas/mjNode"
-Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
-Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
-Error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
-Node path: "Canvas/mjNode"
-Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
-Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
-
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at report (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:25)
-    at reportByWalker (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:127)
-3-12-2025 20:27:55 - error: [Scene] Script "88827lxtv5D9ZqgDdOG+R/q" attached to "gameStart" is missing or invalid. Detailed information:
-Node path: "Canvas/gameStart"
-Script UUID: "88827971-b6fe-43f5-9aa0-0dd386f91fea"
-Class ID: "88827lxtv5D9ZqgDdOG+R/q"
-Error: [Scene] Script "88827lxtv5D9ZqgDdOG+R/q" attached to "gameStart" is missing or invalid. Detailed information:
-Node path: "Canvas/gameStart"
-Script UUID: "88827971-b6fe-43f5-9aa0-0dd386f91fea"
-Class ID: "88827lxtv5D9ZqgDdOG+R/q"
-
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at report (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:25)
-    at reportByWalker (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:127)
-3-13-2025 15:21:15 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: /file:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts: Unexpected token (126:8)
-
-  124 |             // const s = this.secondNode.getComponent(Label)
-  125 |             // s.string = this.second + ''
-> 126 |         }
-      |         ^
-  127 |     }
-  128 |
-  129 |     //随机创建麻将
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/c9/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20%2Ffile%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%3A%20Unexpected%20token%20(126%3A8)%0A%0A%20%20124%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20const%20s%20%3D%20this.secondNode.getComponent(Label)%0A%20%20125%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20s.string%20%3D%20this.second%20%2B%20''%0A%3E%20126%20%7C%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%5E%0A%20%20127%20%7C%20%20%20%20%20%7D%0A%20%20128%20%7C%0A%20%20129%20%7C%20%20%20%20%20%2F%2F%E9%9A%8F%E6%9C%BA%E5%88%9B%E5%BB%BA%E9%BA%BB%E5%B0%86%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: /file:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts: Unexpected token (126:8)
-
-  124 |             // const s = this.secondNode.getComponent(Label)
-  125 |             // s.string = this.second + ''
-> 126 |         }
-  129 |     //随机创建麻将
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/c9/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20%2Ffile%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%3A%20Unexpected%20token%20(126%3A8)%0A%0A%20%20124%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20const%20s%20%3D%20this.secondNode.getComponent(Label)%0A%20%20125%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20s.string%20%3D%20this.second%20%2B%20''%0A%3E%20126%20%7C%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%5E%0A%20%20127%20%7C%20%20%20%20%20%7D%0A%20%20128%20%7C%0A%20%20129%20%7C%20%20%20%20%20%2F%2F%E9%9A%8F%E6%9C%BA%E5%88%9B%E5%BB%BA%E9%BA%BB%E5%B0%86%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)
-    at Logger._logHandler (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:487)
-    at Logger.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1414)
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at ScriptManager._handleImportException (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:5408)
-    at Executor.importExceptionHandler [as _importExceptionHandler] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:3604)
-    at Executor._onModuleLoaded (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:401:22)
-    at SystemJS.onload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:99:18)
-    at triggerOnload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:270:10)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:538:7)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)
-3-13-2025 15:21:15 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at Object.classFinder (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:982)
-    at _Deserializer.classFinder [as _classFinder] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163942:34)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52666:30)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer.deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52592:42)
-    at deserializeDynamic (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52442:30)
-    at deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:53292:13)
-    at deserializeAsset (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163955:15)
-    at parseImport (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166168:22)
-    at Parser.parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166250:11)
-    at parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165698:20)
-    at Pipeline._flow (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166533:11)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166543:22)
-3-13-2025 15:21:15 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
-Node path: "Canvas/mjNode"
-Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
-Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
-Error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
-Node path: "Canvas/mjNode"
-Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
-Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
-
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at report (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:25)
-    at reportByWalker (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:127)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_1.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_1.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_10.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_10.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_11.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_11.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_12.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_12.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_13.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_13.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_14.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_14.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_15.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_15.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_16.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_16.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_17.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_17.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_18.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_18.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_19.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_19.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_2.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_2.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_20.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_20.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_21.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_21.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_22.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_22.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_23.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_23.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_24.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_24.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_25.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_25.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_26.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_26.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_27.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_27.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_28.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_28.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_29.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_29.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_3.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_3.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_30.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_30.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_31.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_31.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_32.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_32.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_33.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_33.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_34.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_34.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_4.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_4.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_5.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_5.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_6.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_6.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_7.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_7.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_8.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_8.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-14-2025 20:05:16 - error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_9.png.meta is not exist! will use cache meta.Error: [Assets] /Users/zzx/Desktop/mygame/assets/resources/mj_9.png.meta is not exist! will use cache meta.
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1409)
-    at AssetDB._checkAssetStat (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:12237)
-    at AssetDB.refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/asset-db/libs/asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/messages/database.ccc:1:3760)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
+2025-3-14 20:56:50 - log: [PreviewInEditor] 游戏开始--- 1
+2025-3-14 20:56:50 - log: [PreviewInEditor] 开始发牌--- 16
+2025-3-14 20:56:52 - log: [PreviewInEditor] 发牌完毕--- 16
+2025-3-14 20:56:57 - log: [PreviewInEditor] 点击麻将 =  mj_8
+2025-3-14 20:56:58 - log: [PreviewInEditor] 点击麻将 =  mj_8
+2025-3-14 20:56:59 - log: [PreviewInEditor] 点击麻将 =  mj_8
+2025-3-14 20:57:02 - log: [PreviewInEditor] 点击麻将 =  mj_9
+2025-3-14 20:57:03 - log: [PreviewInEditor] 点击麻将 =  mj_14
+2025-3-14 20:57:03 - log: [PreviewInEditor] 点击麻将 =  mj_19
+2025-3-14 20:57:03 - log: [PreviewInEditor] 点击麻将 =  mj_19
+2025-3-14 20:57:05 - log: [PreviewInEditor] 点击麻将 =  mj_19
+2025-3-14 20:57:08 - log: [PreviewInEditor] 点击麻将 =  mj_23
+2025-3-14 20:57:08 - log: [PreviewInEditor] 点击麻将 =  mj_23
+2025-3-14 20:57:09 - log: [PreviewInEditor] 点击麻将 =  mj_23
+2025-3-14 20:57:10 - log: [PreviewInEditor] 点击麻将 =  mj_31
+2025-3-14 20:57:11 - log: [PreviewInEditor] 点击麻将 =  mj_31
+2025-3-14 20:57:12 - log: [PreviewInEditor] 点击麻将 =  mj_31
+2025-3-14 20:57:13 - log: [PreviewInEditor] 点击麻将 =  mj_14
+2025-3-14 20:57:14 - log: [PreviewInEditor] 点击麻将 =  mj_14
+2025-3-14 20:57:16 - log: [PreviewInEditor] 游戏开始--- 2
+2025-3-14 20:57:16 - log: [PreviewInEditor] 开始发牌--- 32
+2025-3-14 20:57:20 - log: [PreviewInEditor] 发牌完毕--- 32
+2025-3-14 20:57:26 - info: [PreviewInEditor] 预览环境初始化完毕
+2025-3-14 20:57:26 - log: [PreviewInEditor] meshopt wasm decoder initialized
+2025-3-14 20:57:26 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+2025-3-14 20:57:26 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+2025-3-14 20:57:26 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+2025-3-14 20:57:26 - log: [PreviewInEditor] Cocos Creator v3.8.5
+2025-3-14 20:57:26 - log: [PreviewInEditor] Using custom pipeline: Builtin
+2025-3-14 20:57:27 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to builtin.
+2025-3-14 20:57:31 - log: [PreviewInEditor] 游戏开始--- 1
+2025-3-14 20:57:31 - log: [PreviewInEditor] 开始发牌--- 16
+2025-3-14 20:57:34 - log: [PreviewInEditor] 发牌完毕--- 16
+2025-3-14 20:57:36 - log: [PreviewInEditor] 点击麻将 =  mj_34
+2025-3-14 20:57:38 - log: [PreviewInEditor] 点击麻将 =  mj_8
+2025-3-14 20:57:38 - log: [PreviewInEditor] 点击麻将 =  mj_8
+2025-3-14 20:57:39 - log: [PreviewInEditor] 点击麻将 =  mj_8
+2025-3-14 20:57:41 - log: [PreviewInEditor] 点击麻将 =  mj_24
+2025-3-14 20:57:41 - log: [PreviewInEditor] 点击麻将 =  mj_24
+2025-3-14 20:57:42 - log: [PreviewInEditor] 点击麻将 =  mj_24
+2025-3-14 20:57:43 - log: [PreviewInEditor] 点击麻将 =  mj_34
+2025-3-14 20:57:44 - log: [PreviewInEditor] 点击麻将 =  mj_17
+2025-3-14 20:57:45 - log: [PreviewInEditor] 点击麻将 =  mj_11
+2025-3-14 20:57:45 - log: [PreviewInEditor] 点击麻将 =  mj_17
+2025-3-14 20:57:46 - log: [PreviewInEditor] 点击麻将 =  mj_17
+2025-3-14 20:57:48 - log: [PreviewInEditor] 点击麻将 =  mj_8
+2025-3-14 20:57:48 - log: [PreviewInEditor] 点击麻将 =  mj_34
+2025-3-14 20:57:50 - log: [PreviewInEditor] 点击麻将 =  mj_11
+2025-3-14 20:57:51 - log: [PreviewInEditor] 点击麻将 =  mj_11
+2025-3-14 20:58:00 - warn: [PreviewInEditor] IPC message has been lost.Error: [PreviewInEditor] IPC message has been lost.
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at IpcRenderer.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\ipc\web\webview.ccc:1:1495)
+    at IpcRenderer.emit (node:events:519:28)
+    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
+2025-3-14 20:58:01 - info: [PreviewInEditor] 预览环境初始化完毕
+2025-3-14 20:58:01 - log: [PreviewInEditor] meshopt wasm decoder initialized
+2025-3-14 20:58:01 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+2025-3-14 20:58:01 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+2025-3-14 20:58:01 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+2025-3-14 20:58:01 - log: [PreviewInEditor] Cocos Creator v3.8.5
+2025-3-14 20:58:01 - log: [PreviewInEditor] Using custom pipeline: Builtin
+2025-3-14 20:58:02 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to builtin.
+2025-3-14 20:58:03 - error: [Window] Cannot read properties of undefined (reading 'cancel')TypeError: Cannot read properties of undefined (reading 'cancel')
+    at Object.close (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\editor\inspector\contributions\node.js:648:34)
+    at Object.close (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\editor\inspector\contributions\node.js:2200:27)
+    at na._setPanel (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\creator-ui-kit\dist\renderer.ccc:168:24535)
+    at na.attributeChangedCallback (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\creator-ui-kit\dist\renderer.ccc:168:25134)
+    at Object.sceneClose (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\modules\editor-extensions\extensions\inspector\dist\panels\inspector\index.ccc:57:1017)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\panel\lib\element.ccc:1:5083
+    at new Promise (<anonymous>)
+    at EventEmitter.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\panel\lib\element.ccc:1:5044)
+    at EventEmitter.emit (node:events:519:28)
+    at IpcRenderer.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@base\electron-base-ipc\dist\renderer.ccc:1:3858)
+    at IpcRenderer.emit (node:events:519:28)
+    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
+2025-3-14 20:58:06 - log: [PreviewInEditor] 游戏开始--- 1
+2025-3-14 20:58:06 - log: [PreviewInEditor] 开始发牌--- 16
+2025-3-14 20:58:08 - log: [PreviewInEditor] 发牌完毕--- 16
+2025-3-14 20:59:48 - warn: [PreviewInEditor] IPC message has been lost.Error: [PreviewInEditor] IPC message has been lost.
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at IpcRenderer.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\ipc\web\webview.ccc:1:1495)
+    at IpcRenderer.emit (node:events:519:28)
+    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
+2025-3-14 20:59:48 - info: [PreviewInEditor] 预览环境初始化完毕
+2025-3-14 20:59:58 - log: [PreviewInEditor] meshopt wasm decoder initialized
+2025-3-14 20:59:58 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+2025-3-14 20:59:58 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+2025-3-14 20:59:58 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+2025-3-14 20:59:58 - log: [PreviewInEditor] Cocos Creator v3.8.5
+2025-3-14 20:59:58 - log: [PreviewInEditor] Using custom pipeline: Builtin
+2025-3-14 20:59:59 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to builtin.
+2025-3-14 21:00:00 - error: [Window] Cannot read properties of undefined (reading 'cancel')TypeError: Cannot read properties of undefined (reading 'cancel')
+    at Object.close (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\editor\inspector\contributions\node.js:648:34)
+    at Object.close (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\editor\inspector\contributions\node.js:2200:27)
+    at na._setPanel (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\creator-ui-kit\dist\renderer.ccc:168:24535)
+    at na.attributeChangedCallback (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\creator-ui-kit\dist\renderer.ccc:168:25134)
+    at Object.sceneClose (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\modules\editor-extensions\extensions\inspector\dist\panels\inspector\index.ccc:57:1017)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\panel\lib\element.ccc:1:5083
+    at new Promise (<anonymous>)
+    at EventEmitter.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\panel\lib\element.ccc:1:5044)
+    at EventEmitter.emit (node:events:519:28)
+    at IpcRenderer.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@base\electron-base-ipc\dist\renderer.ccc:1:3858)
+    at IpcRenderer.emit (node:events:519:28)
+    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
+2025-3-14 21:00:17 - log: [PreviewInEditor] 游戏开始--- 1
+2025-3-14 21:00:17 - log: [PreviewInEditor] 开始发牌--- 18
+2025-3-14 21:00:19 - log: [PreviewInEditor] 发牌完毕--- 18
+2025-3-14 21:00:21 - log: [PreviewInEditor] 点击麻将 =  mj_31
+2025-3-14 21:00:22 - log: [PreviewInEditor] 点击麻将 =  mj_31
+2025-3-14 21:00:27 - log: [PreviewInEditor] 点击麻将 =  mj_25
+2025-3-14 21:00:28 - log: [PreviewInEditor] 点击麻将 =  mj_31
+2025-3-14 21:00:38 - log: [PreviewInEditor] 点击麻将 =  mj_32
+2025-3-14 21:00:39 - log: [PreviewInEditor] 点击麻将 =  mj_32
+2025-3-14 21:00:39 - log: [PreviewInEditor] 点击麻将 =  mj_7
+2025-3-14 21:00:40 - log: [PreviewInEditor] 点击麻将 =  mj_32
+2025-3-14 21:00:42 - log: [PreviewInEditor] 点击麻将 =  mj_7
+2025-3-14 21:00:42 - log: [PreviewInEditor] 点击麻将 =  mj_7
+2025-3-14 21:00:45 - log: [PreviewInEditor] 点击麻将 =  mj_25
+2025-3-14 21:00:45 - log: [PreviewInEditor] 不可点击的麻将 =  mj_36
+2025-3-14 21:00:46 - log: [PreviewInEditor] 点击麻将 =  mj_15
+2025-3-14 21:00:47 - log: [PreviewInEditor] 不可点击的麻将 =  mj_36
+2025-3-14 21:00:48 - log: [PreviewInEditor] 点击麻将 =  mj_15
+2025-3-14 21:00:49 - log: [PreviewInEditor] 点击麻将 =  mj_25
+2025-3-14 21:00:50 - log: [PreviewInEditor] 不可点击的麻将 =  mj_36
+2025-3-14 21:00:51 - log: [PreviewInEditor] 不可点击的麻将 =  mj_36
+2025-3-14 21:00:51 - log: [PreviewInEditor] 不可点击的麻将 =  mj_36
+2025-3-14 21:00:51 - log: [PreviewInEditor] 不可点击的麻将 =  mj_36
+2025-3-14 21:00:51 - log: [PreviewInEditor] 不可点击的麻将 =  mj_36
+2025-3-14 21:00:51 - log: [PreviewInEditor] 不可点击的麻将 =  mj_36
+2025-3-14 21:00:58 - info: [PreviewInEditor] 预览环境初始化完毕
+2025-3-14 21:01:11 - warn: [Assets] Input file contains unsupported image formatError: Input file contains unsupported image format
+2025-3-14 21:01:11 - warn: [Assets] resizeThumbnail failed for db://assets/resources/mj_card.plist@05033Warn: [Assets] resizeThumbnail failed for db://assets/resources/mj_card.plist@05033
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at NewConsole.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1510)
+    at AssetHandlerManager.generateThumbnail (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\asset-db\dist\worker\manager\asset-handler-manager.ccc:1:10412)
+    at Ipc.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\asset-db\dist\worker\ipc.ccc:1:530)
+2025-3-14 21:01:11 - warn: [Assets] pngload: end of streamError: pngload: end of stream
+2025-3-14 21:01:11 - warn: [Assets] resizeThumbnail failed for db://assets/resources/mj_card.plist@8484cWarn: [Assets] resizeThumbnail failed for db://assets/resources/mj_card.plist@8484c
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at NewConsole.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1510)
+    at AssetHandlerManager.generateThumbnail (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\asset-db\dist\worker\manager\asset-handler-manager.ccc:1:10412)
+    at Ipc.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\asset-db\dist\worker\ipc.ccc:1:530)
+2025-3-14 21:03:48 - log: [PreviewInEditor] meshopt wasm decoder initialized
+2025-3-14 21:03:48 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+2025-3-14 21:03:48 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+2025-3-14 21:03:48 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+2025-3-14 21:03:49 - log: [PreviewInEditor] Cocos Creator v3.8.5
+2025-3-14 21:03:49 - log: [PreviewInEditor] Using custom pipeline: Builtin
+2025-3-14 21:03:49 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to builtin.
+2025-3-14 21:03:50 - error: [Window] Cannot read properties of undefined (reading 'cancel')TypeError: Cannot read properties of undefined (reading 'cancel')
+    at Object.close (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\editor\inspector\contributions\node.js:648:34)
+    at Object.close (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\editor\inspector\contributions\node.js:2200:27)
+    at na._setPanel (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\creator-ui-kit\dist\renderer.ccc:168:24535)
+    at na.attributeChangedCallback (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\creator-ui-kit\dist\renderer.ccc:168:25134)
+    at Object.sceneClose (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\modules\editor-extensions\extensions\inspector\dist\panels\inspector\index.ccc:57:1017)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\panel\lib\element.ccc:1:5083
+    at new Promise (<anonymous>)
+    at EventEmitter.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\panel\lib\element.ccc:1:5044)
+    at EventEmitter.emit (node:events:519:28)
+    at IpcRenderer.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@base\electron-base-ipc\dist\renderer.ccc:1:3858)
+    at IpcRenderer.emit (node:events:519:28)
+    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
+2025-3-14 21:04:26 - log: [PreviewInEditor] 游戏开始--- 1
+2025-3-14 21:04:26 - log: [PreviewInEditor] 开始发牌--- 18
+2025-3-14 21:04:29 - log: [PreviewInEditor] 发牌完毕--- 18
+2025-3-14 21:04:30 - log: [PreviewInEditor] 点击麻将 =  mj_1
+2025-3-14 21:04:30 - log: [PreviewInEditor] 点击麻将 =  mj_1
+2025-3-14 21:04:31 - log: [PreviewInEditor] 点击麻将 =  mj_24
+2025-3-14 21:04:31 - log: [PreviewInEditor] 点击麻将 =  mj_24
+2025-3-14 21:04:32 - log: [PreviewInEditor] 点击麻将 =  mj_23
+2025-3-14 21:04:32 - log: [PreviewInEditor] 点击麻将 =  mj_23
+2025-3-14 21:04:33 - log: [PreviewInEditor] 点击麻将 =  mj_23
+2025-3-14 21:04:36 - log: [PreviewInEditor] 点击麻将 =  mj_1
+2025-3-14 21:04:37 - log: [PreviewInEditor] 点击麻将 =  mj_24
+2025-3-14 21:04:38 - log: [PreviewInEditor] 点击麻将 =  mj_3
+2025-3-14 21:04:38 - log: [PreviewInEditor] 点击麻将 =  mj_3
+2025-3-14 21:04:38 - log: [PreviewInEditor] 点击麻将 =  mj_3
+2025-3-14 21:04:39 - log: [PreviewInEditor] 点击麻将 =  mj_6
+2025-3-14 21:04:39 - log: [PreviewInEditor] 点击麻将 =  mj_6
+2025-3-14 21:04:40 - log: [PreviewInEditor] 点击麻将 =  mj_29
+2025-3-14 21:04:41 - log: [PreviewInEditor] 点击麻将 =  mj_29
+2025-3-14 21:04:41 - log: [PreviewInEditor] 点击麻将 =  mj_6
+2025-3-14 21:04:42 - log: [PreviewInEditor] 点击麻将 =  mj_29
+2025-3-14 21:04:45 - log: [PreviewInEditor] 游戏开始--- 2
+2025-3-14 21:04:45 - log: [PreviewInEditor] 开始发牌--- 36
+2025-3-14 21:04:49 - log: [PreviewInEditor] 发牌完毕--- 36
+2025-3-14 21:05:02 - warn: [PreviewInEditor] IPC message has been lost.Error: [PreviewInEditor] IPC message has been lost.
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at IpcRenderer.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\ipc\web\webview.ccc:1:1495)
+    at IpcRenderer.emit (node:events:519:28)
+    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
+2025-3-14 21:05:02 - info: [PreviewInEditor] 预览环境初始化完毕

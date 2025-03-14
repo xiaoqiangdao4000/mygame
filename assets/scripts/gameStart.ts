@@ -49,7 +49,7 @@ export class gameStart extends Component {
 
     //设置关卡按钮
     setLevelBtn() {
-        let spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + tools.level);
+        let spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('mj_' + tools.level);
         this.mjsprite.spriteFrame = spriteFrame;
     }
 

@@ -139,7 +139,7 @@ export class mjNode extends Component {
 
     initDesktopMj() {
         this.desktopCuritem = 0;
-        this.randomIndex = tools.getRandomMjIndex(1, 37);
+        this.randomIndex = tools.getRandomMjIndex();
         console.log('开始发牌---', this.desktopItemCount);
         for (let i = 0; i < this.desktopItemCount; i++) {
             tween(this.node)
@@ -164,8 +164,8 @@ export class mjNode extends Component {
     //随机创建麻将
     createDesktopMj(refresh) {
         //发牌
-        if (this.desktopCuritem % 3 == 0) this.randomIndex = tools.getRandomMjIndex(1, 37);
-        const spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
+        if (this.desktopCuritem % 3 == 0) this.randomIndex = tools.getRandomMjIndex();
+        const spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('mj_' + this.randomIndex);
         let mj = instantiate(this.mycard_prefab);
         mj.parent = this.node;
         var mycard = mj.getComponent("mjcard");

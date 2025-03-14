@@ -2,7 +2,7 @@
 export default class tools {
 
     static level: number = 1;       //当前游戏关卡等级
-    static picNum: number = 16;      //图片数量 level * picNum
+    static picNum: number = 18;      //图片数量 level * picNum
     static animType: number = 2;     //发牌动画 1同时移动，缩放  2缩放出现
     static userName = '磨人小妖精'
     static userHeadspr = null;
@@ -42,9 +42,8 @@ export default class tools {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    static getRandomMjIndex(min, max) {
-        let randomInt = tools.getRandomInt(1, 37);
-        if (randomInt == 10 || randomInt == 20 || randomInt == 30) randomInt += 1;
+    static getRandomMjIndex() {
+        let randomInt = tools.getRandomInt(1, 34);
         return randomInt;
     }
 }

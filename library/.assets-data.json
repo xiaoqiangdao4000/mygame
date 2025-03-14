@@ -1806,5 +1806,369 @@
       "depends": []
     },
     "versionCode": 1
+  },
+  "ebabbabd-e21a-4f89-993a-8ba65d53862e": {
+    "url": "db://assets/resources/mj_card.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54": {
+    "url": "db://assets/resources/mj_card.plist",
+    "value": {
+      "depends": [
+        "9ab8e808-c384-432a-b268-6320f8b1da54@69f6c",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@284a9",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@e57f7",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@66633",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@27b58",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@67b40",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@bb0d4",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@7accc",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@08c08",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@c31b2",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@f2a6e",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@0cc78",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@c2f6d",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@7fbab",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@52084",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@2782d",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@18d92",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@55d35",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@beeeb",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@02256",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@bbf61",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@8484c",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@96cda",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@77a5a",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@61ad0",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@9b819",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@05033",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@6032d",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@19bd6",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@f0a9b",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@bcaf1",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@af705",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@872bf",
+        "9ab8e808-c384-432a-b268-6320f8b1da54@573af"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@52084": {
+    "url": "db://assets/resources/mj_card.plist@52084",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@66633": {
+    "url": "db://assets/resources/mj_card.plist@66633",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@69f6c": {
+    "url": "db://assets/resources/mj_card.plist@69f6c",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@284a9": {
+    "url": "db://assets/resources/mj_card.plist@284a9",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@e57f7": {
+    "url": "db://assets/resources/mj_card.plist@e57f7",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@27b58": {
+    "url": "db://assets/resources/mj_card.plist@27b58",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@67b40": {
+    "url": "db://assets/resources/mj_card.plist@67b40",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@bb0d4": {
+    "url": "db://assets/resources/mj_card.plist@bb0d4",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a": {
+    "url": "db://assets/resources/mj_card.png@6c48a",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@7accc": {
+    "url": "db://assets/resources/mj_card.plist@7accc",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@08c08": {
+    "url": "db://assets/resources/mj_card.plist@08c08",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@c31b2": {
+    "url": "db://assets/resources/mj_card.plist@c31b2",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@f2a6e": {
+    "url": "db://assets/resources/mj_card.plist@f2a6e",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@0cc78": {
+    "url": "db://assets/resources/mj_card.plist@0cc78",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@c2f6d": {
+    "url": "db://assets/resources/mj_card.plist@c2f6d",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@7fbab": {
+    "url": "db://assets/resources/mj_card.plist@7fbab",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@2782d": {
+    "url": "db://assets/resources/mj_card.plist@2782d",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@18d92": {
+    "url": "db://assets/resources/mj_card.plist@18d92",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@55d35": {
+    "url": "db://assets/resources/mj_card.plist@55d35",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@beeeb": {
+    "url": "db://assets/resources/mj_card.plist@beeeb",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@02256": {
+    "url": "db://assets/resources/mj_card.plist@02256",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@bbf61": {
+    "url": "db://assets/resources/mj_card.plist@bbf61",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@8484c": {
+    "url": "db://assets/resources/mj_card.plist@8484c",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@96cda": {
+    "url": "db://assets/resources/mj_card.plist@96cda",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@77a5a": {
+    "url": "db://assets/resources/mj_card.plist@77a5a",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@61ad0": {
+    "url": "db://assets/resources/mj_card.plist@61ad0",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@9b819": {
+    "url": "db://assets/resources/mj_card.plist@9b819",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@05033": {
+    "url": "db://assets/resources/mj_card.plist@05033",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@6032d": {
+    "url": "db://assets/resources/mj_card.plist@6032d",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@19bd6": {
+    "url": "db://assets/resources/mj_card.plist@19bd6",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@f0a9b": {
+    "url": "db://assets/resources/mj_card.plist@f0a9b",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@bcaf1": {
+    "url": "db://assets/resources/mj_card.plist@bcaf1",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@af705": {
+    "url": "db://assets/resources/mj_card.plist@af705",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@872bf": {
+    "url": "db://assets/resources/mj_card.plist@872bf",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9ab8e808-c384-432a-b268-6320f8b1da54@573af": {
+    "url": "db://assets/resources/mj_card.plist@573af",
+    "value": {
+      "depends": [
+        "ebabbabd-e21a-4f89-993a-8ba65d53862e@6c48a"
+      ]
+    },
+    "versionCode": 1
   }
 }
