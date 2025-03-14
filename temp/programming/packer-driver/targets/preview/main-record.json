@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 7139.815575,
+      "mTimestamp": 193106574.53527,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -89,7 +89,7 @@
           }
         },
         {
-          "value": "cce:/internal/x/cc-fu/dragon-bones",
+          "value": "cce:/internal/x/cc-fu/gfx-webgl",
           "resolved": "__unresolved_6",
           "loc": {
             "start": {
@@ -98,12 +98,12 @@
             },
             "end": {
               "line": 7,
-              "column": 50
+              "column": 47
             }
           }
         },
         {
-          "value": "cce:/internal/x/cc-fu/gfx-webgl",
+          "value": "cce:/internal/x/cc-fu/gfx-webgl2",
           "resolved": "__unresolved_7",
           "loc": {
             "start": {
@@ -112,12 +112,12 @@
             },
             "end": {
               "line": 8,
-              "column": 47
+              "column": 48
             }
           }
         },
         {
-          "value": "cce:/internal/x/cc-fu/gfx-webgl2",
+          "value": "cce:/internal/x/cc-fu/intersection-2d",
           "resolved": "__unresolved_8",
           "loc": {
             "start": {
@@ -126,12 +126,12 @@
             },
             "end": {
               "line": 9,
-              "column": 48
+              "column": 53
             }
           }
         },
         {
-          "value": "cce:/internal/x/cc-fu/intersection-2d",
+          "value": "cce:/internal/x/cc-fu/profiler",
           "resolved": "__unresolved_9",
           "loc": {
             "start": {
@@ -140,12 +140,12 @@
             },
             "end": {
               "line": 10,
-              "column": 53
+              "column": 46
             }
           }
         },
         {
-          "value": "cce:/internal/x/cc-fu/particle-2d",
+          "value": "cce:/internal/x/cc-fu/spine",
           "resolved": "__unresolved_10",
           "loc": {
             "start": {
@@ -154,12 +154,12 @@
             },
             "end": {
               "line": 11,
-              "column": 49
+              "column": 43
             }
           }
         },
         {
-          "value": "cce:/internal/x/cc-fu/physics-2d-box2d",
+          "value": "cce:/internal/x/cc-fu/tween",
           "resolved": "__unresolved_11",
           "loc": {
             "start": {
@@ -168,12 +168,12 @@
             },
             "end": {
               "line": 12,
-              "column": 54
+              "column": 43
             }
           }
         },
         {
-          "value": "cce:/internal/x/cc-fu/physics-2d-framework",
+          "value": "cce:/internal/x/cc-fu/ui",
           "resolved": "__unresolved_12",
           "loc": {
             "start": {
@@ -182,12 +182,12 @@
             },
             "end": {
               "line": 13,
-              "column": 58
+              "column": 40
             }
           }
         },
         {
-          "value": "cce:/internal/x/cc-fu/profiler",
+          "value": "cce:/internal/x/cc-fu/video",
           "resolved": "__unresolved_13",
           "loc": {
             "start": {
@@ -196,12 +196,12 @@
             },
             "end": {
               "line": 14,
-              "column": 46
+              "column": 43
             }
           }
         },
         {
-          "value": "cce:/internal/x/cc-fu/spine",
+          "value": "cce:/internal/x/cc-fu/webview",
           "resolved": "__unresolved_14",
           "loc": {
             "start": {
@@ -210,76 +210,6 @@
             },
             "end": {
               "line": 15,
-              "column": 43
-            }
-          }
-        },
-        {
-          "value": "cce:/internal/x/cc-fu/tiled-map",
-          "resolved": "__unresolved_15",
-          "loc": {
-            "start": {
-              "line": 16,
-              "column": 14
-            },
-            "end": {
-              "line": 16,
-              "column": 47
-            }
-          }
-        },
-        {
-          "value": "cce:/internal/x/cc-fu/tween",
-          "resolved": "__unresolved_16",
-          "loc": {
-            "start": {
-              "line": 17,
-              "column": 14
-            },
-            "end": {
-              "line": 17,
-              "column": 43
-            }
-          }
-        },
-        {
-          "value": "cce:/internal/x/cc-fu/ui",
-          "resolved": "__unresolved_17",
-          "loc": {
-            "start": {
-              "line": 18,
-              "column": 14
-            },
-            "end": {
-              "line": 18,
-              "column": 40
-            }
-          }
-        },
-        {
-          "value": "cce:/internal/x/cc-fu/video",
-          "resolved": "__unresolved_18",
-          "loc": {
-            "start": {
-              "line": 19,
-              "column": 14
-            },
-            "end": {
-              "line": 19,
-              "column": 43
-            }
-          }
-        },
-        {
-          "value": "cce:/internal/x/cc-fu/webview",
-          "resolved": "__unresolved_19",
-          "loc": {
-            "start": {
-              "line": 20,
-              "column": 14
-            },
-            "end": {
-              "line": 20,
               "column": 45
             }
           }
@@ -332,13 +262,6 @@
         {
           "resolved": {
             "type": "external",
-            "specifierOrURL": "cce:/internal/x/cc-fu/dragon-bones"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "external",
             "specifierOrURL": "cce:/internal/x/cc-fu/gfx-webgl"
           },
           "messages": []
@@ -360,27 +283,6 @@
         {
           "resolved": {
             "type": "external",
-            "specifierOrURL": "cce:/internal/x/cc-fu/particle-2d"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "external",
-            "specifierOrURL": "cce:/internal/x/cc-fu/physics-2d-box2d"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "external",
-            "specifierOrURL": "cce:/internal/x/cc-fu/physics-2d-framework"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "external",
             "specifierOrURL": "cce:/internal/x/cc-fu/profiler"
           },
           "messages": []
@@ -389,13 +291,6 @@
           "resolved": {
             "type": "external",
             "specifierOrURL": "cce:/internal/x/cc-fu/spine"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "external",
-            "specifierOrURL": "cce:/internal/x/cc-fu/tiled-map"
           },
           "messages": []
         },
@@ -430,7 +325,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 183870834.044278,
+      "mTimestamp": 193465173.859481,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1313,7 +1208,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
       "mTimestamp": {
-        "mtime": 1741946634600.088,
+        "mtime": 1741956403255.5203,
         "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
       },
       "chunkId": "1e3b7946781e8cadf1879c0857073b236b3508b9",
@@ -1543,7 +1438,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts": {
       "mTimestamp": {
-        "mtime": 1741944616244.2224,
+        "mtime": 1741955448802.4336,
         "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
       },
       "chunkId": "d9a5e3f9516b8c6eeae843734f33fa214af1fc8b",
@@ -1679,7 +1574,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts": {
       "mTimestamp": {
-        "mtime": 1741946693173.13,
+        "mtime": 1741956607051.3782,
         "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
       },
       "chunkId": "081daf1f78749add18c62059d1c7e3a76fbdb7e8",
@@ -1701,7 +1596,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts": {
       "mTimestamp": {
-        "mtime": 1741947088979.8691,
+        "mtime": 1741955418137.1667,
         "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
       },
       "chunkId": "1a743102ec6f0466d7ce963c97d80152d07f58da",

@@ -1766,5 +1766,45 @@
       ]
     },
     "versionCode": 1
+  },
+  "647320d3-dcdf-4180-9a8a-dd38b2377c86": {
+    "url": "db://assets/sound",
+    "value": {},
+    "versionCode": 1
+  },
+  "547c3065-cd85-4ab8-a8ce-44f5f7c8d911": {
+    "url": "db://assets/sound/BACKGROUND.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6620fe1a-9cf0-42dd-9b31-b18a4110c002": {
+    "url": "db://assets/sound/BT_CLICK.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "abc7cc46-ddec-4bab-a68f-4e17413ff804": {
+    "url": "db://assets/sound/BT_CLOSE.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d91f38dc-2e90-4434-947a-5245d2df7fc5": {
+    "url": "db://assets/sound/GAME_START.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "cdb7b0cb-b2d9-46dc-bf45-dcd8f89a45a6": {
+    "url": "db://assets/sound/SEND_CARD.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
   }
 }

@@ -29,13 +29,50 @@ System.register(["cc"], function (_export, _context) {
 
       tools.level = 1;
       //当前游戏关卡等级
-      tools.picNum = 9;
+      tools.picNum = 16;
       //图片数量 level * picNum
-      tools.animType = 1;
+      tools.animType = 2;
       //发牌动画 1同时移动，缩放  2缩放出现
       tools.userName = '磨人小妖精';
       tools.userHeadspr = null;
       tools.userRank = 'No.1';
+      tools.mjdata = [{
+        level: 1,
+        cardNum: 16 * 3,
+        animType: 1
+      }, {
+        level: 2,
+        cardNum: 20 * 3,
+        animType: 2
+      }, {
+        level: 3,
+        cardNum: 20 * 3,
+        animType: 2
+      }, {
+        level: 4,
+        cardNum: 20 * 3,
+        animType: 2
+      }, {
+        level: 5,
+        cardNum: 20 * 3,
+        animType: 2
+      }, {
+        level: 6,
+        cardNum: 20 * 3,
+        animType: 2
+      }, {
+        level: 7,
+        cardNum: 20 * 3,
+        animType: 2
+      }, {
+        level: 8,
+        cardNum: 20 * 3,
+        animType: 2
+      }, {
+        level: 9,
+        cardNum: 20 * 3,
+        animType: 2
+      }];
       tools.userData = [{
         headIndex: 0,
         userName: '磨人小妖精',

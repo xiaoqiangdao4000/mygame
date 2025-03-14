@@ -26,7 +26,6 @@ export class gameStart extends Component {
 
     static instant = null;
 
-
     start() {
         gameStart.instant = this;
         for (let i = 0; i < 12; i++) {

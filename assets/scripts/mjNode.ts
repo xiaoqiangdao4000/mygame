@@ -22,7 +22,6 @@ export class mjNode extends Component {
     @property(Label)
     gameTipsLabel: Label | null = null;
 
-
     isCanClick = false;         //是否可以点击
     desktopItems = [];          //桌面麻将
     desktopCuritem = 0;         //当前数量
@@ -31,7 +30,7 @@ export class mjNode extends Component {
     time = 60;
     allTime = this.time;
 
-    mjItemPos = [
+    tabItemPos = [
         { x: -294.764, y: -572 },
         { x: -197.881, y: -572 },
         { x: -100.211, y: -572 },
@@ -41,7 +40,7 @@ export class mjNode extends Component {
         { x: 290.353, y: -572 },
     ];    //物品栏坐标
 
-    mjItem: Node[] = [] //物品栏
+    tabItem: Node[] = [] //物品栏
 
     start() {
         this.node.on('clickmj', this.onClickMj, this);
@@ -67,7 +66,7 @@ export class mjNode extends Component {
     cleanMj() {
         this.node.destroyAllChildren();
         this.desktopItems = [];
-        this.mjItem = [];
+        this.tabItem = [];
     }
 
     //按钮点击事件
@@ -90,18 +89,16 @@ export class mjNode extends Component {
     }
 
     onClickMj(node: Node) {
-        console.log('onClickMj,self.isCanClick = ', this.isCanClick);
         if (this.isCanClick == false) {
             console.log('动画为执行完毕，不可点击---');
             return;
         }
         this.isCanClick = false;
-        console.log('onClickMj-----,self.isCanClick = ', this.isCanClick);
         //是否可以插入
-        if (this.mjItem.length >= 7)  //不可以插入,游戏结束
+        if (this.tabItem.length >= 7)  //不可以插入,游戏结束
         {
             console.log('格子已经满了---游戏结束');
-            this.gameShowTips(1);
+            //this.gameShowTips(1);
             return;
         }
         //可以插入
@@ -116,19 +113,18 @@ export class mjNode extends Component {
             //console.log('可以消除的下标---', index);
             if (index.length < 3) {
                 self.refreshDeaktopMj();
-                if (self.mjItem.length == 7) {
+                if (self.tabItem.length == 7) {
                     self.gameShowTips(0);
                     console.log('游戏结束---');
                 }
                 self.isCanClick = true;
-                console.log('插入回调,self.isCanClick = ', self.isCanClick);
                 return;
             }
             //开始执行物品栏消除动画
             self.deleteTabAnima(index, function () {
-                self.mjItem.splice(index[2], 1);
-                self.mjItem.splice(index[1], 1);
-                self.mjItem.splice(index[0], 1);
+                self.tabItem.splice(index[2], 1);
+                self.tabItem.splice(index[1], 1);
+                self.tabItem.splice(index[0], 1);
                 self.refreshDeaktopMj();
                 //console.log('消除回调---')
                 self.time += 2;
@@ -232,8 +228,8 @@ export class mjNode extends Component {
     isTabCanDelete(node: Node) {
         let tempIndex = [];
         //判断否可以消除
-        for (let i = 0; i < this.mjItem.length; i++) {
-            if (this.mjItem[i].name == node.name) {
+        for (let i = 0; i < this.tabItem.length; i++) {
+            if (this.tabItem[i].name == node.name) {
                 tempIndex.push(i);
             }
         }
@@ -243,10 +239,10 @@ export class mjNode extends Component {
 
     //插入到物品栏
     insertItem(node: Node, callback) {
-        this.mjItem.push(node);
+        this.tabItem.push(node);
         //console.log('插入成功---');
-        let index = this.mjItem.length - 1;
-        let t1 = tween(node).to(0.2, { position: new Vec3(this.mjItemPos[index].x, this.mjItemPos[index].y, 0) })
+        let index = this.tabItem.length - 1;
+        let t1 = tween(node).to(0.2, { position: new Vec3(this.tabItemPos[index].x, this.tabItemPos[index].y, 0) })
         let t2 = tween(node).call(() => {
             callback()
         });
@@ -256,9 +252,9 @@ export class mjNode extends Component {
 
     //消除物品栏动画
     deleteTabAnima(index, callback) {
-        let node2 = this.mjItem[index[2]];
-        let node1 = this.mjItem[index[1]];
-        let node0 = this.mjItem[index[0]];
+        let node2 = this.tabItem[index[2]];
+        let node1 = this.tabItem[index[1]];
+        let node0 = this.tabItem[index[0]];
         tween(node2)
             .delay(0.1)
             .show()
@@ -292,15 +288,15 @@ export class mjNode extends Component {
     //整理物品栏
     restTopAnima() {
         let self = this;
-        if (this.mjItem.length == 0) {
+        if (this.tabItem.length == 0) {
             self.isCanClick = true;
         }
-        for (let i = 0; i < this.mjItem.length; i++) {
-            if (i == this.mjItem.length - 1) {
-                tween(this.mjItem[i])
+        for (let i = 0; i < this.tabItem.length; i++) {
+            if (i == this.tabItem.length - 1) {
+                tween(this.tabItem[i])
                     .delay(0.3)
                     .show()
-                    .to(0.3, { position: new Vec3(this.mjItemPos[i].x, this.mjItemPos[i].y, 0) })
+                    .to(0.3, { position: new Vec3(this.tabItemPos[i].x, this.tabItemPos[i].y, 0) })
                     .call(() => {
                         self.isCanClick = true;
                     })
@@ -308,10 +304,10 @@ export class mjNode extends Component {
 
             }
             else {
-                tween(this.mjItem[i])
+                tween(this.tabItem[i])
                     .delay(0.3)
                     .show()
-                    .to(0.3, { position: new Vec3(this.mjItemPos[i].x, this.mjItemPos[i].y, 0) })
+                    .to(0.3, { position: new Vec3(this.tabItemPos[i].x, this.tabItemPos[i].y, 0) })
                     .start();
             }
         }

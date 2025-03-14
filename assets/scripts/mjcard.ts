@@ -64,7 +64,6 @@ export class mjcard extends Component {
             });
             tween(this.node).sequence(t1, t2).start();
         }
-
     }
 
     onTouchStart(event: EventTouch) {
