@@ -29,14 +29,16 @@ System.register(["cc"], function (_export, _context) {
 
       tools.level = 1;
       //当前游戏关卡等级
-      tools.picNum = 15;
+      tools.picNum = 9;
       //图片数量 level * picNum
-      tools.userName = '张配配';
+      tools.animType = 1;
+      //发牌动画 1同时移动，缩放  2缩放出现
+      tools.userName = '磨人小妖精';
       tools.userHeadspr = null;
       tools.userRank = 'No.1';
       tools.userData = [{
         headIndex: 0,
-        userName: '张配配',
+        userName: '磨人小妖精',
         nickName: '无敌眼',
         rank: 'No.1'
       }, {

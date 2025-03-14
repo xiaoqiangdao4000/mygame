@@ -39,7 +39,6 @@ export class gameStart extends Component {
         //初始化用户数据
         this.setUserData();
         this.setLevelBtn();
-
     }
 
     //设置用户数据
@@ -52,7 +51,6 @@ export class gameStart extends Component {
     //设置关卡按钮
     setLevelBtn() {
         let spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + tools.level);
-        tools.desktopItemCount = tools.level * 9;
         this.mjsprite.spriteFrame = spriteFrame;
     }
 

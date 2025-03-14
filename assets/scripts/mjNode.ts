@@ -16,7 +16,14 @@ export class mjNode extends Component {
     @property(Label)
     timeLabel: Label | null = null;
 
-    refreshLock = false;
+    @property(Node)
+    gameSucNode: Node | null = null;
+
+    @property(Label)
+    gameTipsLabel: Label | null = null;
+
+
+    isCanClick = false;         //是否可以点击
     desktopItems = [];          //桌面麻将
     desktopCuritem = 0;         //当前数量
     randomIndex = 0;            //当前随机牌索引
@@ -38,34 +45,63 @@ export class mjNode extends Component {
 
     start() {
         this.node.on('clickmj', this.onClickMj, this);
-        this.startGame();
+        //this.startGame();
     }
 
     //开始游戏
     startGame() {
-        this.time = tools.level * 20 + 30;
+        console.log('游戏开始---', tools.level)
+        this.isCanClick = true;
+        this.cleanMj();
+        this.time = tools.level * 10 + 30;
         this.allTime = this.time;
-        this.timeLabel.string = '倒计时:' + this.time
-        //gameStart.getInstant().hide()
+        this.timeLabel.string = '第' + tools.level + '关 ' + '倒计时:' + this.time + 's';
+        this.timeProgressBar.progress = this.time / this.allTime;
+        this.gameSucNode.active = false;
+        gameStart.getInstant().hide()
         this.desktopItemCount = tools.level * tools.picNum;
         this.initDesktopMj();
+    }
+
+    //清理桌面牌，物品栏
+    cleanMj() {
+        this.node.destroyAllChildren();
+        this.desktopItems = [];
+        this.mjItem = [];
     }
 
     //按钮点击事件
     onBtnClick(event: Event, customEventData: string) {
         //游戏开始
         if (customEventData == 'gameStart') {
-            console.log('游戏开始---', tools.level)
             this.startGame();
+        }
+        else if (customEventData == 'contiuneGame') //继续
+        {
+            this.gameShowTips(2);
+            this.startGame();
+        }
+        else if (customEventData == 'backGame')  //返回到开始界面
+        {
+            this.gameShowTips(2);
+            gameStart.getInstant().setLevelBtn();
+            gameStart.getInstant().show();
         }
     }
 
     onClickMj(node: Node) {
+        console.log('onClickMj,self.isCanClick = ', this.isCanClick);
+        if (this.isCanClick == false) {
+            console.log('动画为执行完毕，不可点击---');
+            return;
+        }
+        this.isCanClick = false;
+        console.log('onClickMj-----,self.isCanClick = ', this.isCanClick);
         //是否可以插入
         if (this.mjItem.length >= 7)  //不可以插入,游戏结束
         {
             console.log('格子已经满了---游戏结束');
-            this.gameOver();
+            this.gameShowTips(1);
             return;
         }
         //可以插入
@@ -77,12 +113,15 @@ export class mjNode extends Component {
             self.deleteDesktopItems(node);
             //判断物品栏是否可以消除
             let index = self.isTabCanDelete(node);
-            console.log('可以消除的下标---', index);
+            //console.log('可以消除的下标---', index);
             if (index.length < 3) {
                 self.refreshDeaktopMj();
                 if (self.mjItem.length == 7) {
+                    self.gameShowTips(0);
                     console.log('游戏结束---');
                 }
+                self.isCanClick = true;
+                console.log('插入回调,self.isCanClick = ', self.isCanClick);
                 return;
             }
             //开始执行物品栏消除动画
@@ -91,7 +130,7 @@ export class mjNode extends Component {
                 self.mjItem.splice(index[1], 1);
                 self.mjItem.splice(index[0], 1);
                 self.refreshDeaktopMj();
-                console.log('消除回调---')
+                //console.log('消除回调---')
                 self.time += 2;
                 self.restTopAnima()
             })
@@ -105,7 +144,7 @@ export class mjNode extends Component {
     initDesktopMj() {
         this.desktopCuritem = 0;
         this.randomIndex = tools.getRandomMjIndex(1, 37);
-        console.log('开始发牌---');
+        console.log('开始发牌---', this.desktopItemCount);
         for (let i = 0; i < this.desktopItemCount; i++) {
             tween(this.node)
                 .delay(i * 0.1)
@@ -118,12 +157,10 @@ export class mjNode extends Component {
     countdown() {
         if (this.time === 0) {
             this.unschedule(this.countdown)
-            // setTimeout(() => {
-            //     this.warningNode.active = false
-            // }, 1500)
+            this.gameShowTips(0);
         } else {
             this.time--;
-            this.timeLabel.string = '倒计时:' + this.time;
+            this.timeLabel.string = '第' + tools.level + '关 ' + '倒计时:' + this.time + 's';
             this.timeProgressBar.progress = this.time / this.allTime;
         }
     }
@@ -132,14 +169,13 @@ export class mjNode extends Component {
     createDesktopMj(refresh) {
         //发牌
         if (this.desktopCuritem % 3 == 0) this.randomIndex = tools.getRandomMjIndex(1, 37);
-        // this.randomIndex += 1;
         const spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
         let mj = instantiate(this.mycard_prefab);
         mj.parent = this.node;
         var mycard = mj.getComponent("mjcard");
         this.desktopItems.push(mj);
         var self = this;
-        mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, tools.level, function () {
+        mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, tools.animType, function () {
             if (refresh) {
                 self.refreshDeaktopMj();
                 console.log('发牌完毕---', self.desktopCuritem);
@@ -151,7 +187,6 @@ export class mjNode extends Component {
 
     //刷新麻将状态
     refreshDeaktopMj() {
-        console.log('刷新牌---', this.desktopItems);
         for (let i = 0; i < this.desktopItems.length; i++) {
             let itemsXJ = [];
             for (let j = 0; j < this.desktopItems.length; j++) {
@@ -186,7 +221,7 @@ export class mjNode extends Component {
             let desktopScript = this.desktopItems[i].getComponent("mjcard");
             if (mjscrpit.cardId == desktopScript.cardId) {
                 this.desktopItems.splice(i, 1);
-                console.log('删除桌面成功---', this.desktopItems);
+                //console.log('删除桌面成功---', this.desktopItems);
                 return;
             }
         }
@@ -209,7 +244,7 @@ export class mjNode extends Component {
     //插入到物品栏
     insertItem(node: Node, callback) {
         this.mjItem.push(node);
-        console.log('插入成功---');
+        //console.log('插入成功---');
         let index = this.mjItem.length - 1;
         let t1 = tween(node).to(0.2, { position: new Vec3(this.mjItemPos[index].x, this.mjItemPos[index].y, 0) })
         let t2 = tween(node).call(() => {
@@ -230,7 +265,7 @@ export class mjNode extends Component {
             .delay(0.1)
             .hide()
             .union()
-            .repeat(3)
+            .repeat(2)
             .removeSelf()
             .start();
         tween(node1)
@@ -239,7 +274,7 @@ export class mjNode extends Component {
             .delay(0.1)
             .hide()
             .union()
-            .repeat(3)
+            .repeat(2)
             .removeSelf()
             .start();
         tween(node0)
@@ -248,7 +283,7 @@ export class mjNode extends Component {
             .delay(0.1)
             .hide()
             .union()
-            .repeat(3)
+            .repeat(2)
             .removeSelf()
             .call(callback())
             .start();
@@ -256,24 +291,69 @@ export class mjNode extends Component {
 
     //整理物品栏
     restTopAnima() {
-        for (let i = 0; i < this.mjItem.length; i++) {
-            tween(this.mjItem[i])
-                .delay(0.5)
-                .show()
-                .to(0.3, { position: new Vec3(this.mjItemPos[i].x, this.mjItemPos[i].y, 0) })
-                .start();
+        let self = this;
+        if (this.mjItem.length == 0) {
+            self.isCanClick = true;
         }
+        for (let i = 0; i < this.mjItem.length; i++) {
+            if (i == this.mjItem.length - 1) {
+                tween(this.mjItem[i])
+                    .delay(0.3)
+                    .show()
+                    .to(0.3, { position: new Vec3(this.mjItemPos[i].x, this.mjItemPos[i].y, 0) })
+                    .call(() => {
+                        self.isCanClick = true;
+                    })
+                    .start();
 
+            }
+            else {
+                tween(this.mjItem[i])
+                    .delay(0.3)
+                    .show()
+                    .to(0.3, { position: new Vec3(this.mjItemPos[i].x, this.mjItemPos[i].y, 0) })
+                    .start();
+            }
+        }
+        //成功过关
+        if (this.desktopItems.length == 0) {
+            this.gameShowTips(1);
+        }
     }
 
-    //游戏结束
-    gameOver() {
-
+    //显示过关成功，失败，提示 typeId = 0 失败，1成功，
+    gameShowTips(typeId) {
+        this.gameSucNode.active = true;
+        this.unschedule(this.countdown);
+        let spos = new Vec3(-618.507, 125.474, 0);
+        let epos = new Vec3(0, 125.474, 0);
+        if (typeId == 0) //闯关失败
+        {
+            this.gameTipsLabel.string = '闯关失败,再接再厉!';
+            spos = new Vec3(-618.507, 125.474, 0);
+            epos = new Vec3(0, 125.474, 0);
+            this.gameSucNode.setPosition(spos);
+        }
+        if (typeId == 1) // 恭喜,闯关成功
+        {
+            this.gameTipsLabel.string = '恭喜,闯关成功!';
+            spos = new Vec3(-618.507, 125.474, 0);
+            epos = new Vec3(0, 125.474, 0);
+            this.gameSucNode.setPosition(spos);
+            tools.level += 1;       //当前游戏关卡等级
+        }
+        else if (typeId == 2) // 隐藏显示面板
+        {
+            spos = new Vec3(0, 125.474, 0);
+            epos = new Vec3(618.507, 125.474, 0);
+            this.gameSucNode.setPosition(spos);
+        }
+        tween(this.gameSucNode)
+            .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
+                easing: "backIn",                                   // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+            })
+            .start();
     }
 
-    nextLevel()
-    {
-        
-    }
 }
 

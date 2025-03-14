@@ -107,11 +107,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           }), main) : main).getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).level);
-          (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-            error: Error()
-          }), tools) : tools).desktopItemCount = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-            error: Error()
-          }), tools) : tools).level * 9;
           this.mjsprite.spriteFrame = spriteFrame;
         }
 

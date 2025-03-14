@@ -91,7 +91,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           // var y = tools.getRandomInt(-20, 40);
 
           this.node.setPosition(0, 0);
-          this.node.setScale(0, 0); //同事移动，缩放
+          this.node.setScale(0, 0); //同时移动，缩放
 
           if (animType == 1) {
             let t1 = tween(this.node).to(this.moveDuration, {
@@ -113,10 +113,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               let t1 = tween(this.node).to(this.scaleDuration, {
                 scale: new Vec3(this.scale, this.scale, 1)
               });
-              let t4 = tween(this.node).call(() => {
+              let t2 = tween(this.node).call(() => {
                 callback();
               });
-              tween(this.node).sequence(t1, t4).start();
+              tween(this.node).sequence(t1, t2).start();
             }
         }
 
@@ -124,7 +124,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           if (this._interaction == false) {
             console.log('不可点击的麻将 = ', event.target.name);
           } else {
-            //console.log('点击麻将 = ', event.target.name);
+            console.log('点击麻将 = ', event.target.name);
             this.node.parent.emit('clickmj', event.target);
           }
         }

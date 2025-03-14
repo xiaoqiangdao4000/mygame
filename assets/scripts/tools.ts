@@ -2,13 +2,14 @@
 export default class tools {
 
     static level: number = 1;       //当前游戏关卡等级
-    static picNum:number = 15;      //图片数量 level * picNum
-    static userName = '张配配'
+    static picNum: number = 9;      //图片数量 level * picNum
+    static animType: number = 1;     //发牌动画 1同时移动，缩放  2缩放出现
+    static userName = '磨人小妖精'
     static userHeadspr = null;
     static userRank = 'No.1';
 
     static userData = [
-        { headIndex: 0, userName: '张配配', nickName: '无敌眼', rank: 'No.1' },
+        { headIndex: 0, userName: '磨人小妖精', nickName: '无敌眼', rank: 'No.1' },
         { headIndex: 0, userName: '烟雨流泽', nickName: '天帝眼', rank: 'No.2' },
         { headIndex: 0, userName: '花千骨', nickName: '轮回眼', rank: 'No.3' },
         { headIndex: 0, userName: '佐佐木', nickName: '血轮眼', rank: 'No.4' },

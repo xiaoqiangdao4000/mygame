@@ -43,7 +43,7 @@ export class mjcard extends Component {
         // var y = tools.getRandomInt(-20, 40);
         this.node.setPosition(0, 0);
         this.node.setScale(0, 0);
-        //同事移动，缩放
+        //同时移动，缩放
         if (animType == 1) {
             let t1 = tween(this.node).to(this.moveDuration, { position: new Vec3(x, y, 0) })
             let t2 = tween(this.node).to(this.moveDuration, { scale: new Vec3(this.scale, this.scale, 1) })
@@ -59,10 +59,10 @@ export class mjcard extends Component {
         {
             this.node.setPosition(x, y);
             let t1 = tween(this.node).to(this.scaleDuration, { scale: new Vec3(this.scale, this.scale, 1) })
-            let t4 = tween(this.node).call(() => {
+            let t2 = tween(this.node).call(() => {
                 callback();
             });
-            tween(this.node).sequence(t1, t4).start();
+            tween(this.node).sequence(t1, t2).start();
         }
 
     }
@@ -72,7 +72,7 @@ export class mjcard extends Component {
             console.log('不可点击的麻将 = ', event.target.name);
         }
         else {
-            //console.log('点击麻将 = ', event.target.name);
+            console.log('点击麻将 = ', event.target.name);
             this.node.parent.emit('clickmj', event.target);
         }
     }

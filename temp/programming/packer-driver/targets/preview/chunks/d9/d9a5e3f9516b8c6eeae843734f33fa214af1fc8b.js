@@ -91,7 +91,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           // var y = tools.getRandomInt(-20, 40);
 
           this.node.setPosition(0, 0);
-          this.node.setScale(0, 0); //同事移动，缩放
+          this.node.setScale(0, 0); //同时移动，缩放
 
           if (animType == 1) {
             var t1 = tween(this.node).to(this.moveDuration, {
@@ -127,7 +127,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           if (this._interaction == false) {
             console.log('不可点击的麻将 = ', event.target.name);
           } else {
-            //console.log('点击麻将 = ', event.target.name);
+            console.log('点击麻将 = ', event.target.name);
             this.node.parent.emit('clickmj', event.target);
           }
         }

@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Label, Prefab, ProgressBar, Rect, tween, Vec3, tools, main, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _crd, ccclass, property, eventTarget, mjNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, tween, Vec3, tools, gameStart, main, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _crd, ccclass, property, eventTarget, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -11,6 +11,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
   function _reportPossibleCrUseOftools(extras) {
     _reporterNs.report("tools", "./tools", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfgameStart(extras) {
+    _reporterNs.report("gameStart", "./gameStart", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfmain(extras) {
@@ -29,6 +33,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       instantiate = _cc.instantiate;
       Intersection2D = _cc.Intersection2D;
       Label = _cc.Label;
+      Node = _cc.Node;
       Prefab = _cc.Prefab;
       ProgressBar = _cc.ProgressBar;
       Rect = _cc.Rect;
@@ -37,7 +42,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     }, function (_unresolved_2) {
       tools = _unresolved_2.default;
     }, function (_unresolved_3) {
-      main = _unresolved_3.main;
+      gameStart = _unresolved_3.gameStart;
+    }, function (_unresolved_4) {
+      main = _unresolved_4.main;
     }],
     execute: function () {
       _crd = true;
@@ -52,7 +59,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       } = _decorator);
       eventTarget = new EventTarget();
 
-      _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(ProgressBar), _dec4 = property(Label), _dec(_class = (_class2 = class mjNode extends Component {
+      _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(ProgressBar), _dec4 = property(Label), _dec5 = property(Node), _dec6 = property(Label), _dec(_class = (_class2 = class mjNode extends Component {
         constructor() {
           super(...arguments);
 
@@ -62,7 +69,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
           _initializerDefineProperty(this, "timeLabel", _descriptor3, this);
 
-          this.refreshLock = false;
+          _initializerDefineProperty(this, "gameSucNode", _descriptor4, this);
+
+          _initializerDefineProperty(this, "gameTipsLabel", _descriptor5, this);
+
+          this.isCanClick = false;
+          //是否可以点击
           this.desktopItems = [];
           //桌面麻将
           this.desktopCuritem = 0;
@@ -100,43 +112,79 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
         //物品栏
         start() {
-          this.node.on('clickmj', this.onClickMj, this);
-          this.startGame();
+          this.node.on('clickmj', this.onClickMj, this); //this.startGame();
         } //开始游戏
 
 
         startGame() {
+          console.log('游戏开始---', (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).level);
+          this.isCanClick = true;
+          this.cleanMj();
           this.time = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), tools) : tools).level * 20 + 30;
+          }), tools) : tools).level * 10 + 30;
           this.allTime = this.time;
-          this.timeLabel.string = '倒计时:' + this.time; //gameStart.getInstant().hide()
-
+          this.timeLabel.string = '第' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).level + '关 ' + '倒计时:' + this.time + 's';
+          this.timeProgressBar.progress = this.time / this.allTime;
+          this.gameSucNode.active = false;
+          (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
+            error: Error()
+          }), gameStart) : gameStart).getInstant().hide();
           this.desktopItemCount = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).level * (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).picNum;
           this.initDesktopMj();
+        } //清理桌面牌，物品栏
+
+
+        cleanMj() {
+          this.node.destroyAllChildren();
+          this.desktopItems = [];
+          this.mjItem = [];
         } //按钮点击事件
 
 
         onBtnClick(event, customEventData) {
           //游戏开始
           if (customEventData == 'gameStart') {
-            console.log('游戏开始---', (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-              error: Error()
-            }), tools) : tools).level);
             this.startGame();
-          }
+          } else if (customEventData == 'contiuneGame') //继续
+            {
+              this.gameShowTips(2);
+              this.startGame();
+            } else if (customEventData == 'backGame') //返回到开始界面
+            {
+              this.gameShowTips(2);
+              (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
+                error: Error()
+              }), gameStart) : gameStart).getInstant().setLevelBtn();
+              (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
+                error: Error()
+              }), gameStart) : gameStart).getInstant().show();
+            }
         }
 
         onClickMj(node) {
-          //是否可以插入
+          console.log('onClickMj,self.isCanClick = ', this.isCanClick);
+
+          if (this.isCanClick == false) {
+            console.log('动画为执行完毕，不可点击---');
+            return;
+          }
+
+          this.isCanClick = false;
+          console.log('onClickMj-----,self.isCanClick = ', this.isCanClick); //是否可以插入
+
           if (this.mjItem.length >= 7) //不可以插入,游戏结束
             {
               console.log('格子已经满了---游戏结束');
-              this.gameOver();
+              this.gameShowTips(1);
               return;
             } //可以插入
 
@@ -148,16 +196,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           function insertCallBack() {
             self.deleteDesktopItems(node); //判断物品栏是否可以消除
 
-            var index = self.isTabCanDelete(node);
-            console.log('可以消除的下标---', index);
+            var index = self.isTabCanDelete(node); //console.log('可以消除的下标---', index);
 
             if (index.length < 3) {
               self.refreshDeaktopMj();
 
               if (self.mjItem.length == 7) {
+                self.gameShowTips(0);
                 console.log('游戏结束---');
               }
 
+              self.isCanClick = true;
+              console.log('插入回调,self.isCanClick = ', self.isCanClick);
               return;
             } //开始执行物品栏消除动画
 
@@ -166,8 +216,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
               self.mjItem.splice(index[2], 1);
               self.mjItem.splice(index[1], 1);
               self.mjItem.splice(index[0], 1);
-              self.refreshDeaktopMj();
-              console.log('消除回调---');
+              self.refreshDeaktopMj(); //console.log('消除回调---')
+
               self.time += 2;
               self.restTopAnima();
             });
@@ -183,7 +233,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           this.randomIndex = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).getRandomMjIndex(1, 37);
-          console.log('开始发牌---');
+          console.log('开始发牌---', this.desktopItemCount);
 
           var _loop = function _loop(i) {
             tween(_this.node).delay(i * 0.1).call(() => {
@@ -199,12 +249,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
         countdown() {
           if (this.time === 0) {
-            this.unschedule(this.countdown); // setTimeout(() => {
-            //     this.warningNode.active = false
-            // }, 1500)
+            this.unschedule(this.countdown);
+            this.gameShowTips(0);
           } else {
             this.time--;
-            this.timeLabel.string = '倒计时:' + this.time;
+            this.timeLabel.string = '第' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).level + '关 ' + '倒计时:' + this.time + 's';
             this.timeProgressBar.progress = this.time / this.allTime;
           }
         } //随机创建麻将
@@ -214,8 +265,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           //发牌
           if (this.desktopCuritem % 3 == 0) this.randomIndex = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), tools) : tools).getRandomMjIndex(1, 37); // this.randomIndex += 1;
-
+          }), tools) : tools).getRandomMjIndex(1, 37);
           var spriteFrame = (_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
             error: Error()
           }), main) : main).getInstant().mjAtlas.getSpriteFrame('s_wzmj_' + this.randomIndex);
@@ -226,7 +276,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           var self = this;
           mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), tools) : tools).level, function () {
+          }), tools) : tools).animType, function () {
             if (refresh) {
               self.refreshDeaktopMj();
               console.log('发牌完毕---', self.desktopCuritem);
@@ -238,8 +288,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
 
         refreshDeaktopMj() {
-          console.log('刷新牌---', this.desktopItems);
-
           for (var i = 0; i < this.desktopItems.length; i++) {
             var itemsXJ = [];
 
@@ -279,8 +327,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             var desktopScript = this.desktopItems[i].getComponent("mjcard");
 
             if (mjscrpit.cardId == desktopScript.cardId) {
-              this.desktopItems.splice(i, 1);
-              console.log('删除桌面成功---', this.desktopItems);
+              this.desktopItems.splice(i, 1); //console.log('删除桌面成功---', this.desktopItems);
+
               return;
             }
           }
@@ -302,8 +350,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
 
         insertItem(node, callback) {
-          this.mjItem.push(node);
-          console.log('插入成功---');
+          this.mjItem.push(node); //console.log('插入成功---');
+
           var index = this.mjItem.length - 1;
           var t1 = tween(node).to(0.2, {
             position: new Vec3(this.mjItemPos[index].x, this.mjItemPos[index].y, 0)
@@ -320,24 +368,78 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           var node2 = this.mjItem[index[2]];
           var node1 = this.mjItem[index[1]];
           var node0 = this.mjItem[index[0]];
-          tween(node2).delay(0.1).show().delay(0.1).hide().union().repeat(3).removeSelf().start();
-          tween(node1).delay(0.1).show().delay(0.1).hide().union().repeat(3).removeSelf().start();
-          tween(node0).delay(0.1).show().delay(0.1).hide().union().repeat(3).removeSelf().call(callback()).start();
+          tween(node2).delay(0.1).show().delay(0.1).hide().union().repeat(2).removeSelf().start();
+          tween(node1).delay(0.1).show().delay(0.1).hide().union().repeat(2).removeSelf().start();
+          tween(node0).delay(0.1).show().delay(0.1).hide().union().repeat(2).removeSelf().call(callback()).start();
         } //整理物品栏
 
 
         restTopAnima() {
-          for (var i = 0; i < this.mjItem.length; i++) {
-            tween(this.mjItem[i]).delay(0.5).show().to(0.3, {
-              position: new Vec3(this.mjItemPos[i].x, this.mjItemPos[i].y, 0)
-            }).start();
+          var self = this;
+
+          if (this.mjItem.length == 0) {
+            self.isCanClick = true;
           }
-        } //游戏结束
+
+          for (var i = 0; i < this.mjItem.length; i++) {
+            if (i == this.mjItem.length - 1) {
+              tween(this.mjItem[i]).delay(0.3).show().to(0.3, {
+                position: new Vec3(this.mjItemPos[i].x, this.mjItemPos[i].y, 0)
+              }).call(() => {
+                self.isCanClick = true;
+              }).start();
+            } else {
+              tween(this.mjItem[i]).delay(0.3).show().to(0.3, {
+                position: new Vec3(this.mjItemPos[i].x, this.mjItemPos[i].y, 0)
+              }).start();
+            }
+          } //成功过关
 
 
-        gameOver() {}
+          if (this.desktopItems.length == 0) {
+            this.gameShowTips(1);
+          }
+        } //显示过关成功，失败，提示 typeId = 0 失败，1成功，
 
-        nextLevel() {}
+
+        gameShowTips(typeId) {
+          this.gameSucNode.active = true;
+          this.unschedule(this.countdown);
+          var spos = new Vec3(-618.507, 125.474, 0);
+          var epos = new Vec3(0, 125.474, 0);
+
+          if (typeId == 0) //闯关失败
+            {
+              this.gameTipsLabel.string = '闯关失败,再接再厉!';
+              spos = new Vec3(-618.507, 125.474, 0);
+              epos = new Vec3(0, 125.474, 0);
+              this.gameSucNode.setPosition(spos);
+            }
+
+          if (typeId == 1) // 恭喜,闯关成功
+            {
+              this.gameTipsLabel.string = '恭喜,闯关成功!';
+              spos = new Vec3(-618.507, 125.474, 0);
+              epos = new Vec3(0, 125.474, 0);
+              this.gameSucNode.setPosition(spos);
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).level += 1; //当前游戏关卡等级
+            } else if (typeId == 2) // 隐藏显示面板
+            {
+              spos = new Vec3(0, 125.474, 0);
+              epos = new Vec3(618.507, 125.474, 0);
+              this.gameSucNode.setPosition(spos);
+            }
+
+          tween(this.gameSucNode).to(0.5, {
+            position: epos
+          }, {
+            // 这里以node的位置信息坐标缓动的目标 
+            easing: "backIn" // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+
+          }).start();
+        }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "mycard_prefab", [_dec2], {
         configurable: true,
@@ -354,6 +456,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           return null;
         }
       }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "timeLabel", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "gameSucNode", [_dec5], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "gameTipsLabel", [_dec6], {
         configurable: true,
         enumerable: true,
         writable: true,
