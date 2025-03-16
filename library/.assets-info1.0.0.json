@@ -1,0 +1,205 @@
+{
+  "version": "1.0.0",
+  "map": {
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\prefabs.meta": {
+      "time": 1742039051004.0654
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\res.meta": {
+      "time": 1742039051005.0632
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources.meta": {
+      "time": 1742039051006.059
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts.meta": {
+      "time": 1742039051007.0579
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\gameStart.ts.meta": {
+      "time": 1741786566168.105
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\main.ts.meta": {
+      "time": 1741096098677.804
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\mjcard.ts.meta": {
+      "time": 1741096098679.799
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\mjNode.ts.meta": {
+      "time": 1741096098678.821
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\rankItem.ts.meta": {
+      "time": 1741786566171.097
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\tools.ts.meta": {
+      "time": 1741786566172.0942
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\prefabs": {
+      "time": 1742039051030.6433,
+      "uuid": "7fb19dca-1e99-4342-8d1b-3f0e86119e21"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\res": {
+      "time": 1742039051033.6355,
+      "uuid": "e4afe4e9-50ea-4716-930d-8fe09e6fc7ac"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources": {
+      "time": 1742126055748.5405,
+      "uuid": "4d2e28d4-0f7a-4ad9-b843-2324b178f2ee"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts": {
+      "time": 1742113245936.0808,
+      "uuid": "e3d3438c-fb7b-4889-9edc-93a64d25460c"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\gameStart.ts": {
+      "time": 1741961180378.787,
+      "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\main.ts": {
+      "time": 1742126773237.0276,
+      "uuid": "f84fe0a7-bc38-477d-b5b1-98df6d391d08"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\mjcard.ts": {
+      "time": 1741959457261.9465,
+      "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\mjNode.ts": {
+      "time": 1742153848949.507,
+      "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\rankItem.ts": {
+      "time": 1741786566171.097,
+      "uuid": "d8a57f4c-ed67-4111-bb3e-7186516beaec"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\tools.ts": {
+      "time": 1742113580910.6616,
+      "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\prefabs\\mjcard.prefab.meta": {
+      "time": 1742039051089.486
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\prefabs\\rankItem.prefab.meta": {
+      "time": 1742039051094.473
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\res\\bg.png.meta": {
+      "time": 1742039051195.424
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\res\\slotbg.png.meta": {
+      "time": 1742039051233.3225
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\mj_card.plist.meta": {
+      "time": 1742046662079.8545
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\mj_card.png.meta": {
+      "time": 1742039051362.05
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\prefabs\\mjcard.prefab": {
+      "time": 1742044096345.948,
+      "uuid": "450189f4-8ffb-45cd-84e1-c7f47fbdac01"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\prefabs\\rankItem.prefab": {
+      "time": 1742047030541.6963,
+      "uuid": "697ad3e1-8ebd-4a9f-831c-1d1e62a406fb"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\res\\bg.png": {
+      "time": 1741096098657.0696,
+      "uuid": "41a9f89a-53ce-4fc1-86f3-0efe6b421b4b"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\res\\slotbg.png": {
+      "time": 1741786566140.211,
+      "uuid": "903260e7-9019-4753-86bf-f2ff1615d004"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\mj_card.png": {
+      "time": 1742038969069.3877,
+      "uuid": "16619663-a554-4810-bc97-6bedb6ba953c"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\mj_card.plist": {
+      "time": 1742038969072.3804,
+      "uuid": "13bbdaad-7631-4ec0-9089-65f83d7d6695"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\main.scene.meta": {
+      "time": 1742039364794.237
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\main.scene": {
+      "time": 1742126360242.7087,
+      "uuid": "df672520-9755-4d63-978e-4a7ae276a322"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\audioManager.ts.meta": {
+      "time": 1742113245950.0461
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\audioManager.ts": {
+      "time": 1742153624013.1638,
+      "uuid": "298c64db-251e-4f24-a1e7-b98e9c863880"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound.meta": {
+      "time": 1742126055763.5015
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound": {
+      "time": 1742038707176.277,
+      "uuid": "335f5383-7c6d-43f0-81a4-3f27672bd257"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\BACKGROUND.mp3.meta": {
+      "time": 1741959457278.919
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\BT_CLICK.mp3.meta": {
+      "time": 1741959457280.898
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\BT_CLOSE.mp3.meta": {
+      "time": 1741959457281.8923
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\GAME_START.mp3.meta": {
+      "time": 1741959457283.8872
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\SEND_CARD.mp3.meta": {
+      "time": 1741959457284.884
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\BT_CLOSE.mp3": {
+      "time": 1741959457281.8923,
+      "uuid": "abc7cc46-ddec-4bab-a68f-4e17413ff804"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\BT_CLICK.mp3": {
+      "time": 1741959457279.8984,
+      "uuid": "6620fe1a-9cf0-42dd-9b31-b18a4110c002"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\BACKGROUND.mp3": {
+      "time": 1741959457277.9182,
+      "uuid": "547c3065-cd85-4ab8-a8ce-44f5f7c8d911"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\SEND_CARD.mp3": {
+      "time": 1741959457283.8872,
+      "uuid": "cdb7b0cb-b2d9-46dc-bf45-dcd8f89a45a6"
+    },
+    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\GAME_START.mp3": {
+      "time": 1741959457282.892,
+      "uuid": "d91f38dc-2e90-4434-947a-5245d2df7fc5"
+    }
+  },
+  "missing": {
+    "82560da5-a494-42b2-a68e-952824e10594": {
+      "path": "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\sound",
+      "time": 1742038707176.277,
+      "removeTime": 1742126055747
+    },
+    "547c3065-cd85-4ab8-a8ce-44f5f7c8d911": {
+      "path": "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\sound\\BACKGROUND.mp3",
+      "time": 1741959457277.9182,
+      "removeTime": 1742126055748
+    },
+    "6620fe1a-9cf0-42dd-9b31-b18a4110c002": {
+      "path": "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\sound\\BT_CLICK.mp3",
+      "time": 1741959457279.8984,
+      "removeTime": 1742126055748
+    },
+    "abc7cc46-ddec-4bab-a68f-4e17413ff804": {
+      "path": "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\sound\\BT_CLOSE.mp3",
+      "time": 1741959457281.8923,
+      "removeTime": 1742126055748
+    },
+    "d91f38dc-2e90-4434-947a-5245d2df7fc5": {
+      "path": "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\sound\\GAME_START.mp3",
+      "time": 1741959457282.892,
+      "removeTime": 1742126055748
+    },
+    "cdb7b0cb-b2d9-46dc-bf45-dcd8f89a45a6": {
+      "path": "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\sound\\SEND_CARD.mp3",
+      "time": 1741959457283.8872,
+      "removeTime": 1742126055748
+    }
+  }
+}

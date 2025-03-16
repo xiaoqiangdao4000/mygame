@@ -1,0 +1,52 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "7qdlj_selKuang",
+    "atlas": "13bbdaad-7631-4ec0-9089-65f83d7d6695",
+    "rect": {
+      "x": 210,
+      "y": 2,
+      "width": 113,
+      "height": 156
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 113,
+      "height": 156
+    },
+    "rotated": false,
+    "capInsets": [
+      24,
+      26,
+      25,
+      25
+    ],
+    "vertices": {
+      "rawPosition": [],
+      "indexes": [],
+      "uv": [],
+      "nuv": [],
+      "minPos": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "texture": "16619663-a554-4810-bc97-6bedb6ba953c@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}
