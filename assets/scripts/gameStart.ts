@@ -34,7 +34,7 @@ export class gameStart extends Component {
             node.parent = this.contentNode;
             let script = node.getComponent("rankItem");
             script.initRank(tools.userData[i].headIndex, tools.userData[i].userName, tools.userData[i].nickName, tools.userData[i].rank);
-            node.setPosition(-300.256, i * -135);
+            node.setPosition(-300.256, i * -125);
         }
         //初始化用户数据
         this.setUserData();

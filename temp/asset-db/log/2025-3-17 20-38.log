@@ -403,3 +403,10 @@
 2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@2146ebackground: #aaff85; color: #000;color: #000;
 2025-3-17 20:58:21-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\main.scenebackground: #aaff85; color: #000;color: #000;
 2025-3-17 20:58:21-debug: asset-db:reimport-assetdf672520-9755-4d63-978e-4a7ae276a322 (29ms)
+2025-3-17 20:59:08-debug: refresh db internal success
+2025-3-17 20:59:08-debug: refresh db assets success
+2025-3-17 20:59:08-debug: Run asset db hook engine-extends:afterRefresh ...
+2025-3-17 20:59:08-debug: Run asset db hook engine-extends:afterRefresh success!
+2025-3-17 20:59:08-debug: asset-db:refresh-all-database (160ms)
+2025-3-17 20:59:08-debug: asset-db:worker-effect-data-processing (2ms)
+2025-3-17 20:59:08-debug: asset-db-hook-engine-extends-afterRefresh (3ms)

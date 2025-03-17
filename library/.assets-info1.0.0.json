@@ -328,10 +328,6 @@
       "time": 1640682244288.6719,
       "uuid": "68ce17e1-de70-4596-8e53-cb6188a711b9"
     },
-    "/Users/zzx/Desktop/mygame/assets/resources/b19xfh_xzYXZbg.png": {
-      "time": 1640682244246.714,
-      "uuid": "320f095f-594d-4195-ba14-a0c9246b214f"
-    },
     "/Users/zzx/Desktop/mygame/assets/resources/b13dating_zuoceBG.png": {
       "time": 1742200790365.4363,
       "uuid": "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e"
@@ -396,7 +392,7 @@
       "uuid": "298c64db-251e-4f24-a1e7-b98e9c863880"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\gameStart.ts": {
-      "time": 1742218630809.3699,
+      "time": 1742220537503.3096,
       "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\main.ts": {
@@ -456,7 +452,7 @@
       "time": 1741786566172.0942
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\main.scene": {
-      "time": 1742219901730.5894,
+      "time": 1742220564383.4463,
       "uuid": "df672520-9755-4d63-978e-4a7ae276a322"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs\\mjcard.prefab": {
@@ -464,7 +460,7 @@
       "uuid": "450189f4-8ffb-45cd-84e1-c7f47fbdac01"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs\\rankItem.prefab": {
-      "time": 1742218630792.2007,
+      "time": 1742220554128.7866,
       "uuid": "697ad3e1-8ebd-4a9f-831c-1d1e62a406fb"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\res\\bg.png": {
@@ -614,9 +610,9 @@
       "removeTime": 1742218740042
     },
     "320f095f-594d-4195-ba14-a0c9246b214f": {
-      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\b19xfh_xzYXZbg.png",
-      "time": 1742218630795.2017,
-      "removeTime": 1742219842887
+      "path": "/Users/zzx/Desktop/mygame/assets/resources/b19xfh_xzYXZbg.png",
+      "time": 1640682244246.714,
+      "removeTime": 1742220025910
     }
   }
 }

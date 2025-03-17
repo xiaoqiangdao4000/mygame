@@ -1,0 +1,32 @@
+{
+  "__version__": "3.0.8",
+  "builder": {
+    "options": {
+      "web-desktop": {
+        "configID": "ef3e64",
+        "services": []
+      },
+      "wechatgame": {
+        "configID": "ef3e64",
+        "services": []
+      }
+    },
+    "taskOptionsMap": {
+      "1742220118934": {
+        "configID": "ef3e64",
+        "services": []
+      },
+      "1742220160327": {
+        "configID": "ef3e64",
+        "services": [],
+        "__version__": "3.0.8"
+      }
+    },
+    "__version__": "1.3.9"
+  },
+  "builder-options": {
+    "configID": "ef3e64",
+    "services": [],
+    "__version__": "3.0.8"
+  }
+}

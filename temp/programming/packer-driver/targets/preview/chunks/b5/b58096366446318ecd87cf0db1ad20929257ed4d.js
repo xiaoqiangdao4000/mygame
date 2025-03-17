@@ -87,7 +87,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), tools) : tools).userData[i].nickName, (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).userData[i].rank);
-            node.setPosition(-300.256, i * -135);
+            node.setPosition(-300.256, i * -125);
           } //初始化用户数据
 
 
