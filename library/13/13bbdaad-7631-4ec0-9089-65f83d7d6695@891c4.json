@@ -4,8 +4,8 @@
     "name": "Dating_head1",
     "atlas": "13bbdaad-7631-4ec0-9089-65f83d7d6695",
     "rect": {
-      "x": 470,
-      "y": 2,
+      "x": 149,
+      "y": 50,
       "width": 137,
       "height": 145
     },
@@ -17,7 +17,7 @@
       "width": 145,
       "height": 145
     },
-    "rotated": false,
+    "rotated": true,
     "capInsets": [
       0,
       0,

@@ -1,0 +1,405 @@
+2025-3-17 20:38:29-log: Cannot access game frame or container.
+2025-3-17 20:38:38-debug: asset-db:require-engine-code (13430ms)
+2025-3-17 20:38:38-log: meshopt wasm decoder initialized
+2025-3-17 20:38:39-log: [bullet]:bullet wasm lib loaded.
+2025-3-17 20:38:39-log: [box2d]:box2d wasm lib loaded.
+2025-3-17 20:38:39-log: Cocos Creator v3.8.5
+2025-3-17 20:38:39-log: Using legacy pipeline
+2025-3-17 20:38:39-log: Forward render pipeline initialized.
+2025-3-17 20:38:39-debug: [Assets Memory track]: asset-db:worker-init: initEngine start:26.29MB, end 79.13MB, increase: 52.84MB
+2025-3-17 20:38:39-debug: [Assets Memory track]: asset-db-plugin-register: programming start:80.00MB, end 84.98MB, increase: 4.98MB
+2025-3-17 20:38:41-debug: [Assets Memory track]: asset-db-plugin-register: builder start:85.02MB, end 195.42MB, increase: 110.41MB
+2025-3-17 20:38:41-debug: [Assets Memory track]: asset-db-plugin-register: engine-extends start:195.67MB, end 198.80MB, increase: 3.13MB
+2025-3-17 20:38:41-debug: [Assets Memory track]: asset-db:worker-init: initPlugin start:79.16MB, end 198.89MB, increase: 119.74MB
+2025-3-17 20:38:41-debug: [Assets Memory track]: asset-db-plugin-register: project start:79.85MB, end 198.87MB, increase: 119.02MB
+2025-3-17 20:38:41-debug: asset-db:worker-init: initPlugin (2683ms)
+2025-3-17 20:38:41-debug: Run asset db hook programming:beforePreStart ...
+2025-3-17 20:38:41-debug: Run asset db hook programming:beforePreStart success!
+2025-3-17 20:38:41-debug: [Assets Memory track]: asset-db:worker-init start:26.28MB, end 198.99MB, increase: 172.71MB
+2025-3-17 20:38:41-debug: Run asset db hook engine-extends:beforePreStart ...
+2025-3-17 20:38:41-debug: Run asset db hook engine-extends:beforePreStart success!
+2025-3-17 20:38:47-debug: asset-db:worker-init (22516ms)
+2025-3-17 20:38:47-debug: asset-db-hook-programming-beforePreStart (5656ms)
+2025-3-17 20:38:47-debug: asset-db-hook-engine-extends-beforePreStart (5655ms)
+2025-3-17 20:38:50-debug: Preimport db internal success
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\prefabsbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\scriptsbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resourcesbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\soundbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\scripts\audioManager.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\scripts\gameStart.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\scripts\mjNode.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\scripts\main.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\scripts\mjcard.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\scripts\rankItem.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\scripts\tools.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:50-debug: Preimport db assets success
+2025-3-17 20:38:50-debug: Run asset db hook programming:afterPreStart ...
+2025-3-17 20:38:50-debug: starting packer-driver...
+2025-3-17 20:38:53-debug: initialize scripting environment...
+2025-3-17 20:38:53-debug: [[Executor]] prepare before lock
+2025-3-17 20:38:53-debug: Set detail map pack:///resolution-detail-map.json: {}
+2025-3-17 20:38:53-debug: [[Executor]] prepare after unlock
+2025-3-17 20:38:53-debug: Run asset db hook programming:afterPreStart success!
+2025-3-17 20:38:53-debug: [Assets Memory track]: asset-db:worker-init: preStart start:199.01MB, end 202.23MB, increase: 3.22MB
+2025-3-17 20:38:53-debug: Start up the 'internal' database...
+2025-3-17 20:38:53-debug: Run asset db hook engine-extends:afterPreStart success!
+2025-3-17 20:38:53-debug: Run asset db hook engine-extends:afterPreStart ...
+2025-3-17 20:38:57-debug: asset-db-hook-programming-afterPreStart (6517ms)
+2025-3-17 20:38:57-debug: asset-db:worker-effect-data-processing (3207ms)
+2025-3-17 20:38:57-debug: asset-db-hook-engine-extends-afterPreStart (3208ms)
+2025-3-17 20:38:57-debug: Start up the 'assets' database...
+2025-3-17 20:38:58-debug: asset-db:worker-startup-database[internal] (16292ms)
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\main.scenebackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\prefabs\mjcard.prefabbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\prefabs\rankItem.prefabbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\res\bg.pngbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\res\slotbg.pngbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\res\bg.png@6c48abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\res\slotbg.png@6c48abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\b13dating_zuoceBG.pngbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\res\bg.png@f9941background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\res\slotbg.png@f9941background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\b19xfh_xzYXZbg.pngbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\dt_GrxxZhaq_txbg2aNv.pngbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\b19xfh_xzYXZbg.png@6c48abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\dt_GrxxZhaq_txbg2aNv.png@6c48abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\b19xfh_xzYXZbg.png@f9941background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\dt_GrxxZhaq_txbg2aNv.png@f9941background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:58-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\b13dating_zuoceBG.png@6c48abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\b13dating_zuoceBG.png@f9941background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\sound\BACKGROUND.mp3background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\sound\BT_CLICK.mp3background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.pngbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\sound\gamelost.mp3background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.png@6c48abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.png@f9941background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\sound\gamewin.mp3background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\sound\GAME_START.mp3background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\sound\SEND_CARDS.mp3background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\sound\TIME_WARIMG.mp3background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\sound\xiaochu.mp3background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plistbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@52084background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@54958background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@66633background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@ad3c4background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@891c4background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@50a24background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@8ec54background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@4425cbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@69f6cbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@284a9background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@e57f7background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@27b58background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@67b40background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@bb0d4background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@7acccbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@08c08background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@c31b2background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@f2a6ebackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@0cc78background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@c2f6dbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@7fbabbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@2782dbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@18d92background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@55d35background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@beeebbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@02256background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@bbf61background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@8484cbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@96cdabackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@77a5abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@61ad0background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@9b819background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@05033background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@6032dbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@19bd6background: #aaff85; color: #000;color: #000;
+2025-3-17 20:38:59-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@f0a9bbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:39:00-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@bcaf1background: #aaff85; color: #000;color: #000;
+2025-3-17 20:39:00-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@af705background: #aaff85; color: #000;color: #000;
+2025-3-17 20:39:00-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@872bfbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:39:00-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@573afbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:39:00-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@2146ebackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:39:00-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@de6a3background: #aaff85; color: #000;color: #000;
+2025-3-17 20:39:00-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@729b2background: #aaff85; color: #000;color: #000;
+2025-3-17 20:39:00-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@36c18background: #aaff85; color: #000;color: #000;
+2025-3-17 20:39:00-debug: lazy register asset handler *
+2025-3-17 20:39:00-debug: lazy register asset handler directory
+2025-3-17 20:39:00-debug: lazy register asset handler spine-data
+2025-3-17 20:39:00-debug: lazy register asset handler json
+2025-3-17 20:39:00-debug: lazy register asset handler dragonbones
+2025-3-17 20:39:00-debug: lazy register asset handler dragonbones-atlas
+2025-3-17 20:39:00-debug: lazy register asset handler javascript
+2025-3-17 20:39:00-debug: lazy register asset handler typescript
+2025-3-17 20:39:00-debug: lazy register asset handler text
+2025-3-17 20:39:00-debug: lazy register asset handler scene
+2025-3-17 20:39:00-debug: lazy register asset handler prefab
+2025-3-17 20:39:00-debug: lazy register asset handler tiled-map
+2025-3-17 20:39:00-debug: lazy register asset handler buffer
+2025-3-17 20:39:00-debug: lazy register asset handler terrain
+2025-3-17 20:39:00-debug: lazy register asset handler sprite-frame
+2025-3-17 20:39:00-debug: lazy register asset handler alpha-image
+2025-3-17 20:39:00-debug: lazy register asset handler image
+2025-3-17 20:39:00-debug: lazy register asset handler sign-image
+2025-3-17 20:39:00-debug: lazy register asset handler texture
+2025-3-17 20:39:00-debug: lazy register asset handler texture-cube
+2025-3-17 20:39:00-debug: lazy register asset handler erp-texture-cube
+2025-3-17 20:39:00-debug: lazy register asset handler texture-cube-face
+2025-3-17 20:39:00-debug: lazy register asset handler render-texture
+2025-3-17 20:39:00-debug: lazy register asset handler rt-sprite-frame
+2025-3-17 20:39:00-debug: lazy register asset handler gltf-mesh
+2025-3-17 20:39:00-debug: lazy register asset handler gltf
+2025-3-17 20:39:00-debug: lazy register asset handler gltf-animation
+2025-3-17 20:39:00-debug: lazy register asset handler gltf-scene
+2025-3-17 20:39:00-debug: lazy register asset handler gltf-material
+2025-3-17 20:39:00-debug: lazy register asset handler gltf-embeded-image
+2025-3-17 20:39:00-debug: lazy register asset handler material
+2025-3-17 20:39:00-debug: lazy register asset handler fbx
+2025-3-17 20:39:00-debug: lazy register asset handler physics-material
+2025-3-17 20:39:00-debug: lazy register asset handler effect
+2025-3-17 20:39:00-debug: lazy register asset handler audio-clip
+2025-3-17 20:39:00-debug: lazy register asset handler animation-clip
+2025-3-17 20:39:00-debug: lazy register asset handler animation-graph-variant
+2025-3-17 20:39:00-debug: lazy register asset handler animation-graph
+2025-3-17 20:39:00-debug: lazy register asset handler animation-mask
+2025-3-17 20:39:00-debug: lazy register asset handler ttf-font
+2025-3-17 20:39:00-debug: lazy register asset handler bitmap-font
+2025-3-17 20:39:00-debug: lazy register asset handler sprite-atlas
+2025-3-17 20:39:00-debug: lazy register asset handler effect-header
+2025-3-17 20:39:00-debug: lazy register asset handler gltf-skeleton
+2025-3-17 20:39:00-debug: lazy register asset handler auto-atlas
+2025-3-17 20:39:00-debug: lazy register asset handler label-atlas
+2025-3-17 20:39:00-debug: lazy register asset handler render-pipeline
+2025-3-17 20:39:00-debug: lazy register asset handler render-flow
+2025-3-17 20:39:00-debug: lazy register asset handler render-stage
+2025-3-17 20:39:00-debug: lazy register asset handler instantiation-material
+2025-3-17 20:39:00-debug: lazy register asset handler instantiation-skeleton
+2025-3-17 20:39:00-debug: lazy register asset handler instantiation-animation
+2025-3-17 20:39:00-debug: lazy register asset handler video-clip
+2025-3-17 20:39:00-debug: lazy register asset handler instantiation-mesh
+2025-3-17 20:39:00-debug: lazy register asset handler particle
+2025-3-17 20:39:00-debug: asset-db:worker-startup-database[assets] (10166ms)
+2025-3-17 20:39:00-debug: asset-db:start-database (18323ms)
+2025-3-17 20:39:00-debug: asset-db:ready (56159ms)
+2025-3-17 20:39:00-debug: init worker message success
+2025-3-17 20:39:00-debug: programming:execute-script (12ms)
+2025-3-17 20:39:01-debug: [Build Memory track]: builder:worker-init start:161.14MB, end 168.50MB, increase: 7.36MB
+2025-3-17 20:39:01-debug: builder:worker-init (1052ms)
+2025-3-17 20:39:36-debug: Query all assets info in project
+2025-3-17 20:39:36-debug: init custom config: keepNodeUuid: false, useCache: true
+2025-3-17 20:39:36-debug: 查询 Asset Bundle start, progress: 0%
+2025-3-17 20:39:36-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-17 20:39:36-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+2025-3-17 20:39:36-debug:   Number of all scenes: 1
+2025-3-17 20:39:36-debug:   Number of other assets: 383
+2025-3-17 20:39:36-debug:   Number of all scripts: 13
+2025-3-17 20:39:36-debug: // ---- build task 查询 Asset Bundle ---- (97ms)
+2025-3-17 20:39:36-debug: run build task 查询 Asset Bundle success in 97 ms√, progress: 5%
+2025-3-17 20:39:36-debug: [Build Memory track]: 查询 Asset Bundle start:166.74MB, end 166.17MB, increase: -584.75KB
+2025-3-17 20:39:36-debug: 查询 Asset Bundle start, progress: 5%
+2025-3-17 20:39:36-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-17 20:39:36-debug: // ---- build task 查询 Asset Bundle ---- (3ms)
+2025-3-17 20:39:36-debug: run build task 查询 Asset Bundle success in 3 ms√, progress: 10%
+2025-3-17 20:39:36-debug: 整理部分构建选项内数据到 settings.json start, progress: 10%
+2025-3-17 20:39:36-debug: [Build Memory track]: 查询 Asset Bundle start:166.21MB, end 166.30MB, increase: 95.16KB
+2025-3-17 20:39:36-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-17 20:39:36-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (1ms)
+2025-3-17 20:39:36-debug: run build task 整理部分构建选项内数据到 settings.json success in 1 ms√, progress: 12%
+2025-3-17 20:39:36-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:166.34MB, end 166.37MB, increase: 33.80KB
+2025-3-17 20:39:36-debug: 填充脚本数据到 settings.json start, progress: 12%
+2025-3-17 20:39:36-debug: // ---- build task 填充脚本数据到 settings.json ----
+2025-3-17 20:39:36-debug: // ---- build task 填充脚本数据到 settings.json ---- (1ms)
+2025-3-17 20:39:36-debug: run build task 填充脚本数据到 settings.json success in 1 ms√, progress: 13%
+2025-3-17 20:39:36-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (17ms)
+2025-3-17 20:39:36-debug: [Build Memory track]: 填充脚本数据到 settings.json start:166.41MB, end 166.44MB, increase: 32.17KB
+2025-3-17 20:39:36-debug: 整理部分构建选项内数据到 settings.json start, progress: 13%
+2025-3-17 20:39:36-debug: run build task 整理部分构建选项内数据到 settings.json success in 17 ms√, progress: 15%
+2025-3-17 20:39:36-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:166.48MB, end 166.64MB, increase: 157.65KB
+2025-3-17 20:39:36-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-17 20:40:12-debug: Query all assets info in project
+2025-3-17 20:40:12-debug: init custom config: keepNodeUuid: false, useCache: true
+2025-3-17 20:40:12-debug: 查询 Asset Bundle start, progress: 0%
+2025-3-17 20:40:12-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-17 20:40:12-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+2025-3-17 20:40:12-debug:   Number of all scenes: 1
+2025-3-17 20:40:12-debug:   Number of other assets: 383
+2025-3-17 20:40:12-debug:   Number of all scripts: 13
+2025-3-17 20:40:12-debug: // ---- build task 查询 Asset Bundle ---- (18ms)
+2025-3-17 20:40:12-debug: run build task 查询 Asset Bundle success in 18 ms√, progress: 5%
+2025-3-17 20:40:12-debug: 查询 Asset Bundle start, progress: 5%
+2025-3-17 20:40:12-debug: [Build Memory track]: 查询 Asset Bundle start:166.93MB, end 166.34MB, increase: -603.03KB
+2025-3-17 20:40:12-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-17 20:40:12-debug: // ---- build task 查询 Asset Bundle ---- (6ms)
+2025-3-17 20:40:12-debug: run build task 查询 Asset Bundle success in 6 ms√, progress: 10%
+2025-3-17 20:40:12-debug: [Build Memory track]: 查询 Asset Bundle start:166.38MB, end 166.47MB, increase: 93.10KB
+2025-3-17 20:40:12-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-17 20:40:12-debug: 整理部分构建选项内数据到 settings.json start, progress: 10%
+2025-3-17 20:40:12-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (2ms)
+2025-3-17 20:40:12-debug: run build task 整理部分构建选项内数据到 settings.json success in 2 ms√, progress: 12%
+2025-3-17 20:40:12-debug: 填充脚本数据到 settings.json start, progress: 12%
+2025-3-17 20:40:12-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:166.51MB, end 166.55MB, increase: 33.41KB
+2025-3-17 20:40:12-debug: // ---- build task 填充脚本数据到 settings.json ----
+2025-3-17 20:40:12-debug: // ---- build task 填充脚本数据到 settings.json ---- (3ms)
+2025-3-17 20:40:12-debug: run build task 填充脚本数据到 settings.json success in 3 ms√, progress: 13%
+2025-3-17 20:40:12-debug: [Build Memory track]: 填充脚本数据到 settings.json start:166.58MB, end 166.62MB, increase: 35.91KB
+2025-3-17 20:40:12-debug: 整理部分构建选项内数据到 settings.json start, progress: 13%
+2025-3-17 20:40:12-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-17 20:40:12-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (8ms)
+2025-3-17 20:40:12-debug: run build task 整理部分构建选项内数据到 settings.json success in 8 ms√, progress: 15%
+2025-3-17 20:40:12-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:166.66MB, end 166.81MB, increase: 156.03KB
+2025-3-17 20:42:52-debug: refresh db internal success
+2025-3-17 20:42:52-debug: refresh db assets success
+2025-3-17 20:42:52-debug: Run asset db hook engine-extends:afterRefresh ...
+2025-3-17 20:42:52-debug: Run asset db hook engine-extends:afterRefresh success!
+2025-3-17 20:42:52-debug: asset-db:refresh-all-database (200ms)
+2025-3-17 20:42:52-debug: asset-db:worker-effect-data-processing (2ms)
+2025-3-17 20:42:52-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2025-3-17 20:43:22-debug: Query all assets info in project
+2025-3-17 20:43:22-debug: init custom config: keepNodeUuid: false, useCache: true
+2025-3-17 20:43:22-debug: 查询 Asset Bundle start, progress: 0%
+2025-3-17 20:43:22-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-17 20:43:22-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+2025-3-17 20:43:22-debug:   Number of all scenes: 1
+2025-3-17 20:43:22-debug:   Number of all scripts: 13
+2025-3-17 20:43:22-debug:   Number of other assets: 383
+2025-3-17 20:43:22-debug: // ---- build task 查询 Asset Bundle ---- (11ms)
+2025-3-17 20:43:22-debug: [Build Memory track]: 查询 Asset Bundle start:168.46MB, end 168.63MB, increase: 180.00KB
+2025-3-17 20:43:22-debug: 查询 Asset Bundle start, progress: 5%
+2025-3-17 20:43:22-debug: run build task 查询 Asset Bundle success in 11 ms√, progress: 5%
+2025-3-17 20:43:22-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-17 20:43:22-debug: // ---- build task 查询 Asset Bundle ---- (4ms)
+2025-3-17 20:43:22-debug: run build task 查询 Asset Bundle success in 4 ms√, progress: 10%
+2025-3-17 20:43:22-debug: [Build Memory track]: 查询 Asset Bundle start:168.67MB, end 168.03MB, increase: -656.50KB
+2025-3-17 20:43:22-debug: 整理部分构建选项内数据到 settings.json start, progress: 10%
+2025-3-17 20:43:22-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-17 20:43:22-debug: run build task 整理部分构建选项内数据到 settings.json success in 1 ms√, progress: 12%
+2025-3-17 20:43:22-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:168.07MB, end 168.10MB, increase: 32.48KB
+2025-3-17 20:43:22-debug: 填充脚本数据到 settings.json start, progress: 12%
+2025-3-17 20:43:22-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (1ms)
+2025-3-17 20:43:22-debug: // ---- build task 填充脚本数据到 settings.json ----
+2025-3-17 20:43:22-debug: // ---- build task 填充脚本数据到 settings.json ---- (1ms)
+2025-3-17 20:43:22-debug: run build task 填充脚本数据到 settings.json success in 1 ms√, progress: 13%
+2025-3-17 20:43:22-debug: 整理部分构建选项内数据到 settings.json start, progress: 13%
+2025-3-17 20:43:22-debug: [Build Memory track]: 填充脚本数据到 settings.json start:168.14MB, end 168.17MB, increase: 31.91KB
+2025-3-17 20:43:22-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-17 20:43:22-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (5ms)
+2025-3-17 20:43:22-debug: run build task 整理部分构建选项内数据到 settings.json success in 5 ms√, progress: 15%
+2025-3-17 20:43:22-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:168.20MB, end 168.34MB, increase: 138.84KB
+2025-3-17 20:45:15-debug: refresh db internal success
+2025-3-17 20:45:15-debug: refresh db assets success
+2025-3-17 20:45:15-debug: Run asset db hook engine-extends:afterRefresh ...
+2025-3-17 20:45:15-debug: Run asset db hook engine-extends:afterRefresh success!
+2025-3-17 20:45:15-debug: asset-db:refresh-all-database (152ms)
+2025-3-17 20:45:15-debug: asset-db:worker-effect-data-processing (2ms)
+2025-3-17 20:45:15-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2025-3-17 20:57:22-debug: refresh db internal success
+2025-3-17 20:57:22-debug: %cDestroy%c: C:\Users\zzx\Desktop\mygame\assets\resources\b19xfh_xzYXZbg.png@6c48abackground: #ffb8b8; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cDestroy%c: C:\Users\zzx\Desktop\mygame\assets\resources\b19xfh_xzYXZbg.png@f9941background: #ffb8b8; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cDestroy%c: C:\Users\zzx\Desktop\mygame\assets\resources\b19xfh_xzYXZbg.pngbackground: #ffb8b8; color: #000;color: #000;
+2025-3-17 20:57:22-error: C:\Users\zzx\Desktop\mygame\assets\resources\b13dating_zuoceBG.png.meta is not exist! will use cache meta.
+2025-3-17 20:57:22-error: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist.meta is not exist! will use cache meta.
+2025-3-17 20:57:22-error: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.png.meta is not exist! will use cache meta.
+2025-3-17 20:57:22-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\score_bg.PNGbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resourcesbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\b13dating_zuoceBG.pngbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.pngbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\score_bg.PNG@6c48abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\score_bg.PNG@f9941background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\b13dating_zuoceBG.png@6c48abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.png@6c48abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\b13dating_zuoceBG.png@f9941background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:22-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.png@f9941background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plistbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@52084background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@54958background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@66633background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@ad3c4background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@891c4background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@50a24background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@8ec54background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@4425cbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@69f6cbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@284a9background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@e57f7background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@27b58background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@67b40background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@bb0d4background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@7acccbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@08c08background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@c31b2background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@f2a6ebackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@0cc78background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@c2f6dbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@7fbabbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@2782dbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@18d92background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@55d35background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@beeebbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@02256background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@bbf61background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@8484cbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@96cdabackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@77a5abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@61ad0background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@9b819background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@05033background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@6032dbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@19bd6background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@f0a9bbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@bcaf1background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@af705background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@872bfbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@573afbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@2146ebackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: refresh db assets success
+2025-3-17 20:57:23-debug: Run asset db hook engine-extends:afterRefresh ...
+2025-3-17 20:57:23-debug: Run asset db hook engine-extends:afterRefresh success!
+2025-3-17 20:57:23-debug: asset-db:refresh-all-database (712ms)
+2025-3-17 20:57:23-debug: asset-db:worker-effect-data-processing (16ms)
+2025-3-17 20:57:23-debug: asset-db-hook-engine-extends-afterRefresh (17ms)
+2025-3-17 20:57:23-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plistbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@52084background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@54958background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@66633background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@ad3c4background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@891c4background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@50a24background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@8ec54background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@4425cbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@69f6cbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@284a9background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@e57f7background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@27b58background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@67b40background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@bb0d4background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@7acccbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@08c08background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@c31b2background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@f2a6ebackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@0cc78background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@c2f6dbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@7fbabbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@2782dbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@18d92background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@55d35background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@beeebbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@02256background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@bbf61background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@8484cbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@96cdabackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@77a5abackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@61ad0background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@9b819background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@05033background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@6032dbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@19bd6background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@f0a9bbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@bcaf1background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@af705background: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@872bfbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@573afbackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:57:23-debug: %cReImport%c: C:\Users\zzx\Desktop\mygame\assets\resources\mj_card.plist@2146ebackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:58:21-debug: %cImport%c: C:\Users\zzx\Desktop\mygame\assets\main.scenebackground: #aaff85; color: #000;color: #000;
+2025-3-17 20:58:21-debug: asset-db:reimport-assetdf672520-9755-4d63-978e-4a7ae276a322 (29ms)

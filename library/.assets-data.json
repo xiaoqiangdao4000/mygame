@@ -140,10 +140,7 @@
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@872bf",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@573af",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@2146e",
-        "13bbdaad-7631-4ec0-9089-65f83d7d6695@de6a3",
-        "13bbdaad-7631-4ec0-9089-65f83d7d6695@729b2",
-        "13bbdaad-7631-4ec0-9089-65f83d7d6695@54958",
-        "13bbdaad-7631-4ec0-9089-65f83d7d6695@36c18"
+        "13bbdaad-7631-4ec0-9089-65f83d7d6695@54958"
       ]
     },
     "versionCode": 1
@@ -647,10 +644,7 @@
         "450189f4-8ffb-45cd-84e1-c7f47fbdac01",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@2146e",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@54958",
-        "13bbdaad-7631-4ec0-9089-65f83d7d6695@de6a3",
-        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
-        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
-        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941",
+        "aaa0ba2a-75b5-4090-a822-ce683f5851a5@f9941",
         "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e@f9941",
         "903260e7-9019-4753-86bf-f2ff1615d004@f9941",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@8ec54",
@@ -697,9 +691,7 @@
   },
   "320f095f-594d-4195-ba14-a0c9246b214f": {
     "url": "db://assets/resources/b19xfh_xzYXZbg.png",
-    "value": {
-      "depends": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "68ce17e1-de70-4596-8e53-cb6188a711b9": {
@@ -795,6 +787,31 @@
     "url": "db://assets/resources/sound/gamewin.mp3",
     "value": {
       "depends": []
+    },
+    "versionCode": 1
+  },
+  "aaa0ba2a-75b5-4090-a822-ce683f5851a5": {
+    "url": "db://assets/resources/score_bg.PNG",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "aaa0ba2a-75b5-4090-a822-ce683f5851a5@6c48a": {
+    "url": "db://assets/resources/score_bg.PNG@6c48a",
+    "value": {
+      "depends": [
+        "aaa0ba2a-75b5-4090-a822-ce683f5851a5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "aaa0ba2a-75b5-4090-a822-ce683f5851a5@f9941": {
+    "url": "db://assets/resources/score_bg.PNG@f9941",
+    "value": {
+      "depends": [
+        "aaa0ba2a-75b5-4090-a822-ce683f5851a5@6c48a"
+      ]
     },
     "versionCode": 1
   }

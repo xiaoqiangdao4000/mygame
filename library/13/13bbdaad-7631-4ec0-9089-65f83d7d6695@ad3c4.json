@@ -4,8 +4,8 @@
     "name": "7qdlj_selKuang",
     "atlas": "13bbdaad-7631-4ec0-9089-65f83d7d6695",
     "rect": {
-      "x": 210,
-      "y": 2,
+      "x": 296,
+      "y": 50,
       "width": 113,
       "height": 156
     },
@@ -17,7 +17,7 @@
       "width": 113,
       "height": 156
     },
-    "rotated": false,
+    "rotated": true,
     "capInsets": [
       24,
       26,

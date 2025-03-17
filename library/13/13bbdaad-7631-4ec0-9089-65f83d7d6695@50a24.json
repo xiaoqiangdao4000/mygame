@@ -4,8 +4,8 @@
     "name": "Dating_head13",
     "atlas": "13bbdaad-7631-4ec0-9089-65f83d7d6695",
     "rect": {
-      "x": 325,
-      "y": 2,
+      "x": 2,
+      "y": 50,
       "width": 145,
       "height": 143
     },
@@ -17,7 +17,7 @@
       "width": 145,
       "height": 145
     },
-    "rotated": true,
+    "rotated": false,
     "capInsets": [
       0,
       0,
