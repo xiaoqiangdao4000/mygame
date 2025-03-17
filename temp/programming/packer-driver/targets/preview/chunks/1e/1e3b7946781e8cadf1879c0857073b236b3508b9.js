@@ -79,8 +79,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "gameSucNode", _descriptor4, this);
 
-          // @property([Node])
-          // tabNodes: Node[] = [];
           _initializerDefineProperty(this, "tabNodes", _descriptor5, this);
 
           _initializerDefineProperty(this, "gameTipsLabel", _descriptor6, this);

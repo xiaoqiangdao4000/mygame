@@ -54,13 +54,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         property
       } = _decorator);
 
-      _export("gameStart", gameStart = (_dec = ccclass('gameStart'), _dec2 = property(Node), _dec3 = property(Sprite), _dec4 = property(Prefab), _dec5 = property(Sprite), _dec6 = property(Label), _dec7 = property(Label), _dec(_class = (_class2 = (_class3 = class gameStart extends Component {
+      _export("gameStart", gameStart = (_dec = ccclass('gameStart'), _dec2 = property(Node), _dec3 = property(Label), _dec4 = property(Prefab), _dec5 = property(Sprite), _dec6 = property(Label), _dec7 = property(Label), _dec(_class = (_class2 = (_class3 = class gameStart extends Component {
         constructor(...args) {
           super(...args);
 
           _initializerDefineProperty(this, "contentNode", _descriptor, this);
 
-          _initializerDefineProperty(this, "mjsprite", _descriptor2, this);
+          _initializerDefineProperty(this, "mjLevelLabel", _descriptor2, this);
 
           _initializerDefineProperty(this, "rank_prefab", _descriptor3, this);
 
@@ -113,12 +113,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
         setLevelBtn() {
-          let spriteFrame = (_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+          //let spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('mj_' + tools.level);
+          this.mjLevelLabel.string = '第 ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), main) : main).getInstant().mjAtlas.getSpriteFrame('mj_' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-            error: Error()
-          }), tools) : tools).level);
-          this.mjsprite.spriteFrame = spriteFrame;
+          }), tools) : tools).level + ' 关';
         }
 
         static getInstant() {
@@ -144,7 +142,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "mjsprite", [_dec3], {
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "mjLevelLabel", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,

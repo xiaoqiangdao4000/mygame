@@ -10,8 +10,8 @@ export class gameStart extends Component {
     @property(Node)
     contentNode: Node;
 
-    @property(Sprite)
-    mjsprite: Sprite;
+    @property(Label)
+    mjLevelLabel: Label;
 
     @property(Prefab)
     rank_prefab: Prefab | null = null;
@@ -52,8 +52,8 @@ export class gameStart extends Component {
 
     //设置关卡按钮
     setLevelBtn() {
-        let spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('mj_' + tools.level);
-        this.mjsprite.spriteFrame = spriteFrame;
+        //let spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('mj_' + tools.level);
+        this.mjLevelLabel.string = '第 ' + tools.level + ' 关';
     }
 
     static getInstant() {
