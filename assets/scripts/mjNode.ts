@@ -4,7 +4,7 @@ const eventTarget = new EventTarget();
 import tools from './tools'
 import { gameStart } from './gameStart';
 import { main } from './main';
-import { audioManager } from './audioManager';
+import { AudioManager } from './audioManager';
 @ccclass('mjNode')
 export class mjNode extends Component {
 
@@ -20,8 +20,6 @@ export class mjNode extends Component {
     @property(Node)
     gameSucNode: Node | null = null;
 
-    // @property([Node])
-    // tabNodes: Node[] = [];
     @property({
         type: [Node]
     })
@@ -67,10 +65,6 @@ export class mjNode extends Component {
         gameStart.getInstant().hide()
         this.desktopItemCount = tools.level * tools.picNum;
         this.initDesktopMj();
-
-        for (let i = 0; i < this.tabItemPos.length; i++) {
-            console.log('pos------=', this.tabItemPos[i]);
-        }
     }
 
     //清理桌面牌，物品栏
@@ -84,16 +78,19 @@ export class mjNode extends Component {
     onBtnClick(event: Event, customEventData: string) {
         //游戏开始
         if (customEventData == 'gameStart') {
-            audioManager.instance.playSound('BT_CLICK.mp3')
+            //AudioManager.inst.play(main.instant.backMusic);
+            AudioManager.inst.playOneShot(main.instant.btStartMusic);
             this.startGame();
         }
         else if (customEventData == 'contiuneGame') //继续
         {
+            AudioManager.inst.play(main.instant.btClickMusic);
             this.gameShowTips(2);
             this.startGame();
         }
         else if (customEventData == 'backGame')  //返回到开始界面
         {
+            AudioManager.inst.play(main.instant.btClickMusic);
             this.gameShowTips(2);
             gameStart.getInstant().setLevelBtn();
             gameStart.getInstant().show();
@@ -101,13 +98,12 @@ export class mjNode extends Component {
     }
 
     onClickMj(node: Node) {
-
-        audioManager.instance.playSound('BT_CLICK.mp3')
-
         if (this.isCanClick == false) {
             console.log('动画为执行完毕，不可点击---');
             return;
         }
+        AudioManager.inst.playOneShot(main.instant.btClickMusic);
+
         this.isCanClick = false;
         //是否可以插入
         if (this.tabItem.length >= 7)  //不可以插入,游戏结束
@@ -137,6 +133,7 @@ export class mjNode extends Component {
             }
             //开始执行物品栏消除动画
             self.deleteTabAnima(index, function () {
+                AudioManager.inst.playOneShot(main.instant.btXiaoChuMusic);
                 self.tabItem.splice(index[2], 1);
                 self.tabItem.splice(index[1], 1);
                 self.tabItem.splice(index[0], 1);
@@ -171,6 +168,7 @@ export class mjNode extends Component {
             this.gameShowTips(0);
         } else {
             this.time--;
+            if (this.time < 10) AudioManager.inst.playOneShot(main.instant.btTimeMusic);
             this.timeLabel.string = '第' + tools.level + '关 ' + '倒计时:' + this.time + 's';
             this.timeProgressBar.progress = this.time / this.allTime;
         }
@@ -179,6 +177,7 @@ export class mjNode extends Component {
     //随机创建麻将
     createDesktopMj(refresh) {
         //发牌
+        // AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
         if (this.desktopCuritem % 3 == 0) this.randomIndex = tools.getRandomMjIndex();
         const spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('mj_' + this.randomIndex);
         let mj = instantiate(this.mycard_prefab);
@@ -187,6 +186,7 @@ export class mjNode extends Component {
         this.desktopItems.push(mj);
         var self = this;
         mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, tools.animType, function () {
+            AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
             if (refresh) {
                 self.refreshDeaktopMj();
                 console.log('发牌完毕---', self.desktopCuritem);
@@ -340,6 +340,7 @@ export class mjNode extends Component {
         let epos = new Vec3(0, 125.474, 0);
         if (typeId == 0) //闯关失败
         {
+            AudioManager.inst.playOneShot(main.instant.btGameLostMusic);
             this.gameTipsLabel.string = '闯关失败,再接再厉!';
             spos = new Vec3(-618.507, 125.474, 0);
             epos = new Vec3(0, 125.474, 0);
@@ -347,6 +348,7 @@ export class mjNode extends Component {
         }
         if (typeId == 1) // 恭喜,闯关成功
         {
+            AudioManager.inst.playOneShot(main.instant.btGameWinMusic);
             this.gameTipsLabel.string = '恭喜,闯关成功!';
             spos = new Vec3(-618.507, 125.474, 0);
             epos = new Vec3(0, 125.474, 0);

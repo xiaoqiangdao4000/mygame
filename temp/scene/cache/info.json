@@ -1,11 +1,11 @@
 {
     "systemInfo": {
         "arch": "x64",
-        "cpu": "Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz",
-        "version": "Windows 10 Pro"
+        "cpu": "Intel(R) Core(TM) i9-9880H CPU @ 2.30GHz",
+        "version": "Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:00 PST 2025; root:xnu-11215.81.4~3/RELEASE_X86_64"
     },
     "sceneListMap": {
         "df672520-9755-4d63-978e-4a7ae276a322": "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\main.scene"
     },
-    "deviceMd5": "0ecca3da10c3669e4ed29c0d4f1886f9"
+    "deviceMd5": "17f5d4a78ecba90a40cde67e399008e8"
 }

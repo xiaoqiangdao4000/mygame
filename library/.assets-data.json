@@ -74,7 +74,7 @@
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@891c4",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@8ec54",
-        "13bbdaad-7631-4ec0-9089-65f83d7d6695@36c18"
+        "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e@f9941"
       ],
       "dependScripts": [
         "d8a57f4c-ed67-4111-bb3e-7186516beaec"
@@ -243,9 +243,7 @@
   },
   "abc7cc46-ddec-4bab-a68f-4e17413ff804": {
     "url": "db://assets/resources/sound/BT_CLOSE.mp3",
-    "value": {
-      "depends": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "13bbdaad-7631-4ec0-9089-65f83d7d6695@50a24": {
@@ -302,9 +300,7 @@
   },
   "cdb7b0cb-b2d9-46dc-bf45-dcd8f89a45a6": {
     "url": "db://assets/resources/sound/SEND_CARD.mp3",
-    "value": {
-      "depends": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "13bbdaad-7631-4ec0-9089-65f83d7d6695@284a9": {
@@ -655,19 +651,29 @@
         "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
         "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
         "951249e0-9f16-456d-8b85-a6ca954da16b@f9941",
+        "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e@f9941",
         "903260e7-9019-4753-86bf-f2ff1615d004@f9941",
-        "547c3065-cd85-4ab8-a8ce-44f5f7c8d911",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@8ec54",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@4425c",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@891c4",
         "13bbdaad-7631-4ec0-9089-65f83d7d6695@69f6c",
+        "158e7e52-3220-4cd7-9694-713e0e6e8278@f9941",
+        "11bdc4b0-64a8-4eb7-a2a7-9fb9e233e977@f9941",
         "41a9f89a-53ce-4fc1-86f3-0efe6b421b4b@f9941",
-        "697ad3e1-8ebd-4a9f-831c-1d1e62a406fb"
+        "697ad3e1-8ebd-4a9f-831c-1d1e62a406fb",
+        "547c3065-cd85-4ab8-a8ce-44f5f7c8d911",
+        "6620fe1a-9cf0-42dd-9b31-b18a4110c002",
+        "b47efb98-543d-4fe6-a6f1-6475cce5b082",
+        "d91f38dc-2e90-4434-947a-5245d2df7fc5",
+        "9a56bcf7-1a08-454b-86e1-96eb447f258a",
+        "abec97be-7df1-4310-b282-6af970cdd302",
+        "0c6b525a-489c-4d71-a95a-0a7548f861c4",
+        "9433be48-424a-4191-8505-c40cde043bd2"
       ],
       "dependScripts": [
         "5e1aab3a-2778-41aa-96fd-ae448f88497b",
-        "f84fe0a7-bc38-477d-b5b1-98df6d391d08",
-        "88827971-b6fe-43f5-9aa0-0dd386f91fea"
+        "88827971-b6fe-43f5-9aa0-0dd386f91fea",
+        "f84fe0a7-bc38-477d-b5b1-98df6d391d08"
       ]
     },
     "versionCode": 1
@@ -680,6 +686,116 @@
   "335f5383-7c6d-43f0-81a4-3f27672bd257": {
     "url": "db://assets/resources/sound",
     "value": {},
+    "versionCode": 1
+  },
+  "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e": {
+    "url": "db://assets/resources/b13dating_zuoceBG.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "320f095f-594d-4195-ba14-a0c9246b214f": {
+    "url": "db://assets/resources/b19xfh_xzYXZbg.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "68ce17e1-de70-4596-8e53-cb6188a711b9": {
+    "url": "db://assets/resources/dt_GrxxZhaq_txbg2aNv.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "320f095f-594d-4195-ba14-a0c9246b214f@6c48a": {
+    "url": "db://assets/resources/b19xfh_xzYXZbg.png@6c48a",
+    "value": {
+      "depends": [
+        "320f095f-594d-4195-ba14-a0c9246b214f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e@6c48a": {
+    "url": "db://assets/resources/b13dating_zuoceBG.png@6c48a",
+    "value": {
+      "depends": [
+        "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "68ce17e1-de70-4596-8e53-cb6188a711b9@6c48a": {
+    "url": "db://assets/resources/dt_GrxxZhaq_txbg2aNv.png@6c48a",
+    "value": {
+      "depends": [
+        "68ce17e1-de70-4596-8e53-cb6188a711b9"
+      ]
+    },
+    "versionCode": 1
+  },
+  "68ce17e1-de70-4596-8e53-cb6188a711b9@f9941": {
+    "url": "db://assets/resources/dt_GrxxZhaq_txbg2aNv.png@f9941",
+    "value": {
+      "depends": [
+        "68ce17e1-de70-4596-8e53-cb6188a711b9@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "320f095f-594d-4195-ba14-a0c9246b214f@f9941": {
+    "url": "db://assets/resources/b19xfh_xzYXZbg.png@f9941",
+    "value": {
+      "depends": [
+        "320f095f-594d-4195-ba14-a0c9246b214f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e@f9941": {
+    "url": "db://assets/resources/b13dating_zuoceBG.png@f9941",
+    "value": {
+      "depends": [
+        "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b47efb98-543d-4fe6-a6f1-6475cce5b082": {
+    "url": "db://assets/resources/sound/SEND_CARDS.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9433be48-424a-4191-8505-c40cde043bd2": {
+    "url": "db://assets/resources/sound/TIME_WARIMG.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9a56bcf7-1a08-454b-86e1-96eb447f258a": {
+    "url": "db://assets/resources/sound/xiaochu.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0c6b525a-489c-4d71-a95a-0a7548f861c4": {
+    "url": "db://assets/resources/sound/gamelost.mp3",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "abec97be-7df1-4310-b282-6af970cdd302": {
+    "url": "db://assets/resources/sound/gamewin.mp3",
+    "value": {
+      "depends": []
+    },
     "versionCode": 1
   }
 }

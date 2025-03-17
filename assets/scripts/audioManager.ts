@@ -1,112 +1,104 @@
-import { _decorator, AudioClip, sys, AudioSource, assert, clamp01, warn } from "cc";
-import tools from "./tools";
-
-export class audioManager {
-    private static _instance: audioManager;
-    private static _audioSource?: AudioSource;
-
-    static get instance() {
-        if (this._instance) {
-            return this._instance;
+//AudioManager.ts
+import { Node, AudioSource, AudioClip, resources, director } from 'cc';
+/**
+ * @en
+ * this is a sington class for audio play, can be easily called from anywhere in you project.
+ * @zh
+ * 这是一个用于播放音频的单件类，可以很方便地在项目的任何地方调用。
+ */
+export class AudioManager {
+    private static _inst: AudioManager;
+    public static get inst(): AudioManager {
+        if (this._inst == null) {
+            this._inst = new AudioManager();
         }
-
-        this._instance = new audioManager();
-        return this._instance;
+        return this._inst;
     }
-
-    soundVolume: number = 1;
-
-    // init AudioManager in GameRoot.
-    init(audioSource: AudioSource) {
-        this.soundVolume = 1;//this.getConfiguration(false) ? 1 : 0;
-
-        audioManager._audioSource = audioSource;
+    private _audioSource: AudioSource;
+    constructor() {
+        //@en create a node as AudioManager
+        //@zh 创建一个节点作为 AudioManager
+        let audioMgr = new Node();
+        audioMgr.name = '__audioMgr__';
+        //@en add to the scene.
+        //@zh 添加节点到场景
+        director.getScene().addChild(audioMgr);
+        //@en make it as a persistent node, so it won't be destroied when scene change.
+        //@zh 标记为常驻节点，这样场景切换的时候就不会被销毁了
+        director.addPersistRootNode(audioMgr);
+        //@en add AudioSource componrnt to play audios.
+        //@zh 添加 AudioSource 组件，用于播放音频。
+        this._audioSource = audioMgr.addComponent(AudioSource);
     }
-
-    //   getConfiguration (isMusic: boolean) {
-    //     let state;
-    //     if (isMusic) {
-    //         state = configuration.instance.getGlobalData('music');
-    //     } else {
-    //         state = configuration.instance.getGlobalData('sound');
-    //     }
-
-    //     // console.log('Config for [' + (isMusic ? 'Music' : 'Sound') + '] is ' + state);
-
-    //     return state === undefined || state === 'true' ? true : false;
-    // }
-
+    public get audioSource() {
+        return this._audioSource;
+    }
     /**
-     * 播放音乐
-     * @param {String} name 音乐名称可通过constants.AUDIO_MUSIC 获取
-     * @param {Boolean} loop 是否循环播放
+     * @en
+     * play short audio, such as strikes,explosions
+     * @zh
+     * 播放短音频,比如 打击音效，爆炸音效等
+     * @param sound clip or url for the audio
+     * @param volume 
      */
-    playMusic(loop: boolean) {
-        const audioSource = audioManager._audioSource!;
-        //assert(audioSource, 'AudioManager not inited!');
-
-        audioSource.loop = loop;
-        if (!audioSource.playing) {
-            audioSource.play();
+    playOneShot(sound: AudioClip | string, volume: number = 1.0) {
+        if (sound instanceof AudioClip) {
+            this._audioSource.playOneShot(sound, volume);
+        }
+        else {
+            resources.load(sound, (err, clip: AudioClip) => {
+                if (err) {
+                    console.log(err);
+                }
+                else {
+                    this._audioSource.playOneShot(clip, volume);
+                }
+            });
         }
     }
-
     /**
-     * 播放音效
-     * @param {String} name 音效名称可通过constants.AUDIO_SOUND 获取
+     * @en
+     * play long audio, such as the bg music
+     * @zh
+     * 播放长音频，比如 背景音乐
+     * @param sound clip or url for the sound
+     * @param volume 
      */
-    playSound(name: string) {
-        const audioSource = audioManager._audioSource!;
-        //assert(audioSource, 'AudioManager not inited!');
-
-        //音效一般是多个的，不会只有一个
-        let path = 'sound/';
-        // if (name !== 'click') {
-        //     path = 'gamePackage/' + path; //微信特殊处理，除一开场的音乐，其余的放在子包里头
-        // }
-
-        tools.loadRes(path + name, AudioClip, (err, clip) => {
-            if (err) {
-                warn('load audioClip failed: ', err);
-                return;
-            }
-
-            // NOTE: the second parameter is volume scale.
-            // audioSource.playOneShot(clip, audioSource.volume ? this.soundVolume / audioSource.volume : 0);
-            audioSource.playOneShot(clip, 1);
-        });
-
+    play(sound: AudioClip | string, volume: number = 1.0) {
+        if (sound instanceof AudioClip) {
+            this._audioSource.clip = sound;
+            this._audioSource.play();
+            this.audioSource.volume = volume;
+        }
+        else {
+            resources.load(sound, (err, clip: AudioClip) => {
+                if (err) {
+                    console.log(err);
+                }
+                else {
+                    this._audioSource.clip = clip;
+                    this._audioSource.play();
+                    this.audioSource.volume = volume;
+                }
+            });
+        }
     }
-
-    setMusicVolume(flag: number) {
-        const audioSource = audioManager._audioSource!;
-        // assert(audioSource, 'AudioManager not inited!');
-
-        flag = clamp01(flag);
-        audioSource.volume = flag;
+    /**
+     * stop the audio play
+     */
+    stop() {
+        this._audioSource.stop();
     }
-
-    setSoundVolume(flag: number) {
-        this.soundVolume = flag;
+    /**
+     * pause the audio play
+     */
+    pause() {
+        this._audioSource.pause();
     }
-
-    openMusic() {
-        this.setMusicVolume(0.8);
-        // configuration.instance.setGlobalData('music', 'true');
-    }
-
-    closeMusic() {
-        this.setMusicVolume(0);
-        // configuration.instance.setGlobalData('music', 'false');
-    }
-
-    openSound() {
-        this.setSoundVolume(1);
-        // configuration.instance.setGlobalData('sound', 'true');
-    }
-
-    closeSound() {
-        this.setSoundVolume(0);
-        // configuration.instance.setGlobalData('sound', 'false');
+    /**
+     * resume the audio play
+     */
+    resume() {
+        this._audioSource.play();
     }
 }
