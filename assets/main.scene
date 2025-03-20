@@ -5646,6 +5646,9 @@
     "contentNode": {
       "__id__": 96
     },
+    "mjLevelLabel": {
+      "__id__": 128
+    },
     "rank_prefab": {
       "__uuid__": "697ad3e1-8ebd-4a9f-831c-1d1e62a406fb",
       "__expectedType__": "cc.Prefab"

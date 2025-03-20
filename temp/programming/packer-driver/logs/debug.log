@@ -1,27 +1,27 @@
-21:00:24.588 debug: 2025/3/17 21:00:24
-21:00:24.589 debug: Project: C:\Users\zzx\Desktop\mygame
-21:00:24.589 debug: Targets: editor,preview
-21:00:24.597 debug: Incremental file seems great.
-21:00:24.599 debug: Engine path: C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine
-21:00:24.616 debug: Initializing target [Editor]
-21:00:24.617 debug: Loading cache
-21:00:24.619 debug: Loading cache costs 1.7840999999989435ms.
-21:00:24.619 debug: Engine features shipped in editor: base,gfx-webgl,gfx-webgl2,gfx-empty,gfx-webgpu,3d,animation,skeletal-animation,2d,ui,particle,particle-2d,physics-framework,physics-2d-framework,physics-2d-box2d-wasm,intersection-2d,primitive,profiler,occlusion-query,geometry-renderer,debug-renderer,audio,video,xr,light-probe,terrain,webview,tween,tiled-map,vendor-google,spine,dragon-bones,marionette,procedural-animation,custom-pipeline,custom-pipeline-builtin-scripts,custom-pipeline-post-process,legacy-pipeline,websocket,websocket-server,meshopt
-21:00:24.620 debug: Our import map(foo:/bar): {
+21:40:08.050 debug: 2025/3/20 21:40:08
+21:40:08.050 debug: Project: C:\Users\zzx\Desktop\mygame
+21:40:08.050 debug: Targets: editor,preview
+21:40:08.066 debug: Incremental file seems great.
+21:40:08.066 debug: Engine path: C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine
+21:40:08.083 debug: Initializing target [Editor]
+21:40:08.083 debug: Loading cache
+21:40:08.096 debug: Loading cache costs 12.505600000000413ms.
+21:40:08.096 debug: Engine features shipped in editor: base,gfx-webgl,gfx-webgl2,gfx-empty,gfx-webgpu,3d,animation,skeletal-animation,2d,ui,particle,particle-2d,physics-framework,physics-2d-framework,physics-2d-box2d-wasm,intersection-2d,primitive,profiler,occlusion-query,geometry-renderer,debug-renderer,audio,video,xr,light-probe,terrain,webview,tween,tiled-map,vendor-google,spine,dragon-bones,marionette,procedural-animation,custom-pipeline,custom-pipeline-builtin-scripts,custom-pipeline-post-process,legacy-pipeline,websocket,websocket-server,meshopt
+21:40:08.097 debug: Our import map(foo:/bar): {
   "imports": {
     "cc": "cce:/internal/x/cc"
   }
 }
-21:00:24.620 debug: Initializing target [Preview]
-21:00:24.620 debug: Loading cache
-21:00:24.622 debug: Loading cache costs 1.511399999999412ms.
-21:00:24.622 debug: Our import map(foo:/bar): {
+21:40:08.097 debug: Initializing target [Preview]
+21:40:08.097 debug: Loading cache
+21:40:08.109 debug: Loading cache costs 11.047300000001997ms.
+21:40:08.109 debug: Our import map(foo:/bar): {
   "imports": {
     "cc": "cce:/internal/x/cc"
   }
 }
-21:00:24.706 debug: Sync engine features: 2d,animation,audio,base,custom-pipeline,dragon-bones,gfx-webgl,gfx-webgl2,intersection-2d,particle-2d,physics-2d-box2d,profiler,spine,tiled-map,tween,ui,video,webview
-21:00:24.712 debug: Reset databases. Enumerated domains: [
+21:40:08.181 debug: Sync engine features: 2d,animation,audio,base,custom-pipeline,gfx-webgl,gfx-webgl2,intersection-2d,physics-2d-box2d,profiler,tween,ui,video,webview
+21:40:08.188 debug: Reset databases. Enumerated domains: [
   {
     "root": "db://internal/",
     "physical": "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.5\\resources\\resources\\3d\\engine\\editor\\assets"
@@ -31,554 +31,289 @@
     "physical": "C:\\Users\\zzx\\Desktop\\mygame\\assets"
   }
 ]
-21:00:24.712 debug: Our import map(foo:/bar): {
+21:40:08.188 debug: Our import map(foo:/bar): {
   "imports": {
     "cc": "cce:/internal/x/cc",
     "db://internal/": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/",
     "db://assets/": "file:///C:/Users/zzx/Desktop/mygame/assets/"
   }
 }
-21:00:24.714 debug: Our import map(foo:/bar): {
+21:40:08.190 debug: Our import map(foo:/bar): {
   "imports": {
     "cc": "cce:/internal/x/cc",
     "db://internal/": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/",
     "db://assets/": "file:///C:/Users/zzx/Desktop/mygame/assets/"
   }
 }
-21:00:24.715 debug: Pulling asset-db.
-21:00:24.727 debug: Fetch asset-db cost: 11.9275000000016ms.
-21:00:24.729 debug: Build iteration starts.
+21:40:08.191 debug: Pulling asset-db.
+21:40:08.204 debug: Fetch asset-db cost: 12.890299999999115ms.
+21:40:08.206 debug: Build iteration starts.
 Number of accumulated asset changes: 13
 Feature changed: false
-21:00:24.729 debug: Target(editor) build started.
-21:00:24.734 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 07:00:48 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:09 GMT+0700 (中南半岛时间)
-21:00:24.734 debug: Inspect cce:/internal/x/cc
-21:00:24.820 debug: transform url: 'cce:/internal/x/cc' costs: 85.70 ms
-21:00:24.822 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
-21:00:24.822 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/gfx-empty from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-empty.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/gfx-webgpu from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgpu.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/3d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/3d.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/skeletal-animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/skeletal-animation.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/particle from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/particle.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/particle-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/particle-2d.
-21:00:24.823 debug: Resolve cce:/internal/x/cc-fu/physics-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-framework.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d-wasm from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d-wasm.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/primitive from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/primitive.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/geometry-renderer from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/geometry-renderer.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/xr from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/xr.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/light-probe from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/light-probe.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/terrain from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/terrain.
-21:00:24.824 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
-21:00:24.826 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
-21:00:24.827 debug: Resolve cce:/internal/x/cc-fu/tiled-map from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tiled-map.
-21:00:24.827 debug: Resolve cce:/internal/x/cc-fu/vendor-google from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/vendor-google.
-21:00:24.827 debug: Resolve cce:/internal/x/cc-fu/spine from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/spine.
-21:00:24.827 debug: Resolve cce:/internal/x/cc-fu/dragon-bones from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/dragon-bones.
-21:00:24.827 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
-21:00:24.827 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline-post-process from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline-post-process.
-21:00:24.827 debug: Resolve cce:/internal/x/cc-fu/legacy-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/legacy-pipeline.
-21:00:24.828 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:00:59 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:09 GMT+0700 (中南半岛时间)
-21:00:24.828 debug: Inspect cce:/internal/x/prerequisite-imports
-21:00:24.890 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 61.60 ms
-21:00:24.892 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
-21:00:24.893 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
-21:00:24.895 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:00:24.896 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:00:24.897 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
-21:00:24.898 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
-21:00:24.898 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:00:24.900 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
-21:00:24.900 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:00:24.901 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
-21:00:24.902 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
-21:00:24.902 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
-21:00:24.903 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:00:24.903 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/code-quality/cr.mjs.
-21:00:24.904 debug: Detected change: cce:/internal/code-quality/cr.mjs. Last mtime: Mon Mar 17 2025 20:38:02 GMT+0700 (中南半岛时间), Current mtime: Mon Mar 17 2025 21:00:14 GMT+0700 (中南半岛时间)
-21:00:24.904 debug: Inspect cce:/internal/code-quality/cr.mjs
-21:00:24.921 debug: transform url: 'cce:/internal/code-quality/cr.mjs' costs: 17.50 ms
-21:00:24.923 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
-21:00:24.924 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
-21:00:24.924 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
-21:00:24.924 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as external dependency cc/env.
-21:00:24.925 debug: Resolve ./builtin-pipeline-settings from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:00:24.926 debug: Resolve ./builtin-pipeline-pass from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
-21:00:24.928 debug: Resolve ./builtin-pipeline from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
-21:00:24.928 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/code-quality/cr.mjs.
-21:00:24.928 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
-21:00:24.928 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
-21:00:24.928 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
-21:00:24.928 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as external dependency cc/env.
-21:00:24.929 debug: Resolve ./builtin-pipeline-types from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:00:24.929 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
-21:00:24.929 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
-21:00:24.930 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
-21:00:24.930 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/code-quality/cr.mjs.
-21:00:24.930 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
-21:00:24.930 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
-21:00:24.930 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
-21:00:24.932 debug: Resolve ./builtin-pipeline-settings from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:00:24.932 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as external dependency cc/env.
-21:00:24.932 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/code-quality/cr.mjs.
-21:00:24.932 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
-21:00:24.932 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
-21:00:24.932 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
-21:00:24.932 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as external dependency cc/env.
-21:00:24.933 debug: Resolve ./builtin-pipeline-types from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:00:24.933 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
-21:00:24.933 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
-21:00:24.933 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
-21:00:24.934 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
-21:00:24.934 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
-21:00:24.934 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
-21:00:24.934 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/code-quality/cr.mjs.
-21:00:24.934 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:00:24.934 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:00:24.934 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:00:24.935 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:00:24.936 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:00:24.937 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:00:24.937 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
-21:00:24.938 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
-21:00:24.938 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
-21:00:24.938 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
-21:00:24.938 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
-21:00:24.938 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
-21:00:24.938 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/code-quality/cr.mjs.
-21:00:24.938 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
-21:00:24.939 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
-21:00:24.939 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
-21:00:24.939 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:00:24.940 debug: Resolve ./gameStart from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
-21:00:24.941 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:00:24.942 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:00:24.942 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/code-quality/cr.mjs.
-21:00:24.942 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
-21:00:24.942 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
-21:00:24.943 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
-21:00:24.943 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:00:24.943 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
-21:00:24.943 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
-21:00:24.943 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
-21:00:24.964 debug: Target(editor) ends with cost 235.10499999999956ms.
-21:00:24.965 debug: Target(preview) build started.
-21:00:24.970 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 07:00:48 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:09 GMT+0700 (中南半岛时间)
-21:00:24.970 debug: Inspect cce:/internal/x/cc
-21:00:25.015 debug: transform url: 'cce:/internal/x/cc' costs: 45.20 ms
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/dragon-bones from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/dragon-bones.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/particle-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/particle-2d.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/spine from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/spine.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/tiled-map from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tiled-map.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
-21:00:25.017 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
-21:00:25.018 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
-21:00:25.018 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
-21:00:25.018 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:00:59 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:10 GMT+0700 (中南半岛时间)
-21:00:25.018 debug: Inspect cce:/internal/x/prerequisite-imports
-21:00:25.039 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 21.40 ms
-21:00:25.042 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
-21:00:25.043 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
-21:00:25.044 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:00:25.046 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:00:25.046 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
-21:00:25.047 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
-21:00:25.048 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:00:25.049 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
-21:00:25.049 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:00:25.051 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
-21:00:25.051 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
-21:00:25.052 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
-21:00:25.052 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:00:25.052 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/code-quality/cr.mjs.
-21:00:25.052 debug: Detected change: cce:/internal/code-quality/cr.mjs. Last mtime: Mon Mar 17 2025 20:38:02 GMT+0700 (中南半岛时间), Current mtime: Mon Mar 17 2025 21:00:14 GMT+0700 (中南半岛时间)
-21:00:25.053 debug: Inspect cce:/internal/code-quality/cr.mjs
-21:00:25.074 debug: transform url: 'cce:/internal/code-quality/cr.mjs' costs: 21.60 ms
-21:00:25.076 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
-21:00:25.076 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
-21:00:25.076 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
-21:00:25.076 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as external dependency cc/env.
-21:00:25.078 debug: Resolve ./builtin-pipeline-settings from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:00:25.079 debug: Resolve ./builtin-pipeline-pass from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
-21:00:25.079 debug: Resolve ./builtin-pipeline from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
-21:00:25.080 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/code-quality/cr.mjs.
-21:00:25.080 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
-21:00:25.080 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
-21:00:25.080 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
-21:00:25.080 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as external dependency cc/env.
-21:00:25.081 debug: Resolve ./builtin-pipeline-types from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:00:25.081 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
-21:00:25.081 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
-21:00:25.081 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
-21:00:25.081 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/code-quality/cr.mjs.
-21:00:25.082 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
-21:00:25.082 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
-21:00:25.082 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
-21:00:25.083 debug: Resolve ./builtin-pipeline-settings from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:00:25.083 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as external dependency cc/env.
-21:00:25.083 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/code-quality/cr.mjs.
-21:00:25.083 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
-21:00:25.083 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
-21:00:25.083 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
-21:00:25.083 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as external dependency cc/env.
-21:00:25.084 debug: Resolve ./builtin-pipeline-types from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:00:25.084 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
-21:00:25.084 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
-21:00:25.084 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
-21:00:25.084 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
-21:00:25.084 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
-21:00:25.084 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
-21:00:25.084 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/code-quality/cr.mjs.
-21:00:25.084 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:00:25.085 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:00:25.085 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:00:25.086 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:00:25.087 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:00:25.087 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:00:25.087 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
-21:00:25.087 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
-21:00:25.088 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
-21:00:25.088 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
-21:00:25.088 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
-21:00:25.088 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
-21:00:25.088 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/code-quality/cr.mjs.
-21:00:25.088 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
-21:00:25.088 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
-21:00:25.088 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
-21:00:25.089 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:00:25.089 debug: Resolve ./gameStart from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
-21:00:25.090 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:00:25.091 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:00:25.091 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/code-quality/cr.mjs.
-21:00:25.091 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
-21:00:25.091 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
-21:00:25.091 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
-21:00:25.093 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:00:25.093 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
-21:00:25.093 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
-21:00:25.093 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
-21:00:25.112 debug: Target(preview) ends with cost 147.08610000000044ms.
-21:00:25.982 debug: Pulling asset-db.
-21:00:26.865 debug: Fetch asset-db cost: 882.6790999999994ms.
-21:00:26.867 debug: Build iteration starts.
+21:40:08.206 debug: Target(editor) build started.
+21:40:08.211 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 07:00:09 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:16 GMT+0700 (中南半岛时间)
+21:40:08.211 debug: Inspect cce:/internal/x/cc
+21:40:08.465 debug: transform url: 'cce:/internal/x/cc' costs: 253.30 ms
+21:40:08.467 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
+21:40:08.467 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
+21:40:08.467 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
+21:40:08.467 debug: Resolve cce:/internal/x/cc-fu/gfx-empty from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-empty.
+21:40:08.467 debug: Resolve cce:/internal/x/cc-fu/gfx-webgpu from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgpu.
+21:40:08.467 debug: Resolve cce:/internal/x/cc-fu/3d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/3d.
+21:40:08.467 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
+21:40:08.467 debug: Resolve cce:/internal/x/cc-fu/skeletal-animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/skeletal-animation.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/particle from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/particle.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/particle-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/particle-2d.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/physics-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-framework.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d-wasm from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d-wasm.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/primitive from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/primitive.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/geometry-renderer from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/geometry-renderer.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/xr from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/xr.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/light-probe from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/light-probe.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/terrain from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/terrain.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
+21:40:08.468 debug: Resolve cce:/internal/x/cc-fu/tiled-map from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tiled-map.
+21:40:08.469 debug: Resolve cce:/internal/x/cc-fu/vendor-google from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/vendor-google.
+21:40:08.470 debug: Resolve cce:/internal/x/cc-fu/spine from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/spine.
+21:40:08.470 debug: Resolve cce:/internal/x/cc-fu/dragon-bones from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/dragon-bones.
+21:40:08.470 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
+21:40:08.470 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline-post-process from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline-post-process.
+21:40:08.470 debug: Resolve cce:/internal/x/cc-fu/legacy-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/legacy-pipeline.
+21:40:08.470 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:08:43 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:16 GMT+0700 (中南半岛时间)
+21:40:08.470 debug: Inspect cce:/internal/x/prerequisite-imports
+21:40:08.515 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 44.60 ms
+21:40:08.520 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+21:40:08.526 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+21:40:08.530 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+21:40:08.532 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+21:40:08.534 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+21:40:08.536 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+21:40:08.537 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
+21:40:08.538 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
+21:40:08.540 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
+21:40:08.541 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
+21:40:08.542 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
+21:40:08.543 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
+21:40:08.544 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
+21:40:08.544 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.545 debug: Detected change: cce:/internal/code-quality/cr.mjs. Last mtime: Mon Mar 17 2025 21:00:14 GMT+0700 (中南半岛时间), Current mtime: Thu Mar 20 2025 21:39:51 GMT+0700 (中南半岛时间)
+21:40:08.545 debug: Inspect cce:/internal/code-quality/cr.mjs
+21:40:08.569 debug: transform url: 'cce:/internal/code-quality/cr.mjs' costs: 24.30 ms
+21:40:08.571 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
+21:40:08.571 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
+21:40:08.571 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
+21:40:08.571 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as external dependency cc/env.
+21:40:08.573 debug: Resolve ./builtin-pipeline-settings from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+21:40:08.575 debug: Resolve ./builtin-pipeline-pass from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+21:40:08.576 debug: Resolve ./builtin-pipeline from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+21:40:08.577 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.577 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
+21:40:08.577 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
+21:40:08.577 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
+21:40:08.577 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as external dependency cc/env.
+21:40:08.579 debug: Resolve ./builtin-pipeline-types from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+21:40:08.579 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
+21:40:08.579 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
+21:40:08.579 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
+21:40:08.579 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.579 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
+21:40:08.579 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
+21:40:08.579 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
+21:40:08.581 debug: Resolve ./builtin-pipeline-settings from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+21:40:08.581 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as external dependency cc/env.
+21:40:08.581 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.581 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
+21:40:08.581 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
+21:40:08.581 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
+21:40:08.581 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as external dependency cc/env.
+21:40:08.583 debug: Resolve ./builtin-pipeline-types from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+21:40:08.583 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+21:40:08.583 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+21:40:08.583 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+21:40:08.583 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
+21:40:08.584 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
+21:40:08.584 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
+21:40:08.584 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.585 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
+21:40:08.585 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
+21:40:08.585 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
+21:40:08.586 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
+21:40:08.587 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
+21:40:08.589 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
+21:40:08.589 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
+21:40:08.589 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
+21:40:08.589 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
+21:40:08.589 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
+21:40:08.590 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
+21:40:08.590 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
+21:40:08.590 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.590 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
+21:40:08.591 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
+21:40:08.591 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
+21:40:08.592 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
+21:40:08.593 debug: Resolve ./gameStart from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
+21:40:08.594 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
+21:40:08.595 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
+21:40:08.596 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.596 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
+21:40:08.596 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
+21:40:08.596 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
+21:40:08.597 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
+21:40:08.597 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
+21:40:08.597 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
+21:40:08.597 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
+21:40:08.649 debug: Target(editor) ends with cost 443.2430000000022ms.
+21:40:08.650 debug: Target(preview) build started.
+21:40:08.654 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 07:05:10 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:16 GMT+0700 (中南半岛时间)
+21:40:08.654 debug: Inspect cce:/internal/x/cc
+21:40:08.700 debug: transform url: 'cce:/internal/x/cc' costs: 46.10 ms
+21:40:08.701 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
+21:40:08.702 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
+21:40:08.702 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
+21:40:08.702 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
+21:40:08.702 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
+21:40:08.702 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
+21:40:08.702 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
+21:40:08.702 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
+21:40:08.702 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
+21:40:08.702 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d.
+21:40:08.703 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
+21:40:08.703 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
+21:40:08.703 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
+21:40:08.703 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
+21:40:08.703 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
+21:40:08.703 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
+21:40:08.703 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:08:43 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:17 GMT+0700 (中南半岛时间)
+21:40:08.703 debug: Inspect cce:/internal/x/prerequisite-imports
+21:40:08.728 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 24.50 ms
+21:40:08.730 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+21:40:08.731 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+21:40:08.733 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+21:40:08.735 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+21:40:08.737 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+21:40:08.740 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+21:40:08.741 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
+21:40:08.742 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
+21:40:08.743 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
+21:40:08.744 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
+21:40:08.745 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
+21:40:08.746 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
+21:40:08.747 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
+21:40:08.747 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.747 debug: Detected change: cce:/internal/code-quality/cr.mjs. Last mtime: Mon Mar 17 2025 21:00:14 GMT+0700 (中南半岛时间), Current mtime: Thu Mar 20 2025 21:39:51 GMT+0700 (中南半岛时间)
+21:40:08.748 debug: Inspect cce:/internal/code-quality/cr.mjs
+21:40:08.769 debug: transform url: 'cce:/internal/code-quality/cr.mjs' costs: 21.50 ms
+21:40:08.771 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
+21:40:08.771 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
+21:40:08.771 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as cce:/internal/x/cc.
+21:40:08.771 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as external dependency cc/env.
+21:40:08.772 debug: Resolve ./builtin-pipeline-settings from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+21:40:08.773 debug: Resolve ./builtin-pipeline-pass from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+21:40:08.775 debug: Resolve ./builtin-pipeline from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+21:40:08.775 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.775 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
+21:40:08.775 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
+21:40:08.775 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as cce:/internal/x/cc.
+21:40:08.775 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as external dependency cc/env.
+21:40:08.776 debug: Resolve ./builtin-pipeline-types from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+21:40:08.776 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
+21:40:08.777 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
+21:40:08.777 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts as cce:/internal/x/cc.
+21:40:08.777 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.777 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
+21:40:08.777 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
+21:40:08.777 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as cce:/internal/x/cc.
+21:40:08.778 debug: Resolve ./builtin-pipeline-settings from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+21:40:08.778 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts as external dependency cc/env.
+21:40:08.778 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.779 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
+21:40:08.779 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
+21:40:08.779 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as cce:/internal/x/cc.
+21:40:08.779 debug: Resolve cc/env from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as external dependency cc/env.
+21:40:08.780 debug: Resolve ./builtin-pipeline-types from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+21:40:08.780 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+21:40:08.780 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+21:40:08.780 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+21:40:08.780 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
+21:40:08.780 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
+21:40:08.780 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts as cce:/internal/x/cc.
+21:40:08.780 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.780 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
+21:40:08.780 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
+21:40:08.780 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
+21:40:08.781 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
+21:40:08.782 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
+21:40:08.783 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
+21:40:08.783 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
+21:40:08.783 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
+21:40:08.783 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts as cce:/internal/x/cc.
+21:40:08.783 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
+21:40:08.783 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
+21:40:08.783 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts as cce:/internal/x/cc.
+21:40:08.784 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.784 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
+21:40:08.784 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
+21:40:08.784 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as cce:/internal/x/cc.
+21:40:08.784 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
+21:40:08.785 debug: Resolve ./gameStart from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
+21:40:08.786 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
+21:40:08.786 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
+21:40:08.787 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/code-quality/cr.mjs.
+21:40:08.787 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
+21:40:08.787 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
+21:40:08.787 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as cce:/internal/x/cc.
+21:40:08.788 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
+21:40:08.788 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
+21:40:08.788 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
+21:40:08.788 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts as cce:/internal/x/cc.
+21:40:08.806 debug: Target(preview) ends with cost 155.9194000000025ms.
+21:40:11.287 debug: Pulling asset-db.
+21:40:12.481 debug: Fetch asset-db cost: 1193.819599999999ms.
+21:40:12.482 debug: Build iteration starts.
 Number of accumulated asset changes: 13
 Feature changed: false
-21:00:26.868 debug: Target(editor) build started.
-21:00:26.872 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:00:09 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:11 GMT+0700 (中南半岛时间)
-21:00:26.875 debug: Inspect cce:/internal/x/prerequisite-imports
-21:00:26.896 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 21.10 ms
-21:00:26.898 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
-21:00:26.899 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
-21:00:26.900 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:00:26.901 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:00:26.902 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
-21:00:26.903 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
-21:00:26.905 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:00:26.905 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
-21:00:26.906 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:00:26.907 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
-21:00:26.907 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
-21:00:26.908 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
-21:00:26.908 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:00:26.929 debug: Target(editor) ends with cost 61.24109999999928ms.
-21:00:26.930 debug: Target(preview) build started.
-21:00:26.933 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:00:10 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:12 GMT+0700 (中南半岛时间)
-21:00:26.933 debug: Inspect cce:/internal/x/prerequisite-imports
-21:00:26.963 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 29.70 ms
-21:00:26.965 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
-21:00:26.966 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
-21:00:26.968 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:00:26.970 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:00:26.972 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
-21:00:26.973 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
-21:00:26.974 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:00:26.975 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
-21:00:26.977 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:00:26.978 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
-21:00:26.979 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
-21:00:26.980 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
-21:00:26.982 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:00:27.003 debug: Target(preview) ends with cost 73.02419999999984ms.
-21:04:53.370 debug: Build iteration starts.
-Number of accumulated asset changes: 0
-Feature changed: true
-21:04:53.371 debug: Sync engine features: 2d,animation,audio,base,custom-pipeline,dragon-bones,gfx-webgl,gfx-webgl2,intersection-2d,physics-2d-box2d,profiler,spine,tiled-map,tween,ui,video,webview
-21:04:53.371 debug: Target(editor) build started.
-21:04:53.400 debug: Target(editor) ends with cost 28.51370000001043ms.
-21:04:53.400 debug: Target(preview) build started.
-21:04:53.404 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 07:00:09 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:04:38 GMT+0700 (中南半岛时间)
-21:04:53.404 debug: Inspect cce:/internal/x/cc
-21:04:53.457 debug: transform url: 'cce:/internal/x/cc' costs: 53.20 ms
-21:04:53.459 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
-21:04:53.459 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/dragon-bones from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/dragon-bones.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/spine from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/spine.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/tiled-map from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tiled-map.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
-21:04:53.460 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
-21:04:53.486 debug: Target(preview) ends with cost 85.72070000000531ms.
-21:04:54.020 debug: Build iteration starts.
-Number of accumulated asset changes: 0
-Feature changed: true
-21:04:54.022 debug: Sync engine features: 2d,animation,audio,base,custom-pipeline,dragon-bones,gfx-webgl,gfx-webgl2,intersection-2d,physics-2d-box2d,profiler,spine,tween,ui,video,webview
-21:04:54.022 debug: Target(editor) build started.
-21:04:54.043 debug: Target(editor) ends with cost 21.275800000003073ms.
-21:04:54.043 debug: Target(preview) build started.
-21:04:54.047 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 07:04:38 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:04:39 GMT+0700 (中南半岛时间)
-21:04:54.048 debug: Inspect cce:/internal/x/cc
-21:04:54.086 debug: transform url: 'cce:/internal/x/cc' costs: 38.00 ms
-21:04:54.087 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
-21:04:54.087 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
-21:04:54.087 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
-21:04:54.087 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
-21:04:54.087 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
-21:04:54.087 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
-21:04:54.087 debug: Resolve cce:/internal/x/cc-fu/dragon-bones from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/dragon-bones.
-21:04:54.087 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
-21:04:54.087 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
-21:04:54.088 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
-21:04:54.088 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d.
-21:04:54.088 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
-21:04:54.088 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
-21:04:54.088 debug: Resolve cce:/internal/x/cc-fu/spine from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/spine.
-21:04:54.088 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
-21:04:54.088 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
-21:04:54.088 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
-21:04:54.088 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
-21:04:54.115 debug: Target(preview) ends with cost 71.06219999998575ms.
-21:04:55.092 debug: Build iteration starts.
-Number of accumulated asset changes: 0
-Feature changed: true
-21:04:55.093 debug: Sync engine features: 2d,animation,audio,base,custom-pipeline,dragon-bones,gfx-webgl,gfx-webgl2,intersection-2d,physics-2d-box2d,profiler,tween,ui,video,webview
-21:04:55.093 debug: Target(editor) build started.
-21:04:55.118 debug: Target(editor) ends with cost 24.792199999967124ms.
-21:04:55.118 debug: Target(preview) build started.
-21:04:55.121 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 07:04:39 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:04:40 GMT+0700 (中南半岛时间)
-21:04:55.121 debug: Inspect cce:/internal/x/cc
-21:04:55.161 debug: transform url: 'cce:/internal/x/cc' costs: 39.70 ms
-21:04:55.163 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
-21:04:55.163 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
-21:04:55.163 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
-21:04:55.163 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
-21:04:55.164 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/dragon-bones from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/dragon-bones.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
-21:04:55.166 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
-21:04:55.167 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
-21:04:55.200 debug: Target(preview) ends with cost 81.90140000003157ms.
-21:04:57.057 debug: Build iteration starts.
-Number of accumulated asset changes: 0
-Feature changed: true
-21:04:57.061 debug: Sync engine features: 2d,animation,audio,base,custom-pipeline,gfx-webgl,gfx-webgl2,intersection-2d,physics-2d-box2d,profiler,tween,ui,video,webview
-21:04:57.061 debug: Target(editor) build started.
-21:04:57.087 debug: Target(editor) ends with cost 25.916900000011083ms.
-21:04:57.087 debug: Target(preview) build started.
-21:04:57.092 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 07:04:40 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:04:42 GMT+0700 (中南半岛时间)
-21:04:57.092 debug: Inspect cce:/internal/x/cc
-21:04:57.133 debug: transform url: 'cce:/internal/x/cc' costs: 40.80 ms
-21:04:57.135 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
-21:04:57.135 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
-21:04:57.135 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
-21:04:57.135 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
-21:04:57.135 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
-21:04:57.135 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
-21:04:57.135 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
-21:04:57.135 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
-21:04:57.136 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
-21:04:57.136 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d.
-21:04:57.136 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
-21:04:57.136 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
-21:04:57.136 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
-21:04:57.136 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
-21:04:57.136 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
-21:04:57.136 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
-21:04:57.179 debug: Target(preview) ends with cost 91.52689999999711ms.
-21:05:25.269 debug: Build iteration starts.
-Number of accumulated asset changes: 0
-Feature changed: true
-21:05:25.271 debug: Sync engine features: 2d,animation,audio,base,custom-pipeline,gfx-webgl,gfx-webgl2,intersection-2d,physics-2d-box2d,profiler,tween,ui,video,webview
-21:05:25.271 debug: Target(editor) build started.
-21:05:25.313 debug: Target(editor) ends with cost 42.1425000000163ms.
-21:05:25.313 debug: Target(preview) build started.
-21:05:25.316 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 07:04:42 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:05:10 GMT+0700 (中南半岛时间)
-21:05:25.316 debug: Inspect cce:/internal/x/cc
-21:05:25.350 debug: transform url: 'cce:/internal/x/cc' costs: 33.30 ms
-21:05:25.353 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
-21:05:25.353 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
-21:05:25.353 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
-21:05:25.353 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
-21:05:25.353 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
-21:05:25.354 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
-21:05:25.354 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
-21:05:25.355 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
-21:05:25.355 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
-21:05:25.355 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d.
-21:05:25.355 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
-21:05:25.355 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
-21:05:25.355 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
-21:05:25.355 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
-21:05:25.355 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
-21:05:25.355 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
-21:05:25.386 debug: Target(preview) ends with cost 72.62199999997392ms.
-21:08:39.047 debug: Dispatch build request for time accumulated 1 asset changes.
-21:08:39.049 debug: Build iteration starts.
-Number of accumulated asset changes: 1
-Feature changed: false
-21:08:39.049 debug: Target(editor) build started.
-21:08:39.054 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:00:11 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:08:24 GMT+0700 (中南半岛时间)
-21:08:39.054 debug: Inspect cce:/internal/x/prerequisite-imports
-21:08:39.079 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 24.60 ms
-21:08:39.082 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
-21:08:39.083 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
-21:08:39.084 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:08:39.085 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:08:39.086 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
-21:08:39.087 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
-21:08:39.088 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:08:39.089 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
-21:08:39.089 debug: Detected change: file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts. Last mtime: Mon Mar 17 2025 20:37:10 GMT+0700 (中南半岛时间)@88827971-b6fe-43f5-9aa0-0dd386f91fea, Current mtime: Mon Mar 17 2025 21:08:37 GMT+0700 (中南半岛时间)@88827971-b6fe-43f5-9aa0-0dd386f91fea
-21:08:39.089 debug: Inspect file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts
-21:08:39.229 debug: transform url: 'file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts' costs: 140.40 ms
-21:08:39.232 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:08:39.233 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
-21:08:39.234 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
-21:08:39.235 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
-21:08:39.236 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:08:39.237 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/code-quality/cr.mjs.
-21:08:39.237 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:39.237 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:39.237 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:39.238 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:08:39.240 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:08:39.241 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:08:39.265 debug: Target(editor) ends with cost 215.20280000002822ms.
-21:08:39.265 debug: Target(preview) build started.
-21:08:39.282 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:00:12 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:08:24 GMT+0700 (中南半岛时间)
-21:08:39.283 debug: Inspect cce:/internal/x/prerequisite-imports
-21:08:39.318 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 35.40 ms
-21:08:39.322 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
-21:08:39.324 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
-21:08:39.326 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:08:39.328 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:08:39.329 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
-21:08:39.330 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
-21:08:39.330 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:08:39.331 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
-21:08:39.331 debug: Detected change: file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts. Last mtime: Mon Mar 17 2025 20:37:10 GMT+0700 (中南半岛时间)@88827971-b6fe-43f5-9aa0-0dd386f91fea, Current mtime: Mon Mar 17 2025 21:08:37 GMT+0700 (中南半岛时间)@88827971-b6fe-43f5-9aa0-0dd386f91fea
-21:08:39.331 debug: Inspect file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts
-21:08:39.486 debug: transform url: 'file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts' costs: 155.20 ms
-21:08:39.559 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:08:39.560 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
-21:08:39.561 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
-21:08:39.562 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
-21:08:39.563 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:08:39.564 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/code-quality/cr.mjs.
-21:08:39.564 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:39.564 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:39.564 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:39.565 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:08:39.566 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:08:39.567 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:08:39.589 debug: Target(preview) ends with cost 323.55790000001434ms.
-21:08:58.241 debug: Dispatch build request for time accumulated 1 asset changes.
-21:08:58.243 debug: Build iteration starts.
-Number of accumulated asset changes: 1
-Feature changed: false
-21:08:58.244 debug: Target(editor) build started.
-21:08:58.247 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:08:24 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:08:43 GMT+0700 (中南半岛时间)
-21:08:58.248 debug: Inspect cce:/internal/x/prerequisite-imports
-21:08:58.277 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 29.50 ms
-21:08:58.281 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
-21:08:58.283 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
-21:08:58.284 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:08:58.286 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:08:58.288 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
-21:08:58.289 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
-21:08:58.290 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:08:58.290 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
-21:08:58.291 debug: Detected change: file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts. Last mtime: Mon Mar 17 2025 21:08:37 GMT+0700 (中南半岛时间)@88827971-b6fe-43f5-9aa0-0dd386f91fea, Current mtime: Mon Mar 17 2025 21:08:57 GMT+0700 (中南半岛时间)@88827971-b6fe-43f5-9aa0-0dd386f91fea
-21:08:58.291 debug: Inspect file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts
-21:08:58.388 debug: transform url: 'file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts' costs: 97.10 ms
-21:08:58.390 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:08:58.391 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
-21:08:58.392 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
-21:08:58.393 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
-21:08:58.394 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:08:58.395 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/code-quality/cr.mjs.
-21:08:58.395 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:58.396 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:58.396 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:58.397 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:08:58.398 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:08:58.399 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:08:58.430 debug: Target(editor) ends with cost 185.4829000000027ms.
-21:08:58.430 debug: Target(preview) build started.
-21:08:58.436 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:08:24 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:08:43 GMT+0700 (中南半岛时间)
-21:08:58.437 debug: Inspect cce:/internal/x/prerequisite-imports
-21:08:58.466 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 28.10 ms
-21:08:58.470 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
-21:08:58.471 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
-21:08:58.473 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
-21:08:58.475 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
-21:08:58.476 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
-21:08:58.477 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
-21:08:58.478 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:08:58.479 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
-21:08:58.480 debug: Detected change: file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts. Last mtime: Mon Mar 17 2025 21:08:37 GMT+0700 (中南半岛时间)@88827971-b6fe-43f5-9aa0-0dd386f91fea, Current mtime: Mon Mar 17 2025 21:08:57 GMT+0700 (中南半岛时间)@88827971-b6fe-43f5-9aa0-0dd386f91fea
-21:08:58.480 debug: Inspect file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts
-21:08:58.596 debug: transform url: 'file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts' costs: 116.70 ms
-21:08:58.600 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:08:58.601 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
-21:08:58.602 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
-21:08:58.603 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
-21:08:58.604 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:08:58.605 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/code-quality/cr.mjs.
-21:08:58.605 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:58.605 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:58.605 debug: Resolve cc from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as cce:/internal/x/cc.
-21:08:58.606 debug: Resolve ./tools from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
-21:08:58.607 debug: Resolve ./main from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
-21:08:58.608 debug: Resolve ./audioManager from file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
-21:08:58.644 debug: Target(preview) ends with cost 213.81849999999395ms.
+21:40:12.483 debug: Target(editor) build started.
+21:40:12.486 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:00:16 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:20 GMT+0700 (中南半岛时间)
+21:40:12.486 debug: Inspect cce:/internal/x/prerequisite-imports
+21:40:12.517 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 30.60 ms
+21:40:12.521 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+21:40:12.523 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+21:40:12.530 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+21:40:12.531 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+21:40:12.532 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+21:40:12.534 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+21:40:12.535 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
+21:40:12.536 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
+21:40:12.537 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
+21:40:12.538 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
+21:40:12.539 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
+21:40:12.540 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
+21:40:12.541 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
+21:40:12.572 debug: Target(editor) ends with cost 88.95899999999892ms.
+21:40:12.572 debug: Target(preview) build started.
+21:40:12.577 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:00:17 GMT+0700 (中南半岛时间), Current mtime: Thu Jan 01 1970 07:00:20 GMT+0700 (中南半岛时间)
+21:40:12.577 debug: Inspect cce:/internal/x/prerequisite-imports
+21:40:12.604 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 26.20 ms
+21:40:12.607 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+21:40:12.608 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+21:40:12.609 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+21:40:12.610 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+21:40:12.611 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+21:40:12.611 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+21:40:12.612 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts.
+21:40:12.613 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts.
+21:40:12.613 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/main.ts.
+21:40:12.614 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts.
+21:40:12.615 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts.
+21:40:12.616 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts.
+21:40:12.617 debug: Resolve file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts.
+21:40:12.635 debug: Target(preview) ends with cost 62.944400000000314ms.

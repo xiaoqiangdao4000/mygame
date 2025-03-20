@@ -452,7 +452,7 @@
       "time": 1741786566172.0942
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\main.scene": {
-      "time": 1742220564383.4463,
+      "time": 1742482259887.424,
       "uuid": "df672520-9755-4d63-978e-4a7ae276a322"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs\\mjcard.prefab": {
@@ -576,6 +576,139 @@
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\score_bg.PNG": {
       "time": 1741786566129.2378,
       "uuid": "aaa0ba2a-75b5-4090-a822-ce683f5851a5"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres": {
+      "time": 1742481607844.3125,
+      "uuid": "c65c7be8-30e8-4e2b-8795-af1d79f4d797"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX": {
+      "time": 1742481607853.288,
+      "uuid": "0cffc172-46fb-4bdc-a745-e31d98b26f56"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres": {
+      "time": 1742481607859.273,
+      "uuid": "f2059007-2655-4a7a-8b07-ced665471099"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\animation": {
+      "time": 1742481607861.2673,
+      "uuid": "15d15de6-8167-4456-a24a-3f6de5c9c4e9"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\config": {
+      "time": 1742392188149.7764,
+      "uuid": "63d1ca55-fb64-4844-b5f9-989acc3e74af"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\csb": {
+      "time": 1742392188239.9363,
+      "uuid": "8e85d772-a246-4619-b04f-9893e8c09b23"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\sound": {
+      "time": 1742392188270.8525,
+      "uuid": "d225987d-5f5a-4083-839c-95f952b9407d"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui": {
+      "time": 1742481607865.2566,
+      "uuid": "2f80440f-14fa-42df-a669-a4b4d5f18d38"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\animation\\spine": {
+      "time": 1742392188209.7822,
+      "uuid": "7fbad077-2bc8-4774-86e2-0bcaf918e91b"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\bg": {
+      "time": 1742392188116.0742,
+      "uuid": "eb7bc637-3dd0-4368-941f-097f2a3b6f94"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common": {
+      "time": 1742481607874.2324,
+      "uuid": "bdb46422-6cd5-4510-b684-5ac9bd06e34b"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\accountList": {
+      "time": 1742392187720.1394,
+      "uuid": "991ced2a-f08d-4f80-9f63-605a5b00721c"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\activity": {
+      "time": 1742392187591.3564,
+      "uuid": "818423e9-a218-4409-8ae6-0fdcd4e7ad8e"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\dwjhd": {
+      "time": 1742392187378.0476,
+      "uuid": "a21ba22e-907c-4e06-bb32-3e92d7f3c85d"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\entrance": {
+      "time": 1742392187811.895,
+      "uuid": "f28ca6a6-2088-4491-b1a1-25c0fb820c1c"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\loading": {
+      "time": 1742392187556.446,
+      "uuid": "47a55502-b038-4a57-b037-f29fc9509b28"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\pane": {
+      "time": 1742392187491.6191,
+      "uuid": "6324b159-35d1-49cd-a84e-e0f509374c09"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\pic": {
+      "time": 1742392187678.1052,
+      "uuid": "6859033e-8588-412e-8bb4-7e2829daba6d"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\task": {
+      "time": 1742392187755.0762,
+      "uuid": "439d4508-92b4-4723-8fbd-f5271218891f"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres.meta": {
+      "time": 1742481607943.9656
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX.meta": {
+      "time": 1742481607945.9597
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres.meta": {
+      "time": 1742481607948.952
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\animation.meta": {
+      "time": 1742481607950.9475
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\config.meta": {
+      "time": 1742481607954.9353
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\csb.meta": {
+      "time": 1742481607956.9302
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\sound.meta": {
+      "time": 1742481607962.914
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui.meta": {
+      "time": 1742481607965.9148
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\animation\\spine.meta": {
+      "time": 1742481607968.8984
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\bg.meta": {
+      "time": 1742481607971.8916
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common.meta": {
+      "time": 1742481607975.88
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\accountList.meta": {
+      "time": 1742481607978.8723
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\activity.meta": {
+      "time": 1742481607980.866
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\dwjhd.meta": {
+      "time": 1742481607982.8608
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\entrance.meta": {
+      "time": 1742481607986.8513
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\loading.meta": {
+      "time": 1742481607988.8455
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\pane.meta": {
+      "time": 1742481607991.838
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\pic.meta": {
+      "time": 1742481607994.829
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres\\__MACOSX\\gameres\\ui\\common\\task.meta": {
+      "time": 1742481607996.8237
     }
   },
   "missing": {
@@ -613,6 +746,11 @@
       "path": "/Users/zzx/Desktop/mygame/assets/resources/b19xfh_xzYXZbg.png",
       "time": 1640682244246.714,
       "removeTime": 1742220025910
+    },
+    "36b9123b-1e64-4b0e-a46e-f8823758e7cd": {
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameres.zip",
+      "time": 1742391713561.788,
+      "removeTime": 1742486994851
     }
   }
 }

@@ -814,5 +814,105 @@
       ]
     },
     "versionCode": 1
+  },
+  "c65c7be8-30e8-4e2b-8795-af1d79f4d797": {
+    "url": "db://assets/gameres",
+    "value": {},
+    "versionCode": 1
+  },
+  "0cffc172-46fb-4bdc-a745-e31d98b26f56": {
+    "url": "db://assets/gameres/__MACOSX",
+    "value": {},
+    "versionCode": 1
+  },
+  "f2059007-2655-4a7a-8b07-ced665471099": {
+    "url": "db://assets/gameres/__MACOSX/gameres",
+    "value": {},
+    "versionCode": 1
+  },
+  "15d15de6-8167-4456-a24a-3f6de5c9c4e9": {
+    "url": "db://assets/gameres/__MACOSX/gameres/animation",
+    "value": {},
+    "versionCode": 1
+  },
+  "63d1ca55-fb64-4844-b5f9-989acc3e74af": {
+    "url": "db://assets/gameres/__MACOSX/gameres/config",
+    "value": {},
+    "versionCode": 1
+  },
+  "8e85d772-a246-4619-b04f-9893e8c09b23": {
+    "url": "db://assets/gameres/__MACOSX/gameres/csb",
+    "value": {},
+    "versionCode": 1
+  },
+  "d225987d-5f5a-4083-839c-95f952b9407d": {
+    "url": "db://assets/gameres/__MACOSX/gameres/sound",
+    "value": {},
+    "versionCode": 1
+  },
+  "2f80440f-14fa-42df-a669-a4b4d5f18d38": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui",
+    "value": {},
+    "versionCode": 1
+  },
+  "7fbad077-2bc8-4774-86e2-0bcaf918e91b": {
+    "url": "db://assets/gameres/__MACOSX/gameres/animation/spine",
+    "value": {},
+    "versionCode": 1
+  },
+  "eb7bc637-3dd0-4368-941f-097f2a3b6f94": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui/bg",
+    "value": {},
+    "versionCode": 1
+  },
+  "bdb46422-6cd5-4510-b684-5ac9bd06e34b": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui/common",
+    "value": {},
+    "versionCode": 1
+  },
+  "991ced2a-f08d-4f80-9f63-605a5b00721c": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui/common/accountList",
+    "value": {},
+    "versionCode": 1
+  },
+  "818423e9-a218-4409-8ae6-0fdcd4e7ad8e": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui/common/activity",
+    "value": {},
+    "versionCode": 1
+  },
+  "a21ba22e-907c-4e06-bb32-3e92d7f3c85d": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui/common/dwjhd",
+    "value": {},
+    "versionCode": 1
+  },
+  "f28ca6a6-2088-4491-b1a1-25c0fb820c1c": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui/common/entrance",
+    "value": {},
+    "versionCode": 1
+  },
+  "47a55502-b038-4a57-b037-f29fc9509b28": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui/common/loading",
+    "value": {},
+    "versionCode": 1
+  },
+  "6324b159-35d1-49cd-a84e-e0f509374c09": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui/common/pane",
+    "value": {},
+    "versionCode": 1
+  },
+  "6859033e-8588-412e-8bb4-7e2829daba6d": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui/common/pic",
+    "value": {},
+    "versionCode": 1
+  },
+  "439d4508-92b4-4723-8fbd-f5271218891f": {
+    "url": "db://assets/gameres/__MACOSX/gameres/ui/common/task",
+    "value": {},
+    "versionCode": 1
+  },
+  "36b9123b-1e64-4b0e-a46e-f8823758e7cd": {
+    "url": "db://assets/gameres.zip",
+    "value": {},
+    "versionCode": 1
   }
 }
