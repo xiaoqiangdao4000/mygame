@@ -1,10 +1,9 @@
 import { _decorator, BoxCollider2D, Collider, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 const eventTarget = new EventTarget();
-import tools from './tools'
+import tools, { SOUND } from './tools'
 import { gameStart } from './gameStart';
-import { main } from './main';
-import { AudioManager } from './audioManager';
+//import { AudioManager } from './audioManager';
 @ccclass('mjNode')
 export class mjNode extends Component {
 
@@ -62,7 +61,7 @@ export class mjNode extends Component {
         this.timeLabel.string = '第' + tools.level + '关 ' + '倒计时:' + this.time + 's';
         this.timeProgressBar.progress = this.time / this.allTime;
         this.gameSucNode.active = false;
-        gameStart.getInstant().hide()
+        gameStart.Instance.hide()
         this.desktopItemCount = tools.level * tools.picNum;
         this.initDesktopMj();
     }
@@ -79,21 +78,24 @@ export class mjNode extends Component {
         //游戏开始
         if (customEventData == 'gameStart') {
             //AudioManager.inst.play(main.instant.backMusic);
-            AudioManager.inst.playOneShot(main.instant.btStartMusic);
+            //AudioManager.inst.playOneShot(main.instant.btStartMusic);
+            tools.playSound(SOUND.start_sound);
             this.startGame();
         }
         else if (customEventData == 'contiuneGame') //继续
         {
-            AudioManager.inst.play(main.instant.btClickMusic);
+            tools.playSound(SOUND.click_sound);
+            //AudioManager.inst.play(main.instant.btClickMusic);
             this.gameShowTips(2);
             this.startGame();
         }
         else if (customEventData == 'backGame')  //返回到开始界面
         {
-            AudioManager.inst.play(main.instant.btClickMusic);
+            //AudioManager.inst.play(main.instant.btClickMusic);
+            tools.playSound(SOUND.click_sound);
             this.gameShowTips(2);
-            gameStart.getInstant().setLevelBtn();
-            gameStart.getInstant().show();
+            gameStart.Instance.setLevel(tools.level);
+            gameStart.Instance.show();
         }
     }
 
@@ -102,7 +104,8 @@ export class mjNode extends Component {
             console.log('动画为执行完毕，不可点击---');
             return;
         }
-        AudioManager.inst.playOneShot(main.instant.btClickMusic);
+        //AudioManager.inst.playOneShot(main.instant.btClickMusic);
+        tools.playSound(SOUND.click_sound);
 
         this.isCanClick = false;
         //是否可以插入
@@ -133,7 +136,8 @@ export class mjNode extends Component {
             }
             //开始执行物品栏消除动画
             self.deleteTabAnima(index, function () {
-                AudioManager.inst.playOneShot(main.instant.btXiaoChuMusic);
+                //AudioManager.inst.playOneShot(main.instant.btXiaoChuMusic);
+                tools.playSound(SOUND.clear_sound);
                 self.tabItem.splice(index[2], 1);
                 self.tabItem.splice(index[1], 1);
                 self.tabItem.splice(index[0], 1);
@@ -168,7 +172,10 @@ export class mjNode extends Component {
             this.gameShowTips(0);
         } else {
             this.time--;
-            if (this.time < 10) AudioManager.inst.playOneShot(main.instant.btTimeMusic);
+            if (this.time < 10) {
+                //AudioManager.inst.playOneShot(main.instant.btTimeMusic);
+                tools.playSound(SOUND.time_sound);
+            }
             this.timeLabel.string = '第' + tools.level + '关 ' + '倒计时:' + this.time + 's';
             this.timeProgressBar.progress = this.time / this.allTime;
         }
@@ -186,7 +193,8 @@ export class mjNode extends Component {
         this.desktopItems.push(mj);
         var self = this;
         mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, tools.animType, function () {
-            AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
+            //AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
+            tools.playSound(SOUND.sendCard_sound);
             if (refresh) {
                 self.refreshDeaktopMj();
                 console.log('发牌完毕---', self.desktopCuritem);
@@ -340,7 +348,8 @@ export class mjNode extends Component {
         let epos = new Vec3(0, 125.474, 0);
         if (typeId == 0) //闯关失败
         {
-            AudioManager.inst.playOneShot(main.instant.btGameLostMusic);
+            tools.playSound(SOUND.gameLost_sound);
+            //AudioManager.inst.playOneShot(main.instant.btGameLostMusic);
             this.gameTipsLabel.string = '闯关失败,再接再厉!';
             spos = new Vec3(-618.507, 125.474, 0);
             epos = new Vec3(0, 125.474, 0);
@@ -348,7 +357,8 @@ export class mjNode extends Component {
         }
         if (typeId == 1) // 恭喜,闯关成功
         {
-            AudioManager.inst.playOneShot(main.instant.btGameWinMusic);
+            tools.playSound(SOUND.gameWin_sound);
+            //AudioManager.inst.playOneShot(main.instant.btGameWinMusic);
             this.gameTipsLabel.string = '恭喜,闯关成功!';
             spos = new Vec3(-618.507, 125.474, 0);
             epos = new Vec3(0, 125.474, 0);

@@ -1,24 +1,50 @@
-System.register(["cc"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, error, resources, tools, _crd;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, AudioClip, error, Prefab, AudioManager, resMgr, tools, _crd, SOUND;
+
+  function _reportPossibleCrUseOfAudioManager(extras) {
+    _reporterNs.report("AudioManager", "./audioManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfresMgr(extras) {
+    _reporterNs.report("resMgr", "./resMgr", _context.meta, extras);
+  }
 
   _export("default", void 0);
 
   return {
-    setters: [function (_cc) {
+    setters: [function (_unresolved_) {
+      _reporterNs = _unresolved_;
+    }, function (_cc) {
       _cclegacy = _cc.cclegacy;
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
+      AudioClip = _cc.AudioClip;
       error = _cc.error;
-      resources = _cc.resources;
+      Prefab = _cc.Prefab;
+    }, function (_unresolved_2) {
+      AudioManager = _unresolved_2.AudioManager;
+    }, function (_unresolved_3) {
+      resMgr = _unresolved_3.resMgr;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "8a205oDXPFARIhKMYUT4y5P", "tools", undefined);
 
-      __checkObsolete__(['Asset', 'Constructor', 'error', 'resources']);
+      __checkObsolete__(['Asset', 'AudioClip', 'Constructor', 'Enum', 'error', 'Prefab', 'resources']);
+
+      _export("SOUND", SOUND = /*#__PURE__*/function (SOUND) {
+        SOUND[SOUND["start_sound"] = 0] = "start_sound";
+        SOUND[SOUND["click_sound"] = 1] = "click_sound";
+        SOUND[SOUND["gameLost_sound"] = 2] = "gameLost_sound";
+        SOUND[SOUND["gameWin_sound"] = 3] = "gameWin_sound";
+        SOUND[SOUND["sendCard_sound"] = 4] = "sendCard_sound";
+        SOUND[SOUND["time_sound"] = 5] = "time_sound";
+        SOUND[SOUND["clear_sound"] = 6] = "clear_sound";
+        return SOUND;
+      }({}));
 
       _export("default", tools = class tools {
         static getRandomInt(min, max) {
@@ -30,41 +56,17 @@ System.register(["cc"], function (_export, _context) {
           return randomInt;
         }
 
-        static loadRes(url, type, cb) {
-          if (type) {
-            resources.load(url, type, (err, res) => {
-              if (err) {
-                error(err.message || err);
-
-                if (cb) {
-                  cb(err, res);
-                }
-
-                return;
-              }
-
-              if (cb) {
-                cb(err, res);
-              }
-            });
-          } else {
-            resources.load(url, (err, res) => {
-              if (err) {
-                error(err.message || err);
-
-                if (cb) {
-                  cb(err, res);
-                }
-
-                return;
-              }
-
-              if (cb) {
-                cb(err, res);
-              }
-            });
+        static playSound(sound) {
+          if (sound == SOUND.start_sound) {
+            var audioClip = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
+              error: Error()
+            }), resMgr) : resMgr).Instance.getAsset('sound', 'gameStart');
+            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              error: Error()
+            }), AudioManager) : AudioManager).inst.playOneShot(audioClip);
           }
-        }
+        } //获取麻将
+
 
       });
 
@@ -77,119 +79,26 @@ System.register(["cc"], function (_export, _context) {
       tools.userName = '磨人小妖精';
       tools.userHeadspr = null;
       tools.userRank = 'No.1';
-      tools.mjdata = [{
-        level: 1,
-        cardNum: 16 * 3,
-        animType: 1
-      }, {
-        level: 2,
-        cardNum: 20 * 3,
-        animType: 2
-      }, {
-        level: 3,
-        cardNum: 20 * 3,
-        animType: 2
-      }, {
-        level: 4,
-        cardNum: 20 * 3,
-        animType: 2
-      }, {
-        level: 5,
-        cardNum: 20 * 3,
-        animType: 2
-      }, {
-        level: 6,
-        cardNum: 20 * 3,
-        animType: 2
-      }, {
-        level: 7,
-        cardNum: 20 * 3,
-        animType: 2
-      }, {
-        level: 8,
-        cardNum: 20 * 3,
-        animType: 2
-      }, {
-        level: 9,
-        cardNum: 20 * 3,
-        animType: 2
-      }];
-      tools.userData = [{
-        headIndex: 0,
-        userName: '磨人小妖精',
-        nickName: '无敌眼',
-        rank: 'No.1'
-      }, {
-        headIndex: 0,
-        userName: '烟雨流泽',
-        nickName: '天帝眼',
-        rank: 'No.2'
-      }, {
-        headIndex: 0,
-        userName: '花千骨',
-        nickName: '轮回眼',
-        rank: 'No.3'
-      }, {
-        headIndex: 0,
-        userName: '佐佐木',
-        nickName: '血轮眼',
-        rank: 'No.4'
-      }, {
-        headIndex: 0,
-        userName: '小泽玛丽',
-        nickName: '透视眼',
-        rank: 'No.5'
-      }, {
-        headIndex: 0,
-        userName: '井下川子',
-        nickName: '鹫之眼',
-        rank: 'No.6'
-      }, {
-        headIndex: 0,
-        userName: '美丽女人',
-        nickName: '鹰之眼',
-        rank: 'No.7'
-      }, {
-        headIndex: 0,
-        userName: '四川婆娘',
-        nickName: '正常眼',
-        rank: 'No.8'
-      }, {
-        headIndex: 0,
-        userName: '你妹妹的',
-        nickName: '斗鸡眼',
-        rank: 'No.9'
-      }, {
-        headIndex: 0,
-        userName: '海贼王',
-        nickName: '青光眼',
-        rank: 'No.10'
-      }, {
-        headIndex: 0,
-        userName: '东西南北',
-        nickName: '老花眼',
-        rank: 'No.11'
-      }, {
-        headIndex: 0,
-        userName: '姐妹来到',
-        nickName: '远视眼',
-        rank: 'No.12'
-      }, {
-        headIndex: 0,
-        userName: '打死也不投',
-        nickName: '近视眼',
-        rank: 'No.13'
-      }, {
-        headIndex: 0,
-        userName: '你啊啊啊',
-        nickName: '单眼瞎',
-        rank: 'No.14'
-      }, {
-        headIndex: 0,
-        userName: '擦擦啊啊',
-        nickName: '死瞎子',
-        rank: 'No.15'
-      }];
+      tools.resPkg = {
+        //gui: {
+        //     assetType: SpriteFrame,
+        //     urls: [
+        //         'btn_bg/spriteFrame',
+        //         'frame/spriteFrame',
+        //         'game_bg/spriteFrame',
+        //         'mj_card/spriteFrame',
+        //     ],
+        // },
+        prefabs: {
+          assetType: Prefab,
+          urls: ['gameStart', 'mjcard', 'game']
+        },
+        sound: {
+          assetType: AudioClip,
+          urls: ['back', 'click', 'gameLost', 'gameStart', 'gameWin', 'sendCard', 'time', 'clear']
+        }
+      };
+      tools.getMj = void 0;
 
       _cclegacy._RF.pop();
 

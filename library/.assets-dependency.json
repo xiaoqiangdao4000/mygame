@@ -3,11 +3,14 @@
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\mj_card.plist": [
       "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\mj_card.png"
     ],
-    "/Users/zzx/Desktop/mygame/assets/resources/mj_card.plist": [
-      "/Users/zzx/Desktop/mygame/assets/resources/mj_card.png"
-    ],
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\mj_card.plist": [
       "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\mj_card.png"
+    ],
+    "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/mj_card.plist": [
+      "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/mj_card.png"
+    ],
+    "/Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist": [
+      "/Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.png"
     ]
   }
 }

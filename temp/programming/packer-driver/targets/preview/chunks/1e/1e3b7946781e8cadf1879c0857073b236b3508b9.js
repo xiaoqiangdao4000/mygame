@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, tween, Vec3, tools, gameStart, main, AudioManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _crd, ccclass, property, eventTarget, mjNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, tween, Vec3, tools, SOUND, gameStart, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _crd, ccclass, property, eventTarget, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -13,16 +13,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("tools", "./tools", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfSOUND(extras) {
+    _reporterNs.report("SOUND", "./tools", _context.meta, extras);
+  }
+
   function _reportPossibleCrUseOfgameStart(extras) {
     _reporterNs.report("gameStart", "./gameStart", _context.meta, extras);
-  }
-
-  function _reportPossibleCrUseOfmain(extras) {
-    _reporterNs.report("main", "./main", _context.meta, extras);
-  }
-
-  function _reportPossibleCrUseOfAudioManager(extras) {
-    _reporterNs.report("AudioManager", "./audioManager", _context.meta, extras);
   }
 
   return {
@@ -45,12 +41,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       Vec3 = _cc.Vec3;
     }, function (_unresolved_2) {
       tools = _unresolved_2.default;
+      SOUND = _unresolved_2.SOUND;
     }, function (_unresolved_3) {
       gameStart = _unresolved_3.gameStart;
-    }, function (_unresolved_4) {
-      main = _unresolved_4.main;
-    }, function (_unresolved_5) {
-      AudioManager = _unresolved_5.AudioManager;
     }],
     execute: function () {
       _crd = true;
@@ -65,6 +58,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       } = _decorator);
       eventTarget = new EventTarget();
 
+      //import { AudioManager } from './audioManager';
       _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(ProgressBar), _dec4 = property(Label), _dec5 = property(Node), _dec6 = property({
         type: [Node]
       }), _dec7 = property(Label), _dec(_class = (_class2 = class mjNode extends Component {
@@ -134,7 +128,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.gameSucNode.active = false;
           (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
             error: Error()
-          }), gameStart) : gameStart).getInstant().hide();
+          }), gameStart) : gameStart).Instance.hide();
           this.desktopItemCount = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).level * (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
@@ -155,35 +149,40 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           //游戏开始
           if (customEventData == 'gameStart') {
             //AudioManager.inst.play(main.instant.backMusic);
-            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+            //AudioManager.inst.playOneShot(main.instant.btStartMusic);
+            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
-            }), AudioManager) : AudioManager).inst.playOneShot((_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+            }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
               error: Error()
-            }), main) : main).instant.btStartMusic);
+            }), SOUND) : SOUND).start_sound);
             this.startGame();
           } else if (customEventData == 'contiuneGame') //继续
             {
-              (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
-              }), AudioManager) : AudioManager).inst.play((_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
                 error: Error()
-              }), main) : main).instant.btClickMusic);
+              }), SOUND) : SOUND).click_sound); //AudioManager.inst.play(main.instant.btClickMusic);
+
               this.gameShowTips(2);
               this.startGame();
             } else if (customEventData == 'backGame') //返回到开始界面
             {
-              (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              //AudioManager.inst.play(main.instant.btClickMusic);
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
-              }), AudioManager) : AudioManager).inst.play((_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
                 error: Error()
-              }), main) : main).instant.btClickMusic);
+              }), SOUND) : SOUND).click_sound);
               this.gameShowTips(2);
               (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
                 error: Error()
-              }), gameStart) : gameStart).getInstant().setLevelBtn();
+              }), gameStart) : gameStart).Instance.setLevel((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).level);
               (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
                 error: Error()
-              }), gameStart) : gameStart).getInstant().show();
+              }), gameStart) : gameStart).Instance.show();
             }
         }
 
@@ -191,13 +190,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           if (this.isCanClick == false) {
             console.log('动画为执行完毕，不可点击---');
             return;
-          }
+          } //AudioManager.inst.playOneShot(main.instant.btClickMusic);
 
-          (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+
+          (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), AudioManager) : AudioManager).inst.playOneShot((_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+          }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
             error: Error()
-          }), main) : main).instant.btClickMusic);
+          }), SOUND) : SOUND).click_sound);
           this.isCanClick = false; //是否可以插入
 
           if (this.tabItem.length >= 7) //不可以插入,游戏结束
@@ -231,11 +231,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
             self.deleteTabAnima(index, function () {
-              (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              //AudioManager.inst.playOneShot(main.instant.btXiaoChuMusic);
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
-              }), AudioManager) : AudioManager).inst.playOneShot((_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
                 error: Error()
-              }), main) : main).instant.btXiaoChuMusic);
+              }), SOUND) : SOUND).clear_sound);
               self.tabItem.splice(index[2], 1);
               self.tabItem.splice(index[1], 1);
               self.tabItem.splice(index[0], 1);
@@ -276,11 +277,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             this.gameShowTips(0);
           } else {
             this.time--;
-            if (this.time < 10) (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
-              error: Error()
-            }), AudioManager) : AudioManager).inst.playOneShot((_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
-              error: Error()
-            }), main) : main).instant.btTimeMusic);
+
+            if (this.time < 10) {
+              //AudioManager.inst.playOneShot(main.instant.btTimeMusic);
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+                error: Error()
+              }), SOUND) : SOUND).time_sound);
+            }
+
             this.timeLabel.string = '第' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).level + '关 ' + '倒计时:' + this.time + 's';
@@ -295,9 +301,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           if (this.desktopCuritem % 3 == 0) this.randomIndex = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).getRandomMjIndex();
-          var spriteFrame = (_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
-            error: Error()
-          }), main) : main).getInstant().mjAtlas.getSpriteFrame('mj_' + this.randomIndex);
+          var spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('mj_' + this.randomIndex);
           var mj = instantiate(this.mycard_prefab);
           mj.parent = this.node;
           var mycard = mj.getComponent("mjcard");
@@ -306,11 +310,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).animType, function () {
-            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+            //AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
+            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
-            }), AudioManager) : AudioManager).inst.playOneShot((_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+            }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
               error: Error()
-            }), main) : main).instant.btSendCardMusic);
+            }), SOUND) : SOUND).sendCard_sound);
 
             if (refresh) {
               self.refreshDeaktopMj();
@@ -445,11 +450,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           if (typeId == 0) //闯关失败
             {
-              (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
-              }), AudioManager) : AudioManager).inst.playOneShot((_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
                 error: Error()
-              }), main) : main).instant.btGameLostMusic);
+              }), SOUND) : SOUND).gameLost_sound); //AudioManager.inst.playOneShot(main.instant.btGameLostMusic);
+
               this.gameTipsLabel.string = '闯关失败,再接再厉!';
               spos = new Vec3(-618.507, 125.474, 0);
               epos = new Vec3(0, 125.474, 0);
@@ -458,11 +464,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           if (typeId == 1) // 恭喜,闯关成功
             {
-              (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
-              }), AudioManager) : AudioManager).inst.playOneShot((_crd && main === void 0 ? (_reportPossibleCrUseOfmain({
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
                 error: Error()
-              }), main) : main).instant.btGameWinMusic);
+              }), SOUND) : SOUND).gameWin_sound); //AudioManager.inst.playOneShot(main.instant.btGameWinMusic);
+
               this.gameTipsLabel.string = '恭喜,闯关成功!';
               spos = new Vec3(-618.507, 125.474, 0);
               epos = new Vec3(0, 125.474, 0);
