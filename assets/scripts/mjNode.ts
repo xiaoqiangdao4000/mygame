@@ -1,8 +1,9 @@
-import { _decorator, BoxCollider2D, Collider, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3 } from 'cc';
+import { _decorator, BoxCollider2D, Collider, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Script, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 const eventTarget = new EventTarget();
 import tools, { SOUND } from './tools'
 import { gameStart } from './gameStart';
+import { mjcard } from './mjcard';
 //import { AudioManager } from './audioManager';
 @ccclass('mjNode')
 export class mjNode extends Component {
@@ -27,6 +28,8 @@ export class mjNode extends Component {
     @property(Label)
     gameTipsLabel: Label | null = null;
 
+    static Instance: mjNode = null;
+
     isCanClick = false;         //是否可以点击
     desktopItems = [];          //桌面麻将
     desktopCuritem = 0;         //当前数量
@@ -36,10 +39,23 @@ export class mjNode extends Component {
     allTime = this.time;
 
     tabItemPos = [];    //物品栏坐标
-
     tabItem: Node[] = [] //物品栏
 
+    onLoad() {
+        console.log('初始化游戏类');
+        // if (mjNode.Instance === null) {
+        //     console.log('初始化游戏类');
+        //     mjNode.Instance = this;
+        // }
+        // else {
+        //     this.destroy();
+        //     return;
+        // }
+
+    }
+
     start() {
+
         this.node.on('clickmj', this.onClickMj, this);
         for (let i = 0; i < this.tabNodes.length; i++) {
             let pos = { x: 0, y: 0 };
@@ -48,7 +64,7 @@ export class mjNode extends Component {
             pos.y = pos1.y;
             this.tabItemPos.push(pos)
         }
-        //this.startGame();
+        this.startGame();
     }
 
     //开始游戏
@@ -63,6 +79,9 @@ export class mjNode extends Component {
         this.gameSucNode.active = false;
         gameStart.Instance.hide()
         this.desktopItemCount = tools.level * tools.picNum;
+        tools.cardBackNow = 0;
+        tools.cardBackTotal = tools.level;
+        tools.randomMjAnim();
         this.initDesktopMj();
     }
 
@@ -93,9 +112,11 @@ export class mjNode extends Component {
         {
             //AudioManager.inst.play(main.instant.btClickMusic);
             tools.playSound(SOUND.click_sound);
-            this.gameShowTips(2);
+            // this.gameShowTips(2);
             gameStart.Instance.setLevel(tools.level);
             gameStart.Instance.show();
+            this.unscheduleAllCallbacks();
+            this.node.parent.destroy();
         }
     }
 
@@ -186,13 +207,12 @@ export class mjNode extends Component {
         //发牌
         // AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
         if (this.desktopCuritem % 3 == 0) this.randomIndex = tools.getRandomMjIndex();
-        const spriteFrame = main.getInstant().mjAtlas.getSpriteFrame('mj_' + this.randomIndex);
         let mj = instantiate(this.mycard_prefab);
         mj.parent = this.node;
-        var mycard = mj.getComponent("mjcard");
+        var mycard = mj.getComponent("mjcard") as mjcard;
         this.desktopItems.push(mj);
         var self = this;
-        mycard.initMj(this.randomIndex, this.desktopItems.length, spriteFrame, tools.animType, function () {
+        mycard.initMj(this.randomIndex, this.desktopItems.length, tools.animType, function () {
             //AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
             tools.playSound(SOUND.sendCard_sound);
             if (refresh) {
@@ -262,6 +282,8 @@ export class mjNode extends Component {
 
     //插入到物品栏
     insertItem(node: Node, callback) {
+        let mjcard = node.getComponent('mjcard') as mjcard;
+        mjcard.restCard();
         this.tabItem.push(node);
         //console.log('插入成功---');
         let index = this.tabItem.length - 1;
@@ -344,36 +366,39 @@ export class mjNode extends Component {
     gameShowTips(typeId) {
         this.gameSucNode.active = true;
         this.unschedule(this.countdown);
-        let spos = new Vec3(-618.507, 125.474, 0);
+        let spos = new Vec3(-700, 125.474, 0);
         let epos = new Vec3(0, 125.474, 0);
         if (typeId == 0) //闯关失败
         {
             tools.playSound(SOUND.gameLost_sound);
             //AudioManager.inst.playOneShot(main.instant.btGameLostMusic);
+            this.gameSucNode.active = true;
             this.gameTipsLabel.string = '闯关失败,再接再厉!';
-            spos = new Vec3(-618.507, 125.474, 0);
+            spos = new Vec3(-700, 125.474, 0);
             epos = new Vec3(0, 125.474, 0);
             this.gameSucNode.setPosition(spos);
+            tools.saveLevel();
         }
         if (typeId == 1) // 恭喜,闯关成功
         {
             tools.playSound(SOUND.gameWin_sound);
             //AudioManager.inst.playOneShot(main.instant.btGameWinMusic);
+            this.gameSucNode.active = true;
             this.gameTipsLabel.string = '恭喜,闯关成功!';
-            spos = new Vec3(-618.507, 125.474, 0);
+            spos = new Vec3(-700, 125.474, 0);
             epos = new Vec3(0, 125.474, 0);
             this.gameSucNode.setPosition(spos);
             tools.level += 1;       //当前游戏关卡等级
+            tools.saveLevel();
         }
         else if (typeId == 2) // 隐藏显示面板
         {
-            spos = new Vec3(0, 125.474, 0);
-            epos = new Vec3(618.507, 125.474, 0);
-            this.gameSucNode.setPosition(spos);
+            this.gameSucNode.active = false;
+            return;
         }
         tween(this.gameSucNode)
             .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
-                easing: "backIn",                                   // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+                easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
             })
             .start();
     }

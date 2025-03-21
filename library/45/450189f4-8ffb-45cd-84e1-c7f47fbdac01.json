@@ -153,6 +153,10 @@
     "sprite": {
       "__id__": 4
     },
+    "mjAtlas": {
+      "__uuid__": "dd35ed1f-7951-4953-a3e4-8397cc408b78",
+      "__expectedType__": "cc.SpriteAtlas"
+    },
     "_id": ""
   },
   {

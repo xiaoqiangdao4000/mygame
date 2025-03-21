@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Color, Component, Node, Sprite, tween, Vec3, tools, _dec, _dec2, _class, _class2, _descriptor, _crd, ccclass, property, mjcard;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Color, Component, Node, Sprite, SpriteAtlas, tween, Vec3, tools, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, mjcard;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -25,6 +25,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       Component = _cc.Component;
       Node = _cc.Node;
       Sprite = _cc.Sprite;
+      SpriteAtlas = _cc.SpriteAtlas;
       tween = _cc.tween;
       Vec3 = _cc.Vec3;
     }, function (_unresolved_2) {
@@ -35,24 +36,28 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
       _cclegacy._RF.push({}, "fc62erwdOpHvLUJ46SH/0d5", "mjcard", undefined);
 
-      __checkObsolete__(['_decorator', 'Color', 'Component', 'EventTouch', 'Node', 'Sprite', 'tween', 'Vec3']);
+      __checkObsolete__(['_decorator', 'Atlas', 'Color', 'Component', 'EventTouch', 'Node', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'tween', 'Vec3']);
 
       ({
         ccclass,
         property
       } = _decorator);
 
-      _export("mjcard", mjcard = (_dec = ccclass('mjcard'), _dec2 = property(Sprite), _dec(_class = (_class2 = class mjcard extends Component {
+      _export("mjcard", mjcard = (_dec = ccclass('mjcard'), _dec2 = property(Sprite), _dec3 = property(SpriteAtlas), _dec(_class = (_class2 = class mjcard extends Component {
         constructor() {
           super(...arguments);
 
           _initializerDefineProperty(this, "sprite", _descriptor, this);
+
+          _initializerDefineProperty(this, "mjAtlas", _descriptor2, this);
 
           this._interaction = true;
           this.cardId = 0;
           this.scale = 1.5;
           this.moveDuration = 0.5;
           this.scaleDuration = 0.5;
+          this.sprFrame = null;
+          this.cardBackFrame = null;
         }
 
         start() {
@@ -72,12 +77,41 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.sprite.color = v ? normalColor : grayColor;
         }
 
-        initMj(num, cardid, spriteFrame, animType, callback) {
+        initMj(num, cardid, animType, callback) {
           this.node.name = 'mj_' + num;
           this.cardId = cardid;
-          this.sprite.spriteFrame = spriteFrame;
+          this.sprFrame = this.mjAtlas.getSpriteFrame('mj_' + num);
+
+          if ((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).cardBackNow < (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).cardBackTotal) {
+            var rand = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).getRandomInt(1, 3);
+
+            if (rand == 1) {
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).cardBackNow++;
+              this.cardBackFrame = this.mjAtlas.getSpriteFrame('mj_35');
+              this.sprite.spriteFrame = this.cardBackFrame;
+            } else {
+              this.sprite.spriteFrame = this.sprFrame;
+            }
+          } else {
+            this.sprite.spriteFrame = this.sprFrame;
+          }
+
           this.interaction = false;
           this.playAnimation(animType, callback);
+        }
+
+        restCard() {
+          if (this.cardBackFrame != null) {
+            this.sprite.spriteFrame = this.sprFrame;
+          }
         } //播放发牌动画
 
 
@@ -135,6 +169,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         update(deltaTime) {}
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "sprite", [_dec2], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "mjAtlas", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,

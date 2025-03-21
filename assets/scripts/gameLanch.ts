@@ -1,4 +1,4 @@
-import { _decorator, Component, instantiate, Label, Node, Prefab, Sprite } from 'cc';
+import { _decorator, Component, instantiate, Label, Node, Prefab, Sprite, tween } from 'cc';
 import { resMgr } from './resMgr';
 import tools from './tools';
 const { ccclass, property } = _decorator;
@@ -42,7 +42,12 @@ export class gameLauch extends Component {
         //加载资源
         resMgr.Instance.preLoadResPkg(tools.resPkg, this.loadingResCallBack, () => {
             //资源加载完成回调
-            this.enterStartScene();
+            tween(this.node)
+                .delay(0.5)
+                .call(() => {
+                    gameLauch.Instance.enterStartScene();
+                }).start();
+
         });
     }
 
@@ -59,7 +64,7 @@ export class gameLauch extends Component {
         this.hideLoading();
 
         //加载开始界面
-        let prefab = resMgr.Instance.getAsset('prefabs', 'gameStart');
+        let prefab = resMgr.Instance.getAsset('prefabs', 'gameStart') as Prefab;
         let gameStart = instantiate(prefab);
         gameStart.parent = this.node;
 

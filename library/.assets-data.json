@@ -597,9 +597,7 @@
   },
   "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e": {
     "url": "db://assets/gameBundle/gui/bt1_bg.png",
-    "value": {
-      "depends": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "320f095f-594d-4195-ba14-a0c9246b214f": {
@@ -841,16 +839,12 @@
   },
   "9838381c-6c70-42f2-9ea3-0e50137663ae": {
     "url": "db://assets/gameBundle/gui/btn_bg.png",
-    "value": {
-      "depends": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "a79d5d7a-985c-47ae-8c2b-8ec2f5eeec6f": {
     "url": "db://assets/gameBundle/gui/frame.png",
-    "value": {
-      "depends": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "dd2add37-286b-4fcc-ae83-9a119ef1223e": {
@@ -864,10 +858,10 @@
     "url": "db://assets/gameBundle/atlas/mj_card.plist",
     "value": {
       "depends": [
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78@ad3c4",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78@891c4",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78@50a24",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@6a858",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@5700d",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@8ec54",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@d6aae",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@4425c",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@69f6c",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@284a9",
@@ -897,12 +891,14 @@
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@9b819",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@05033",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@6032d",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@4fb09",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@19bd6",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@f0a9b",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@bcaf1",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@af705",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@872bf",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@573af",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@aab81",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@2146e",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@54958"
       ]
@@ -1362,11 +1358,13 @@
     "value": {
       "depends": [
         "41a9f89a-53ce-4fc1-86f3-0efe6b421b4b@f9941",
-        "9838381c-6c70-42f2-9ea3-0e50137663ae@f9941",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78@69f6c",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@4425c",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@5700d",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@69f6c",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@0cc78",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78@96cda"
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@96cda",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@8ec54"
       ],
       "dependScripts": [
         "88827971-b6fe-43f5-9aa0-0dd386f91fea"
@@ -1531,17 +1529,17 @@
     "versionCode": 1
   },
   "47e65697-8589-419b-91a9-fb9c6ff27703": {
-    "url": "db://assets/gameBundle/prefabs/game.prefab",
+    "url": "db://assets/gameBundle/prefabs/gameNode.prefab",
     "value": {
       "depends": [
         "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78@ad3c4",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@aab81",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78",
         "450189f4-8ffb-45cd-84e1-c7f47fbdac01",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@2146e",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@54958",
-        "9838381c-6c70-42f2-9ea3-0e50137663ae@f9941",
-        "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e@f9941",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@5700d",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@6a858",
         "dd2add37-286b-4fcc-ae83-9a119ef1223e@f9941"
       ],
       "dependScripts": [
@@ -1558,6 +1556,56 @@
   "62ca7440-75de-442c-a3eb-8410ba899976": {
     "url": "db://assets/gameBundle/atlas",
     "value": {},
+    "versionCode": 1
+  },
+  "30cb24bb-d1bb-4d9a-a83a-a2c487e94705": {
+    "url": "db://assets/gameBundle/sound/btn_close.mp3",
+    "value": {},
+    "versionCode": 1
+  },
+  "dd35ed1f-7951-4953-a3e4-8397cc408b78@6a858": {
+    "url": "db://assets/gameBundle/atlas/mj_card.plist@6a858",
+    "value": {
+      "depends": [
+        "61c11695-2396-40aa-a7b9-5c6062cf7cf3@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "dd35ed1f-7951-4953-a3e4-8397cc408b78@5700d": {
+    "url": "db://assets/gameBundle/atlas/mj_card.plist@5700d",
+    "value": {
+      "depends": [
+        "61c11695-2396-40aa-a7b9-5c6062cf7cf3@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "dd35ed1f-7951-4953-a3e4-8397cc408b78@d6aae": {
+    "url": "db://assets/gameBundle/atlas/mj_card.plist@d6aae",
+    "value": {
+      "depends": [
+        "61c11695-2396-40aa-a7b9-5c6062cf7cf3@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "dd35ed1f-7951-4953-a3e4-8397cc408b78@4fb09": {
+    "url": "db://assets/gameBundle/atlas/mj_card.plist@4fb09",
+    "value": {
+      "depends": [
+        "61c11695-2396-40aa-a7b9-5c6062cf7cf3@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "dd35ed1f-7951-4953-a3e4-8397cc408b78@aab81": {
+    "url": "db://assets/gameBundle/atlas/mj_card.plist@aab81",
+    "value": {
+      "depends": [
+        "61c11695-2396-40aa-a7b9-5c6062cf7cf3@6c48a"
+      ]
+    },
     "versionCode": 1
   }
 }

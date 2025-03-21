@@ -31,17 +31,9 @@
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\tools.ts.meta": {
       "time": 1741786566172.0942
     },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\prefabs": {
-      "time": 1742039051030.6433,
-      "uuid": "7fb19dca-1e99-4342-8d1b-3f0e86119e21"
-    },
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\res": {
       "time": 1742039051033.6355,
       "uuid": "e4afe4e9-50ea-4716-930d-8fe09e6fc7ac"
-    },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources": {
-      "time": 1742126055748.5405,
-      "uuid": "4d2e28d4-0f7a-4ad9-b843-2324b178f2ee"
     },
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts": {
       "time": 1742113245936.0808,
@@ -51,10 +43,6 @@
       "time": 1741961180378.787,
       "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
     },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\main.ts": {
-      "time": 1742126773237.0276,
-      "uuid": "f84fe0a7-bc38-477d-b5b1-98df6d391d08"
-    },
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\mjcard.ts": {
       "time": 1741959457261.9465,
       "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
@@ -62,10 +50,6 @@
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\mjNode.ts": {
       "time": 1742153848949.507,
       "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
-    },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\rankItem.ts": {
-      "time": 1741786566171.097,
-      "uuid": "d8a57f4c-ed67-4111-bb3e-7186516beaec"
     },
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\scripts\\tools.ts": {
       "time": 1742113580910.6616,
@@ -93,25 +77,9 @@
       "time": 1742044096345.948,
       "uuid": "450189f4-8ffb-45cd-84e1-c7f47fbdac01"
     },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\prefabs\\rankItem.prefab": {
-      "time": 1742047030541.6963,
-      "uuid": "697ad3e1-8ebd-4a9f-831c-1d1e62a406fb"
-    },
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\res\\bg.png": {
       "time": 1741096098657.0696,
       "uuid": "41a9f89a-53ce-4fc1-86f3-0efe6b421b4b"
-    },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\res\\slotbg.png": {
-      "time": 1741786566140.211,
-      "uuid": "903260e7-9019-4753-86bf-f2ff1615d004"
-    },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\mj_card.png": {
-      "time": 1742038969069.3877,
-      "uuid": "16619663-a554-4810-bc97-6bedb6ba953c"
-    },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\mj_card.plist": {
-      "time": 1742038969072.3804,
-      "uuid": "13bbdaad-7631-4ec0-9089-65f83d7d6695"
     },
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\main.scene.meta": {
       "time": 1742039364794.237
@@ -130,10 +98,6 @@
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound.meta": {
       "time": 1742126055763.5015
     },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound": {
-      "time": 1742038707176.277,
-      "uuid": "335f5383-7c6d-43f0-81a4-3f27672bd257"
-    },
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\BACKGROUND.mp3.meta": {
       "time": 1741959457278.919
     },
@@ -148,18 +112,6 @@
     },
     "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\SEND_CARD.mp3.meta": {
       "time": 1741959457284.884
-    },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\BT_CLICK.mp3": {
-      "time": 1741959457279.8984,
-      "uuid": "6620fe1a-9cf0-42dd-9b31-b18a4110c002"
-    },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\BACKGROUND.mp3": {
-      "time": 1741959457277.9182,
-      "uuid": "547c3065-cd85-4ab8-a8ce-44f5f7c8d911"
-    },
-    "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\GAME_START.mp3": {
-      "time": 1741959457282.892,
-      "uuid": "d91f38dc-2e90-4434-947a-5245d2df7fc5"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts": {
       "time": 1742561932867.5803,
@@ -206,52 +158,32 @@
     "/Users/zzx/Desktop/mygame/assets/resources/b19xfh_xzYXZbg.png.meta": {
       "time": 1742201104975.1934
     },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs": {
-      "time": 1742218630792.2007,
-      "uuid": "7fb19dca-1e99-4342-8d1b-3f0e86119e21"
-    },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\res": {
       "time": 1742156645956.6262,
       "uuid": "e4afe4e9-50ea-4716-930d-8fe09e6fc7ac"
     },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources": {
-      "time": 1742219842912.937,
-      "uuid": "4d2e28d4-0f7a-4ad9-b843-2324b178f2ee"
-    },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts": {
-      "time": 1742218630812.36,
+      "time": 1742564123096.3503,
       "uuid": "e3d3438c-fb7b-4889-9edc-93a64d25460c"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound": {
-      "time": 1742218630807.3752,
-      "uuid": "335f5383-7c6d-43f0-81a4-3f27672bd257"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\audioManager.ts": {
       "time": 1742218630808.3853,
       "uuid": "298c64db-251e-4f24-a1e7-b98e9c863880"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\gameStart.ts": {
-      "time": 1742220537503.3096,
+      "time": 1742571715739.8823,
       "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
     },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\main.ts": {
-      "time": 1742218630810.3645,
-      "uuid": "f84fe0a7-bc38-477d-b5b1-98df6d391d08"
-    },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\mjcard.ts": {
-      "time": 1741959457261.9465,
+      "time": 1742575605813.1758,
       "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\mjNode.ts": {
-      "time": 1742218630812.36,
+      "time": 1742575510042.3271,
       "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
     },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\rankItem.ts": {
-      "time": 1741786566171.097,
-      "uuid": "d8a57f4c-ed67-4111-bb3e-7186516beaec"
-    },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\tools.ts": {
-      "time": 1742113580910.6616,
+      "time": 1742574488542.8567,
       "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs.meta": {
@@ -298,65 +230,13 @@
       "time": 1742044096345.948,
       "uuid": "450189f4-8ffb-45cd-84e1-c7f47fbdac01"
     },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs\\rankItem.prefab": {
-      "time": 1742220554128.7866,
-      "uuid": "697ad3e1-8ebd-4a9f-831c-1d1e62a406fb"
-    },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\res\\bg.png": {
       "time": 1741096098657.0696,
       "uuid": "41a9f89a-53ce-4fc1-86f3-0efe6b421b4b"
     },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\res\\slotbg.png": {
-      "time": 1741786566140.211,
-      "uuid": "903260e7-9019-4753-86bf-f2ff1615d004"
-    },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\b13dating_zuoceBG.png": {
       "time": 1741786566143.2002,
       "uuid": "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\dt_GrxxZhaq_txbg2aNv.png": {
-      "time": 1742218630798.1868,
-      "uuid": "68ce17e1-de70-4596-8e53-cb6188a711b9"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\mj_card.plist": {
-      "time": 1742219786759.837,
-      "uuid": "13bbdaad-7631-4ec0-9089-65f83d7d6695"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\mj_card.png": {
-      "time": 1742219786755.847,
-      "uuid": "16619663-a554-4810-bc97-6bedb6ba953c"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\BACKGROUND.mp3": {
-      "time": 1741959457277.9182,
-      "uuid": "547c3065-cd85-4ab8-a8ce-44f5f7c8d911"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\BT_CLICK.mp3": {
-      "time": 1741959457279.8984,
-      "uuid": "6620fe1a-9cf0-42dd-9b31-b18a4110c002"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\gamelost.mp3": {
-      "time": 1742218630802.176,
-      "uuid": "0c6b525a-489c-4d71-a95a-0a7548f861c4"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\gamewin.mp3": {
-      "time": 1742218630805.38,
-      "uuid": "abec97be-7df1-4310-b282-6af970cdd302"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\GAME_START.mp3": {
-      "time": 1741959457282.892,
-      "uuid": "d91f38dc-2e90-4434-947a-5245d2df7fc5"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\SEND_CARDS.mp3": {
-      "time": 1742218630800.1858,
-      "uuid": "b47efb98-543d-4fe6-a6f1-6475cce5b082"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\TIME_WARIMG.mp3": {
-      "time": 1742218630801.1785,
-      "uuid": "9433be48-424a-4191-8505-c40cde043bd2"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\xiaochu.mp3": {
-      "time": 1742218630807.3752,
-      "uuid": "9a56bcf7-1a08-454b-86e1-96eb447f258a"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs\\mjcard.prefab.meta": {
       "time": 1742039051089.486
@@ -411,10 +291,6 @@
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\score_bg.PNG.meta": {
       "time": 1742219842972.7766
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\score_bg.PNG": {
-      "time": 1741786566129.2378,
-      "uuid": "aaa0ba2a-75b5-4090-a822-ce683f5851a5"
     },
     "/Users/zzx/Desktop/mygame/assets/scene.meta": {
       "time": 1742551723292.385
@@ -639,6 +515,209 @@
     "/Users/zzx/Desktop/mygame/assets/gameBundle/sound/time.mp3": {
       "time": 1742551865494.3328,
       "uuid": "82a16a2b-6a41-4461-9a0e-24d79c71ddd4"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle": {
+      "time": 1742564123020.5525,
+      "uuid": "28e71477-fcd8-44e5-ab3f-4f55a72f981c"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gui": {
+      "time": 1742564123077.4019,
+      "uuid": "e4afe4e9-50ea-4716-930d-8fe09e6fc7ac"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scene": {
+      "time": 1742564123088.3723,
+      "uuid": "56d8d2dd-7ecf-4891-8fb2-47a24db3a131"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\atlas": {
+      "time": 1742573591845.0605,
+      "uuid": "62ca7440-75de-442c-a3eb-8410ba899976"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\gui": {
+      "time": 1742573526500.177,
+      "uuid": "2b010b11-d45f-4430-b075-964eec1a239e"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs": {
+      "time": 1742565465715.9814,
+      "uuid": "12e5d28d-7d63-4f4b-b336-1d00903b4cf1"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound": {
+      "time": 1742570935110.8147,
+      "uuid": "d28e714b-ef1b-4cdb-8684-23d773784799"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\gameLanch.ts": {
+      "time": 1742564542760.1763,
+      "uuid": "36d96c96-16af-4164-914c-59c8c45154d4"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\loading.ts": {
+      "time": 1742564123091.3647,
+      "uuid": "e8fee0cd-3b4f-4be9-80f3-d2d6a490b229"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\resMgr.ts": {
+      "time": 1742564123094.356,
+      "uuid": "0b7cd3c8-fcb2-4e6d-ba23-c0c45d04845d"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle.meta": {
+      "time": 1742564122962.7231
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gui.meta": {
+      "time": 1742564123069.4575
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scene.meta": {
+      "time": 1742564123078.3984
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\atlas.meta": {
+      "time": 1742564122963.7224
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\gui.meta": {
+      "time": 1742564122979.6626
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs.meta": {
+      "time": 1742564123014.593
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound.meta": {
+      "time": 1742564123020.5525
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\gameLanch.ts.meta": {
+      "time": 1742564123090.3691
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\loading.ts.meta": {
+      "time": 1742564123092.3616
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\resMgr.ts.meta": {
+      "time": 1742564123095.3533
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gui\\bg.png": {
+      "time": 1742564123072.414,
+      "uuid": "41a9f89a-53ce-4fc1-86f3-0efe6b421b4b"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gui\\loading0.png": {
+      "time": 1742564123074.4084,
+      "uuid": "b5f57b74-6924-4648-9d45-2cefd169e54c"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gui\\loading1.png": {
+      "time": 1742564123075.4062,
+      "uuid": "96a548a1-bf00-4ed9-8861-290bb9a87d02"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gui\\mj_11.png": {
+      "time": 1742564123076.4033,
+      "uuid": "de372a8d-e19e-4c4f-af8d-3a5a5bc629ef"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scene\\main.scene": {
+      "time": 1742564123079.4065,
+      "uuid": "df672520-9755-4d63-978e-4a7ae276a322"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\atlas\\mj_card.plist": {
+      "time": 1742573406115.1226,
+      "uuid": "dd35ed1f-7951-4953-a3e4-8397cc408b78"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\atlas\\mj_card.png": {
+      "time": 1742573406111.1328,
+      "uuid": "61c11695-2396-40aa-a7b9-5c6062cf7cf3"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\gui\\game_bg.png": {
+      "time": 1742564123012.579,
+      "uuid": "dd2add37-286b-4fcc-ae83-9a119ef1223e"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameStart.prefab": {
+      "time": 1742573771123.9895,
+      "uuid": "823197b1-3bd7-451b-99ff-f6c1debdc910"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\mjcard.prefab": {
+      "time": 1742565231626.7644,
+      "uuid": "450189f4-8ffb-45cd-84e1-c7f47fbdac01"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\back.mp3": {
+      "time": 1742564123045.4868,
+      "uuid": "7737de62-2ed1-4958-a406-d6657e0e3f08"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\clear.mp3": {
+      "time": 1742564123047.4841,
+      "uuid": "ff49708a-d790-4141-8512-7a5d088db1e8"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\click.mp3": {
+      "time": 1742564123049.4763,
+      "uuid": "09dd27df-f5ee-41aa-9885-06410e00b1d8"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\gameLost.mp3": {
+      "time": 1742564123050.4731,
+      "uuid": "02a9ef8f-81e7-4911-8e47-02df2cdf5974"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\gameStart.mp3": {
+      "time": 1742564123052.4744,
+      "uuid": "8544dc37-c387-4c1d-a236-3f287943633f"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\gameWin.mp3": {
+      "time": 1742564123054.463,
+      "uuid": "1aed9155-01a5-4f81-bcca-8180eaf456c9"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\sendCard.mp3": {
+      "time": 1742564123055.4597,
+      "uuid": "7a86e2e6-185f-41b4-8a09-9f12f8f7ff78"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\time.mp3": {
+      "time": 1742564123056.4666,
+      "uuid": "82a16a2b-6a41-4461-9a0e-24d79c71ddd4"
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scene\\main.scene.meta": {
+      "time": 1742564123088.3723
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gui\\mj_11.png.meta": {
+      "time": 1742564123077.4019
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gui\\loading0.png.meta": {
+      "time": 1742564123074.4084
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gui\\loading1.png.meta": {
+      "time": 1742564123076.4033
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gui\\bg.png.meta": {
+      "time": 1742564123073.4272
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\atlas\\mj_card.png.meta": {
+      "time": 1742573591846.0674
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameStart.prefab.meta": {
+      "time": 1742564123018.5613
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\mjcard.prefab.meta": {
+      "time": 1742564123019.556
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\back.mp3.meta": {
+      "time": 1742564123046.4875
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\clear.mp3.meta": {
+      "time": 1742564123047.4841
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\click.mp3.meta": {
+      "time": 1742564123049.4763
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\gameStart.mp3.meta": {
+      "time": 1742564123052.4744
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\gameLost.mp3.meta": {
+      "time": 1742564123051.47
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\gui\\game_bg.png.meta": {
+      "time": 1742564123014.593
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\gameWin.mp3.meta": {
+      "time": 1742564123054.463
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\sendCard.mp3.meta": {
+      "time": 1742564123056.4666
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\time.mp3.meta": {
+      "time": 1742564123057.4539
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\atlas\\mj_card.plist.meta": {
+      "time": 1742573732255.913
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameNode.prefab.meta": {
+      "time": 1742565465729.9421
+    },
+    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameNode.prefab": {
+      "time": 1742573742022.4138,
+      "uuid": "47e65697-8589-419b-91a9-fb9c6ff27703"
     }
   },
   "missing": {
@@ -648,14 +727,14 @@
       "removeTime": 1742126055747
     },
     "547c3065-cd85-4ab8-a8ce-44f5f7c8d911": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/sound/BACKGROUND.mp3",
-      "time": 1742389824435.2952,
-      "removeTime": 1742560126537
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\BACKGROUND.mp3",
+      "time": 1741959457277.9182,
+      "removeTime": 1742564223696
     },
     "6620fe1a-9cf0-42dd-9b31-b18a4110c002": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/sound/BT_CLICK.mp3",
-      "time": 1742389824436.3684,
-      "removeTime": 1742560126537
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\BT_CLICK.mp3",
+      "time": 1741959457279.8984,
+      "removeTime": 1742564223697
     },
     "abc7cc46-ddec-4bab-a68f-4e17413ff804": {
       "path": "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\BT_CLOSE.mp3",
@@ -663,9 +742,9 @@
       "removeTime": 1742218740042
     },
     "d91f38dc-2e90-4434-947a-5245d2df7fc5": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/sound/GAME_START.mp3",
-      "time": 1742389824436.8733,
-      "removeTime": 1742560126537
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\GAME_START.mp3",
+      "time": 1741959457282.892,
+      "removeTime": 1742564223698
     },
     "cdb7b0cb-b2d9-46dc-bf45-dcd8f89a45a6": {
       "path": "C:\\Users\\zzx\\Desktop\\myGameMj\\assets\\resources\\sound\\SEND_CARD.mp3",
@@ -788,14 +867,14 @@
       "removeTime": 1742552153283
     },
     "903260e7-9019-4753-86bf-f2ff1615d004": {
-      "path": "/Users/zzx/Desktop/mygame/assets/gui/slotbg.png",
-      "time": 1742389824420.4487,
-      "removeTime": 1742552283691
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\res\\slotbg.png",
+      "time": 1741786566140.211,
+      "removeTime": 1742564223694
     },
     "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/bt1_bg.png",
-      "time": 1742389824421.7368,
-      "removeTime": 1742559768914
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\gui\\bt1_bg.png",
+      "time": 1742564122981.6597,
+      "removeTime": 1742573526499
     },
     "61a5e5d5-48bd-4d93-a7b4-3d68e23cf2af": {
       "path": "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/gameUI.prefab",
@@ -803,9 +882,9 @@
       "removeTime": 1742559974900
     },
     "697ad3e1-8ebd-4a9f-831c-1d1e62a406fb": {
-      "path": "/Users/zzx/Desktop/mygame/assets/prefabs/rankItem.prefab",
-      "time": 1742389824405.4065,
-      "removeTime": 1742560089042
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs\\rankItem.prefab",
+      "time": 1742220554128.7866,
+      "removeTime": 1742564223694
     },
     "450189f4-8ffb-45cd-84e1-c7f47fbdac01": {
       "path": "/Users/zzx/Desktop/mygame/assets/prefabs/mjcard.prefab",
@@ -813,59 +892,59 @@
       "removeTime": 1742560097997
     },
     "335f5383-7c6d-43f0-81a4-3f27672bd257": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/sound",
-      "time": 1742454801125.3213,
-      "removeTime": 1742560126537
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound",
+      "time": 1742218630807.3752,
+      "removeTime": 1742564223694
     },
     "b47efb98-543d-4fe6-a6f1-6475cce5b082": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/sound/SEND_CARDS.mp3",
-      "time": 1742389824437.6794,
-      "removeTime": 1742560126537
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\SEND_CARDS.mp3",
+      "time": 1742218630800.1858,
+      "removeTime": 1742564223698
     },
     "9433be48-424a-4191-8505-c40cde043bd2": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/sound/TIME_WARIMG.mp3",
-      "time": 1742389824438.2695,
-      "removeTime": 1742560126537
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\TIME_WARIMG.mp3",
+      "time": 1742218630801.1785,
+      "removeTime": 1742564223698
     },
     "0c6b525a-489c-4d71-a95a-0a7548f861c4": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/sound/gamelost.mp3",
-      "time": 1742389824439.0212,
-      "removeTime": 1742560126537
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\gamelost.mp3",
+      "time": 1742218630802.176,
+      "removeTime": 1742564223697
     },
     "abec97be-7df1-4310-b282-6af970cdd302": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/sound/gamewin.mp3",
-      "time": 1742389824440.494,
-      "removeTime": 1742560126537
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\gamewin.mp3",
+      "time": 1742218630805.38,
+      "removeTime": 1742564223697
     },
     "9a56bcf7-1a08-454b-86e1-96eb447f258a": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/sound/xiaochu.mp3",
-      "time": 1742389824441.0647,
-      "removeTime": 1742560126537
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\sound\\xiaochu.mp3",
+      "time": 1742218630807.3752,
+      "removeTime": 1742564223698
     },
     "4d2e28d4-0f7a-4ad9-b843-2324b178f2ee": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources",
-      "time": 1742560126536.3574,
-      "removeTime": 1742560141707
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources",
+      "time": 1742219842912.937,
+      "removeTime": 1742564223694
     },
     "68ce17e1-de70-4596-8e53-cb6188a711b9": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/dt_GrxxZhaq_txbg2aNv.png",
-      "time": 1742389824422.2083,
-      "removeTime": 1742560141707
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\dt_GrxxZhaq_txbg2aNv.png",
+      "time": 1742218630798.1868,
+      "removeTime": 1742564223695
     },
     "13bbdaad-7631-4ec0-9089-65f83d7d6695": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/mj_card.plist",
-      "time": 1742389824422.6973,
-      "removeTime": 1742560141707
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\mj_card.plist",
+      "time": 1742219786759.837,
+      "removeTime": 1742564223695
     },
     "16619663-a554-4810-bc97-6bedb6ba953c": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/mj_card.png",
-      "time": 1742389824425.6362,
-      "removeTime": 1742560141707
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\mj_card.png",
+      "time": 1742219786755.847,
+      "removeTime": 1742564223696
     },
     "aaa0ba2a-75b5-4090-a822-ce683f5851a5": {
-      "path": "/Users/zzx/Desktop/mygame/assets/resources/score_bg.PNG",
-      "time": 1742389824426.0955,
-      "removeTime": 1742560141707
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\score_bg.PNG",
+      "time": 1741786566129.2378,
+      "removeTime": 1742564223699
     },
     "da8ddbad-cf76-46c5-ad75-f3e4f19e9875": {
       "path": "/Users/zzx/Desktop/mygame/assets/gameBundle/auto-atlas.pac",
@@ -883,9 +962,9 @@
       "removeTime": 1742560277564
     },
     "7fb19dca-1e99-4342-8d1b-3f0e86119e21": {
-      "path": "/Users/zzx/Desktop/mygame/assets/prefabs",
-      "time": 1742560097996.6487,
-      "removeTime": 1742560406849
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs",
+      "time": 1742218630792.2007,
+      "removeTime": 1742564223693
     },
     "df672520-9755-4d63-978e-4a7ae276a322": {
       "path": "/Users/zzx/Desktop/mygame/assets/main.scene",
@@ -893,9 +972,9 @@
       "removeTime": 1742560412504
     },
     "47e65697-8589-419b-91a9-fb9c6ff27703": {
-      "path": "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameUI.prefab",
-      "time": 1742560000576.0757,
-      "removeTime": 1742560996118
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\game.prefab",
+      "time": 1742564123016.566,
+      "removeTime": 1742565465718
     },
     "8c1619b8-cd0d-4516-bcfa-873e248a8634": {
       "path": "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameLoading.prefab",
@@ -903,14 +982,14 @@
       "removeTime": 1742561124367
     },
     "d8a57f4c-ed67-4111-bb3e-7186516beaec": {
-      "path": "/Users/zzx/Desktop/mygame/assets/scripts/rankItem.ts",
-      "time": 1742389824444.929,
-      "removeTime": 1742561906965
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\rankItem.ts",
+      "time": 1741786566171.097,
+      "removeTime": 1742564223694
     },
     "f84fe0a7-bc38-477d-b5b1-98df6d391d08": {
-      "path": "/Users/zzx/Desktop/mygame/assets/scripts/main.ts",
-      "time": 1742389824443.1682,
-      "removeTime": 1742561932868
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\main.ts",
+      "time": 1742218630810.3645,
+      "removeTime": 1742564223694
     },
     "ff49708a-d790-4141-8512-7a5d088db1e8": {
       "path": "/Users/zzx/Desktop/mygame/assets/gameBundle/sound/xiaochu.mp3",
@@ -921,6 +1000,21 @@
       "path": "/Users/zzx/Desktop/mygame/assets/gameBundle/sound/time_sound.mp3",
       "time": 1742551865494.3328,
       "removeTime": 1742562809177
+    },
+    "30cb24bb-d1bb-4d9a-a83a-a2c487e94705": {
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound\\btn_close.mp3",
+      "time": 1640682242000,
+      "removeTime": 1742570935110
+    },
+    "a79d5d7a-985c-47ae-8c2b-8ec2f5eeec6f": {
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\gui\\frame.png",
+      "time": 1742564122984.6553,
+      "removeTime": 1742573526278
+    },
+    "9838381c-6c70-42f2-9ea3-0e50137663ae": {
+      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\gui\\btn_bg.png",
+      "time": 1742564122982.6572,
+      "removeTime": 1742573526500
     }
   }
 }

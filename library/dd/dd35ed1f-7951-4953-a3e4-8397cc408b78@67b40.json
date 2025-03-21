@@ -4,8 +4,8 @@
     "name": "mj_14",
     "atlas": "dd35ed1f-7951-4953-a3e4-8397cc408b78",
     "rect": {
-      "x": 1741,
-      "y": 2,
+      "x": 1502,
+      "y": 171,
       "width": 67,
       "height": 91
     },
@@ -17,7 +17,7 @@
       "width": 67,
       "height": 91
     },
-    "rotated": false,
+    "rotated": true,
     "capInsets": [
       0,
       0,

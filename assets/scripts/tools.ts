@@ -11,6 +11,7 @@ export enum SOUND {
     sendCard_sound,
     time_sound,
     clear_sound,
+    back_sound,
 }
 
 export default class tools {
@@ -18,9 +19,8 @@ export default class tools {
     static level: number = 1;       //当前游戏关卡等级
     static picNum: number = 18;      //图片数量 level * picNum
     static animType: number = 2;     //发牌动画 1同时移动，缩放  2缩放出现
-    static userName = '磨人小妖精'
-    static userHeadspr = null;
-    static userRank = 'No.1';
+    static cardBackTotal: number = 0;      //背面牌数量
+    static cardBackNow:number = 0;
 
     static resPkg = {
         //gui: {
@@ -38,7 +38,7 @@ export default class tools {
             urls: [
                 'gameStart',
                 'mjcard',
-                'game',
+                'gameNode',
             ],
         },
 
@@ -68,11 +68,59 @@ export default class tools {
 
     static playSound(sound) {
         if (sound == SOUND.start_sound) {
-            let audioClip = resMgr.Instance.getAsset('sound', 'gameStart');
+            let audioClip = resMgr.Instance.getAsset('sound', 'gameStart') as AudioClip;
+            AudioManager.inst.playOneShot(audioClip);
+        }
+        else if (sound == SOUND.click_sound) {
+            let audioClip = resMgr.Instance.getAsset('sound', 'click') as AudioClip;
+            AudioManager.inst.playOneShot(audioClip);
+        }
+        else if (sound == SOUND.gameLost_sound) {
+            let audioClip = resMgr.Instance.getAsset('sound', 'gameLost') as AudioClip;
+            AudioManager.inst.playOneShot(audioClip);
+        }
+        else if (sound == SOUND.gameWin_sound) {
+            let audioClip = resMgr.Instance.getAsset('sound', 'gameWin') as AudioClip;
+            AudioManager.inst.playOneShot(audioClip);
+        }
+        else if (sound == SOUND.sendCard_sound) {
+            let audioClip = resMgr.Instance.getAsset('sound', 'sendCard') as AudioClip;
+            AudioManager.inst.playOneShot(audioClip);
+        }
+        else if (sound == SOUND.time_sound) {
+            let audioClip = resMgr.Instance.getAsset('sound', 'time') as AudioClip;
+            AudioManager.inst.playOneShot(audioClip);
+        }
+        else if (sound == SOUND.clear_sound) {
+            let audioClip = resMgr.Instance.getAsset('sound', 'clear') as AudioClip;
+            AudioManager.inst.playOneShot(audioClip);
+        }
+        else if (sound == SOUND.back_sound) {
+            let audioClip = resMgr.Instance.getAsset('sound', 'back') as AudioClip;
             AudioManager.inst.playOneShot(audioClip);
         }
     }
 
-    //获取麻将
-    static getMj
+    static saveLevel() {
+        tools.cardBackTotal = tools.level;
+        tools.cardBackNow = 0;
+        localStorage.setItem('level', tools.level.toString());
+    }
+
+    static getLevel() {
+        let level = localStorage.getItem('level');
+        tools.level = Number(level);
+        if (tools.level == 0) tools.level = 1;
+        tools.cardBackTotal = tools.level;
+        tools.cardBackNow = 0;
+        return tools.level;
+    }
+
+    static randomMjAnim() {
+        let type = 1;
+        if (tools.level % 2 == 0) type = 1;
+        else type = 2
+
+        tools.animType = type;
+    }
 }

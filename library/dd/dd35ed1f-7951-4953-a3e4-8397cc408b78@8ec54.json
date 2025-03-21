@@ -4,20 +4,20 @@
     "name": "dating_PHB1",
     "atlas": "dd35ed1f-7951-4953-a3e4-8397cc408b78",
     "rect": {
-      "x": 454,
-      "y": 143,
+      "x": 1967,
+      "y": 171,
       "width": 48,
       "height": 43
     },
     "offset": {
       "x": 0,
-      "y": 2
+      "y": 0
     },
     "originalSize": {
-      "width": 56,
-      "height": 49
+      "width": 48,
+      "height": 43
     },
-    "rotated": true,
+    "rotated": false,
     "capInsets": [
       0,
       0,

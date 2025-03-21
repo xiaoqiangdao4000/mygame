@@ -4,7 +4,7 @@
     "name": "item",
     "atlas": "dd35ed1f-7951-4953-a3e4-8397cc408b78",
     "rect": {
-      "x": 630,
+      "x": 52,
       "y": 2,
       "width": 156,
       "height": 166
@@ -19,10 +19,10 @@
     },
     "rotated": false,
     "capInsets": [
-      0,
-      0,
-      0,
-      0
+      30,
+      24,
+      37,
+      46
     ],
     "vertices": {
       "rawPosition": [],
