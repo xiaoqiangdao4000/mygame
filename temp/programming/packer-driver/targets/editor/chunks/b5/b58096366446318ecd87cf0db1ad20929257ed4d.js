@@ -106,6 +106,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
             error: Error()
           }), SOUND) : SOUND).start_sound);
+          console.log('this.gameNode = ', this.gameNode.getPosition());
           this.hide();
         }
 

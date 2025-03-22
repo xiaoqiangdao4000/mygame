@@ -54,8 +54,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this._interaction = true;
           this.cardId = 0;
           this.scale = 1.5;
-          this.moveDuration = 0.5;
-          this.scaleDuration = 0.5;
+          this.moveDuration = 0.1;
+          this.scaleDuration = 0.1;
           this.sprFrame = null;
           this.cardBackFrame = null;
         }

@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, tween, Vec3, tools, SOUND, gameStart, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _class3, _crd, ccclass, property, eventTarget, mjNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, tween, Vec3, tools, SOUND, gameStart, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _class3, _crd, ccclass, property, eventTarget, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -54,7 +54,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
       _cclegacy._RF.push({}, "5e1aas6J3hBqpb9rkSPiEl7", "mjNode", undefined);
 
-      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Collider', 'Component', 'ConfigurableConstraint', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Label', 'Node', 'NodeEventType', 'Prefab', 'ProgressBar', 'Rect', 'resources', 'Script', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'tween', 'UITransform', 'Vec2', 'Vec3']);
+      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Collider', 'Component', 'ConfigurableConstraint', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Label', 'Node', 'NodeEventType', 'Prefab', 'ProgressBar', 'Rect', 'resources', 'Script', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'tween', 'UITransform', 'Vec2', 'Vec3', 'view']);
 
       ({
         ccclass,
@@ -65,7 +65,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       //import { AudioManager } from './audioManager';
       _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(ProgressBar), _dec4 = property(Label), _dec5 = property(Node), _dec6 = property({
         type: [Node]
-      }), _dec7 = property(Label), _dec(_class = (_class2 = (_class3 = class mjNode extends Component {
+      }), _dec7 = property(Label), _dec8 = property(Node), _dec(_class = (_class2 = (_class3 = class mjNode extends Component {
         constructor() {
           super(...arguments);
 
@@ -80,6 +80,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           _initializerDefineProperty(this, "tabNodes", _descriptor5, this);
 
           _initializerDefineProperty(this, "gameTipsLabel", _descriptor6, this);
+
+          _initializerDefineProperty(this, "mjFrameNode", _descriptor7, this);
 
           this.isCanClick = false;
           //是否可以点击
@@ -99,14 +101,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
         //物品栏
         onLoad() {
-          console.log('初始化游戏类'); // if (mjNode.Instance === null) {
-          //     console.log('初始化游戏类');
-          //     mjNode.Instance = this;
-          // }
-          // else {
-          //     this.destroy();
-          //     return;
-          // }
+          console.log('初始化游戏类');
         }
 
         start() {
@@ -120,6 +115,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             var pos1 = this.tabNodes[i].getPosition();
             pos.x = pos1.x;
             pos.y = pos1.y;
+            console.log('posy = ', pos.y);
             this.tabItemPos.push(pos);
           }
 
@@ -326,7 +322,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
         createDesktopMj(refresh) {
           //发牌
-          // AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
           if (this.desktopCuritem % 3 == 0) this.randomIndex = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).getRandomMjIndex();
@@ -338,7 +333,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           mycard.initMj(this.randomIndex, this.desktopItems.length, (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).animType, function () {
-            //AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
             (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
@@ -418,6 +412,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
 
         insertItem(node, callback) {
+          this.tabItemPos = [];
+
+          for (var i = 0; i < this.tabNodes.length; i++) {
+            var pos = {
+              x: 0,
+              y: 0
+            };
+            var pos1 = this.tabNodes[i].getPosition();
+            pos.x = pos1.x;
+            pos.y = pos1.y;
+            console.log('click_posy = ', pos.y);
+            this.tabItemPos.push(pos);
+          }
+
           var mjcard = node.getComponent('mjcard');
           mjcard.restCard();
           this.tabItem.push(node); //console.log('插入成功---');
@@ -567,6 +575,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           return [];
         }
       }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "gameTipsLabel", [_dec7], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "mjFrameNode", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,

@@ -47,6 +47,7 @@ export class gameStart extends Component {
         this.gameNode.parent = this.node.parent;
         this.gameNode.active = true;
         tools.playSound(SOUND.start_sound);
+        console.log('this.gameNode = ', this.gameNode.getPosition())
         this.hide();
     }
 

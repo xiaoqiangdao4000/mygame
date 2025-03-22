@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 16047.943,
+      "mTimestamp": 9512.1201,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -724,7 +724,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 11411679.1181,
+      "mTimestamp": 1333651.9381,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1589,7 +1589,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1742564203865,
+      "mTimestamp": 1742649936319,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -3306,7 +3306,7 @@
     },
     "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts": {
       "mTimestamp": {
-        "mtime": 1742571715739.8823,
+        "mtime": 1742648793148.8208,
         "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
       },
       "chunkId": "b58096366446318ecd87cf0db1ad20929257ed4d",
@@ -3463,7 +3463,7 @@
     },
     "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
       "mTimestamp": {
-        "mtime": 1742575510042.3271,
+        "mtime": 1742650022053.7837,
         "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
       },
       "chunkId": "4396f24366498b1f1ba4adeb33ac634f35ee0f65",
@@ -3483,11 +3483,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 293
+              "column": 299
             },
             "end": {
               "line": 1,
-              "column": 297
+              "column": 303
             }
           }
         },
@@ -3568,7 +3568,7 @@
     },
     "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts": {
       "mTimestamp": {
-        "mtime": 1742575605813.1758,
+        "mtime": 1742651268264.913,
         "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
       },
       "chunkId": "a52fe6b6ff070e1b1b03bdff76bf64ce65fc9c0c",

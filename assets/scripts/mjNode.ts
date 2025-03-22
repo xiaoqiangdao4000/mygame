@@ -1,4 +1,4 @@
-import { _decorator, BoxCollider2D, Collider, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Script, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3 } from 'cc';
+import { _decorator, BoxCollider2D, Collider, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Script, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3, view } from 'cc';
 const { ccclass, property } = _decorator;
 const eventTarget = new EventTarget();
 import tools, { SOUND } from './tools'
@@ -28,6 +28,9 @@ export class mjNode extends Component {
     @property(Label)
     gameTipsLabel: Label | null = null;
 
+    @property(Node)
+    mjFrameNode: Node | null = null;
+
     static Instance: mjNode = null;
 
     isCanClick = false;         //是否可以点击
@@ -43,15 +46,6 @@ export class mjNode extends Component {
 
     onLoad() {
         console.log('初始化游戏类');
-        // if (mjNode.Instance === null) {
-        //     console.log('初始化游戏类');
-        //     mjNode.Instance = this;
-        // }
-        // else {
-        //     this.destroy();
-        //     return;
-        // }
-
     }
 
     start() {
@@ -62,6 +56,8 @@ export class mjNode extends Component {
             let pos1 = this.tabNodes[i].getPosition();
             pos.x = pos1.x;
             pos.y = pos1.y;
+            console.log('posy = ', pos.y)
+
             this.tabItemPos.push(pos)
         }
         this.startGame();
@@ -205,7 +201,6 @@ export class mjNode extends Component {
     //随机创建麻将
     createDesktopMj(refresh) {
         //发牌
-        // AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
         if (this.desktopCuritem % 3 == 0) this.randomIndex = tools.getRandomMjIndex();
         let mj = instantiate(this.mycard_prefab);
         mj.parent = this.node;
@@ -213,7 +208,6 @@ export class mjNode extends Component {
         this.desktopItems.push(mj);
         var self = this;
         mycard.initMj(this.randomIndex, this.desktopItems.length, tools.animType, function () {
-            //AudioManager.inst.playOneShot(main.instant.btSendCardMusic);
             tools.playSound(SOUND.sendCard_sound);
             if (refresh) {
                 self.refreshDeaktopMj();
@@ -282,6 +276,18 @@ export class mjNode extends Component {
 
     //插入到物品栏
     insertItem(node: Node, callback) {
+
+        this.tabItemPos = [];
+        for (let i = 0; i < this.tabNodes.length; i++) {
+            let pos = { x: 0, y: 0 };
+            let pos1 = this.tabNodes[i].getPosition();
+            pos.x = pos1.x;
+            pos.y = pos1.y;
+            console.log('click_posy = ', pos.y)
+
+            this.tabItemPos.push(pos)
+        }
+
         let mjcard = node.getComponent('mjcard') as mjcard;
         mjcard.restCard();
         this.tabItem.push(node);

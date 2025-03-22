@@ -13,8 +13,8 @@ export class mjcard extends Component {
     private _interaction = true;
     cardId = 0;
     scale = 1.5;
-    moveDuration = 0.5;
-    scaleDuration = 0.5;
+    moveDuration = 0.1;
+    scaleDuration = 0.1;
     sprFrame: SpriteFrame = null;
     cardBackFrame: SpriteFrame = null;
 

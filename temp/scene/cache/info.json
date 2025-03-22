@@ -4,9 +4,6 @@
         "cpu": "Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz",
         "version": "Windows 10 Pro"
     },
-    "sceneListMap": {
-        "df672520-9755-4d63-978e-4a7ae276a322": "/Users/zzx/Desktop/mygame/assets/main.scene",
-        "823197b1-3bd7-451b-99ff-f6c1debdc910": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameStart.prefab"
-    },
+    "sceneListMap": {},
     "deviceMd5": "0ecca3da10c3669e4ed29c0d4f1886f9"
 }

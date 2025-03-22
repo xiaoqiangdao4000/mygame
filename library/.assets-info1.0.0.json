@@ -171,15 +171,15 @@
       "uuid": "298c64db-251e-4f24-a1e7-b98e9c863880"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\gameStart.ts": {
-      "time": 1742571715739.8823,
+      "time": 1742648793148.8208,
       "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\mjcard.ts": {
-      "time": 1742575605813.1758,
+      "time": 1742651268264.913,
       "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\mjNode.ts": {
-      "time": 1742575510042.3271,
+      "time": 1742650022053.7837,
       "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\tools.ts": {
@@ -233,10 +233,6 @@
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\res\\bg.png": {
       "time": 1741096098657.0696,
       "uuid": "41a9f89a-53ce-4fc1-86f3-0efe6b421b4b"
-    },
-    "C:\\Users\\zzx\\Desktop\\mygame\\assets\\resources\\b13dating_zuoceBG.png": {
-      "time": 1741786566143.2002,
-      "uuid": "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs\\mjcard.prefab.meta": {
       "time": 1742039051089.486
@@ -335,14 +331,6 @@
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/game_bg.png.meta": {
       "time": 1742551809381.7695
-    },
-    "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/frame.png": {
-      "time": 1742551809390.371,
-      "uuid": "a79d5d7a-985c-47ae-8c2b-8ec2f5eeec6f"
-    },
-    "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/btn_bg.png": {
-      "time": 1742551809391.968,
-      "uuid": "9838381c-6c70-42f2-9ea3-0e50137663ae"
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/game_bg.png": {
       "time": 1742551809387.9517,
@@ -455,10 +443,6 @@
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/bt1_bg.png.meta": {
       "time": 1742559752411.4602
-    },
-    "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/bt1_bg.png": {
-      "time": 1742389824421.7368,
-      "uuid": "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e"
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/mjcard.prefab.meta": {
       "time": 1742389824405.2207
@@ -603,7 +587,7 @@
       "uuid": "de372a8d-e19e-4c4f-af8d-3a5a5bc629ef"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scene\\main.scene": {
-      "time": 1742564123079.4065,
+      "time": 1742651308362.921,
       "uuid": "df672520-9755-4d63-978e-4a7ae276a322"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\atlas\\mj_card.plist": {
@@ -619,7 +603,7 @@
       "uuid": "dd2add37-286b-4fcc-ae83-9a119ef1223e"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameStart.prefab": {
-      "time": 1742573771123.9895,
+      "time": 1742651455853.348,
       "uuid": "823197b1-3bd7-451b-99ff-f6c1debdc910"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\mjcard.prefab": {
@@ -716,7 +700,7 @@
       "time": 1742565465729.9421
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameNode.prefab": {
-      "time": 1742573742022.4138,
+      "time": 1742651167938.3425,
       "uuid": "47e65697-8589-419b-91a9-fb9c6ff27703"
     }
   },
@@ -872,9 +856,9 @@
       "removeTime": 1742564223694
     },
     "5a5bc6b2-44e2-460d-8957-9c54ee2e5c7e": {
-      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\gui\\bt1_bg.png",
-      "time": 1742564122981.6597,
-      "removeTime": 1742573526499
+      "path": "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/bt1_bg.png",
+      "time": 1742389824421.7368,
+      "removeTime": 1742644280027
     },
     "61a5e5d5-48bd-4d93-a7b4-3d68e23cf2af": {
       "path": "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/gameUI.prefab",
@@ -1007,14 +991,14 @@
       "removeTime": 1742570935110
     },
     "a79d5d7a-985c-47ae-8c2b-8ec2f5eeec6f": {
-      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\gui\\frame.png",
-      "time": 1742564122984.6553,
-      "removeTime": 1742573526278
+      "path": "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/frame.png",
+      "time": 1742551809390.371,
+      "removeTime": 1742644280024
     },
     "9838381c-6c70-42f2-9ea3-0e50137663ae": {
-      "path": "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\gui\\btn_bg.png",
-      "time": 1742564122982.6572,
-      "removeTime": 1742573526500
+      "path": "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/btn_bg.png",
+      "time": 1742551809391.968,
+      "removeTime": 1742644280025
     }
   }
 }
