@@ -54,6 +54,7 @@ export class mjcard extends Component {
         this.playAnimation(animType, callback);
     }
 
+    //恢复到正面牌
     restCard() {
         if (this.cardBackFrame != null) {
             this.sprite.spriteFrame = this.sprFrame;
@@ -61,20 +62,22 @@ export class mjcard extends Component {
     }
 
     //播放发牌动画
-    playAnimation(animType, callback) {
+    playAnimation(animType, callback: Function | null) {
         var x = tools.getRandomInt(-300, 300);
         var y = tools.getRandomInt(-200, 400);
         // var x = tools.getRandomInt(-30, 30);
         // var y = tools.getRandomInt(-20, 40);
         this.node.setPosition(0, 0);
         this.node.setScale(0, 0);
+        this.node.active = true;
         //同时移动，缩放
         if (animType == 1) {
             let t1 = tween(this.node).to(this.moveDuration, { position: new Vec3(x, y, 0) })
             let t2 = tween(this.node).to(this.moveDuration, { scale: new Vec3(this.scale, this.scale, 1) })
             let t3 = tween(this.node).parallel(t1, t2);
             let t4 = tween(this.node).call(() => {
-                callback();
+                if (callback) callback();
+
             });
             tween(this.node).sequence(t3, t4).start();
             //tween(this.node).parallel(t1, t2).start();
@@ -85,7 +88,8 @@ export class mjcard extends Component {
             this.node.setPosition(x, y);
             let t1 = tween(this.node).to(this.scaleDuration, { scale: new Vec3(this.scale, this.scale, 1) })
             let t2 = tween(this.node).call(() => {
-                callback();
+                if (callback) callback();
+                // callback();
             });
             tween(this.node).sequence(t1, t2).start();
         }

@@ -83,6 +83,11 @@ export class AudioManager {
             });
         }
     }
+
+    stopAll()
+    {
+       // this._audioSource.stop
+    }
     /**
      * stop the audio play
      */

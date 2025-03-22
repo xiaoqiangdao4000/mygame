@@ -167,23 +167,23 @@
       "uuid": "e3d3438c-fb7b-4889-9edc-93a64d25460c"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\audioManager.ts": {
-      "time": 1742218630808.3853,
+      "time": 1742672063776.899,
       "uuid": "298c64db-251e-4f24-a1e7-b98e9c863880"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\gameStart.ts": {
-      "time": 1742648793148.8208,
+      "time": 1742653248924.808,
       "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\mjcard.ts": {
-      "time": 1742651268264.913,
+      "time": 1742674464963.0366,
       "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\mjNode.ts": {
-      "time": 1742650022053.7837,
+      "time": 1742675418877.6826,
       "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\tools.ts": {
-      "time": 1742574488542.8567,
+      "time": 1742675018410.3567,
       "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs.meta": {
@@ -603,7 +603,7 @@
       "uuid": "dd2add37-286b-4fcc-ae83-9a119ef1223e"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameStart.prefab": {
-      "time": 1742651455853.348,
+      "time": 1742667241092.187,
       "uuid": "823197b1-3bd7-451b-99ff-f6c1debdc910"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\mjcard.prefab": {
@@ -694,13 +694,13 @@
       "time": 1742564123057.4539
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\atlas\\mj_card.plist.meta": {
-      "time": 1742573732255.913
+      "time": 1742667640179.3284
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameNode.prefab.meta": {
       "time": 1742565465729.9421
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameNode.prefab": {
-      "time": 1742651167938.3425,
+      "time": 1742675495097.8086,
       "uuid": "47e65697-8589-419b-91a9-fb9c6ff27703"
     }
   },

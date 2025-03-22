@@ -73,6 +73,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
               error: Error()
             }), tools) : tools).getLevel();
             this.setLevel(level);
+            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+              error: Error()
+            }), SOUND) : SOUND).back_sound);
           } else {
             this.destroy();
             return;

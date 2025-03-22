@@ -113,6 +113,9 @@ System.register(["cc"], function (_export, _context) {
             });
           }
         }
+
+        stopAll() {// this._audioSource.stop
+        }
         /**
          * stop the audio play
          */

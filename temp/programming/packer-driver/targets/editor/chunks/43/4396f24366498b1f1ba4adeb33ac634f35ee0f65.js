@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, tween, Vec3, tools, SOUND, gameStart, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _class3, _crd, ccclass, property, eventTarget, mjNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Button, color, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3, tools, SOUND, gameStart, AudioManager, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _class3, _crd, ccclass, property, eventTarget, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -25,6 +25,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     _reporterNs.report("mjcard", "./mjcard", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfAudioManager(extras) {
+    _reporterNs.report("AudioManager", "./audioManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -33,6 +37,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
       _decorator = _cc._decorator;
+      Button = _cc.Button;
+      color = _cc.color;
       Component = _cc.Component;
       instantiate = _cc.instantiate;
       Intersection2D = _cc.Intersection2D;
@@ -41,6 +47,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       Prefab = _cc.Prefab;
       ProgressBar = _cc.ProgressBar;
       Rect = _cc.Rect;
+      Sprite = _cc.Sprite;
       tween = _cc.tween;
       Vec3 = _cc.Vec3;
     }, function (_unresolved_2) {
@@ -48,13 +55,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       SOUND = _unresolved_2.SOUND;
     }, function (_unresolved_3) {
       gameStart = _unresolved_3.gameStart;
+    }, function (_unresolved_4) {
+      AudioManager = _unresolved_4.AudioManager;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "5e1aas6J3hBqpb9rkSPiEl7", "mjNode", undefined);
 
-      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Collider', 'Component', 'ConfigurableConstraint', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Label', 'Node', 'NodeEventType', 'Prefab', 'ProgressBar', 'Rect', 'resources', 'Script', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'tween', 'UITransform', 'Vec2', 'Vec3', 'view']);
+      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Button', 'Collider', 'color', 'Component', 'ConfigurableConstraint', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Label', 'Node', 'NodeEventType', 'Prefab', 'ProgressBar', 'Rect', 'resources', 'Script', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'tween', 'UITransform', 'Vec2', 'Vec3', 'view']);
 
       ({
         ccclass,
@@ -171,8 +180,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         onBtnClick(event, customEventData) {
           //游戏开始
           if (customEventData == 'gameStart') {
-            //AudioManager.inst.play(main.instant.backMusic);
-            //AudioManager.inst.playOneShot(main.instant.btStartMusic);
             (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
@@ -185,13 +192,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
                 error: Error()
               }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
                 error: Error()
-              }), SOUND) : SOUND).click_sound); //AudioManager.inst.play(main.instant.btClickMusic);
-
+              }), SOUND) : SOUND).click_sound);
               this.gameShowTips(2);
               this.startGame();
             } else if (customEventData == 'backGame') //返回到开始界面
             {
-              //AudioManager.inst.play(main.instant.btClickMusic);
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
@@ -208,6 +213,54 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
               }), gameStart) : gameStart).Instance.show();
               this.unscheduleAllCallbacks();
               this.node.parent.destroy();
+            } else if (customEventData == 'xipai') //洗牌
+            {
+              if ((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).xiPai > 0) {
+                this.xiPai(); //  tools.xiPai--;
+
+                let node = this.node.parent.getChildByName('gameXiPaiBtn');
+                let label = node.getChildByName('Label').getComponent(Label);
+
+                if ((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                  error: Error()
+                }), tools) : tools).xiPai <= 0) {
+                  label.string = '洗牌X0';
+                  node.getComponent(Sprite).color = color(255, 255, 255, 128);
+                  node.getComponent(Button).enabled = false;
+                } else {
+                  label.string = '洗牌X' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                    error: Error()
+                  }), tools) : tools).xiPai;
+                  node.getComponent(Sprite).color = color(255, 255, 255, 255);
+                  node.getComponent(Button).enabled = true;
+                }
+              }
+            } else if (customEventData == 'chehui') //撤回
+            {} else if (customEventData == 'addtime') //加时
+            {} else if (customEventData == 'toushi') //透视
+            {} else if (customEventData == 'music') //音乐
+            {
+              if ((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).music) {
+                (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                  error: Error()
+                }), tools) : tools).music = false;
+                (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+                  error: Error()
+                }), AudioManager) : AudioManager).inst.stop();
+                let label = this.node.parent.getChildByName('gameMusicBtn').getChildByName('Label').getComponent(Label);
+                label.string = '音乐❌';
+              } else {
+                (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                  error: Error()
+                }), tools) : tools).music = true; //tools.playSound(SOUND.back_sound);
+
+                let label = this.node.parent.getChildByName('gameMusicBtn').getChildByName('Label').getComponent(Label);
+                label.string = '音乐✔';
+              }
             }
         }
 
@@ -283,7 +336,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           console.log('开始发牌---', this.desktopItemCount);
 
           for (let i = 0; i < this.desktopItemCount; i++) {
-            tween(this.node).delay(i * 0.1).call(() => {
+            // i == this.desktopItemCount - 1 ? this.createDesktopMj(true) : this.createDesktopMj(false);
+            tween(this.node).delay(i * 0.04).call(() => {
               i == this.desktopItemCount - 1 ? this.createDesktopMj(true) : this.createDesktopMj(false);
             }).start();
           }
@@ -372,6 +426,56 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             let mjscrpit = maxNodeItem.getComponent("mjcard");
             mjscrpit.interaction = true;
           }
+        } //洗牌
+
+
+        xiPai() {
+          this.unschedule(this.countdown);
+          var self = this;
+
+          for (let i = 0; i < this.desktopItems.length; i++) {
+            this.desktopItems[i].active = false;
+          }
+
+          for (let i = 0; i < this.desktopItems.length; i++) {
+            let desktopScript = this.desktopItems[i].getComponent("mjcard");
+            tween(this.node).delay(i * 0.04).call(() => {
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+                error: Error()
+              }), SOUND) : SOUND).sendCard_sound);
+
+              if (i == this.desktopItems.length - 1) {
+                desktopScript.playAnimation((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                  error: Error()
+                }), tools) : tools).animType, () => {
+                  self.refreshDeaktopMj();
+                  console.log('发牌完毕---', self.desktopCuritem);
+                  self.schedule(self.countdown, 1);
+                });
+              } else {
+                desktopScript.playAnimation((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                  error: Error()
+                }), tools) : tools).animType, null);
+              }
+            }).start();
+          } // for (let i = 0; i < this.desktopItems.length; i++) {
+          //     let desktopScript = this.desktopItems[i].getComponent("mjcard");
+          //     if (i % 5 == 0) tools.playSound(SOUND.sendCard_sound);
+          //     var self = this;
+          //     if (i == this.desktopItems.length - 1) {
+          //         desktopScript.playAnimation(tools.animType, () => {
+          //             self.refreshDeaktopMj();
+          //             console.log('发牌完毕---', self.desktopCuritem);
+          //             self.schedule(self.countdown, 1)
+          //         })
+          //     }
+          //     else {
+          //         desktopScript.playAnimation(tools.animType, null);
+          //     }
+          // }
+
         } //删除桌面麻将
 
 

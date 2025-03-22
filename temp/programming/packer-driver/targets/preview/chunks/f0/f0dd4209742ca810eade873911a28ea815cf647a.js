@@ -64,12 +64,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             }), resMgr) : resMgr).Instance.getAsset('sound', 'gameStart');
             (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
               error: Error()
-            }), AudioManager) : AudioManager).inst.playOneShot(audioClip);
+            }), AudioManager) : AudioManager).inst.audioSource.loop = true;
+            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              error: Error()
+            }), AudioManager) : AudioManager).inst.play(audioClip);
           } else if (sound == SOUND.click_sound) {
             var _audioClip = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
               error: Error()
             }), resMgr) : resMgr).Instance.getAsset('sound', 'click');
 
+            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              error: Error()
+            }), AudioManager) : AudioManager).inst.audioSource.loop = false;
             (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
               error: Error()
             }), AudioManager) : AudioManager).inst.playOneShot(_audioClip);
@@ -80,12 +86,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
             (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
               error: Error()
+            }), AudioManager) : AudioManager).inst.audioSource.loop = false;
+            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              error: Error()
             }), AudioManager) : AudioManager).inst.playOneShot(_audioClip2);
           } else if (sound == SOUND.gameWin_sound) {
             var _audioClip3 = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
               error: Error()
             }), resMgr) : resMgr).Instance.getAsset('sound', 'gameWin');
 
+            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              error: Error()
+            }), AudioManager) : AudioManager).inst.audioSource.loop = false;
             (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
               error: Error()
             }), AudioManager) : AudioManager).inst.playOneShot(_audioClip3);
@@ -96,12 +108,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
             (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
               error: Error()
+            }), AudioManager) : AudioManager).inst.audioSource.loop = false;
+            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              error: Error()
             }), AudioManager) : AudioManager).inst.playOneShot(_audioClip4);
           } else if (sound == SOUND.time_sound) {
             var _audioClip5 = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
               error: Error()
             }), resMgr) : resMgr).Instance.getAsset('sound', 'time');
 
+            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              error: Error()
+            }), AudioManager) : AudioManager).inst.audioSource.loop = false;
             (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
               error: Error()
             }), AudioManager) : AudioManager).inst.playOneShot(_audioClip5);
@@ -112,12 +130,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
             (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
               error: Error()
+            }), AudioManager) : AudioManager).inst.audioSource.loop = false;
+            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              error: Error()
             }), AudioManager) : AudioManager).inst.playOneShot(_audioClip6);
           } else if (sound == SOUND.back_sound) {
             var _audioClip7 = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
               error: Error()
             }), resMgr) : resMgr).Instance.getAsset('sound', 'back');
 
+            (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
+              error: Error()
+            }), AudioManager) : AudioManager).inst.audioSource.loop = false;
             (_crd && AudioManager === void 0 ? (_reportPossibleCrUseOfAudioManager({
               error: Error()
             }), AudioManager) : AudioManager).inst.playOneShot(_audioClip7);
@@ -156,6 +180,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       tools.cardBackTotal = 0;
       //背面牌数量
       tools.cardBackNow = 0;
+      tools.music = true;
+      //背景音乐
+      tools.xiPai = 1;
+      //洗牌次数
       tools.resPkg = {
         //gui: {
         //     assetType: SpriteFrame,

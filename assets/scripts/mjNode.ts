@@ -1,9 +1,10 @@
-import { _decorator, BoxCollider2D, Collider, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Script, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3, view } from 'cc';
+import { _decorator, BoxCollider2D, Button, Collider, color, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Script, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3, view } from 'cc';
 const { ccclass, property } = _decorator;
 const eventTarget = new EventTarget();
 import tools, { SOUND } from './tools'
 import { gameStart } from './gameStart';
 import { mjcard } from './mjcard';
+import { AudioManager } from './audioManager';
 //import { AudioManager } from './audioManager';
 @ccclass('mjNode')
 export class mjNode extends Component {
@@ -92,21 +93,17 @@ export class mjNode extends Component {
     onBtnClick(event: Event, customEventData: string) {
         //游戏开始
         if (customEventData == 'gameStart') {
-            //AudioManager.inst.play(main.instant.backMusic);
-            //AudioManager.inst.playOneShot(main.instant.btStartMusic);
             tools.playSound(SOUND.start_sound);
             this.startGame();
         }
         else if (customEventData == 'contiuneGame') //继续
         {
             tools.playSound(SOUND.click_sound);
-            //AudioManager.inst.play(main.instant.btClickMusic);
             this.gameShowTips(2);
             this.startGame();
         }
         else if (customEventData == 'backGame')  //返回到开始界面
         {
-            //AudioManager.inst.play(main.instant.btClickMusic);
             tools.playSound(SOUND.click_sound);
             // this.gameShowTips(2);
             gameStart.Instance.setLevel(tools.level);
@@ -114,6 +111,55 @@ export class mjNode extends Component {
             this.unscheduleAllCallbacks();
             this.node.parent.destroy();
         }
+        else if (customEventData == 'xipai')     //洗牌
+        {
+            if (tools.xiPai > 0) {
+                this.xiPai();
+                //  tools.xiPai--;
+                let node = this.node.parent.getChildByName('gameXiPaiBtn');
+                let label = node.getChildByName('Label').getComponent(Label);
+                if (tools.xiPai <= 0) {
+                    label.string = '洗牌X0';
+                    node.getComponent(Sprite).color = color(255, 255, 255, 128);
+                    node.getComponent(Button).enabled = false;
+                }
+                else {
+                    label.string = '洗牌X' + tools.xiPai;
+                    node.getComponent(Sprite).color = color(255, 255, 255, 255);
+                    node.getComponent(Button).enabled = true;
+                }
+            }
+
+        }
+        else if (customEventData == 'chehui')     //撤回
+        {
+
+        }
+        else if (customEventData == 'addtime')     //加时
+        {
+
+        }
+        else if (customEventData == 'toushi')     //透视
+        {
+
+        }
+        else if (customEventData == 'music')     //音乐
+        {
+            if (tools.music) {
+                tools.music = false;
+                AudioManager.inst.stop();
+                let label = this.node.parent.getChildByName('gameMusicBtn').getChildByName('Label').getComponent(Label);
+                label.string = '音乐❌'
+            }
+            else {
+                tools.music = true;
+                //tools.playSound(SOUND.back_sound);
+                let label = this.node.parent.getChildByName('gameMusicBtn').getChildByName('Label').getComponent(Label);
+                label.string = '音乐✔'
+            }
+        }
+
+
     }
 
     onClickMj(node: Node) {
@@ -175,8 +221,9 @@ export class mjNode extends Component {
         this.randomIndex = tools.getRandomMjIndex();
         console.log('开始发牌---', this.desktopItemCount);
         for (let i = 0; i < this.desktopItemCount; i++) {
+            // i == this.desktopItemCount - 1 ? this.createDesktopMj(true) : this.createDesktopMj(false);
             tween(this.node)
-                .delay(i * 0.1)
+                .delay(i * 0.04)
                 .call(() => { i == this.desktopItemCount - 1 ? this.createDesktopMj(true) : this.createDesktopMj(false); })
                 .start()
         }
@@ -244,7 +291,51 @@ export class mjNode extends Component {
             let mjscrpit = maxNodeItem.getComponent("mjcard");
             mjscrpit.interaction = true;
         }
+    }
 
+    //洗牌
+    xiPai() {
+        this.unschedule(this.countdown);
+        var self = this;
+        for (let i = 0; i < this.desktopItems.length; i++) {
+            this.desktopItems[i].active = false;
+        }
+
+        for (let i = 0; i < this.desktopItems.length; i++) {
+            let desktopScript = this.desktopItems[i].getComponent("mjcard");
+            tween(this.node)
+                .delay(i * 0.04)
+                .call(() => {
+                    tools.playSound(SOUND.sendCard_sound);
+                    if (i == this.desktopItems.length - 1) {
+                        desktopScript.playAnimation(tools.animType, () => {
+                            self.refreshDeaktopMj();
+                            console.log('发牌完毕---', self.desktopCuritem);
+                            self.schedule(self.countdown, 1)
+                        })
+                    }
+                    else {
+                        desktopScript.playAnimation(tools.animType, null);
+                    }
+                })
+                .start()
+        }
+
+        // for (let i = 0; i < this.desktopItems.length; i++) {
+        //     let desktopScript = this.desktopItems[i].getComponent("mjcard");
+        //     if (i % 5 == 0) tools.playSound(SOUND.sendCard_sound);
+        //     var self = this;
+        //     if (i == this.desktopItems.length - 1) {
+        //         desktopScript.playAnimation(tools.animType, () => {
+        //             self.refreshDeaktopMj();
+        //             console.log('发牌完毕---', self.desktopCuritem);
+        //             self.schedule(self.countdown, 1)
+        //         })
+        //     }
+        //     else {
+        //         desktopScript.playAnimation(tools.animType, null);
+        //     }
+        // }
     }
 
     //删除桌面麻将
@@ -258,7 +349,6 @@ export class mjNode extends Component {
                 return;
             }
         }
-
     }
 
     //判断是否可以消除,返回消除下标数组

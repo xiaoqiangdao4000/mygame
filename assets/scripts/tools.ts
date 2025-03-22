@@ -20,7 +20,10 @@ export default class tools {
     static picNum: number = 18;      //图片数量 level * picNum
     static animType: number = 2;     //发牌动画 1同时移动，缩放  2缩放出现
     static cardBackTotal: number = 0;      //背面牌数量
-    static cardBackNow:number = 0;
+    static cardBackNow: number = 0;
+
+    static music = true;    //背景音乐
+    static xiPai = 1;       //洗牌次数
 
     static resPkg = {
         //gui: {
@@ -69,34 +72,42 @@ export default class tools {
     static playSound(sound) {
         if (sound == SOUND.start_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'gameStart') as AudioClip;
-            AudioManager.inst.playOneShot(audioClip);
+            AudioManager.inst.audioSource.loop = true;
+            AudioManager.inst.play(audioClip);
         }
         else if (sound == SOUND.click_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'click') as AudioClip;
+            AudioManager.inst.audioSource.loop = false;
             AudioManager.inst.playOneShot(audioClip);
         }
         else if (sound == SOUND.gameLost_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'gameLost') as AudioClip;
+            AudioManager.inst.audioSource.loop = false;
             AudioManager.inst.playOneShot(audioClip);
         }
         else if (sound == SOUND.gameWin_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'gameWin') as AudioClip;
+            AudioManager.inst.audioSource.loop = false;
             AudioManager.inst.playOneShot(audioClip);
         }
         else if (sound == SOUND.sendCard_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'sendCard') as AudioClip;
+            AudioManager.inst.audioSource.loop = false;
             AudioManager.inst.playOneShot(audioClip);
         }
         else if (sound == SOUND.time_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'time') as AudioClip;
+            AudioManager.inst.audioSource.loop = false;
             AudioManager.inst.playOneShot(audioClip);
         }
         else if (sound == SOUND.clear_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'clear') as AudioClip;
+            AudioManager.inst.audioSource.loop = false;
             AudioManager.inst.playOneShot(audioClip);
         }
         else if (sound == SOUND.back_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'back') as AudioClip;
+            AudioManager.inst.audioSource.loop = false;
             AudioManager.inst.playOneShot(audioClip);
         }
     }

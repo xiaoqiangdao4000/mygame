@@ -23,6 +23,7 @@ export class gameStart extends Component {
             gameStart.Instance = this;
             let level = tools.getLevel();
             this.setLevel(level);
+            tools.playSound(SOUND.back_sound);
         }
         else {
             this.destroy();
