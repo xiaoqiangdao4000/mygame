@@ -29,7 +29,6 @@ export class gameStart extends Component {
             this.destroy();
             return;
         }
-
     }
 
     setLevel(level) {
@@ -47,7 +46,7 @@ export class gameStart extends Component {
         this.gameNode = instantiate(this.gamePrefab);
         this.gameNode.parent = this.node.parent;
         this.gameNode.active = true;
-        tools.playSound(SOUND.start_sound);
+        
         console.log('this.gameNode = ', this.gameNode.getPosition())
         this.hide();
     }

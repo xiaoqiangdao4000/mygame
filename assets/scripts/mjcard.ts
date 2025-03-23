@@ -1,4 +1,4 @@
-import { _decorator, Atlas, Color, Component, EventTouch, Node, Sprite, SpriteAtlas, SpriteFrame, tween, Vec3 } from 'cc';
+import { _decorator, Atlas, color, Color, Component, EventTouch, Node, Sprite, SpriteAtlas, SpriteFrame, tween, Vec3 } from 'cc';
 import tools from './tools';
 const { ccclass, property } = _decorator;
 @ccclass('mjcard')
@@ -17,6 +17,10 @@ export class mjcard extends Component {
     scaleDuration = 0.1;
     sprFrame: SpriteFrame = null;
     cardBackFrame: SpriteFrame = null;
+    sPos: Vec3 = new Vec3(0, 0, 0);
+    ePos: Vec3 = new Vec3(0, 0, 0);
+    isCanClick = false;
+    oldSiblingIndex = 0;
 
     start() {
         this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this);
@@ -61,6 +65,31 @@ export class mjcard extends Component {
         }
     }
 
+    //恢复到之前的渲染层级
+    restSibingIndex() {
+        this.node.setSiblingIndex(this.oldSiblingIndex);
+    }
+
+    //设置插入后的坐标
+    setInsterEndPos(pos: Vec3) {
+        this.ePos = pos;
+    }
+
+    //设置麻将牌是否可以点击
+    setCanClick(canClick) {
+        this.isCanClick = canClick;
+    }
+
+    setTouShi() {
+        if (this.cardBackFrame != null) {
+            let node = new Node('toushi');
+            let spr = node.addComponent(Sprite);
+            spr.spriteFrame = this.sprFrame;
+            spr.color = color(255, 255, 255, 50);
+            this.node.addChild(spr.node);
+        }
+    }
+
     //播放发牌动画
     playAnimation(animType, callback: Function | null) {
         var x = tools.getRandomInt(-300, 300);
@@ -70,12 +99,16 @@ export class mjcard extends Component {
         this.node.setPosition(0, 0);
         this.node.setScale(0, 0);
         this.node.active = true;
+        this.sPos = new Vec3(x, y, 0);//设置桌面坐标
+        var self = this;
         //同时移动，缩放
         if (animType == 1) {
             let t1 = tween(this.node).to(this.moveDuration, { position: new Vec3(x, y, 0) })
             let t2 = tween(this.node).to(this.moveDuration, { scale: new Vec3(this.scale, this.scale, 1) })
             let t3 = tween(this.node).parallel(t1, t2);
             let t4 = tween(this.node).call(() => {
+                self.isCanClick = true;
+                self.oldSiblingIndex = this.node.getSiblingIndex();
                 if (callback) callback();
 
             });
@@ -88,6 +121,8 @@ export class mjcard extends Component {
             this.node.setPosition(x, y);
             let t1 = tween(this.node).to(this.scaleDuration, { scale: new Vec3(this.scale, this.scale, 1) })
             let t2 = tween(this.node).call(() => {
+                self.isCanClick = true;
+                self.oldSiblingIndex = this.node.getSiblingIndex();
                 if (callback) callback();
                 // callback();
             });
@@ -96,7 +131,7 @@ export class mjcard extends Component {
     }
 
     onTouchStart(event: EventTouch) {
-        if (this._interaction == false) {
+        if (this._interaction == false || this.isCanClick == false) {
             console.log('不可点击的麻将 = ', event.target.name);
         }
         else {

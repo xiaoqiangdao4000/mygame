@@ -1,10 +1,10 @@
 import { _decorator, BoxCollider2D, Button, Collider, color, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Script, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3, view } from 'cc';
 const { ccclass, property } = _decorator;
 const eventTarget = new EventTarget();
-import tools, { SOUND } from './tools'
+import tools, { GAMESTATE, SOUND } from './tools'
 import { gameStart } from './gameStart';
 import { mjcard } from './mjcard';
-import { AudioManager } from './audioManager';
+import { AudioMgr } from './audioManager';
 //import { AudioManager } from './audioManager';
 @ccclass('mjNode')
 export class mjNode extends Component {
@@ -41,24 +41,24 @@ export class mjNode extends Component {
     desktopItemCount = 0;
     time = 60;
     allTime = this.time;
+    gameState = GAMESTATE.game_start;
 
     tabItemPos = [];    //物品栏坐标
     tabItem: Node[] = [] //物品栏
 
     onLoad() {
         console.log('初始化游戏类');
+        tools.getData();
+        this.updataBtn();
     }
 
     start() {
-
         this.node.on('clickmj', this.onClickMj, this);
         for (let i = 0; i < this.tabNodes.length; i++) {
             let pos = { x: 0, y: 0 };
             let pos1 = this.tabNodes[i].getPosition();
             pos.x = pos1.x;
             pos.y = pos1.y;
-            console.log('posy = ', pos.y)
-
             this.tabItemPos.push(pos)
         }
         this.startGame();
@@ -68,6 +68,7 @@ export class mjNode extends Component {
     startGame() {
         console.log('游戏开始---', tools.level)
         this.isCanClick = true;
+        this.gameState = GAMESTATE.game_start;
         this.cleanMj();
         this.time = tools.level * 10 + 30;
         this.allTime = this.time;
@@ -79,6 +80,7 @@ export class mjNode extends Component {
         tools.cardBackNow = 0;
         tools.cardBackTotal = tools.level;
         tools.randomMjAnim();
+        this.updataBtn();
         this.initDesktopMj();
     }
 
@@ -115,50 +117,118 @@ export class mjNode extends Component {
         {
             if (tools.xiPai > 0) {
                 this.xiPai();
-                //  tools.xiPai--;
-                let node = this.node.parent.getChildByName('gameXiPaiBtn');
-                let label = node.getChildByName('Label').getComponent(Label);
-                if (tools.xiPai <= 0) {
-                    label.string = '洗牌X0';
-                    node.getComponent(Sprite).color = color(255, 255, 255, 128);
-                    node.getComponent(Button).enabled = false;
-                }
-                else {
-                    label.string = '洗牌X' + tools.xiPai;
-                    node.getComponent(Sprite).color = color(255, 255, 255, 255);
-                    node.getComponent(Button).enabled = true;
-                }
+                this.updataBtn();
             }
-
         }
         else if (customEventData == 'chehui')     //撤回
         {
-
+            if (tools.cheHui > 0) {
+                this.cheHui();
+                this.updataBtn();
+            }
         }
         else if (customEventData == 'addtime')     //加时
         {
-
+            if (tools.addTime > 0) {
+                this.addTime();
+                this.updataBtn();
+            }
         }
         else if (customEventData == 'toushi')     //透视
         {
-
+            if (tools.touShi > 0) {
+                this.touShi();
+                this.setBtnState('gameToushiBtn', false, '透视X' + tools.touShi);
+                //this.updataBtn();
+            }
         }
         else if (customEventData == 'music')     //音乐
         {
             if (tools.music) {
                 tools.music = false;
-                AudioManager.inst.stop();
+                AudioMgr.Instance.pauseBgm();
                 let label = this.node.parent.getChildByName('gameMusicBtn').getChildByName('Label').getComponent(Label);
                 label.string = '音乐❌'
             }
             else {
                 tools.music = true;
-                //tools.playSound(SOUND.back_sound);
+                AudioMgr.Instance.resumeBgm();
                 let label = this.node.parent.getChildByName('gameMusicBtn').getChildByName('Label').getComponent(Label);
                 label.string = '音乐✔'
             }
         }
+    }
 
+    //洗牌
+    xiPai() {
+        tools.xiPai--;
+        this.unschedule(this.countdown);
+        var self = this;
+        for (let i = 0; i < this.desktopItems.length; i++) {
+            this.desktopItems[i].active = false;
+        }
+        for (let i = 0; i < this.desktopItems.length; i++) {
+            let desktopScript = this.desktopItems[i].getComponent("mjcard");
+            tween(this.node)
+                .delay(i * 0.04)
+                .call(() => {
+                    tools.playSound(SOUND.sendCard_sound);
+                    if (i == this.desktopItems.length - 1) {
+                        desktopScript.playAnimation(tools.animType, () => {
+                            self.refreshDeaktopMj();
+                            console.log('发牌完毕---', self.desktopCuritem);
+                            self.schedule(self.countdown, 1)
+                        })
+                    }
+                    else {
+                        desktopScript.playAnimation(tools.animType, null);
+                    }
+                })
+                .start()
+        }
+    }
+
+    //撤回按钮
+    cheHui() {
+        if (this.tabItem.length <= 0) return;
+        tools.playSound(SOUND.click_sound);
+        let index = this.tabItem.length;
+        let item = this.tabItem[index - 1];
+        let mjcard = item.getComponent('mjcard') as mjcard;
+        mjcard.setInsterEndPos(new Vec3(0, 0, 0));
+        mjcard.setCanClick(true);
+        var self = this;
+        let t1 = tween(item).to(0.2, { position: new Vec3(mjcard.sPos.x, mjcard.sPos.y, 0) })
+        let t2 = tween(item).call(() => {
+            mjcard.restSibingIndex();
+            self.desktopItems.push(item);
+            self.refreshDeaktopMj();
+        });
+        tween(item).sequence(t1, t2).start()
+        this.tabItem.pop();
+        tools.cheHui--;
+    }
+
+    //加时按钮
+    addTime() {
+        if (tools.addTime <= 0) return;
+        this.time = this.time + tools.addTime;
+        this.allTime = this.time;
+        this.timeLabel.string = '第' + tools.level + '关 ' + '倒计时:' + this.time + 's';
+        this.timeProgressBar.progress = this.time / this.allTime;
+        tools.addTime = 0;
+        tools.playSound(SOUND.start_sound);
+    }
+
+    //透视按钮
+    touShi() {
+        if (tools.touShi <= 0) return;
+        tools.touShi--;
+        tools.playSound(SOUND.click_sound);
+        for (let i = 0; i < this.desktopItems.length; i++) {
+            let mjcard = this.desktopItems[i].getComponent('mjcard') as mjcard;
+            mjcard.setTouShi();
+        }
 
     }
 
@@ -167,9 +237,6 @@ export class mjNode extends Component {
             console.log('动画为执行完毕，不可点击---');
             return;
         }
-        //AudioManager.inst.playOneShot(main.instant.btClickMusic);
-        tools.playSound(SOUND.click_sound);
-
         this.isCanClick = false;
         //是否可以插入
         if (this.tabItem.length >= 7)  //不可以插入,游戏结束
@@ -178,6 +245,7 @@ export class mjNode extends Component {
             //this.gameShowTips(1);
             return;
         }
+        tools.playSound(SOUND.click_sound);
         //可以插入
         this.insertItem(node, insertCallBack);
 
@@ -190,6 +258,7 @@ export class mjNode extends Component {
             //console.log('可以消除的下标---', index);
             if (index.length < 3) {
                 self.refreshDeaktopMj();
+                self.updataBtn();
                 if (self.tabItem.length == 7) {
                     self.gameShowTips(0);
                     console.log('游戏结束---');
@@ -199,7 +268,6 @@ export class mjNode extends Component {
             }
             //开始执行物品栏消除动画
             self.deleteTabAnima(index, function () {
-                //AudioManager.inst.playOneShot(main.instant.btXiaoChuMusic);
                 tools.playSound(SOUND.clear_sound);
                 self.tabItem.splice(index[2], 1);
                 self.tabItem.splice(index[1], 1);
@@ -258,6 +326,7 @@ export class mjNode extends Component {
             tools.playSound(SOUND.sendCard_sound);
             if (refresh) {
                 self.refreshDeaktopMj();
+                self.gameState = GAMESTATE.game_inGame;
                 console.log('发牌完毕---', self.desktopCuritem);
                 self.schedule(self.countdown, 1)
             }
@@ -291,51 +360,6 @@ export class mjNode extends Component {
             let mjscrpit = maxNodeItem.getComponent("mjcard");
             mjscrpit.interaction = true;
         }
-    }
-
-    //洗牌
-    xiPai() {
-        this.unschedule(this.countdown);
-        var self = this;
-        for (let i = 0; i < this.desktopItems.length; i++) {
-            this.desktopItems[i].active = false;
-        }
-
-        for (let i = 0; i < this.desktopItems.length; i++) {
-            let desktopScript = this.desktopItems[i].getComponent("mjcard");
-            tween(this.node)
-                .delay(i * 0.04)
-                .call(() => {
-                    tools.playSound(SOUND.sendCard_sound);
-                    if (i == this.desktopItems.length - 1) {
-                        desktopScript.playAnimation(tools.animType, () => {
-                            self.refreshDeaktopMj();
-                            console.log('发牌完毕---', self.desktopCuritem);
-                            self.schedule(self.countdown, 1)
-                        })
-                    }
-                    else {
-                        desktopScript.playAnimation(tools.animType, null);
-                    }
-                })
-                .start()
-        }
-
-        // for (let i = 0; i < this.desktopItems.length; i++) {
-        //     let desktopScript = this.desktopItems[i].getComponent("mjcard");
-        //     if (i % 5 == 0) tools.playSound(SOUND.sendCard_sound);
-        //     var self = this;
-        //     if (i == this.desktopItems.length - 1) {
-        //         desktopScript.playAnimation(tools.animType, () => {
-        //             self.refreshDeaktopMj();
-        //             console.log('发牌完毕---', self.desktopCuritem);
-        //             self.schedule(self.countdown, 1)
-        //         })
-        //     }
-        //     else {
-        //         desktopScript.playAnimation(tools.animType, null);
-        //     }
-        // }
     }
 
     //删除桌面麻将
@@ -373,16 +397,15 @@ export class mjNode extends Component {
             let pos1 = this.tabNodes[i].getPosition();
             pos.x = pos1.x;
             pos.y = pos1.y;
-            console.log('click_posy = ', pos.y)
-
             this.tabItemPos.push(pos)
         }
-
         let mjcard = node.getComponent('mjcard') as mjcard;
         mjcard.restCard();
         this.tabItem.push(node);
         //console.log('插入成功---');
         let index = this.tabItem.length - 1;
+        mjcard.setInsterEndPos(new Vec3(this.tabItemPos[index].x, this.tabItemPos[index].y, 0));
+        mjcard.setCanClick(false);
         let t1 = tween(node).to(0.2, { position: new Vec3(this.tabItemPos[index].x, this.tabItemPos[index].y, 0) })
         let t2 = tween(node).call(() => {
             callback()
@@ -467,18 +490,22 @@ export class mjNode extends Component {
         if (typeId == 0) //闯关失败
         {
             tools.playSound(SOUND.gameLost_sound);
-            //AudioManager.inst.playOneShot(main.instant.btGameLostMusic);
+            this.isCanClick = false;
+            this.gameState = GAMESTATE.game_end;
             this.gameSucNode.active = true;
             this.gameTipsLabel.string = '闯关失败,再接再厉!';
             spos = new Vec3(-700, 125.474, 0);
             epos = new Vec3(0, 125.474, 0);
             this.gameSucNode.setPosition(spos);
             tools.saveLevel();
+            tools.savaData();
+            this.updataBtn();
         }
         if (typeId == 1) // 恭喜,闯关成功
         {
             tools.playSound(SOUND.gameWin_sound);
-            //AudioManager.inst.playOneShot(main.instant.btGameWinMusic);
+            this.gameState = GAMESTATE.game_end;
+            this.isCanClick = false;
             this.gameSucNode.active = true;
             this.gameTipsLabel.string = '恭喜,闯关成功!';
             spos = new Vec3(-700, 125.474, 0);
@@ -486,6 +513,10 @@ export class mjNode extends Component {
             this.gameSucNode.setPosition(spos);
             tools.level += 1;       //当前游戏关卡等级
             tools.saveLevel();
+            tools.addTime += 10;
+            this.setBtnState('gameAddTimeBtn', true, '加时' + tools.addTime + 's');
+            tools.savaData();
+            this.updataBtn();
         }
         else if (typeId == 2) // 隐藏显示面板
         {
@@ -499,5 +530,61 @@ export class mjNode extends Component {
             .start();
     }
 
+    //更新道具按钮
+    updataBtn() {
+        if (this.gameState == GAMESTATE.game_end) {
+            this.setBtnState('gameXiPaiBtn', false);
+            this.setBtnState('gameCheHuiBtn', false);
+            this.setBtnState('gameAddTimeBtn', false);
+            this.setBtnState('gameToushiBtn', false);
+            this.setBtnState('gameCheHuiBtn', false);
+        }
+        else {
+            //洗牌按钮
+            if (tools.xiPai <= 0) {
+                this.setBtnState('gameXiPaiBtn', false, '洗牌X0');
+            }
+            else {
+                this.setBtnState('gameXiPaiBtn', true, '洗牌X' + tools.xiPai);
+            }
+            //撤回按钮
+            if (tools.cheHui <= 0 || this.tabItem.length <= 0) {
+                this.setBtnState('gameCheHuiBtn', false, '撤回X0');
+            }
+            else {
+                this.setBtnState('gameCheHuiBtn', true, '撤回X' + tools.cheHui);
+            }
+            //加时按钮
+            if (tools.addTime <= 0) {
+                this.setBtnState('gameAddTimeBtn', false, '加时0s');
+            }
+            else {
+                this.setBtnState('gameAddTimeBtn', true, '加时' + tools.addTime + 's');
+            }
+            //透视按钮
+            if (tools.touShi <= 0) {
+                this.setBtnState('gameToushiBtn', false, '透视X0');
+            }
+            else {
+                this.setBtnState('gameToushiBtn', true, '透视X' + tools.touShi);
+            }
+
+        }
+        tools.savaData();
+    }
+
+    setBtnState(bttName: string, enable: boolean, btnText: string | null = null) {
+        let node = this.node.parent.getChildByName(bttName);
+        let label = node.getChildByName('Label').getComponent(Label);
+        if (btnText != null) label.string = btnText;
+        if (enable) {
+            node.getComponent(Sprite).color = color(255, 255, 255, 255);
+            node.getComponent(Button).enabled = true;
+        }
+        else {
+            node.getComponent(Sprite).color = color(255, 255, 255, 128);
+            node.getComponent(Button).enabled = false;
+        }
+    }
 }
 

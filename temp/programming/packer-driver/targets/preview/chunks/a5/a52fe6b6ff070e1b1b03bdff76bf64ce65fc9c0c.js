@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Color, Component, Node, Sprite, SpriteAtlas, tween, Vec3, tools, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, mjcard;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, color, Color, Component, Node, Sprite, SpriteAtlas, tween, Vec3, tools, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, mjcard;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -21,6 +21,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
       _decorator = _cc._decorator;
+      color = _cc.color;
       Color = _cc.Color;
       Component = _cc.Component;
       Node = _cc.Node;
@@ -36,7 +37,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
       _cclegacy._RF.push({}, "fc62erwdOpHvLUJ46SH/0d5", "mjcard", undefined);
 
-      __checkObsolete__(['_decorator', 'Atlas', 'Color', 'Component', 'EventTouch', 'Node', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'tween', 'Vec3']);
+      __checkObsolete__(['_decorator', 'Atlas', 'color', 'Color', 'Component', 'EventTouch', 'Node', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'tween', 'Vec3']);
 
       ({
         ccclass,
@@ -58,6 +59,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.scaleDuration = 0.1;
           this.sprFrame = null;
           this.cardBackFrame = null;
+          this.sPos = new Vec3(0, 0, 0);
+          this.ePos = new Vec3(0, 0, 0);
+          this.isCanClick = false;
+          this.oldSiblingIndex = 0;
         }
 
         start() {
@@ -113,6 +118,31 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           if (this.cardBackFrame != null) {
             this.sprite.spriteFrame = this.sprFrame;
           }
+        } //恢复到之前的渲染层级
+
+
+        restSibingIndex() {
+          this.node.setSiblingIndex(this.oldSiblingIndex);
+        } //设置插入后的坐标
+
+
+        setInsterEndPos(pos) {
+          this.ePos = pos;
+        } //设置麻将牌是否可以点击
+
+
+        setCanClick(canClick) {
+          this.isCanClick = canClick;
+        }
+
+        setTouShi() {
+          if (this.cardBackFrame != null) {
+            var node = new Node('toushi');
+            var spr = node.addComponent(Sprite);
+            spr.spriteFrame = this.sprFrame;
+            spr.color = color(255, 255, 255, 50);
+            this.node.addChild(spr.node);
+          }
         } //播放发牌动画
 
 
@@ -127,7 +157,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           this.node.setPosition(0, 0);
           this.node.setScale(0, 0);
-          this.node.active = true; //同时移动，缩放
+          this.node.active = true;
+          this.sPos = new Vec3(x, y, 0); //设置桌面坐标
+
+          var self = this; //同时移动，缩放
 
           if (animType == 1) {
             var t1 = tween(this.node).to(this.moveDuration, {
@@ -138,6 +171,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             });
             var t3 = tween(this.node).parallel(t1, t2);
             var t4 = tween(this.node).call(() => {
+              self.isCanClick = true;
+              self.oldSiblingIndex = this.node.getSiblingIndex();
               if (callback) callback();
             });
             tween(this.node).sequence(t3, t4).start(); //tween(this.node).parallel(t1, t2).start();
@@ -152,6 +187,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               });
 
               var _t2 = tween(this.node).call(() => {
+                self.isCanClick = true;
+                self.oldSiblingIndex = this.node.getSiblingIndex();
                 if (callback) callback(); // callback();
               });
 
@@ -160,7 +197,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         }
 
         onTouchStart(event) {
-          if (this._interaction == false) {
+          if (this._interaction == false || this.isCanClick == false) {
             console.log('不可点击的麻将 = ', event.target.name);
           } else {
             console.log('点击麻将 = ', event.target.name);

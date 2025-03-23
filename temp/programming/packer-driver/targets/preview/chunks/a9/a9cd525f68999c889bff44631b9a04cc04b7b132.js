@@ -84,7 +84,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             error: Error()
           }), tools) : tools).resPkg, this.loadingResCallBack, () => {
             //资源加载完成回调
-            tween(this.node).delay(0.5).call(() => {
+            tween(this.node).delay(0.3).call(() => {
               gameLauch.Instance.enterStartScene();
             }).start();
           });

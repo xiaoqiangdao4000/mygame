@@ -1,5 +1,5 @@
 import { Asset, AudioClip, Constructor, Enum, error, Prefab, resources } from "cc";
-import { AudioManager } from "./audioManager";
+import { AudioMgr } from "./audioManager";
 import { resMgr } from "./resMgr";
 export type AssetType<T = Asset> = Constructor<T>;
 export type LoadCompleteCallback<T> = (error: Error | null, asset: T) => void;
@@ -14,6 +14,12 @@ export enum SOUND {
     back_sound,
 }
 
+export enum GAMESTATE {
+    game_start,
+    game_inGame,
+    game_end,
+}
+
 export default class tools {
 
     static level: number = 1;       //当前游戏关卡等级
@@ -23,7 +29,10 @@ export default class tools {
     static cardBackNow: number = 0;
 
     static music = true;    //背景音乐
-    static xiPai = 1;       //洗牌次数
+    static xiPai = 3;       //洗牌次数
+    static cheHui = 3;      //撤回次数
+    static addTime = 30;    //加时30s
+    static touShi = 3;      //透视
 
     static resPkg = {
         //gui: {
@@ -60,6 +69,32 @@ export default class tools {
         },
     };
 
+    static savaData() {
+        localStorage.setItem('xiPai', tools.xiPai.toString());
+        localStorage.setItem('cheHui', tools.cheHui.toString());
+        localStorage.setItem('addTime', tools.addTime.toString());
+        localStorage.setItem('touShi', tools.touShi.toString());
+    }
+
+    static getData() {
+        let xiPai = Number(localStorage.getItem('xiPai'));
+        let cheHui = Number(localStorage.getItem('cheHui'));
+        let addTime = Number(localStorage.getItem('addTime'));
+        let touShi = Number(localStorage.getItem('touShi'));
+        if (xiPai === 0 && cheHui === 0 && addTime == 0 && touShi == 0) {
+            tools.xiPai = 3;
+            tools.cheHui = 3;
+            tools.addTime = 30;
+            tools.touShi = 3;
+            return;
+        }
+        tools.xiPai = xiPai;
+        tools.cheHui = cheHui;
+        tools.addTime = addTime;
+        tools.touShi = touShi;
+
+    }
+
     static getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -72,43 +107,35 @@ export default class tools {
     static playSound(sound) {
         if (sound == SOUND.start_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'gameStart') as AudioClip;
-            AudioManager.inst.audioSource.loop = true;
-            AudioManager.inst.play(audioClip);
+            AudioMgr.Instance.playEffect(audioClip);
         }
         else if (sound == SOUND.click_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'click') as AudioClip;
-            AudioManager.inst.audioSource.loop = false;
-            AudioManager.inst.playOneShot(audioClip);
+            AudioMgr.Instance.playEffect(audioClip);
         }
         else if (sound == SOUND.gameLost_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'gameLost') as AudioClip;
-            AudioManager.inst.audioSource.loop = false;
-            AudioManager.inst.playOneShot(audioClip);
+            AudioMgr.Instance.playEffect(audioClip);
         }
         else if (sound == SOUND.gameWin_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'gameWin') as AudioClip;
-            AudioManager.inst.audioSource.loop = false;
-            AudioManager.inst.playOneShot(audioClip);
+            AudioMgr.Instance.playEffect(audioClip);
         }
         else if (sound == SOUND.sendCard_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'sendCard') as AudioClip;
-            AudioManager.inst.audioSource.loop = false;
-            AudioManager.inst.playOneShot(audioClip);
+            AudioMgr.Instance.playEffectCanBreak(audioClip);
         }
         else if (sound == SOUND.time_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'time') as AudioClip;
-            AudioManager.inst.audioSource.loop = false;
-            AudioManager.inst.playOneShot(audioClip);
+            AudioMgr.Instance.playEffect(audioClip);
         }
         else if (sound == SOUND.clear_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'clear') as AudioClip;
-            AudioManager.inst.audioSource.loop = false;
-            AudioManager.inst.playOneShot(audioClip);
+            AudioMgr.Instance.playEffect(audioClip);
         }
         else if (sound == SOUND.back_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'back') as AudioClip;
-            AudioManager.inst.audioSource.loop = false;
-            AudioManager.inst.playOneShot(audioClip);
+            AudioMgr.Instance.playBgm(audioClip);
         }
     }
 

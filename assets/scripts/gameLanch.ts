@@ -43,7 +43,7 @@ export class gameLauch extends Component {
         resMgr.Instance.preLoadResPkg(tools.resPkg, this.loadingResCallBack, () => {
             //资源加载完成回调
             tween(this.node)
-                .delay(0.5)
+                .delay(0.3)
                 .call(() => {
                     gameLauch.Instance.enterStartScene();
                 }).start();

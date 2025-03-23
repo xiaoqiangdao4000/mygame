@@ -167,23 +167,23 @@
       "uuid": "e3d3438c-fb7b-4889-9edc-93a64d25460c"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\audioManager.ts": {
-      "time": 1742672063776.899,
+      "time": 1742724420622.2612,
       "uuid": "298c64db-251e-4f24-a1e7-b98e9c863880"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\gameStart.ts": {
-      "time": 1742653248924.808,
+      "time": 1742742980383.5728,
       "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\mjcard.ts": {
-      "time": 1742674464963.0366,
+      "time": 1742744912469.605,
       "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\mjNode.ts": {
-      "time": 1742675418877.6826,
+      "time": 1742745923912.9243,
       "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\tools.ts": {
-      "time": 1742675018410.3567,
+      "time": 1742745766406.1113,
       "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs.meta": {
@@ -529,7 +529,7 @@
       "uuid": "d28e714b-ef1b-4cdb-8684-23d773784799"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\gameLanch.ts": {
-      "time": 1742564542760.1763,
+      "time": 1742700088672.3115,
       "uuid": "36d96c96-16af-4164-914c-59c8c45154d4"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\loading.ts": {
@@ -700,7 +700,7 @@
       "time": 1742565465729.9421
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameNode.prefab": {
-      "time": 1742675495097.8086,
+      "time": 1742750718885.6086,
       "uuid": "47e65697-8589-419b-91a9-fb9c6ff27703"
     }
   },

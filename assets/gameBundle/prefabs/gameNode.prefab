@@ -533,7 +533,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
       "__id__": 18
@@ -703,7 +703,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
+      "width": 140,
       "height": 100
     },
     "_anchorPoint": {
@@ -3781,7 +3781,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -149.718,
+      "x": -144.127,
       "y": -429.524,
       "z": 0
     },
@@ -3981,7 +3981,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
+      "width": 140,
       "height": 100
     },
     "_anchorPoint": {
@@ -4209,7 +4209,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -4.751,
+      "x": 0.84,
       "y": -429.524,
       "z": 0
     },
@@ -4300,7 +4300,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
+      "width": 200,
       "height": 100
     },
     "_anchorPoint": {
@@ -4409,7 +4409,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
+      "width": 140,
       "height": 100
     },
     "_anchorPoint": {
@@ -4607,7 +4607,7 @@
   {
     "__type__": "cc.Node",
     "_name": "gameToushiBtn",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "__editorExtras__": {},
     "_parent": {
       "__id__": 1
@@ -4637,7 +4637,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 140.047,
+      "x": 145.638,
       "y": -429.524,
       "z": 0
     },
@@ -4837,7 +4837,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
+      "width": 140,
       "height": 100
     },
     "_anchorPoint": {
@@ -5065,7 +5065,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 289.62,
+      "x": 290.692,
       "y": -429.524,
       "z": 0
     },
@@ -5265,7 +5265,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
+      "width": 140,
       "height": 100
     },
     "_anchorPoint": {
