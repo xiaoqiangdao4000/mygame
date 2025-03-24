@@ -153,8 +153,8 @@ export default class tools {
     }
 
     static getLevel() {
-        tools.level = 1;
-        return 1;
+        // tools.level = 1;
+        // return 1;
         let level = localStorage.getItem('level');
         tools.level = Number(level);
         if (tools.level == 0) tools.level = 1;

@@ -173,8 +173,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         }
 
         static getLevel() {
-          tools.level = 1;
-          return 1;
+          // tools.level = 1;
+          // return 1;
           var level = localStorage.getItem('level');
           tools.level = Number(level);
           if (tools.level == 0) tools.level = 1;
