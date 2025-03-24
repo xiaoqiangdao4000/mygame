@@ -268,10 +268,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               if ((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).touShi > 0) {
-                this.touShi();
-                this.setBtnState('gameToushiBtn', false, '透视X' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-                  error: Error()
-                }), tools) : tools).touShi); //this.updataBtn();
+                this.touShi(); // this.setBtnState('gameToushiBtn', false, '透视X' + tools.touShi);
+
+                this.updataBtn();
               }
             } else if (customEventData == 'music') //音乐
             {

@@ -148,8 +148,8 @@ export class mjNode extends Component {
         {
             if (tools.touShi > 0) {
                 this.touShi();
-                this.setBtnState('gameToushiBtn', false, '透视X' + tools.touShi);
-                //this.updataBtn();
+                // this.setBtnState('gameToushiBtn', false, '透视X' + tools.touShi);
+                this.updataBtn();
             }
         }
         else if (customEventData == 'music')     //音乐
