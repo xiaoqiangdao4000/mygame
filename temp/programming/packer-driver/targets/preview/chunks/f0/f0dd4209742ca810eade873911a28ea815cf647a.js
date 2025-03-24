@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, AudioClip, error, Prefab, AudioMgr, resMgr, tools, _crd, SOUND, GAMESTATE;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, AudioClip, error, Prefab, AudioMgr, resMgr, tools, _crd, SOUND, GAMESTATE, GAMETIPS;
 
   function _reportPossibleCrUseOfAudioMgr(extras) {
     _reporterNs.report("AudioMgr", "./audioManager", _context.meta, extras);
@@ -52,6 +52,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         GAMESTATE[GAMESTATE["game_inGame"] = 1] = "game_inGame";
         GAMESTATE[GAMESTATE["game_end"] = 2] = "game_end";
         return GAMESTATE;
+      }({}));
+
+      _export("GAMETIPS", GAMETIPS = /*#__PURE__*/function (GAMETIPS) {
+        GAMETIPS[GAMETIPS["game_success"] = 0] = "game_success";
+        GAMETIPS[GAMETIPS["gmae_fail"] = 1] = "gmae_fail";
+        GAMETIPS[GAMETIPS["game_hide"] = 2] = "game_hide";
+        GAMETIPS[GAMETIPS["game_rest"] = 3] = "game_rest";
+        return GAMETIPS;
       }({}));
 
       _export("default", tools = class tools {
@@ -165,6 +173,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         }
 
         static getLevel() {
+          tools.level = 1;
+          return 1;
           var level = localStorage.getItem('level');
           tools.level = Number(level);
           if (tools.level == 0) tools.level = 1;

@@ -20,6 +20,13 @@ export enum GAMESTATE {
     game_end,
 }
 
+export enum GAMETIPS {
+    game_success,
+    gmae_fail,
+    game_hide,
+    game_rest,
+}
+
 export default class tools {
 
     static level: number = 1;       //当前游戏关卡等级
@@ -146,6 +153,8 @@ export default class tools {
     }
 
     static getLevel() {
+        tools.level = 1;
+        return 1;
         let level = localStorage.getItem('level');
         tools.level = Number(level);
         if (tools.level == 0) tools.level = 1;

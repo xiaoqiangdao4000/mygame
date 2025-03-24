@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Button, color, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3, tools, GAMESTATE, SOUND, gameStart, AudioMgr, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _class3, _crd, ccclass, property, eventTarget, mjNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Button, color, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3, tools, GAMESTATE, GAMETIPS, SOUND, gameStart, AudioMgr, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _class3, _crd, ccclass, property, eventTarget, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -15,6 +15,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
   function _reportPossibleCrUseOfGAMESTATE(extras) {
     _reporterNs.report("GAMESTATE", "./tools", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfGAMETIPS(extras) {
+    _reporterNs.report("GAMETIPS", "./tools", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfSOUND(extras) {
@@ -57,6 +61,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_2) {
       tools = _unresolved_2.default;
       GAMESTATE = _unresolved_2.GAMESTATE;
+      GAMETIPS = _unresolved_2.GAMETIPS;
       SOUND = _unresolved_2.SOUND;
     }, function (_unresolved_3) {
       gameStart = _unresolved_3.gameStart;
@@ -79,7 +84,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       //import { AudioManager } from './audioManager';
       _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(ProgressBar), _dec4 = property(Label), _dec5 = property(Node), _dec6 = property({
         type: [Node]
-      }), _dec7 = property(Label), _dec8 = property(Node), _dec(_class = (_class2 = (_class3 = class mjNode extends Component {
+      }), _dec(_class = (_class2 = (_class3 = class mjNode extends Component {
         constructor() {
           super(...arguments);
 
@@ -89,14 +94,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "timeLabel", _descriptor3, this);
 
-          _initializerDefineProperty(this, "gameSucNode", _descriptor4, this);
+          _initializerDefineProperty(this, "gameTipsNode", _descriptor4, this);
 
           _initializerDefineProperty(this, "tabNodes", _descriptor5, this);
 
-          _initializerDefineProperty(this, "gameTipsLabel", _descriptor6, this);
-
-          _initializerDefineProperty(this, "mjFrameNode", _descriptor7, this);
-
+          this.tips_title_label = void 0;
+          this.tips_xipai_label = void 0;
+          this.tips_chehui_label = void 0;
+          this.tips_addtime_label = void 0;
+          this.tips_toushi_label = void 0;
+          this.gameContinueBtn = void 0;
+          this.gameRestBtn = void 0;
           this.isCanClick = false;
           //是否可以点击
           this.desktopItems = [];
@@ -119,6 +127,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         //物品栏
         onLoad() {
           console.log('初始化游戏类');
+          this.tips_title_label = this.gameTipsNode.getChildByName('tips_title_label').getComponent(Label);
+          this.tips_xipai_label = this.gameTipsNode.getChildByName('tips_xipai_label').getComponent(Label);
+          this.tips_chehui_label = this.gameTipsNode.getChildByName('tips_chehui_label').getComponent(Label);
+          this.tips_addtime_label = this.gameTipsNode.getChildByName('tips_addtime_label').getComponent(Label);
+          this.tips_toushi_label = this.gameTipsNode.getChildByName('tips_toushi_label').getComponent(Label);
+          this.gameContinueBtn = this.gameTipsNode.getChildByName('gameContinueBtn');
+          this.gameRestBtn = this.gameTipsNode.getChildByName('gameRestBtn');
           (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).getData();
@@ -160,7 +175,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), tools) : tools).level + '关 ' + '倒计时:' + this.time + 's';
           this.timeProgressBar.progress = this.time / this.allTime;
-          this.gameSucNode.active = false;
+          this.gameTipsNode.active = false;
           (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
             error: Error()
           }), gameStart) : gameStart).Instance.hide();
@@ -195,22 +210,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         onBtnClick(event, customEventData) {
           //游戏开始
           if (customEventData == 'gameStart') {
-            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            this.gameShowTips((_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
               error: Error()
-            }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
-              error: Error()
-            }), SOUND) : SOUND).start_sound);
-            this.startGame();
-          } else if (customEventData == 'contiuneGame') //继续
+            }), GAMETIPS) : GAMETIPS).game_hide);
+          } else if (customEventData == 'gameRest') //重新开始
             {
-              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              this.gameShowTips((_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
                 error: Error()
-              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
-                error: Error()
-              }), SOUND) : SOUND).click_sound);
-              this.gameShowTips(2);
+              }), GAMETIPS) : GAMETIPS).game_rest);
+            } else if (customEventData == 'gameNext') //下一关
+            {
               this.startGame();
-            } else if (customEventData == 'backGame') //返回到开始界面
+            } else if (customEventData == 'gameBack') //返回到开始界面
             {
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
@@ -443,7 +454,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               self.updataBtn();
 
               if (self.tabItem.length == 7) {
-                self.gameShowTips(0);
+                self.gameShowTips((_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
+                  error: Error()
+                }), GAMETIPS) : GAMETIPS).gmae_fail);
                 console.log('游戏结束---');
               }
 
@@ -496,7 +509,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         countdown() {
           if (this.time === 0) {
             this.unschedule(this.countdown);
-            this.gameShowTips(0);
+            this.gameShowTips((_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
+              error: Error()
+            }), GAMETIPS) : GAMETIPS).gmae_fail);
           } else {
             this.time--;
 
@@ -676,18 +691,43 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
           if (this.desktopItems.length == 0) {
-            this.gameShowTips(1);
+            this.gameShowTips((_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
+              error: Error()
+            }), GAMETIPS) : GAMETIPS).game_success);
           }
         } //显示过关成功，失败，提示 typeId = 0 失败，1成功，
 
 
         gameShowTips(typeId) {
-          this.gameSucNode.active = true;
           this.unschedule(this.countdown);
           var spos = new Vec3(-700, 125.474, 0);
           var epos = new Vec3(0, 125.474, 0);
 
-          if (typeId == 0) //闯关失败
+          if (typeId == (_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
+            error: Error()
+          }), GAMETIPS) : GAMETIPS).game_hide) //隐藏
+            {
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+                error: Error()
+              }), SOUND) : SOUND).click_sound);
+              this.gameTipsNode.active = false;
+              this.startGame();
+            } else if (typeId == (_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
+            error: Error()
+          }), GAMETIPS) : GAMETIPS).game_rest) //重新开始
+            {
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+                error: Error()
+              }), SOUND) : SOUND).click_sound);
+              this.gameTipsNode.active = false;
+              this.startGame();
+            } else if (typeId == (_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
+            error: Error()
+          }), GAMETIPS) : GAMETIPS).gmae_fail) //失败
             {
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
@@ -698,11 +738,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.gameState = (_crd && GAMESTATE === void 0 ? (_reportPossibleCrUseOfGAMESTATE({
                 error: Error()
               }), GAMESTATE) : GAMESTATE).game_end;
-              this.gameSucNode.active = true;
-              this.gameTipsLabel.string = '闯关失败,再接再厉!';
+              this.gameTipsNode.active = true;
+              this.tips_title_label.string = '闯关失败，再接再厉!';
+              this.gameContinueBtn.active = false;
+              this.gameRestBtn.active = true;
               spos = new Vec3(-700, 125.474, 0);
               epos = new Vec3(0, 125.474, 0);
-              this.gameSucNode.setPosition(spos);
+              this.gameTipsNode.setPosition(spos);
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).saveLevel();
@@ -710,24 +752,44 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 error: Error()
               }), tools) : tools).savaData();
               this.updataBtn();
-            }
+              this.tips_xipai_label.string = '洗 牌: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).xiPai;
+              this.tips_chehui_label.string = '撤 回: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).cheHui;
+              this.tips_addtime_label.string = '加 时: ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).addTime + 's';
+              this.tips_toushi_label.string = '透 视: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).touShi;
+              tween(this.gameTipsNode).to(0.5, {
+                position: epos
+              }, {
+                // 这里以node的位置信息坐标缓动的目标 
+                easing: "quartIn" // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
 
-          if (typeId == 1) // 恭喜,闯关成功
+              }).start();
+            } else if (typeId == (_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
+            error: Error()
+          }), GAMETIPS) : GAMETIPS).game_success) //成功
             {
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
                 error: Error()
               }), SOUND) : SOUND).gameWin_sound);
+              this.isCanClick = false;
               this.gameState = (_crd && GAMESTATE === void 0 ? (_reportPossibleCrUseOfGAMESTATE({
                 error: Error()
               }), GAMESTATE) : GAMESTATE).game_end;
-              this.isCanClick = false;
-              this.gameSucNode.active = true;
-              this.gameTipsLabel.string = '恭喜,闯关成功!';
+              this.gameTipsNode.active = true;
+              this.tips_title_label.string = '恭喜，闯关成功!';
+              this.gameContinueBtn.active = true;
+              this.gameRestBtn.active = false;
               spos = new Vec3(-700, 125.474, 0);
               epos = new Vec3(0, 125.474, 0);
-              this.gameSucNode.setPosition(spos);
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).level += 1; //当前游戏关卡等级
@@ -745,19 +807,38 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 error: Error()
               }), tools) : tools).savaData();
               this.updataBtn();
-            } else if (typeId == 2) // 隐藏显示面板
-            {
-              this.gameSucNode.active = false;
-              return;
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).xiPai++;
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).cheHui++;
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).addTime += 10;
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).touShi++;
+              this.tips_xipai_label.string = '洗 牌: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).xiPai;
+              this.tips_chehui_label.string = '撤 回: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).cheHui;
+              this.tips_addtime_label.string = '加 时: ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).addTime + 's';
+              this.tips_toushi_label.string = '透 视: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).touShi;
+              tween(this.gameTipsNode).to(0.5, {
+                position: epos
+              }, {
+                // 这里以node的位置信息坐标缓动的目标 
+                easing: "quartIn" // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+
+              }).start();
             }
-
-          tween(this.gameSucNode).to(0.5, {
-            position: epos
-          }, {
-            // 这里以node的位置信息坐标缓动的目标 
-            easing: "quartIn" // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
-
-          }).start();
         } //更新道具按钮
 
 
@@ -786,7 +867,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             if ((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).cheHui <= 0 || this.tabItem.length <= 0) {
-              this.setBtnState('gameCheHuiBtn', false, '撤回X0');
+              this.setBtnState('gameCheHuiBtn', false, '撤回X' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).cheHui);
             } else {
               this.setBtnState('gameCheHuiBtn', true, '撤回X' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
@@ -860,7 +943,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "gameSucNode", [_dec5], {
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "gameTipsNode", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,
@@ -873,20 +956,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         writable: true,
         initializer: function initializer() {
           return [];
-        }
-      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "gameTipsLabel", [_dec7], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function initializer() {
-          return null;
-        }
-      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "mjFrameNode", [_dec8], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function initializer() {
-          return null;
         }
       })), _class2)) || _class));
 

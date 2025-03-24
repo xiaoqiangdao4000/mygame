@@ -1,7 +1,7 @@
 import { _decorator, BoxCollider2D, Button, Collider, color, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Script, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3, view } from 'cc';
 const { ccclass, property } = _decorator;
 const eventTarget = new EventTarget();
-import tools, { GAMESTATE, SOUND } from './tools'
+import tools, { GAMESTATE, GAMETIPS, SOUND } from './tools'
 import { gameStart } from './gameStart';
 import { mjcard } from './mjcard';
 import { AudioMgr } from './audioManager';
@@ -19,18 +19,20 @@ export class mjNode extends Component {
     timeLabel: Label | null = null;
 
     @property(Node)
-    gameSucNode: Node | null = null;
+    gameTipsNode: Node | null = null;
 
     @property({
         type: [Node]
     })
     tabNodes: Node[] = [];
 
-    @property(Label)
-    gameTipsLabel: Label | null = null;
-
-    @property(Node)
-    mjFrameNode: Node | null = null;
+    tips_title_label: Label;
+    tips_xipai_label: Label;
+    tips_chehui_label: Label;
+    tips_addtime_label: Label;
+    tips_toushi_label: Label;
+    gameContinueBtn: Node;
+    gameRestBtn: Node;
 
     static Instance: mjNode = null;
 
@@ -48,6 +50,13 @@ export class mjNode extends Component {
 
     onLoad() {
         console.log('初始化游戏类');
+        this.tips_title_label = this.gameTipsNode.getChildByName('tips_title_label').getComponent(Label);
+        this.tips_xipai_label = this.gameTipsNode.getChildByName('tips_xipai_label').getComponent(Label);
+        this.tips_chehui_label = this.gameTipsNode.getChildByName('tips_chehui_label').getComponent(Label);
+        this.tips_addtime_label = this.gameTipsNode.getChildByName('tips_addtime_label').getComponent(Label);
+        this.tips_toushi_label = this.gameTipsNode.getChildByName('tips_toushi_label').getComponent(Label);
+        this.gameContinueBtn = this.gameTipsNode.getChildByName('gameContinueBtn');
+        this.gameRestBtn = this.gameTipsNode.getChildByName('gameRestBtn');
         tools.getData();
         this.updataBtn();
     }
@@ -74,7 +83,7 @@ export class mjNode extends Component {
         this.allTime = this.time;
         this.timeLabel.string = '第' + tools.level + '关 ' + '倒计时:' + this.time + 's';
         this.timeProgressBar.progress = this.time / this.allTime;
-        this.gameSucNode.active = false;
+        this.gameTipsNode.active = false;
         gameStart.Instance.hide()
         this.desktopItemCount = tools.level * tools.picNum;
         tools.cardBackNow = 0;
@@ -95,16 +104,17 @@ export class mjNode extends Component {
     onBtnClick(event: Event, customEventData: string) {
         //游戏开始
         if (customEventData == 'gameStart') {
-            tools.playSound(SOUND.start_sound);
-            this.startGame();
+            this.gameShowTips(GAMETIPS.game_hide);
         }
-        else if (customEventData == 'contiuneGame') //继续
+        else if (customEventData == 'gameRest') //重新开始
         {
-            tools.playSound(SOUND.click_sound);
-            this.gameShowTips(2);
+            this.gameShowTips(GAMETIPS.game_rest);
+        }
+        else if (customEventData == 'gameNext') //下一关
+        {
             this.startGame();
         }
-        else if (customEventData == 'backGame')  //返回到开始界面
+        else if (customEventData == 'gameBack')  //返回到开始界面
         {
             tools.playSound(SOUND.click_sound);
             // this.gameShowTips(2);
@@ -260,7 +270,7 @@ export class mjNode extends Component {
                 self.refreshDeaktopMj();
                 self.updataBtn();
                 if (self.tabItem.length == 7) {
-                    self.gameShowTips(0);
+                    self.gameShowTips(GAMETIPS.gmae_fail);
                     console.log('游戏结束---');
                 }
                 self.isCanClick = true;
@@ -301,7 +311,7 @@ export class mjNode extends Component {
     countdown() {
         if (this.time === 0) {
             this.unschedule(this.countdown)
-            this.gameShowTips(0);
+            this.gameShowTips(GAMETIPS.gmae_fail);
         } else {
             this.time--;
             if (this.time < 10) {
@@ -477,57 +487,87 @@ export class mjNode extends Component {
         }
         //成功过关
         if (this.desktopItems.length == 0) {
-            this.gameShowTips(1);
+            this.gameShowTips(GAMETIPS.game_success);
         }
     }
 
     //显示过关成功，失败，提示 typeId = 0 失败，1成功，
     gameShowTips(typeId) {
-        this.gameSucNode.active = true;
+
         this.unschedule(this.countdown);
         let spos = new Vec3(-700, 125.474, 0);
         let epos = new Vec3(0, 125.474, 0);
-        if (typeId == 0) //闯关失败
+
+
+        if (typeId == GAMETIPS.game_hide) //隐藏
+        {
+            tools.playSound(SOUND.click_sound);
+            this.gameTipsNode.active = false;
+            this.startGame();
+        }
+        else if (typeId == GAMETIPS.game_rest) //重新开始
+        {
+            tools.playSound(SOUND.click_sound);
+            this.gameTipsNode.active = false;
+            this.startGame();
+        }
+        else if (typeId == GAMETIPS.gmae_fail) //失败
         {
             tools.playSound(SOUND.gameLost_sound);
             this.isCanClick = false;
             this.gameState = GAMESTATE.game_end;
-            this.gameSucNode.active = true;
-            this.gameTipsLabel.string = '闯关失败,再接再厉!';
+            this.gameTipsNode.active = true;
+            this.tips_title_label.string = '闯关失败，再接再厉!'
+            this.gameContinueBtn.active = false;
+            this.gameRestBtn.active = true;
             spos = new Vec3(-700, 125.474, 0);
             epos = new Vec3(0, 125.474, 0);
-            this.gameSucNode.setPosition(spos);
+            this.gameTipsNode.setPosition(spos);
             tools.saveLevel();
             tools.savaData();
             this.updataBtn();
+            this.tips_xipai_label.string = '洗 牌: X ' + tools.xiPai;
+            this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
+            this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
+            this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
+            tween(this.gameTipsNode)
+                .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
+                    easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+                })
+                .start();
         }
-        if (typeId == 1) // 恭喜,闯关成功
+        else if (typeId == GAMETIPS.game_success) //成功
         {
             tools.playSound(SOUND.gameWin_sound);
-            this.gameState = GAMESTATE.game_end;
             this.isCanClick = false;
-            this.gameSucNode.active = true;
-            this.gameTipsLabel.string = '恭喜,闯关成功!';
+            this.gameState = GAMESTATE.game_end;
+            this.gameTipsNode.active = true;
+            this.tips_title_label.string = '恭喜，闯关成功!'
+            this.gameContinueBtn.active = true;
+            this.gameRestBtn.active = false;
             spos = new Vec3(-700, 125.474, 0);
             epos = new Vec3(0, 125.474, 0);
-            this.gameSucNode.setPosition(spos);
             tools.level += 1;       //当前游戏关卡等级
             tools.saveLevel();
             tools.addTime += 10;
             this.setBtnState('gameAddTimeBtn', true, '加时' + tools.addTime + 's');
             tools.savaData();
             this.updataBtn();
+            tools.xiPai++;
+            tools.cheHui++;
+            tools.addTime += 10;
+            tools.touShi++;
+
+            this.tips_xipai_label.string = '洗 牌: X ' + tools.xiPai;
+            this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
+            this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
+            this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
+            tween(this.gameTipsNode)
+                .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
+                    easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+                })
+                .start();
         }
-        else if (typeId == 2) // 隐藏显示面板
-        {
-            this.gameSucNode.active = false;
-            return;
-        }
-        tween(this.gameSucNode)
-            .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
-                easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
-            })
-            .start();
     }
 
     //更新道具按钮
@@ -549,7 +589,7 @@ export class mjNode extends Component {
             }
             //撤回按钮
             if (tools.cheHui <= 0 || this.tabItem.length <= 0) {
-                this.setBtnState('gameCheHuiBtn', false, '撤回X0');
+                this.setBtnState('gameCheHuiBtn', false, '撤回X' + tools.cheHui);
             }
             else {
                 this.setBtnState('gameCheHuiBtn', true, '撤回X' + tools.cheHui);

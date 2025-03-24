@@ -179,11 +179,11 @@
       "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\mjNode.ts": {
-      "time": 1742745923912.9243,
+      "time": 1742851971344.6704,
       "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\tools.ts": {
-      "time": 1742745766406.1113,
+      "time": 1742851412047.2622,
       "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\prefabs.meta": {
@@ -603,7 +603,7 @@
       "uuid": "dd2add37-286b-4fcc-ae83-9a119ef1223e"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameStart.prefab": {
-      "time": 1742667241092.187,
+      "time": 1742824063568.0654,
       "uuid": "823197b1-3bd7-451b-99ff-f6c1debdc910"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\mjcard.prefab": {
@@ -700,7 +700,7 @@
       "time": 1742565465729.9421
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameNode.prefab": {
-      "time": 1742750718885.6086,
+      "time": 1742852030299.5881,
       "uuid": "47e65697-8589-419b-91a9-fb9c6ff27703"
     }
   },
