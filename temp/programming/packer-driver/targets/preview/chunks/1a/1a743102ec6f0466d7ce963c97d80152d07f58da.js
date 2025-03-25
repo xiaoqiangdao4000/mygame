@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Label, resMgr, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _class3, _crd, ccclass, property, gameStart;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Label, resMgr, tools, SOUND, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _class3, _crd, ccclass, property, gameStart;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -11,6 +11,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
   function _reportPossibleCrUseOfresMgr(extras) {
     _reporterNs.report("resMgr", "./resMgr", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOftools(extras) {
+    _reporterNs.report("tools", "./tools", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfSOUND(extras) {
+    _reporterNs.report("SOUND", "./tools", _context.meta, extras);
   }
 
   return {
@@ -26,13 +34,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       Label = _cc.Label;
     }, function (_unresolved_2) {
       resMgr = _unresolved_2.resMgr;
+    }, function (_unresolved_3) {
+      tools = _unresolved_3.default;
+      SOUND = _unresolved_3.SOUND;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "88827lxtv5D9ZqgDdOG+R/q", "gameStart", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Label', 'Node']);
+      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Label', 'Node', 'Prefab']);
 
       ({
         ccclass,
@@ -46,12 +57,27 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           _initializerDefineProperty(this, "rankLabel", _descriptor, this);
 
           _initializerDefineProperty(this, "btnLabel", _descriptor2, this);
+
+          this.gamePrefab = void 0;
+          this.gameNode = void 0;
         }
 
         onLoad() {
           if (gameStart.Instance === null) {
             console.log('初始化gameStart单列!');
+            this.gamePrefab = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
+              error: Error()
+            }), resMgr) : resMgr).Instance.getAsset('prefabs', 'gameNode');
             gameStart.Instance = this;
+            var level = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).getLevel();
+            this.setLevel(level);
+            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+              error: Error()
+            }), SOUND) : SOUND).back_sound);
           } else {
             this.destroy();
             return;
@@ -61,15 +87,27 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         setLevel(level) {
           this.rankLabel.string = '最高纪录:' + level;
           this.btnLabel.string = '第' + level + '关';
+          (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).saveLevel();
         } //开始按钮
 
 
-        onBtnClick() {
-          var prefab = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
-            error: Error()
-          }), resMgr) : resMgr).Instance.getAsset('prefabs', 'game');
-          var game = instantiate(prefab);
-          game.parent = this.node;
+        onBtnClick(event, data) {
+          if (data == 'restGame') {
+            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).level = 1;
+            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).saveLevel();
+          }
+
+          this.gameNode = instantiate(this.gamePrefab);
+          this.gameNode.parent = this.node.parent;
+          this.gameNode.active = true;
+          console.log('this.gameNode = ', this.gameNode.getPosition());
+          this.hide();
         }
 
         hide() {

@@ -1,0 +1,360 @@
+2025-3-25 13:50:36-log: Cannot access game frame or container.
+2025-3-25 13:50:36-debug: asset-db:require-engine-code (1215ms)
+2025-3-25 13:50:37-log: meshopt wasm decoder initialized
+2025-3-25 13:50:37-log: [box2d]:box2d wasm lib loaded.
+2025-3-25 13:50:37-log: [bullet]:bullet wasm lib loaded.
+2025-3-25 13:50:37-log: Cocos Creator v3.8.5
+2025-3-25 13:50:37-log: Using legacy pipeline
+2025-3-25 13:50:38-debug: [Assets Memory track]: asset-db-plugin-register: builder start:81.70MB, end 196.40MB, increase: 114.70MB
+2025-3-25 13:50:38-debug: [Assets Memory track]: asset-db-plugin-register: project start:80.06MB, end 195.85MB, increase: 115.79MB
+2025-3-25 13:50:38-debug: [Assets Memory track]: asset-db:worker-init: initPlugin start:79.35MB, end 195.88MB, increase: 116.53MB
+2025-3-25 13:50:37-log: Forward render pipeline initialized.
+2025-3-25 13:50:37-debug: [Assets Memory track]: asset-db:worker-init: initEngine start:32.29MB, end 79.33MB, increase: 47.04MB
+2025-3-25 13:50:37-debug: [Assets Memory track]: asset-db-plugin-register: programming start:80.19MB, end 81.67MB, increase: 1.48MB
+2025-3-25 13:50:38-debug: asset-db:worker-init: initPlugin (1754ms)
+2025-3-25 13:50:38-debug: [Assets Memory track]: asset-db:worker-init start:32.28MB, end 195.98MB, increase: 163.70MB
+2025-3-25 13:50:38-debug: Run asset db hook programming:beforePreStart ...
+2025-3-25 13:50:38-debug: Run asset db hook engine-extends:beforePreStart ...
+2025-3-25 13:50:38-debug: Run asset db hook engine-extends:beforePreStart success!
+2025-3-25 13:50:38-debug: Run asset db hook programming:beforePreStart success!
+2025-3-25 13:50:38-debug: asset-db:worker-init (3185ms)
+2025-3-25 13:50:38-debug: asset-db-hook-programming-beforePreStart (87ms)
+2025-3-25 13:50:38-debug: asset-db-hook-engine-extends-beforePreStart (87ms)
+2025-3-25 13:50:38-debug: Preimport db internal success
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scenebackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scriptsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlasbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/guibackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/prefabsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/audioManager.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/gameLanch.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/gameStart.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/mjNode.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/mjcard.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:38-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/tools.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:39-debug: Preimport db assets success
+2025-3-25 13:50:39-debug: Run asset db hook programming:afterPreStart ...
+2025-3-25 13:50:39-debug: starting packer-driver...
+2025-3-25 13:50:39-debug: initialize scripting environment...
+2025-3-25 13:50:39-debug: [[Executor]] prepare before lock
+2025-3-25 13:50:39-debug: Set detail map pack:///resolution-detail-map.json: {}
+2025-3-25 13:50:39-debug: [[Executor]] prepare after unlock
+2025-3-25 13:50:39-debug: [Assets Memory track]: asset-db:worker-init: preStart start:195.99MB, end 201.60MB, increase: 5.61MB
+2025-3-25 13:50:39-debug: Start up the 'internal' database...
+2025-3-25 13:50:39-debug: Run asset db hook programming:afterPreStart success!
+2025-3-25 13:50:39-debug: Run asset db hook engine-extends:afterPreStart ...
+2025-3-25 13:50:39-debug: Run asset db hook engine-extends:afterPreStart success!
+2025-3-25 13:50:40-debug: asset-db-hook-programming-afterPreStart (1218ms)
+2025-3-25 13:50:40-debug: asset-db:worker-effect-data-processing (398ms)
+2025-3-25 13:50:40-debug: asset-db-hook-engine-extends-afterPreStart (398ms)
+2025-3-25 13:50:40-debug: Start up the 'assets' database...
+2025-3-25 13:50:40-debug: [Assets Memory track]: asset-db:worker-startup-database[internal] start:196.07MB, end 215.25MB, increase: 19.18MB
+2025-3-25 13:50:40-debug: asset-db:worker-startup-database[internal] (1438ms)
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scene/main.scenebackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameNode.prefabbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameStart.prefabbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.pngbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/mjcard.prefabbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.png@6c48abackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.png@f9941background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plistbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@52084background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@54958background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@66633background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@6a858background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@5700dbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@8ec54background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@d6aaebackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@4425cbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@69f6cbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@284a9background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@e57f7background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@27b58background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@67b40background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@bb0d4background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@7acccbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@08c08background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@c31b2background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@f2a6ebackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@0cc78background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@c2f6dbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@7fbabbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@2782dbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@18d92background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@55d35background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@beeebbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@02256background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@bbf61background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@8484cbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@96cdabackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@77a5abackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@61ad0background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@9b819background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@05033background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@6032dbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@4fb09background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@19bd6background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@f0a9bbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@bcaf1background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@af705background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@872bfbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@573afbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@aab81background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@2146ebackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plistbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@52084background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@54958background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@66633background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@6a858background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@5700dbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@8ec54background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@d6aaebackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@4425cbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@69f6cbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@284a9background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@e57f7background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@27b58background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@67b40background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@bb0d4background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@7acccbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@08c08background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@c31b2background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@f2a6ebackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@0cc78background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@c2f6dbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@7fbabbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@2782dbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@18d92background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@55d35background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@beeebbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@02256background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@bbf61background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@8484cbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@96cdabackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@77a5abackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@61ad0background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@9b819background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@05033background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@6032dbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@4fb09background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@19bd6background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@f0a9bbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@bcaf1background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@af705background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@872bfbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@573afbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@aab81background: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: %cReImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/atlas/mj_card.plist@2146ebackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:50:40-debug: [Assets Memory track]: asset-db:worker-startup-database[assets] start:199.79MB, end 215.38MB, increase: 15.59MB
+2025-3-25 13:50:40-debug: [Assets Memory track]: asset-db:worker-init: startup start:201.61MB, end 215.40MB, increase: 13.79MB
+2025-3-25 13:50:40-debug: lazy register asset handler json
+2025-3-25 13:50:40-debug: lazy register asset handler spine-data
+2025-3-25 13:50:40-debug: lazy register asset handler dragonbones
+2025-3-25 13:50:40-debug: lazy register asset handler dragonbones-atlas
+2025-3-25 13:50:40-debug: lazy register asset handler terrain
+2025-3-25 13:50:40-debug: lazy register asset handler javascript
+2025-3-25 13:50:40-debug: lazy register asset handler typescript
+2025-3-25 13:50:40-debug: lazy register asset handler scene
+2025-3-25 13:50:40-debug: lazy register asset handler prefab
+2025-3-25 13:50:40-debug: lazy register asset handler sprite-frame
+2025-3-25 13:50:40-debug: lazy register asset handler tiled-map
+2025-3-25 13:50:40-debug: lazy register asset handler buffer
+2025-3-25 13:50:40-debug: lazy register asset handler image
+2025-3-25 13:50:40-debug: lazy register asset handler sign-image
+2025-3-25 13:50:40-debug: lazy register asset handler alpha-image
+2025-3-25 13:50:40-debug: lazy register asset handler texture
+2025-3-25 13:50:40-debug: lazy register asset handler texture-cube
+2025-3-25 13:50:40-debug: lazy register asset handler erp-texture-cube
+2025-3-25 13:50:40-debug: lazy register asset handler render-texture
+2025-3-25 13:50:40-debug: lazy register asset handler texture-cube-face
+2025-3-25 13:50:40-debug: lazy register asset handler rt-sprite-frame
+2025-3-25 13:50:40-debug: lazy register asset handler gltf
+2025-3-25 13:50:40-debug: lazy register asset handler gltf-mesh
+2025-3-25 13:50:40-debug: lazy register asset handler gltf-animation
+2025-3-25 13:50:40-debug: lazy register asset handler directory
+2025-3-25 13:50:40-debug: lazy register asset handler gltf-material
+2025-3-25 13:50:40-debug: lazy register asset handler gltf-scene
+2025-3-25 13:50:40-debug: lazy register asset handler gltf-embeded-image
+2025-3-25 13:50:40-debug: lazy register asset handler fbx
+2025-3-25 13:50:40-debug: lazy register asset handler material
+2025-3-25 13:50:40-debug: lazy register asset handler physics-material
+2025-3-25 13:50:40-debug: lazy register asset handler effect
+2025-3-25 13:50:40-debug: lazy register asset handler effect-header
+2025-3-25 13:50:40-debug: lazy register asset handler audio-clip
+2025-3-25 13:50:40-debug: lazy register asset handler animation-clip
+2025-3-25 13:50:40-debug: lazy register asset handler animation-graph
+2025-3-25 13:50:40-debug: lazy register asset handler animation-graph-variant
+2025-3-25 13:50:40-debug: lazy register asset handler animation-mask
+2025-3-25 13:50:40-debug: lazy register asset handler text
+2025-3-25 13:50:40-debug: lazy register asset handler bitmap-font
+2025-3-25 13:50:40-debug: lazy register asset handler particle
+2025-3-25 13:50:40-debug: lazy register asset handler sprite-atlas
+2025-3-25 13:50:40-debug: lazy register asset handler auto-atlas
+2025-3-25 13:50:40-debug: lazy register asset handler label-atlas
+2025-3-25 13:50:40-debug: lazy register asset handler render-pipeline
+2025-3-25 13:50:40-debug: lazy register asset handler render-stage
+2025-3-25 13:50:40-debug: lazy register asset handler render-flow
+2025-3-25 13:50:40-debug: lazy register asset handler instantiation-material
+2025-3-25 13:50:40-debug: lazy register asset handler instantiation-mesh
+2025-3-25 13:50:40-debug: lazy register asset handler instantiation-skeleton
+2025-3-25 13:50:40-debug: lazy register asset handler instantiation-animation
+2025-3-25 13:50:40-debug: lazy register asset handler gltf-skeleton
+2025-3-25 13:50:40-debug: lazy register asset handler video-clip
+2025-3-25 13:50:40-debug: lazy register asset handler ttf-font
+2025-3-25 13:50:40-debug: lazy register asset handler *
+2025-3-25 13:50:40-debug: asset-db:worker-startup-database[assets] (1519ms)
+2025-3-25 13:50:40-debug: asset-db:start-database (1645ms)
+2025-3-25 13:50:40-debug: init worker message success
+2025-3-25 13:50:40-debug: asset-db:ready (7952ms)
+2025-3-25 13:50:40-debug: programming:execute-script (5ms)
+2025-3-25 13:50:41-debug: [Build Memory track]: builder:worker-init start:219.83MB, end 230.63MB, increase: 10.80MB
+2025-3-25 13:50:41-debug: builder:worker-init (546ms)
+2025-3-25 13:50:49-debug: refresh db internal success
+2025-3-25 13:50:49-debug: refresh db assets success
+2025-3-25 13:50:49-debug: Run asset db hook engine-extends:afterRefresh ...
+2025-3-25 13:50:49-debug: Run asset db hook engine-extends:afterRefresh success!
+2025-3-25 13:50:49-debug: asset-db:refresh-all-database (75ms)
+2025-3-25 13:50:49-debug: asset-db:worker-effect-data-processing (1ms)
+2025-3-25 13:50:49-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2025-3-25 13:52:59-debug: Query all assets info in project
+2025-3-25 13:52:59-debug: init custom config: keepNodeUuid: false, useCache: true
+2025-3-25 13:52:59-debug: 查询 Asset Bundle start, progress: 0%
+2025-3-25 13:52:59-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-25 13:52:59-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+2025-3-25 13:52:59-debug:   Number of other assets: 383
+2025-3-25 13:52:59-debug:   Number of all scenes: 1
+2025-3-25 13:52:59-debug:   Number of all scripts: 14
+2025-3-25 13:52:59-debug: // ---- build task 查询 Asset Bundle ---- (9ms)
+2025-3-25 13:52:59-debug: 查询 Asset Bundle start, progress: 5%
+2025-3-25 13:52:59-debug: run build task 查询 Asset Bundle success in 9 ms√, progress: 5%
+2025-3-25 13:52:59-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-25 13:52:59-debug: [Build Memory track]: 查询 Asset Bundle start:168.07MB, end 167.71MB, increase: -369.44KB
+2025-3-25 13:52:59-debug: // ---- build task 查询 Asset Bundle ---- (3ms)
+2025-3-25 13:52:59-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-25 13:52:59-debug: run build task 查询 Asset Bundle success in 3 ms√, progress: 10%
+2025-3-25 13:52:59-debug: [Build Memory track]: 查询 Asset Bundle start:167.74MB, end 167.83MB, increase: 90.35KB
+2025-3-25 13:52:59-debug: 整理部分构建选项内数据到 settings.json start, progress: 10%
+2025-3-25 13:52:59-debug: run build task 整理部分构建选项内数据到 settings.json success in √, progress: 12%
+2025-3-25 13:52:59-debug: 填充脚本数据到 settings.json start, progress: 12%
+2025-3-25 13:52:59-debug: // ---- build task 填充脚本数据到 settings.json ----
+2025-3-25 13:52:59-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:167.86MB, end 167.88MB, increase: 20.38KB
+2025-3-25 13:52:59-debug: // ---- build task 填充脚本数据到 settings.json ---- (1ms)
+2025-3-25 13:52:59-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-25 13:52:59-debug: run build task 填充脚本数据到 settings.json success in 1 ms√, progress: 13%
+2025-3-25 13:52:59-debug: 整理部分构建选项内数据到 settings.json start, progress: 13%
+2025-3-25 13:52:59-debug: [Build Memory track]: 填充脚本数据到 settings.json start:167.91MB, end 167.94MB, increase: 28.27KB
+2025-3-25 13:52:59-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (4ms)
+2025-3-25 13:52:59-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:167.98MB, end 168.12MB, increase: 142.90KB
+2025-3-25 13:52:59-debug: run build task 整理部分构建选项内数据到 settings.json success in 4 ms√, progress: 15%
+2025-3-25 13:56:13-debug: refresh db internal success
+2025-3-25 13:56:13-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/mjNode.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 13:56:13-debug: refresh db assets success
+2025-3-25 13:56:13-debug: Run asset db hook engine-extends:afterRefresh ...
+2025-3-25 13:56:13-debug: Run asset db hook engine-extends:afterRefresh success!
+2025-3-25 13:56:13-debug: asset-db:refresh-all-database (67ms)
+2025-3-25 13:56:13-debug: asset-db:worker-effect-data-processing (2ms)
+2025-3-25 13:56:13-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2025-3-25 13:56:14-debug: Query all assets info in project
+2025-3-25 13:56:14-debug: init custom config: keepNodeUuid: false, useCache: true
+2025-3-25 13:56:14-debug: 查询 Asset Bundle start, progress: 0%
+2025-3-25 13:56:14-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-25 13:56:14-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+2025-3-25 13:56:14-debug:   Number of all scenes: 1
+2025-3-25 13:56:14-debug:   Number of all scripts: 14
+2025-3-25 13:56:14-debug:   Number of other assets: 383
+2025-3-25 13:56:14-debug: // ---- build task 查询 Asset Bundle ---- (9ms)
+2025-3-25 13:56:14-debug: 查询 Asset Bundle start, progress: 5%
+2025-3-25 13:56:14-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-25 13:56:14-debug: run build task 查询 Asset Bundle success in 9 ms√, progress: 5%
+2025-3-25 13:56:14-debug: [Build Memory track]: 查询 Asset Bundle start:169.48MB, end 168.96MB, increase: -523.36KB
+2025-3-25 13:56:14-debug: // ---- build task 查询 Asset Bundle ---- (2ms)
+2025-3-25 13:56:14-debug: [Build Memory track]: 查询 Asset Bundle start:169.00MB, end 169.08MB, increase: 89.32KB
+2025-3-25 13:56:14-debug: 整理部分构建选项内数据到 settings.json start, progress: 10%
+2025-3-25 13:56:14-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-25 13:56:14-debug: run build task 查询 Asset Bundle success in 2 ms√, progress: 10%
+2025-3-25 13:56:14-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (1ms)
+2025-3-25 13:56:14-debug: run build task 整理部分构建选项内数据到 settings.json success in 1 ms√, progress: 12%
+2025-3-25 13:56:14-debug: // ---- build task 填充脚本数据到 settings.json ----
+2025-3-25 13:56:14-debug: 填充脚本数据到 settings.json start, progress: 12%
+2025-3-25 13:56:14-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:169.12MB, end 169.15MB, increase: 29.44KB
+2025-3-25 13:56:14-debug: // ---- build task 填充脚本数据到 settings.json ---- (1ms)
+2025-3-25 13:56:14-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-25 13:56:14-debug: run build task 填充脚本数据到 settings.json success in 1 ms√, progress: 13%
+2025-3-25 13:56:14-debug: [Build Memory track]: 填充脚本数据到 settings.json start:169.18MB, end 169.22MB, increase: 33.90KB
+2025-3-25 13:56:14-debug: 整理部分构建选项内数据到 settings.json start, progress: 13%
+2025-3-25 13:56:14-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (3ms)
+2025-3-25 13:56:14-debug: run build task 整理部分构建选项内数据到 settings.json success in 3 ms√, progress: 15%
+2025-3-25 13:56:14-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:169.25MB, end 169.38MB, increase: 129.65KB
+2025-3-25 14:04:28-debug: refresh db internal success
+2025-3-25 14:04:28-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/mjNode.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 14:04:28-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/tools.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-25 14:04:28-debug: refresh db assets success
+2025-3-25 14:04:28-debug: Run asset db hook engine-extends:afterRefresh ...
+2025-3-25 14:04:28-debug: Run asset db hook engine-extends:afterRefresh success!
+2025-3-25 14:04:28-debug: asset-db:refresh-all-database (59ms)
+2025-3-25 14:04:28-debug: asset-db:worker-effect-data-processing (1ms)
+2025-3-25 14:04:28-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2025-3-25 14:04:29-debug: Query all assets info in project
+2025-3-25 14:04:29-debug: init custom config: keepNodeUuid: false, useCache: true
+2025-3-25 14:04:29-debug: 查询 Asset Bundle start, progress: 0%
+2025-3-25 14:04:29-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-25 14:04:29-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+2025-3-25 14:04:29-debug:   Number of all scenes: 1
+2025-3-25 14:04:29-debug:   Number of all scripts: 14
+2025-3-25 14:04:29-debug:   Number of other assets: 383
+2025-3-25 14:04:29-debug: // ---- build task 查询 Asset Bundle ---- (12ms)
+2025-3-25 14:04:29-debug: run build task 查询 Asset Bundle success in 12 ms√, progress: 5%
+2025-3-25 14:04:29-debug: [Build Memory track]: 查询 Asset Bundle start:170.87MB, end 170.37MB, increase: -513.00KB
+2025-3-25 14:04:29-debug: 查询 Asset Bundle start, progress: 5%
+2025-3-25 14:04:29-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-25 14:04:29-debug: // ---- build task 查询 Asset Bundle ---- (3ms)
+2025-3-25 14:04:29-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-25 14:04:29-debug: run build task 查询 Asset Bundle success in 3 ms√, progress: 10%
+2025-3-25 14:04:29-debug: 整理部分构建选项内数据到 settings.json start, progress: 10%
+2025-3-25 14:04:29-debug: [Build Memory track]: 查询 Asset Bundle start:170.40MB, end 170.50MB, increase: 96.97KB
+2025-3-25 14:04:29-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (1ms)
+2025-3-25 14:04:29-debug: run build task 整理部分构建选项内数据到 settings.json success in 1 ms√, progress: 12%
+2025-3-25 14:04:29-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:170.53MB, end 170.56MB, increase: 37.69KB
+2025-3-25 14:04:29-debug: 填充脚本数据到 settings.json start, progress: 12%
+2025-3-25 14:04:29-debug: // ---- build task 填充脚本数据到 settings.json ----
+2025-3-25 14:04:29-debug: // ---- build task 填充脚本数据到 settings.json ---- (1ms)
+2025-3-25 14:04:29-debug: run build task 填充脚本数据到 settings.json success in 1 ms√, progress: 13%
+2025-3-25 14:04:29-debug: [Build Memory track]: 填充脚本数据到 settings.json start:170.60MB, end 170.63MB, increase: 29.29KB
+2025-3-25 14:04:29-debug: 整理部分构建选项内数据到 settings.json start, progress: 13%
+2025-3-25 14:04:29-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-25 14:04:29-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (4ms)
+2025-3-25 14:04:29-debug: run build task 整理部分构建选项内数据到 settings.json success in 4 ms√, progress: 15%
+2025-3-25 14:04:29-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:170.66MB, end 170.78MB, increase: 128.85KB
+2025-3-25 14:04:52-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameNode.prefabbackground: #aaff85; color: #000;color: #000;
+2025-3-25 14:04:52-debug: asset-db:reimport-asset47e65697-8589-419b-91a9-fb9c6ff27703 (13ms)
+2025-3-25 14:04:53-debug: Query all assets info in project
+2025-3-25 14:04:53-debug: init custom config: keepNodeUuid: false, useCache: true
+2025-3-25 14:04:53-debug: 查询 Asset Bundle start, progress: 0%
+2025-3-25 14:04:53-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-25 14:04:53-debug: Query preload assets/scripts from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,6a2d0734-bd9e-4ddf-946e-caa52498cb75,871c3b6c-7379-419d-bda3-794b239ab90d,ff9b0199-ce04-4cfe-86cc-6c719f08d6e4,de1c2107-70c8-4021-8459-6399f24d01c6,cbf30902-517f-40dc-af90-a550bac27cf1
+2025-3-25 14:04:53-debug:   Number of all scripts: 14
+2025-3-25 14:04:53-debug:   Number of other assets: 383
+2025-3-25 14:04:53-debug:   Number of all scenes: 1
+2025-3-25 14:04:53-debug: // ---- build task 查询 Asset Bundle ---- (8ms)
+2025-3-25 14:04:53-debug: // ---- build task 查询 Asset Bundle ----
+2025-3-25 14:04:53-debug: run build task 查询 Asset Bundle success in 8 ms√, progress: 5%
+2025-3-25 14:04:53-debug: [Build Memory track]: 查询 Asset Bundle start:171.29MB, end 171.49MB, increase: 209.02KB
+2025-3-25 14:04:53-debug: 查询 Asset Bundle start, progress: 5%
+2025-3-25 14:04:53-debug: // ---- build task 查询 Asset Bundle ---- (7ms)
+2025-3-25 14:04:53-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-25 14:04:53-debug: run build task 查询 Asset Bundle success in 7 ms√, progress: 10%
+2025-3-25 14:04:53-debug: [Build Memory track]: 查询 Asset Bundle start:171.52MB, end 171.61MB, increase: 88.98KB
+2025-3-25 14:04:53-debug: 整理部分构建选项内数据到 settings.json start, progress: 10%
+2025-3-25 14:04:53-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (2ms)
+2025-3-25 14:04:53-debug: // ---- build task 填充脚本数据到 settings.json ----
+2025-3-25 14:04:53-debug: run build task 整理部分构建选项内数据到 settings.json success in 2 ms√, progress: 12%
+2025-3-25 14:04:53-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:171.64MB, end 170.94MB, increase: -715.22KB
+2025-3-25 14:04:53-debug: 填充脚本数据到 settings.json start, progress: 12%
+2025-3-25 14:04:53-debug: // ---- build task 填充脚本数据到 settings.json ---- (1ms)
+2025-3-25 14:04:53-debug: run build task 填充脚本数据到 settings.json success in 1 ms√, progress: 13%
+2025-3-25 14:04:53-debug: 整理部分构建选项内数据到 settings.json start, progress: 13%
+2025-3-25 14:04:53-debug: [Build Memory track]: 填充脚本数据到 settings.json start:170.98MB, end 171.00MB, increase: 28.60KB
+2025-3-25 14:04:53-debug: // ---- build task 整理部分构建选项内数据到 settings.json ----
+2025-3-25 14:04:53-debug: // ---- build task 整理部分构建选项内数据到 settings.json ---- (4ms)
+2025-3-25 14:04:53-debug: run build task 整理部分构建选项内数据到 settings.json success in 4 ms√, progress: 15%
+2025-3-25 14:04:53-debug: [Build Memory track]: 整理部分构建选项内数据到 settings.json start:171.04MB, end 171.17MB, increase: 136.84KB

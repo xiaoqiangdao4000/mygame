@@ -152,7 +152,7 @@
       "id": "6a858",
       "name": "bt1_bg",
       "userData": {
-        "trimType": "custom",
+        "trimType": "auto",
         "trimThreshold": 1,
         "rotated": false,
         "offsetX": 0,
@@ -160,7 +160,7 @@
         "trimX": 323,
         "trimY": 2,
         "width": 730,
-        "height": 120,
+        "height": 134,
         "rawWidth": 730,
         "rawHeight": 134,
         "borderTop": 0,

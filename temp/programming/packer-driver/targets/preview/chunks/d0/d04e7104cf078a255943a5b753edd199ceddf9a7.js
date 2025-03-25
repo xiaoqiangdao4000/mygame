@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Label, Sprite, resMgr, tools, _dec, _class, _class2, _crd, ccclass, property, gameLauch;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Label, Sprite, tween, resMgr, tools, _dec, _class, _class2, _crd, ccclass, property, gameLauch;
 
   function _reportPossibleCrUseOfresMgr(extras) {
     _reporterNs.report("resMgr", "./resMgr", _context.meta, extras);
@@ -23,6 +23,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       instantiate = _cc.instantiate;
       Label = _cc.Label;
       Sprite = _cc.Sprite;
+      tween = _cc.tween;
     }, function (_unresolved_2) {
       resMgr = _unresolved_2.resMgr;
     }, function (_unresolved_3) {
@@ -33,7 +34,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
       _cclegacy._RF.push({}, "36d96yWFq9BZJFMWcjEUVTU", "gameLanch", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Label', 'Node', 'Prefab', 'Sprite']);
+      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Label', 'Node', 'Prefab', 'Sprite', 'tween']);
 
       ({
         ccclass,
@@ -83,7 +84,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             error: Error()
           }), tools) : tools).resPkg, this.loadingResCallBack, () => {
             //资源加载完成回调
-            this.enterStartScene();
+            tween(this.node).delay(0.3).call(() => {
+              gameLauch.Instance.enterStartScene();
+            }).start();
           });
         } //资源加载进度
 

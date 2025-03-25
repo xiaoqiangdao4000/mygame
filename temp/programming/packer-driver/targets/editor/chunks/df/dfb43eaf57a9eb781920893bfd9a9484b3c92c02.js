@@ -1,146 +1,246 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, Node, AudioSource, AudioClip, resources, director, AudioManager, _crd;
-
-  _export("AudioManager", void 0);
+  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, AudioClip, AudioSource, director, Node, resources, _dec, _class, _class2, _crd, ccclass, property, AudioMgr;
 
   return {
     setters: [function (_cc) {
       _cclegacy = _cc.cclegacy;
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
-      Node = _cc.Node;
-      AudioSource = _cc.AudioSource;
+      _decorator = _cc._decorator;
       AudioClip = _cc.AudioClip;
-      resources = _cc.resources;
+      AudioSource = _cc.AudioSource;
       director = _cc.director;
+      Node = _cc.Node;
+      resources = _cc.resources;
     }],
     execute: function () {
       _crd = true;
 
-      _cclegacy._RF.push({}, "298c6TbJR5PJKHnuY6chjiA", "audioManager", undefined); //AudioManager.ts
+      _cclegacy._RF.push({}, "298c6TbJR5PJKHnuY6chjiA", "audioManager", undefined);
 
+      __checkObsolete__(['_decorator', 'AudioClip', 'AudioSource', 'Component', 'director', 'Node', 'resources']);
 
-      /**
-       * @en
-       * this is a sington class for audio play, can be easily called from anywhere in you project.
-       * @zh
-       * 这是一个用于播放音频的单件类，可以很方便地在项目的任何地方调用。
-       */
-      __checkObsolete__(['Node', 'AudioSource', 'AudioClip', 'resources', 'director']);
+      ({
+        ccclass,
+        property
+      } = _decorator);
 
-      _export("AudioManager", AudioManager = class AudioManager {
-        static get inst() {
-          if (this._inst == null) {
-            this._inst = new AudioManager();
+      _export("AudioMgr", AudioMgr = (_dec = ccclass('AudioMgr'), _dec(_class = (_class2 = class AudioMgr {
+        static get Instance() {
+          if (!this._instance) {
+            this._instance = new AudioMgr();
           }
 
-          return this._inst;
-        }
+          return this._instance;
+        } //AudioSource组件用于控制音频播放
+
 
         constructor() {
           this._audioSource = void 0;
-          //@en create a node as AudioManager
-          //@zh 创建一个节点作为 AudioManager
-          let audioMgr = new Node();
-          audioMgr.name = '__audioMgr__'; //@en add to the scene.
-          //@zh 添加节点到场景
+          this._volume = 0.8;
+          //默认音量（部分web平台（ios）限制并不会生效）
+          this._sound_on = true;
+          //音效开关
+          //特别：用于播放可以被打断的音效
+          this._audioSource2 = void 0;
+          console.log('初始化声音管理模块'); //创建一个空节点
 
-          director.getScene().addChild(audioMgr); //@en make it as a persistent node, so it won't be destroied when scene change.
-          //@zh 标记为常驻节点，这样场景切换的时候就不会被销毁了
+          let audio_node = new Node();
+          audio_node.name = '__audio_node__'; //把创建的节点添加到场景中
 
-          director.addPersistRootNode(audioMgr); //@en add AudioSource componrnt to play audios.
-          //@zh 添加 AudioSource 组件，用于播放音频。
+          director.getScene().addChild(audio_node); //设置为常驻节点
 
-          this._audioSource = audioMgr.addComponent(AudioSource);
+          director.addPersistRootNode(audio_node); //添加AudioSource组件
+
+          this._audioSource = audio_node.addComponent(AudioSource); //把音频设置为非加载完自动播放（部分web平台不允许未交互就有音频播放）
+
+          this._audioSource.playOnAwake = false;
+          let audio_node2 = new Node();
+          audio_node2.name = '__audio_node2__';
+          director.getScene().addChild(audio_node2);
+          director.addPersistRootNode(audio_node2);
+          this._audioSource2 = audio_node2.addComponent(AudioSource);
+          this._audioSource2.playOnAwake = false;
         }
 
-        get audioSource() {
+        get AudioSource() {
           return this._audioSource;
         }
-        /**
-         * @en
-         * play short audio, such as strikes,explosions
-         * @zh
-         * 播放短音频,比如 打击音效，爆炸音效等
-         * @param sound clip or url for the audio
-         * @param volume 
-         */
 
-
-        playOneShot(sound, volume = 1.0) {
-          if (sound instanceof AudioClip) {
-            this._audioSource.playOneShot(sound, volume);
-          } else {
-            resources.load(sound, (err, clip) => {
-              if (err) {
-                console.log(err);
-              } else {
-                this._audioSource.playOneShot(clip, volume);
-              }
-            });
-          }
+        get AudioSource2() {
+          return this._audioSource2;
         }
         /**
-         * @en
-         * play long audio, such as the bg music
-         * @zh
-         * 播放长音频，比如 背景音乐
-         * @param sound clip or url for the sound
+         * 播放背景音乐
+         * @param sound 音频剪辑或者resources的音频路径
          * @param volume 
          */
 
 
-        play(sound, volume = 1.0) {
+        playBgm(clip, volume = 1.0) {
+          if (!this._sound_on) {
+            this._volume = 0;
+          } else {
+            this._volume = volume;
+          }
+
+          let sound = clip;
+
+          if (!sound) {
+            console.error("背景音乐为空");
+            return;
+          }
+
           if (sound instanceof AudioClip) {
-            this._audioSource.clip = sound;
+            this._audioSource.stop();
+
+            this._audioSource.clip = sound; //考虑到切换背景音乐时，先停止后播放，防止出现播放叠加或不播放的问题
 
             this._audioSource.play();
 
-            this.audioSource.volume = volume;
+            this._audioSource.loop = true;
+            this._audioSource.volume = this._volume;
           } else {
-            resources.load(sound, (err, clip) => {
+            //(实际上不放在这里，一般来说会在ResMgr中预先加载)
+            resources.load(sound, (err, audio) => {
               if (err) {
-                console.log(err);
+                console.error("背景音乐加载失败", sound);
               } else {
-                this._audioSource.clip = clip;
+                this._audioSource.stop();
+
+                this._audioSource.clip = audio;
 
                 this._audioSource.play();
 
-                this.audioSource.volume = volume;
+                this._audioSource.loop = true;
+                this._audioSource.volume = this._volume;
+              }
+            });
+          }
+        }
+
+        /**
+         * 播放音效1 预加载方式
+         * @param soundtype 音频类型（定义）
+         * @param volume 
+         */
+        playEffect(sound_clip, volume = 1.0) {
+          if (!this._sound_on) return;
+          let sound = sound_clip;
+
+          if (!sound) {
+            console.error("音效为空");
+            return;
+          } //判断是不是音频剪辑
+
+
+          if (sound instanceof AudioClip) {
+            this._audioSource.playOneShot(sound, this._volume);
+          } else {
+            //动态加载(实际上不放在这里，一般来说会在ResMgr中预先加载)
+            resources.load(sound, (err, audio) => {
+              if (err) {
+                console.error("音效加载失败", sound);
+              } else {
+                this._audioSource.playOneShot(audio, this._volume);
               }
             });
           }
         }
         /**
-         * stop the audio play
+         * 播放音效2 可以被打断的音效
+         * @param sound_clip 
+         * @param volume 
          */
 
 
-        stop() {
+        playEffectCanBreak(sound_clip, volume = 1.0) {
+          if (!this._sound_on) {
+            this._volume = 0;
+          } else {
+            this._volume = volume;
+          }
+
+          let sound = sound_clip;
+
+          if (!sound) {
+            console.error("音效为空");
+            return;
+          }
+
+          if (sound instanceof AudioClip) {
+            this._audioSource2.stop();
+
+            this._audioSource2.clip = sound;
+
+            this._audioSource2.play();
+
+            this._audioSource2.loop = false;
+            this._audioSource2.volume = this._volume;
+          } else {
+            resources.load(sound, (err, audio) => {
+              if (err) {
+                console.error("音效加载失败", sound);
+              } else {
+                this._audioSource2.stop();
+
+                this._audioSource2.clip = audio;
+
+                this._audioSource2.play();
+
+                this._audioSource2.loop = false;
+                this._audioSource2.volume = this._volume;
+              }
+            });
+          }
+        }
+        /**
+         * 客户端音效开关
+         * @param soundOpen 
+         */
+
+
+        setMenu(soundOpen) {
+          this._sound_on = soundOpen;
+
+          if (!this._sound_on) {
+            this._audioSource.volume = 0;
+            this._audioSource2.volume = 0;
+            this._volume = 0;
+          } else {
+            this._audioSource.volume = 1.0;
+            this._audioSource2.volume = 1.0;
+            this._volume = 1.0;
+          }
+        }
+        /**
+         * 停止背景音乐
+         */
+
+
+        stopBgm() {
           this._audioSource.stop();
         }
         /**
-         * pause the audio play
+         * 暂停背景音乐
          */
 
 
-        pause() {
+        pauseBgm() {
           this._audioSource.pause();
         }
         /**
-         * resume the audio play
+         * 恢复背景音乐
          */
 
 
-        resume() {
+        resumeBgm() {
           this._audioSource.play();
         }
 
-      });
-
-      AudioManager._inst = void 0;
+      }, _class2._instance = void 0, _class2)) || _class));
 
       _cclegacy._RF.pop();
 

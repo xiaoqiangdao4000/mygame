@@ -5,7 +5,6 @@ import tools, { GAMESTATE, GAMETIPS, SOUND } from './tools'
 import { gameStart } from './gameStart';
 import { mjcard } from './mjcard';
 import { AudioMgr } from './audioManager';
-//import { AudioManager } from './audioManager';
 @ccclass('mjNode')
 export class mjNode extends Component {
 
@@ -148,8 +147,8 @@ export class mjNode extends Component {
         {
             if (tools.touShi > 0) {
                 this.touShi();
-                // this.setBtnState('gameToushiBtn', false, '透视X' + tools.touShi);
-                this.updataBtn();
+                this.setBtnState('gameToushiBtn', false, '透视X' + tools.touShi);
+                //this.updataBtn();
             }
         }
         else if (customEventData == 'music')     //音乐
