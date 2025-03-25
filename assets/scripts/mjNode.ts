@@ -1,6 +1,5 @@
-import { _decorator, BoxCollider2D, Button, Collider, color, Component, ConfigurableConstraint, EventTouch, Input, input, instantiate, Intersection2D, Label, Node, NodeEventType, Prefab, ProgressBar, Rect, resources, Script, Sprite, SpriteAtlas, SpriteFrame, Texture2D, tween, UITransform, Vec2, Vec3, view } from 'cc';
+import { _decorator, Button, color, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
-const eventTarget = new EventTarget();
 import tools, { GAMESTATE, GAMETIPS, SOUND } from './tools'
 import { gameStart } from './gameStart';
 import { mjcard } from './mjcard';
@@ -25,13 +24,13 @@ export class mjNode extends Component {
     })
     tabNodes: Node[] = [];
 
-    tips_title_label: Label;
-    tips_xipai_label: Label;
-    tips_chehui_label: Label;
-    tips_addtime_label: Label;
-    tips_toushi_label: Label;
-    gameContinueBtn: Node;
-    gameRestBtn: Node;
+    tips_title_label: Label = null;
+    tips_xipai_label: Label = null;
+    tips_chehui_label: Label = null;
+    tips_addtime_label: Label = null;
+    tips_toushi_label: Label = null;
+    gameContinueBtn: Node = null;
+    gameRestBtn: Node = null;
 
     static Instance: mjNode = null;
 

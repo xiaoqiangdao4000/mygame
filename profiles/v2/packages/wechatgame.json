@@ -5,7 +5,39 @@
       "buildPath": "project://build",
       "outputName": "wechatgame",
       "mainBundleCompressionType": "merge_dep",
-      "platform": "wechatgame"
+      "platform": "wechatgame",
+      "bundleConfigs": [
+        {
+          "name": "internal",
+          "root": "",
+          "output": true
+        },
+        {
+          "root": "db://assets/gameBundle/atlas",
+          "name": "atlas",
+          "output": true,
+          "uuid": "62ca7440-75de-442c-a3eb-8410ba899976"
+        },
+        {
+          "root": "db://assets/gameBundle/gui",
+          "name": "gui",
+          "output": true,
+          "uuid": "2b010b11-d45f-4430-b075-964eec1a239e"
+        },
+        {
+          "root": "db://assets/gameBundle/sound",
+          "name": "sound",
+          "output": true,
+          "uuid": "d28e714b-ef1b-4cdb-8684-23d773784799"
+        },
+        {
+          "root": "db://assets/gameBundle/prefabs",
+          "name": "prefabs",
+          "output": true,
+          "uuid": "12e5d28d-7d63-4f4b-b336-1d00903b4cf1"
+        }
+      ],
+      "buildMode": "bundle"
     },
     "taskOptionsMap": {
       "1742220118934": {
@@ -23,8 +55,34 @@
         "separateEngine": false,
         "highPerformanceMode": false,
         "__version__": "1.0.4"
+      },
+      "1742915849388": {
+        "orientation": "portrait",
+        "appid": "wx494cae4c1ff3e79b",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4"
+      },
+      "1742918584403": {
+        "orientation": "portrait",
+        "appid": "wx494cae4c1ff3e79b",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4"
       }
     },
-    "__version__": "1.3.9"
+    "__version__": "1.3.9",
+    "options": {
+      "wechatgame": {
+        "orientation": "portrait",
+        "appid": "wx494cae4c1ff3e79b",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4"
+      }
+    }
   }
 }

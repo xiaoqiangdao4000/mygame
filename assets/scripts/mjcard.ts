@@ -1,14 +1,14 @@
-import { _decorator, Atlas, color, Color, Component, EventTouch, Node, Sprite, SpriteAtlas, SpriteFrame, tween, Vec3 } from 'cc';
+import { _decorator, color, Color, Component, EventTouch, Node, Sprite, SpriteAtlas, SpriteFrame, tween, Vec3 } from 'cc';
 import tools from './tools';
 const { ccclass, property } = _decorator;
 @ccclass('mjcard')
 export class mjcard extends Component {
 
     @property(Sprite)
-    sprite: Sprite;
+    sprite: Sprite = null;
 
     @property(SpriteAtlas)
-    mjAtlas: SpriteAtlas
+    mjAtlas: SpriteAtlas = null;
 
     private _interaction = true;
     cardId = 0;

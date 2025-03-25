@@ -16,7 +16,7 @@ System.register(["cc"], function (_export, _context) {
 
       _cclegacy._RF.push({}, "e8feeDNO09L6YDz0takkLIp", "loading", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'Node']);
+      __checkObsolete__(['_decorator', 'Component']);
 
       ({
         ccclass,

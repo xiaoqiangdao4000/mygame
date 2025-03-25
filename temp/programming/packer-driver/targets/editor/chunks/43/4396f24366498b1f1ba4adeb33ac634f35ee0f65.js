@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Button, color, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3, tools, GAMESTATE, GAMETIPS, SOUND, gameStart, AudioMgr, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _class3, _crd, ccclass, property, eventTarget, mjNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Button, color, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3, tools, GAMESTATE, GAMETIPS, SOUND, gameStart, AudioMgr, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _class3, _crd, ccclass, property, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -73,15 +73,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
       _cclegacy._RF.push({}, "5e1aas6J3hBqpb9rkSPiEl7", "mjNode", undefined);
 
-      __checkObsolete__(['_decorator', 'BoxCollider2D', 'Button', 'Collider', 'color', 'Component', 'ConfigurableConstraint', 'EventTouch', 'Input', 'input', 'instantiate', 'Intersection2D', 'Label', 'Node', 'NodeEventType', 'Prefab', 'ProgressBar', 'Rect', 'resources', 'Script', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'Texture2D', 'tween', 'UITransform', 'Vec2', 'Vec3', 'view']);
+      __checkObsolete__(['_decorator', 'Button', 'color', 'Component', 'instantiate', 'Intersection2D', 'Label', 'Node', 'Prefab', 'ProgressBar', 'Rect', 'Sprite', 'tween', 'Vec3']);
 
       ({
         ccclass,
         property
       } = _decorator);
-      eventTarget = new EventTarget();
 
-      //import { AudioManager } from './audioManager';
       _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(ProgressBar), _dec4 = property(Label), _dec5 = property(Node), _dec6 = property({
         type: [Node]
       }), _dec(_class = (_class2 = (_class3 = class mjNode extends Component {
@@ -98,13 +96,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "tabNodes", _descriptor5, this);
 
-          this.tips_title_label = void 0;
-          this.tips_xipai_label = void 0;
-          this.tips_chehui_label = void 0;
-          this.tips_addtime_label = void 0;
-          this.tips_toushi_label = void 0;
-          this.gameContinueBtn = void 0;
-          this.gameRestBtn = void 0;
+          this.tips_title_label = null;
+          this.tips_xipai_label = null;
+          this.tips_chehui_label = null;
+          this.tips_addtime_label = null;
+          this.tips_toushi_label = null;
+          this.gameContinueBtn = null;
+          this.gameRestBtn = null;
           this.isCanClick = false;
           //是否可以点击
           this.desktopItems = [];
@@ -268,9 +266,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               if ((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).touShi > 0) {
-                this.touShi(); // this.setBtnState('gameToushiBtn', false, '透视X' + tools.touShi);
-
-                this.updataBtn();
+                this.touShi();
+                this.setBtnState('gameToushiBtn', false, '透视X' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                  error: Error()
+                }), tools) : tools).touShi); //this.updataBtn();
               }
             } else if (customEventData == 'music') //音乐
             {

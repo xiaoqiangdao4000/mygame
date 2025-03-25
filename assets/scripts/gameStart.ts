@@ -6,13 +6,13 @@ const { ccclass, property } = _decorator;
 @ccclass('gameStart')
 export class gameStart extends Component {
     @property(Label)
-    rankLabel: Label;
+    rankLabel: Label = null;
 
     @property(Label)
-    btnLabel: Label;
+    btnLabel: Label = null;
 
     gamePrefab: Prefab;
-    gameNode: Node;
+    gameNode: Node = null;
 
     static Instance: gameStart = null;
 
@@ -46,7 +46,7 @@ export class gameStart extends Component {
         this.gameNode = instantiate(this.gamePrefab);
         this.gameNode.parent = this.node.parent;
         this.gameNode.active = true;
-        
+
         console.log('this.gameNode = ', this.gameNode.getPosition())
         this.hide();
     }

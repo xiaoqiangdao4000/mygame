@@ -1,4 +1,4 @@
-import { _decorator, Component, instantiate, Label, Node, Prefab, Sprite, tween } from 'cc';
+import { _decorator, Component, instantiate, Label, Prefab, Sprite, tween } from 'cc';
 import { resMgr } from './resMgr';
 import tools from './tools';
 const { ccclass, property } = _decorator;
@@ -7,8 +7,8 @@ const { ccclass, property } = _decorator;
 export class gameLauch extends Component {
     static Instance: gameLauch = null
 
-    loadingSprite: Sprite;  //进度条
-    loadingLabel: Label;    //进度条文字
+    loadingSprite: Sprite = null;  //进度条
+    loadingLabel: Label = null;    //进度条文字
 
 
     onLoad() {

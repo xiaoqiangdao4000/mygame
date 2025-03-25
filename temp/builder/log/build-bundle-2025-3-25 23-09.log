@@ -1,0 +1,306 @@
+2025-3-25 23:09:10 - debug: =================================== build bundle db://assets/gameBundle/gui Task (wechatgame) Start ================================
+2025-3-25 23:09:10 - debug: Start build task, options:{"name":"myGameMj","server":"","platform":"wechatgame","buildPath":"project://build","debug":false,"buildMode":"normal","mangleProperties":false,"md5Cache":false,"skipCompressTexture":false,"sourceMaps":false,"overwriteProjectSettings":{"macroConfig":{"cleanupImageCache":"on"},"includeModules":{"physics":"inherit-project-setting","physics-2d":"inherit-project-setting","gfx-webgl2":"off"}},"nativeCodeBundleMode":"wasm","polyfills":{"asyncFunctions":false},"experimentalEraseModules":false,"startSceneAssetBundle":false,"bundleConfigs":[{"root":"db://assets/gameBundle/gui","output":true}],"inlineEnum":true,"useBuiltinServer":false,"md5CacheOptions":{"excludes":[],"includes":[],"replaceOnly":[],"handleTemplateMd5Link":true},"mainBundleIsRemote":false,"mainBundleCompressionType":"merge_dep","useSplashScreen":true,"bundleCommonChunk":false,"packAutoAtlas":true,"startScene":"df672520-9755-4d63-978e-4a7ae276a322","outputName":"wechatgame","taskName":"build bundle db://assets/gameBundle/gui","scenes":[{"url":"db://assets/scene/main.scene","uuid":"df672520-9755-4d63-978e-4a7ae276a322"}],"wasmCompressionMode":false,"packages":{"cocos-service":{"configID":"ef3e64","services":[],"__version__":"3.0.8"},"wechatgame":{"orientation":"portrait","appid":"wx494cae4c1ff3e79b","buildOpenDataContextTemplate":"","separateEngine":false,"highPerformanceMode":false,"__version__":"1.0.4"}},"__version__":"1.3.9","logDest":"project://temp/builder/log/build-bundle-2025-3-25 23-09.log","dest":"C:\\Users\\zzx\\Desktop\\mygame\\build\\build-bundle\\wechatgame","buildBundleOnly":true,"id":"buildBundle"}
+2025-3-25 23:09:10 - debug: Build with Cocos Creator 3.8.5
+2025-3-25 23:09:10 - debug: // ---- build task wechatgame：onBeforeBundleInit ----
+2025-3-25 23:09:10 - debug: // ---- build task wechatgame：onBeforeBundleInit ---- (56ms)
+2025-3-25 23:09:10 - debug: // ---- build task adsense-h5g-plugin：onBeforeBundleInit ----
+2025-3-25 23:09:10 - debug: [adsense-h5g-plugin] remove script success
+2025-3-25 23:09:10 - debug: // ---- build task adsense-h5g-plugin：onBeforeBundleInit ---- (61ms)
+2025-3-25 23:09:10 - debug:   Number of all scenes: 1
+2025-3-25 23:09:10 - debug:   Number of all scripts: 14
+2025-3-25 23:09:10 - debug:   Number of other assets: 383
+2025-3-25 23:09:10 - debug: reload all scripts.
+2025-3-25 23:09:10 - debug: [[Executor]] reload before lock
+2025-3-25 23:09:10 - debug: Set detail map pack:///resolution-detail-map.json: {}
+2025-3-25 23:09:10 - groupCollapsed: Invalidate all modules
+2025-3-25 23:09:10 - debug: Unregister BuiltinPipelineSettings
+2025-3-25 23:09:10 - debug: Unregister BuiltinPipelinePassBuilder
+2025-3-25 23:09:10 - debug: Unregister BuiltinDepthOfFieldPass
+2025-3-25 23:09:10 - debug: Unregister DebugViewRuntimeControl
+2025-3-25 23:09:10 - debug: Unregister AudioMgr
+2025-3-25 23:09:10 - debug: Unregister gameLauch
+2025-3-25 23:09:10 - debug: Unregister gameStart
+2025-3-25 23:09:10 - debug: Unregister gameLoading
+2025-3-25 23:09:10 - debug: Unregister mjNode
+2025-3-25 23:09:10 - debug: Unregister mjcard
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/58/58736b97e6eaa1d43b32ca964d67346769e8222e.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/b0/b0a2b616b355a47dcda11f2bba43a2d91debd27c.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/c8/c8027bab33604d0d04930552aaf3aff3408cfddb.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/f3/f3f54528bfcd10077eb00a2121ed5d1424412e76.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/57/5746e8c30047ffa32e3d4c41a4cd3e6251a29171.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/9c/9c012447265e6d10c1112a3c5718a72269253753.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/0b/0bd0befd2e26c87d9f5aca5ddff77a44821eef7c.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/a9/a9cd525f68999c889bff44631b9a04cc04b7b132.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/0a/0a7bc2303c9cdef5c1384e4a827bf01b15e7dae9.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/f0/f0dd4209742ca810eade873911a28ea815cf647a.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/b5/b58096366446318ecd87cf0db1ad20929257ed4d.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/c3/c3d793dd1d9d7bef6bfdd580404bbdebac8d0e5c.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/43/4396f24366498b1f1ba4adeb33ac634f35ee0f65.js'
+2025-3-25 23:09:11 - debug: Invalidating 'pack:///chunks/a5/a52fe6b6ff070e1b1b03bdff76bf64ce65fc9c0c.js'
+2025-3-25 23:09:11 - groupEnd: Invalidate all modules
+2025-3-25 23:09:11 - groupCollapsed: Imports all modules
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/57/5746e8c30047ffa32e3d4c41a4cd3e6251a29171.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Register BuiltinPipelineSettings
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/b0/b0a2b616b355a47dcda11f2bba43a2d91debd27c.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Register BuiltinPipelinePassBuilder
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/c8/c8027bab33604d0d04930552aaf3aff3408cfddb.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/f3/f3f54528bfcd10077eb00a2121ed5d1424412e76.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Register BuiltinDepthOfFieldPass
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/58/58736b97e6eaa1d43b32ca964d67346769e8222e.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Register DebugViewRuntimeControl
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/9c/9c012447265e6d10c1112a3c5718a72269253753.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Register AudioMgr
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/0b/0bd0befd2e26c87d9f5aca5ddff77a44821eef7c.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/0a/0a7bc2303c9cdef5c1384e4a827bf01b15e7dae9.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/f0/f0dd4209742ca810eade873911a28ea815cf647a.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Register gameLauch
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/a9/a9cd525f68999c889bff44631b9a04cc04b7b132.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Register gameStart
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/b5/b58096366446318ecd87cf0db1ad20929257ed4d.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Register gameLoading
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/c3/c3d793dd1d9d7bef6bfdd580404bbdebac8d0e5c.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Register mjNode
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/43/4396f24366498b1f1ba4adeb33ac634f35ee0f65.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Register mjcard
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/a5/a52fe6b6ff070e1b1b03bdff76bf64ce65fc9c0c.js" loaded.
+2025-3-25 23:09:11 - debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+2025-3-25 23:09:11 - groupEnd: Imports all modules
+2025-3-25 23:09:11 - debug: [[Executor]] after unlock
+2025-3-25 23:09:11 - debug: Incremental keys: 
+2025-3-25 23:09:11 - debug: handle json group in bundle gui
+2025-3-25 23:09:11 - debug: handle json group in bundle gui success
+2025-3-25 23:09:11 - debug: init image compress task 0 in bundle gui
+2025-3-25 23:09:11 - log: Run build task(build-script) in child, see: chrome://inspect/#devices
+2025-3-25 23:09:12 - log: [build-script]enter sub process 6172, C:\ProgramData\cocos\editors\Creator\3.8.5\CocosCreator.exe,C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\builder\static\sub-process-index
+2025-3-25 23:09:15 - debug: excute-script over with build-script 4027ms
+2025-3-25 23:09:15 - debug: Copy externalScripts success!
+2025-3-25 23:09:15 - debug: builder:pack-auto-atlas-image (61ms)
+2025-3-25 23:09:15 - group: Compress image...
+2025-3-25 23:09:15 - debug: sort compress task {}
+2025-3-25 23:09:15 - debug: Num of all image compress task 0, really: 0, configTasks: 0
+2025-3-25 23:09:15 - debug: No image need to compress
+2025-3-25 23:09:15 - groupEnd: Compress image...
+2025-3-25 23:09:15 - debug: Handle all json groups in bundle gui
+2025-3-25 23:09:15 - debug: handle json group
+2025-3-25 23:09:15 - debug: handle single json
+2025-3-25 23:09:15 - debug: // ---- build task wechatgame：onAfterBundleBuildTask ----
+2025-3-25 23:09:15 - debug: // ---- build task wechatgame：onAfterBundleBuildTask ---- (82ms)
+2025-3-25 23:09:15 - debug: compress config of bundle gui...
+2025-3-25 23:09:15 - debug: compress config of bundle gui success
+2025-3-25 23:09:15 - debug: output config of bundle gui
+2025-3-25 23:09:15 - debug: output config of bundle gui success
+2025-3-25 23:09:15 - debug: [Build Memory track]: builder:build-bundle-total start:180.26MB, end 181.06MB, increase: 816.65KB
+2025-3-25 23:09:15 - log: build bundle db://assets/gameBundle/gui (wechatgame) in {link(C:\Users\zzx\Desktop\mygame\build\build-bundle\wechatgame)} success!
+2025-3-25 23:09:15 - debug: 2025-3-25 23:09:15Build Bundle success in 4 s!
+2025-3-25 23:09:15 - debug: ================================ build bundle db://assets/gameBundle/gui Task (build bundle db://assets/gameBundle/gui) Finished in (4 s)ms ================================
+2025-3-25 23:09:29 - debug: =================================== build bundle db://assets/gameBundle/prefabs Task (wechatgame) Start ================================
+2025-3-25 23:09:29 - debug: Start build task, options:{"name":"myGameMj","server":"","platform":"wechatgame","buildPath":"project://build","debug":false,"buildMode":"normal","mangleProperties":false,"md5Cache":false,"skipCompressTexture":false,"sourceMaps":false,"overwriteProjectSettings":{"macroConfig":{"cleanupImageCache":"on"},"includeModules":{"physics":"inherit-project-setting","physics-2d":"inherit-project-setting","gfx-webgl2":"off"}},"nativeCodeBundleMode":"wasm","polyfills":{"asyncFunctions":false},"experimentalEraseModules":false,"startSceneAssetBundle":false,"bundleConfigs":[{"root":"db://assets/gameBundle/prefabs","output":true}],"inlineEnum":true,"useBuiltinServer":false,"md5CacheOptions":{"excludes":[],"includes":[],"replaceOnly":[],"handleTemplateMd5Link":true},"mainBundleIsRemote":false,"mainBundleCompressionType":"merge_dep","useSplashScreen":true,"bundleCommonChunk":false,"packAutoAtlas":true,"startScene":"df672520-9755-4d63-978e-4a7ae276a322","outputName":"wechatgame","taskName":"build bundle db://assets/gameBundle/prefabs","scenes":[{"url":"db://assets/scene/main.scene","uuid":"df672520-9755-4d63-978e-4a7ae276a322"}],"wasmCompressionMode":false,"packages":{"cocos-service":{"configID":"ef3e64","services":[],"__version__":"3.0.8"},"wechatgame":{"orientation":"portrait","appid":"wx494cae4c1ff3e79b","buildOpenDataContextTemplate":"","separateEngine":false,"highPerformanceMode":false,"__version__":"1.0.4"}},"__version__":"1.3.9","logDest":"project://temp/builder/log/build-bundle-2025-3-25 23-09.log","dest":"C:\\Users\\zzx\\Desktop\\mygame\\build\\build-bundle\\wechatgame","buildBundleOnly":true,"id":"buildBundle"}
+2025-3-25 23:09:29 - debug: Build with Cocos Creator 3.8.5
+2025-3-25 23:09:29 - debug: // ---- build task wechatgame：onBeforeBundleInit ----
+2025-3-25 23:09:29 - debug: // ---- build task wechatgame：onBeforeBundleInit ---- (56ms)
+2025-3-25 23:09:29 - debug: // ---- build task adsense-h5g-plugin：onBeforeBundleInit ----
+2025-3-25 23:09:29 - debug: [adsense-h5g-plugin] remove script success
+2025-3-25 23:09:30 - debug: // ---- build task adsense-h5g-plugin：onBeforeBundleInit ---- (60ms)
+2025-3-25 23:09:30 - debug:   Number of all scenes: 1
+2025-3-25 23:09:30 - debug:   Number of all scripts: 14
+2025-3-25 23:09:30 - debug:   Number of other assets: 383
+2025-3-25 23:09:30 - debug: reload all scripts.
+2025-3-25 23:09:30 - debug: [[Executor]] reload before lock
+2025-3-25 23:09:30 - debug: Set detail map pack:///resolution-detail-map.json: {}
+2025-3-25 23:09:30 - groupCollapsed: Invalidate all modules
+2025-3-25 23:09:30 - debug: Unregister BuiltinPipelineSettings
+2025-3-25 23:09:30 - debug: Unregister BuiltinPipelinePassBuilder
+2025-3-25 23:09:30 - debug: Unregister BuiltinDepthOfFieldPass
+2025-3-25 23:09:30 - debug: Unregister DebugViewRuntimeControl
+2025-3-25 23:09:30 - debug: Unregister AudioMgr
+2025-3-25 23:09:30 - debug: Unregister gameLauch
+2025-3-25 23:09:30 - debug: Unregister gameStart
+2025-3-25 23:09:30 - debug: Unregister gameLoading
+2025-3-25 23:09:30 - debug: Unregister mjNode
+2025-3-25 23:09:30 - debug: Unregister mjcard
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/58/58736b97e6eaa1d43b32ca964d67346769e8222e.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/b0/b0a2b616b355a47dcda11f2bba43a2d91debd27c.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/c8/c8027bab33604d0d04930552aaf3aff3408cfddb.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/f3/f3f54528bfcd10077eb00a2121ed5d1424412e76.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/57/5746e8c30047ffa32e3d4c41a4cd3e6251a29171.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/9c/9c012447265e6d10c1112a3c5718a72269253753.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/0b/0bd0befd2e26c87d9f5aca5ddff77a44821eef7c.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/a9/a9cd525f68999c889bff44631b9a04cc04b7b132.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/0a/0a7bc2303c9cdef5c1384e4a827bf01b15e7dae9.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/f0/f0dd4209742ca810eade873911a28ea815cf647a.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/b5/b58096366446318ecd87cf0db1ad20929257ed4d.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/c3/c3d793dd1d9d7bef6bfdd580404bbdebac8d0e5c.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/43/4396f24366498b1f1ba4adeb33ac634f35ee0f65.js'
+2025-3-25 23:09:30 - debug: Invalidating 'pack:///chunks/a5/a52fe6b6ff070e1b1b03bdff76bf64ce65fc9c0c.js'
+2025-3-25 23:09:30 - groupEnd: Invalidate all modules
+2025-3-25 23:09:30 - groupCollapsed: Imports all modules
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/57/5746e8c30047ffa32e3d4c41a4cd3e6251a29171.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Register BuiltinPipelineSettings
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/b0/b0a2b616b355a47dcda11f2bba43a2d91debd27c.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Register BuiltinPipelinePassBuilder
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/c8/c8027bab33604d0d04930552aaf3aff3408cfddb.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/f3/f3f54528bfcd10077eb00a2121ed5d1424412e76.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Register BuiltinDepthOfFieldPass
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/58/58736b97e6eaa1d43b32ca964d67346769e8222e.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Register DebugViewRuntimeControl
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/9c/9c012447265e6d10c1112a3c5718a72269253753.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Register AudioMgr
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/0b/0bd0befd2e26c87d9f5aca5ddff77a44821eef7c.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/0a/0a7bc2303c9cdef5c1384e4a827bf01b15e7dae9.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/f0/f0dd4209742ca810eade873911a28ea815cf647a.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Register gameLauch
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/a9/a9cd525f68999c889bff44631b9a04cc04b7b132.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Register gameStart
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/b5/b58096366446318ecd87cf0db1ad20929257ed4d.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Register gameLoading
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/c3/c3d793dd1d9d7bef6bfdd580404bbdebac8d0e5c.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Register mjNode
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/43/4396f24366498b1f1ba4adeb33ac634f35ee0f65.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Register mjcard
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/a5/a52fe6b6ff070e1b1b03bdff76bf64ce65fc9c0c.js" loaded.
+2025-3-25 23:09:30 - debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+2025-3-25 23:09:30 - groupEnd: Imports all modules
+2025-3-25 23:09:30 - debug: [[Executor]] after unlock
+2025-3-25 23:09:30 - debug: Incremental keys: 
+2025-3-25 23:09:30 - debug: handle json group in bundle prefabs
+2025-3-25 23:09:30 - debug: handle json group in bundle prefabs success
+2025-3-25 23:09:30 - debug: init image compress task 0 in bundle prefabs
+2025-3-25 23:09:30 - log: Run build task(build-script) in child, see: chrome://inspect/#devices
+2025-3-25 23:09:31 - log: [build-script]enter sub process 18140, C:\ProgramData\cocos\editors\Creator\3.8.5\CocosCreator.exe,C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\builder\static\sub-process-index
+2025-3-25 23:09:34 - debug: excute-script over with build-script 3848ms
+2025-3-25 23:09:34 - debug: Copy externalScripts success!
+2025-3-25 23:09:34 - debug: builder:pack-auto-atlas-image (32ms)
+2025-3-25 23:09:34 - group: Compress image...
+2025-3-25 23:09:34 - debug: sort compress task {}
+2025-3-25 23:09:34 - debug: Num of all image compress task 0, really: 0, configTasks: 0
+2025-3-25 23:09:34 - debug: No image need to compress
+2025-3-25 23:09:34 - groupEnd: Compress image...
+2025-3-25 23:09:34 - debug: Handle all json groups in bundle prefabs
+2025-3-25 23:09:34 - debug: handle json group
+2025-3-25 23:09:34 - debug: Json group(03526f0d4) compile success，json number: 6
+2025-3-25 23:09:34 - debug: Json group(037b749a1) compile success，json number: 6
+2025-3-25 23:09:34 - debug: Json group(0f3b150c0) compile success，json number: 6
+2025-3-25 23:09:34 - debug: handle single json
+2025-3-25 23:09:34 - debug: // ---- build task wechatgame：onAfterBundleBuildTask ----
+2025-3-25 23:09:34 - debug: // ---- build task wechatgame：onAfterBundleBuildTask ---- (86ms)
+2025-3-25 23:09:34 - debug: compress config of bundle prefabs...
+2025-3-25 23:09:34 - debug: compress config of bundle prefabs success
+2025-3-25 23:09:34 - debug: output config of bundle prefabs
+2025-3-25 23:09:34 - debug: output config of bundle prefabs success
+2025-3-25 23:09:34 - debug: [Build Memory track]: builder:build-bundle-total start:180.73MB, end 182.11MB, increase: 1.38MB
+2025-3-25 23:09:34 - log: build bundle db://assets/gameBundle/prefabs (wechatgame) in {link(C:\Users\zzx\Desktop\mygame\build\build-bundle\wechatgame)} success!
+2025-3-25 23:09:34 - debug: 2025-3-25 23:09:34Build Bundle success in 4 s!
+2025-3-25 23:09:34 - debug: ================================ build bundle db://assets/gameBundle/prefabs Task (build bundle db://assets/gameBundle/prefabs) Finished in (4 s)ms ================================
+2025-3-25 23:09:45 - debug: =================================== build bundle db://assets/gameBundle/sound Task (wechatgame) Start ================================
+2025-3-25 23:09:45 - debug: Start build task, options:{"name":"myGameMj","server":"","platform":"wechatgame","buildPath":"project://build","debug":false,"buildMode":"normal","mangleProperties":false,"md5Cache":false,"skipCompressTexture":false,"sourceMaps":false,"overwriteProjectSettings":{"macroConfig":{"cleanupImageCache":"on"},"includeModules":{"physics":"inherit-project-setting","physics-2d":"inherit-project-setting","gfx-webgl2":"off"}},"nativeCodeBundleMode":"wasm","polyfills":{"asyncFunctions":false},"experimentalEraseModules":false,"startSceneAssetBundle":false,"bundleConfigs":[{"root":"db://assets/gameBundle/sound","output":true}],"inlineEnum":true,"useBuiltinServer":false,"md5CacheOptions":{"excludes":[],"includes":[],"replaceOnly":[],"handleTemplateMd5Link":true},"mainBundleIsRemote":false,"mainBundleCompressionType":"merge_dep","useSplashScreen":true,"bundleCommonChunk":false,"packAutoAtlas":true,"startScene":"df672520-9755-4d63-978e-4a7ae276a322","outputName":"wechatgame","taskName":"build bundle db://assets/gameBundle/sound","scenes":[{"url":"db://assets/scene/main.scene","uuid":"df672520-9755-4d63-978e-4a7ae276a322"}],"wasmCompressionMode":false,"packages":{"cocos-service":{"configID":"ef3e64","services":[],"__version__":"3.0.8"},"wechatgame":{"orientation":"portrait","appid":"wx494cae4c1ff3e79b","buildOpenDataContextTemplate":"","separateEngine":false,"highPerformanceMode":false,"__version__":"1.0.4"}},"__version__":"1.3.9","logDest":"project://temp/builder/log/build-bundle-2025-3-25 23-09.log","dest":"C:\\Users\\zzx\\Desktop\\mygame\\build\\build-bundle\\wechatgame","buildBundleOnly":true,"id":"buildBundle"}
+2025-3-25 23:09:45 - debug: Build with Cocos Creator 3.8.5
+2025-3-25 23:09:45 - debug: // ---- build task wechatgame：onBeforeBundleInit ----
+2025-3-25 23:09:45 - debug: // ---- build task wechatgame：onBeforeBundleInit ---- (56ms)
+2025-3-25 23:09:45 - debug: // ---- build task adsense-h5g-plugin：onBeforeBundleInit ----
+2025-3-25 23:09:45 - debug: [adsense-h5g-plugin] remove script success
+2025-3-25 23:09:45 - debug: // ---- build task adsense-h5g-plugin：onBeforeBundleInit ---- (54ms)
+2025-3-25 23:09:45 - debug:   Number of all scenes: 1
+2025-3-25 23:09:45 - debug:   Number of all scripts: 14
+2025-3-25 23:09:45 - debug:   Number of other assets: 383
+2025-3-25 23:09:45 - debug: reload all scripts.
+2025-3-25 23:09:46 - debug: [[Executor]] reload before lock
+2025-3-25 23:09:46 - debug: Set detail map pack:///resolution-detail-map.json: {}
+2025-3-25 23:09:46 - groupCollapsed: Invalidate all modules
+2025-3-25 23:09:46 - debug: Unregister BuiltinPipelineSettings
+2025-3-25 23:09:46 - debug: Unregister BuiltinPipelinePassBuilder
+2025-3-25 23:09:46 - debug: Unregister BuiltinDepthOfFieldPass
+2025-3-25 23:09:46 - debug: Unregister DebugViewRuntimeControl
+2025-3-25 23:09:46 - debug: Unregister AudioMgr
+2025-3-25 23:09:46 - debug: Unregister gameLauch
+2025-3-25 23:09:46 - debug: Unregister gameStart
+2025-3-25 23:09:46 - debug: Unregister gameLoading
+2025-3-25 23:09:46 - debug: Unregister mjNode
+2025-3-25 23:09:46 - debug: Unregister mjcard
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/58/58736b97e6eaa1d43b32ca964d67346769e8222e.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/b0/b0a2b616b355a47dcda11f2bba43a2d91debd27c.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/c8/c8027bab33604d0d04930552aaf3aff3408cfddb.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/f3/f3f54528bfcd10077eb00a2121ed5d1424412e76.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/57/5746e8c30047ffa32e3d4c41a4cd3e6251a29171.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/9c/9c012447265e6d10c1112a3c5718a72269253753.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/0b/0bd0befd2e26c87d9f5aca5ddff77a44821eef7c.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/a9/a9cd525f68999c889bff44631b9a04cc04b7b132.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/0a/0a7bc2303c9cdef5c1384e4a827bf01b15e7dae9.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/f0/f0dd4209742ca810eade873911a28ea815cf647a.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/b5/b58096366446318ecd87cf0db1ad20929257ed4d.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/c3/c3d793dd1d9d7bef6bfdd580404bbdebac8d0e5c.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/43/4396f24366498b1f1ba4adeb33ac634f35ee0f65.js'
+2025-3-25 23:09:46 - debug: Invalidating 'pack:///chunks/a5/a52fe6b6ff070e1b1b03bdff76bf64ce65fc9c0c.js'
+2025-3-25 23:09:46 - groupEnd: Invalidate all modules
+2025-3-25 23:09:46 - groupCollapsed: Imports all modules
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/57/5746e8c30047ffa32e3d4c41a4cd3e6251a29171.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Register BuiltinPipelineSettings
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/b0/b0a2b616b355a47dcda11f2bba43a2d91debd27c.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Register BuiltinPipelinePassBuilder
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/c8/c8027bab33604d0d04930552aaf3aff3408cfddb.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/f3/f3f54528bfcd10077eb00a2121ed5d1424412e76.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Register BuiltinDepthOfFieldPass
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/58/58736b97e6eaa1d43b32ca964d67346769e8222e.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Register DebugViewRuntimeControl
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/9c/9c012447265e6d10c1112a3c5718a72269253753.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Register AudioMgr
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/0b/0bd0befd2e26c87d9f5aca5ddff77a44821eef7c.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/0a/0a7bc2303c9cdef5c1384e4a827bf01b15e7dae9.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/f0/f0dd4209742ca810eade873911a28ea815cf647a.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Register gameLauch
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/a9/a9cd525f68999c889bff44631b9a04cc04b7b132.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Register gameStart
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/b5/b58096366446318ecd87cf0db1ad20929257ed4d.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Register gameLoading
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/c3/c3d793dd1d9d7bef6bfdd580404bbdebac8d0e5c.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Register mjNode
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/43/4396f24366498b1f1ba4adeb33ac634f35ee0f65.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Register mjcard
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/a5/a52fe6b6ff070e1b1b03bdff76bf64ce65fc9c0c.js" loaded.
+2025-3-25 23:09:46 - debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+2025-3-25 23:09:46 - groupEnd: Imports all modules
+2025-3-25 23:09:46 - debug: [[Executor]] after unlock
+2025-3-25 23:09:46 - debug: Incremental keys: 
+2025-3-25 23:09:46 - debug: handle json group in bundle sound
+2025-3-25 23:09:46 - debug: handle json group in bundle sound success
+2025-3-25 23:09:46 - debug: init image compress task 0 in bundle sound
+2025-3-25 23:09:46 - log: Run build task(build-script) in child, see: chrome://inspect/#devices
+2025-3-25 23:09:47 - log: [build-script]enter sub process 19492, C:\ProgramData\cocos\editors\Creator\3.8.5\CocosCreator.exe,C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\builder\static\sub-process-index
+2025-3-25 23:09:50 - debug: excute-script over with build-script 3868ms
+2025-3-25 23:09:50 - debug: Copy externalScripts success!
+2025-3-25 23:09:50 - debug: builder:pack-auto-atlas-image (64ms)
+2025-3-25 23:09:50 - group: Compress image...
+2025-3-25 23:09:50 - debug: sort compress task {}
+2025-3-25 23:09:50 - debug: Num of all image compress task 0, really: 0, configTasks: 0
+2025-3-25 23:09:50 - debug: No image need to compress
+2025-3-25 23:09:50 - groupEnd: Compress image...
+2025-3-25 23:09:50 - debug: Handle all json groups in bundle sound
+2025-3-25 23:09:50 - debug: handle json group
+2025-3-25 23:09:50 - debug: handle single json
+2025-3-25 23:09:50 - debug: // ---- build task wechatgame：onAfterBundleBuildTask ----
+2025-3-25 23:09:50 - debug: // ---- build task wechatgame：onAfterBundleBuildTask ---- (140ms)
+2025-3-25 23:09:50 - debug: compress config of bundle sound...
+2025-3-25 23:09:50 - debug: compress config of bundle sound success
+2025-3-25 23:09:50 - debug: output config of bundle sound
+2025-3-25 23:09:50 - debug: output config of bundle sound success
+2025-3-25 23:09:50 - debug: [Build Memory track]: builder:build-bundle-total start:181.62MB, end 182.16MB, increase: 547.77KB
+2025-3-25 23:09:50 - log: build bundle db://assets/gameBundle/sound (wechatgame) in {link(C:\Users\zzx\Desktop\mygame\build\build-bundle\wechatgame)} success!
+2025-3-25 23:09:50 - debug: 2025-3-25 23:09:50Build Bundle success in 4 s!
+2025-3-25 23:09:50 - debug: ================================ build bundle db://assets/gameBundle/sound Task (build bundle db://assets/gameBundle/sound) Finished in (4 s)ms ================================

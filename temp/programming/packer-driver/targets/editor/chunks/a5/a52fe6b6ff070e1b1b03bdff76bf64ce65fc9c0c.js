@@ -37,7 +37,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
       _cclegacy._RF.push({}, "fc62erwdOpHvLUJ46SH/0d5", "mjcard", undefined);
 
-      __checkObsolete__(['_decorator', 'Atlas', 'color', 'Color', 'Component', 'EventTouch', 'Node', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'tween', 'Vec3']);
+      __checkObsolete__(['_decorator', 'color', 'Color', 'Component', 'EventTouch', 'Node', 'Sprite', 'SpriteAtlas', 'SpriteFrame', 'tween', 'Vec3']);
 
       ({
         ccclass,
@@ -208,12 +208,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function () {
+          return null;
+        }
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "mjAtlas", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function () {
+          return null;
+        }
       })), _class2)) || _class));
 
       _cclegacy._RF.pop();

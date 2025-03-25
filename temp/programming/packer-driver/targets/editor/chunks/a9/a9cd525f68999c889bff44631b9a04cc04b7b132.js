@@ -34,7 +34,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
       _cclegacy._RF.push({}, "36d96yWFq9BZJFMWcjEUVTU", "gameLanch", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Label', 'Node', 'Prefab', 'Sprite', 'tween']);
+      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Label', 'Prefab', 'Sprite', 'tween']);
 
       ({
         ccclass,
@@ -44,9 +44,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       _export("gameLauch", gameLauch = (_dec = ccclass('gameLauch'), _dec(_class = (_class2 = class gameLauch extends Component {
         constructor(...args) {
           super(...args);
-          this.loadingSprite = void 0;
+          this.loadingSprite = null;
           //进度条
-          this.loadingLabel = void 0;
+          this.loadingLabel = null;
         }
 
         //进度条文字

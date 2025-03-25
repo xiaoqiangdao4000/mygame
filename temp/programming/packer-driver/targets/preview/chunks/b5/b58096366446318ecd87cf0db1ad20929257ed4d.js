@@ -59,7 +59,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           _initializerDefineProperty(this, "btnLabel", _descriptor2, this);
 
           this.gamePrefab = void 0;
-          this.gameNode = void 0;
+          this.gameNode = null;
         }
 
         onLoad() {
@@ -122,12 +122,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "btnLabel", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       })), _class2)) || _class));
 
       _cclegacy._RF.pop();

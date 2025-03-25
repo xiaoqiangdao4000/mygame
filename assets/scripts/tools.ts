@@ -1,4 +1,4 @@
-import { Asset, AudioClip, Constructor, Enum, error, Prefab, resources } from "cc";
+import { Asset, AudioClip, Constructor, Prefab } from "cc";
 import { AudioMgr } from "./audioManager";
 import { resMgr } from "./resMgr";
 export type AssetType<T = Asset> = Constructor<T>;

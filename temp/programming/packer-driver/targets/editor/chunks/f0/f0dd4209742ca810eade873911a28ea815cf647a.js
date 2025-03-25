@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, AudioClip, error, Prefab, AudioMgr, resMgr, tools, _crd, SOUND, GAMESTATE, GAMETIPS;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, AudioClip, Prefab, AudioMgr, resMgr, tools, _crd, SOUND, GAMESTATE, GAMETIPS;
 
   function _reportPossibleCrUseOfAudioMgr(extras) {
     _reporterNs.report("AudioMgr", "./audioManager", _context.meta, extras);
@@ -21,7 +21,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
       AudioClip = _cc.AudioClip;
-      error = _cc.error;
       Prefab = _cc.Prefab;
     }, function (_unresolved_2) {
       AudioMgr = _unresolved_2.AudioMgr;
@@ -33,7 +32,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
       _cclegacy._RF.push({}, "8a205oDXPFARIhKMYUT4y5P", "tools", undefined);
 
-      __checkObsolete__(['Asset', 'AudioClip', 'Constructor', 'Enum', 'error', 'Prefab', 'resources']);
+      __checkObsolete__(['Asset', 'AudioClip', 'Constructor', 'Prefab']);
 
       _export("SOUND", SOUND = /*#__PURE__*/function (SOUND) {
         SOUND[SOUND["start_sound"] = 0] = "start_sound";
