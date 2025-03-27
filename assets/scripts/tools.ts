@@ -24,7 +24,7 @@ export enum GAMETIPS {
     game_success,
     gmae_fail,
     game_hide,
-    game_rest,
+    game_contiune,
 }
 
 export default class tools {

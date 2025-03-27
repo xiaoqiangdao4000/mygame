@@ -1,9 +1,11 @@
-import { _decorator, Button, color, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3 } from 'cc';
+import { _decorator, Button, color, Component, game, Input, input, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, systemEvent, tween, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 import tools, { GAMESTATE, GAMETIPS, SOUND } from './tools'
 import { gameStart } from './gameStart';
 import { mjcard } from './mjcard';
 import { AudioMgr } from './audioManager';
+//const { systemEvent } = cc;
+
 @ccclass('mjNode')
 export class mjNode extends Component {
 
@@ -31,6 +33,7 @@ export class mjNode extends Component {
     tips_toushi_label: Label = null;
     gameContinueBtn: Node = null;
     gameRestBtn: Node = null;
+    gameNextBtn: Node = null;
 
     static Instance: mjNode = null;
 
@@ -54,13 +57,16 @@ export class mjNode extends Component {
         this.tips_addtime_label = this.gameTipsNode.getChildByName('tips_addtime_label').getComponent(Label);
         this.tips_toushi_label = this.gameTipsNode.getChildByName('tips_toushi_label').getComponent(Label);
         this.gameContinueBtn = this.gameTipsNode.getChildByName('gameContinueBtn');
+        this.gameNextBtn = this.gameTipsNode.getChildByName('gameNextBtn');
         this.gameRestBtn = this.gameTipsNode.getChildByName('gameRestBtn');
+        this.node.on('clickmj', this.onClickMj, this);
+        // input.on(Input.EventType.DEVICEMOTION., this.onResumed, this);
         tools.getData();
         this.updataBtn();
     }
 
     start() {
-        this.node.on('clickmj', this.onClickMj, this);
+
         for (let i = 0; i < this.tabNodes.length; i++) {
             let pos = { x: 0, y: 0 };
             let pos1 = this.tabNodes[i].getPosition();
@@ -86,6 +92,7 @@ export class mjNode extends Component {
         this.desktopItemCount = tools.level * tools.picNum;
         tools.cardBackNow = 0;
         tools.cardBackTotal = tools.level;
+        this.gameTipsNode.active = false;
         tools.randomMjAnim();
         this.updataBtn();
         this.initDesktopMj();
@@ -100,22 +107,31 @@ export class mjNode extends Component {
 
     //按钮点击事件
     onBtnClick(event: Event, customEventData: string) {
-        //游戏开始
-        if (customEventData == 'gameStart') {
-            this.gameShowTips(GAMETIPS.game_hide);
+
+        // if (customEventData == 'gameStart') // //游戏开始
+        // {
+        //     this.gameShowTips(GAMETIPS.game_hide);
+        // }
+        // else 
+
+        if (customEventData == 'gameContiune') //继续游戏
+        {
+            tools.playSound(SOUND.click_sound);
+            this.contiuneGame();
         }
         else if (customEventData == 'gameRest') //重新开始
         {
-            this.gameShowTips(GAMETIPS.game_rest);
+            tools.playSound(SOUND.click_sound);
+            this.startGame();
         }
         else if (customEventData == 'gameNext') //下一关
         {
+            tools.playSound(SOUND.click_sound);
             this.startGame();
         }
         else if (customEventData == 'gameBack')  //返回到开始界面
         {
             tools.playSound(SOUND.click_sound);
-            // this.gameShowTips(2);
             gameStart.Instance.setLevel(tools.level);
             gameStart.Instance.show();
             this.unscheduleAllCallbacks();
@@ -147,7 +163,6 @@ export class mjNode extends Component {
             if (tools.touShi > 0) {
                 this.touShi();
                 this.setBtnState('gameToushiBtn', false, '透视X' + tools.touShi);
-                //this.updataBtn();
             }
         }
         else if (customEventData == 'music')     //音乐
@@ -489,27 +504,49 @@ export class mjNode extends Component {
         }
     }
 
-    //显示过关成功，失败，提示 typeId = 0 失败，1成功，
+    //继续游戏
+    contiuneGame() {
+        tools.playSound(SOUND.click_sound);
+        this.gameTipsNode.active = false;
+        this.schedule(this.countdown, 1);
+        this.isCanClick = true;
+    }
+
+    //显示:过关成功，失败，提示 
     gameShowTips(typeId) {
 
         this.unschedule(this.countdown);
         let spos = new Vec3(-700, 125.474, 0);
         let epos = new Vec3(0, 125.474, 0);
 
-
-        if (typeId == GAMETIPS.game_hide) //隐藏
+        if (typeId == GAMETIPS.game_hide) //隐藏面板
         {
-            tools.playSound(SOUND.click_sound);
             this.gameTipsNode.active = false;
-            this.startGame();
         }
-        else if (typeId == GAMETIPS.game_rest) //重新开始
+        else if (typeId == GAMETIPS.game_contiune)  //继续面板
         {
-            tools.playSound(SOUND.click_sound);
-            this.gameTipsNode.active = false;
-            this.startGame();
+            this.isCanClick = false;
+            this.gameState = GAMESTATE.game_inGame;
+            this.gameTipsNode.active = true;
+            this.tips_title_label.string = '游戏暂停中';
+            this.gameContinueBtn.active = true;
+            this.gameRestBtn.active = false;
+            this.gameNextBtn.active = false;
+            this.updataBtn();
+            this.tips_xipai_label.string = '洗 牌: X ' + tools.xiPai;
+            this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
+            this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
+            this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
+            spos = new Vec3(-700, 125.474, 0);
+            epos = new Vec3(0, 125.474, 0);
+            this.gameTipsNode.setPosition(spos);
+            tween(this.gameTipsNode)
+                .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
+                    easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+                })
+                .start();
         }
-        else if (typeId == GAMETIPS.gmae_fail) //失败
+        else if (typeId == GAMETIPS.gmae_fail) //失败面板
         {
             tools.playSound(SOUND.gameLost_sound);
             this.isCanClick = false;
@@ -518,9 +555,7 @@ export class mjNode extends Component {
             this.tips_title_label.string = '闯关失败，再接再厉!'
             this.gameContinueBtn.active = false;
             this.gameRestBtn.active = true;
-            spos = new Vec3(-700, 125.474, 0);
-            epos = new Vec3(0, 125.474, 0);
-            this.gameTipsNode.setPosition(spos);
+            this.gameNextBtn.active = false;
             tools.saveLevel();
             tools.savaData();
             this.updataBtn();
@@ -528,13 +563,16 @@ export class mjNode extends Component {
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
             this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
             this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
+            spos = new Vec3(-700, 125.474, 0);
+            epos = new Vec3(0, 125.474, 0);
+            this.gameTipsNode.setPosition(spos);
             tween(this.gameTipsNode)
                 .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
                     easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
                 })
                 .start();
         }
-        else if (typeId == GAMETIPS.game_success) //成功
+        else if (typeId == GAMETIPS.game_success) //成功面板
         {
             tools.playSound(SOUND.gameWin_sound);
             this.isCanClick = false;
@@ -543,8 +581,7 @@ export class mjNode extends Component {
             this.tips_title_label.string = '恭喜，闯关成功!'
             this.gameContinueBtn.active = true;
             this.gameRestBtn.active = false;
-            spos = new Vec3(-700, 125.474, 0);
-            epos = new Vec3(0, 125.474, 0);
+            this.gameNextBtn.active = false;
             tools.level += 1;       //当前游戏关卡等级
             tools.saveLevel();
             tools.addTime += 10;
@@ -555,11 +592,13 @@ export class mjNode extends Component {
             tools.cheHui++;
             tools.addTime += 10;
             tools.touShi++;
-
             this.tips_xipai_label.string = '洗 牌: X ' + tools.xiPai;
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
             this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
             this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
+            spos = new Vec3(-700, 125.474, 0);
+            epos = new Vec3(0, 125.474, 0);
+            this.gameTipsNode.setPosition(spos);
             tween(this.gameTipsNode)
                 .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
                     easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      

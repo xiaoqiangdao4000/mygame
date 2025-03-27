@@ -58,6 +58,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         GAMETIPS[GAMETIPS["gmae_fail"] = 1] = "gmae_fail";
         GAMETIPS[GAMETIPS["game_hide"] = 2] = "game_hide";
         GAMETIPS[GAMETIPS["game_rest"] = 3] = "game_rest";
+        GAMETIPS[GAMETIPS["game_contiune"] = 4] = "game_contiune";
         return GAMETIPS;
       }({}));
 
