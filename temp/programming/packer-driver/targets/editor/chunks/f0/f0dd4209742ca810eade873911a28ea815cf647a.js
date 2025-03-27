@@ -57,7 +57,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         GAMETIPS[GAMETIPS["game_success"] = 0] = "game_success";
         GAMETIPS[GAMETIPS["gmae_fail"] = 1] = "gmae_fail";
         GAMETIPS[GAMETIPS["game_hide"] = 2] = "game_hide";
-        GAMETIPS[GAMETIPS["game_rest"] = 3] = "game_rest";
+        GAMETIPS[GAMETIPS["game_contiune"] = 3] = "game_contiune";
         return GAMETIPS;
       }({}));
 
@@ -165,13 +165,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         }
 
         static getLevel() {
-          // tools.level = 1;
-          // return 1;
+          // tools.level = 2;
+          // return tools.level;
           let level = localStorage.getItem('level');
           tools.level = Number(level);
           if (tools.level == 0) tools.level = 1;
-          tools.cardBackTotal = tools.level;
-          tools.cardBackNow = 0;
           return tools.level;
         }
 
@@ -185,7 +183,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
       tools.level = 1;
       //当前游戏关卡等级
-      tools.picNum = 18;
+      tools.picNum = 3;
       //图片数量 level * picNum
       tools.animType = 2;
       //发牌动画 1同时移动，缩放  2缩放出现
@@ -202,6 +200,21 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       //加时30s
       tools.touShi = 3;
       //透视
+      // static levelData =
+      //     [
+      //         //等级，牌数量，时间
+      //         { lv: 0, cardNum: 0, time: 0 },
+      //         { lv: 1, cardNum: 3 * 6, time: 40 },
+      //         { lv: 2, cardNum: 3 * 10, time: 45 },
+      //         { lv: 3, cardNum: 3 * 12, time: 60 },
+      //         { lv: 4, cardNum: 3 * 14, time: 65 },
+      //         { lv: 5, cardNum: 3 * 16, time: 70 },
+      //         { lv: 6, cardNum: 3 * 20, time: 75 },
+      //         { lv: 7, cardNum: 3 * 24, time: 80 },
+      //         { lv: 8, cardNum: 3 * 28, time: 90 },
+      //         { lv: 9, cardNum: 3 * 32, time: 110 },
+      //         { lv: 10, cardNum: 3 * 40, time: 150 },
+      //     ]
       tools.resPkg = {
         //gui: {
         //     assetType: SpriteFrame,

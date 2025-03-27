@@ -2,7 +2,7 @@
   "__version__": "1.0.4",
   "builder": {
     "common": {
-      "buildPath": "project://build",
+      "buildPath": "C:\\Users\\zzx\\Desktop\\wx_game",
       "outputName": "wechatgame",
       "mainBundleCompressionType": "subpackage",
       "platform": "wechatgame",
@@ -44,6 +44,42 @@
         "__version__": "1.0.4"
       },
       "1743060782666": {
+        "orientation": "portrait",
+        "appid": "wx494cae4c1ff3e79b",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4",
+        "wasmSubpackage": true
+      },
+      "1743084040593": {
+        "orientation": "portrait",
+        "appid": "wx494cae4c1ff3e79b",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4",
+        "wasmSubpackage": true
+      },
+      "1743090222344": {
+        "orientation": "portrait",
+        "appid": "wx494cae4c1ff3e79b",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4",
+        "wasmSubpackage": true
+      },
+      "1743090801761": {
+        "orientation": "portrait",
+        "appid": "wx494cae4c1ff3e79b",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4",
+        "wasmSubpackage": true
+      },
+      "1743091371709": {
         "orientation": "portrait",
         "appid": "wx494cae4c1ff3e79b",
         "buildOpenDataContextTemplate": "",

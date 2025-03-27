@@ -7,7 +7,7 @@
     "polyfills": {
       "asyncFunctions": true
     },
-    "buildPath": "project://build",
+    "buildPath": "C:\\Users\\zzx\\Desktop\\wx_game",
     "outputName": "wechatgame",
     "mainBundleCompressionType": "subpackage",
     "platform": "wechatgame",
@@ -16,19 +16,19 @@
   },
   "BuildTaskManager": {
     "taskMap": {
-      "1743060782666": {
+      "1743091371709": {
         "type": "build",
-        "id": "1743060782666",
+        "id": "1743091371709",
         "progress": 1,
         "state": "success",
         "stage": "build",
-        "message": "2025-3-27 14:34:44 build success in 49 s!",
-        "detailMessage": "// ---- build task wechatgame：onAfterCopyBuildTemplate ----\r",
+        "message": "2025-3-27 23:03:10 build success in 18 s!",
+        "detailMessage": "// ---- build task cocos-service：onAfterBuild ----\r",
         "options": {
           "name": "myGameMj",
           "server": "",
           "platform": "wechatgame",
-          "buildPath": "project://build",
+          "buildPath": "C:\\Users\\zzx\\Desktop\\wx_game",
           "debug": false,
           "buildMode": "normal",
           "mangleProperties": false,
@@ -77,9 +77,9 @@
           "wasmCompressionMode": false,
           "packages": {},
           "__version__": "1.3.9",
-          "logDest": "project://temp/builder/log/wechatgame3-27-2025 14-33.log"
+          "logDest": "project://temp/builder/log/wechatgame2025-3-27 23-02.log"
         },
-        "time": "3-27-2025 14:33:54",
+        "time": "2025-3-27 23:02:51",
         "dirty": false
       }
     }

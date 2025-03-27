@@ -1,4 +1,4 @@
-import { _decorator, Button, color, Component, game, Input, input, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, systemEvent, tween, Vec3 } from 'cc';
+import { _decorator, Button, color, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 import tools, { GAMESTATE, GAMETIPS, SOUND } from './tools'
 import { gameStart } from './gameStart';
@@ -60,7 +60,6 @@ export class mjNode extends Component {
         this.gameNextBtn = this.gameTipsNode.getChildByName('gameNextBtn');
         this.gameRestBtn = this.gameTipsNode.getChildByName('gameRestBtn');
         this.node.on('clickmj', this.onClickMj, this);
-        // input.on(Input.EventType.DEVICEMOTION., this.onResumed, this);
         tools.getData();
         this.updataBtn();
     }
@@ -82,20 +81,47 @@ export class mjNode extends Component {
         console.log('游戏开始---', tools.level)
         this.isCanClick = true;
         this.gameState = GAMESTATE.game_start;
+
+        //清理桌面牌，物品栏
         this.cleanMj();
-        this.time = tools.level * 10 + 30;
-        this.allTime = this.time;
+
+        //设置牌数量
+        if (tools.level == 1) {
+            this.desktopItemCount = 24;
+        }
+        else if (tools.level == 2) {
+            this.desktopItemCount = 45;
+        }
+        else {
+            this.desktopItemCount = 45 + (tools.level * 3);
+        }
+
+        tools.cardBackNow = 0;
+        tools.cardBackTotal = tools.level + 2;
+
+        //设置关卡时间，当前牌的数量+30S
+        this.setLevelTime(this.desktopItemCount + 10);
+
+        //隐藏 提示面板，开始界面
+        this.gameTipsNode.active = false;
+        gameStart.Instance.hide();
+
+        //更新按钮状态
+        this.updataBtn();
+
+        //随机发牌动画
+        tools.randomMjAnim();
+
+        //开始发牌
+        this.initDesktopMj();
+    }
+
+    //设置关卡时间
+    setLevelTime(time: number) {
+        this.allTime = time;
+        this.time = this.allTime;
         this.timeLabel.string = '第' + tools.level + '关 ' + '倒计时:' + this.time + 's';
         this.timeProgressBar.progress = this.time / this.allTime;
-        this.gameTipsNode.active = false;
-        gameStart.Instance.hide()
-        this.desktopItemCount = tools.level * tools.picNum;
-        tools.cardBackNow = 0;
-        tools.cardBackTotal = tools.level;
-        this.gameTipsNode.active = false;
-        tools.randomMjAnim();
-        this.updataBtn();
-        this.initDesktopMj();
     }
 
     //清理桌面牌，物品栏
@@ -132,7 +158,7 @@ export class mjNode extends Component {
         else if (customEventData == 'gameBack')  //返回到开始界面
         {
             tools.playSound(SOUND.click_sound);
-            gameStart.Instance.setLevel(tools.level);
+            gameStart.Instance.setLevelLabel(tools.level);
             gameStart.Instance.show();
             this.unscheduleAllCallbacks();
             this.node.parent.destroy();
@@ -579,18 +605,17 @@ export class mjNode extends Component {
             this.gameState = GAMESTATE.game_end;
             this.gameTipsNode.active = true;
             this.tips_title_label.string = '恭喜，闯关成功!'
-            this.gameContinueBtn.active = true;
+            this.gameContinueBtn.active = false;
             this.gameRestBtn.active = false;
-            this.gameNextBtn.active = false;
+            this.gameNextBtn.active = true;
             tools.level += 1;       //当前游戏关卡等级
-            tools.saveLevel();
             tools.addTime += 10;
+            tools.saveLevel();
             this.setBtnState('gameAddTimeBtn', true, '加时' + tools.addTime + 's');
             tools.savaData();
             this.updataBtn();
             tools.xiPai++;
             tools.cheHui++;
-            tools.addTime += 10;
             tools.touShi++;
             this.tips_xipai_label.string = '洗 牌: X ' + tools.xiPai;
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;

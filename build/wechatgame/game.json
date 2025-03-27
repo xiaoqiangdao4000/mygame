@@ -1,0 +1,39 @@
+{
+    "deviceOrientation": "portrait",
+    "networkTimeout": {
+        "request": 5000,
+        "connectSocket": 5000,
+        "uploadFile": 5000,
+        "downloadFile": 500000
+    },
+    "subpackages": [
+        {
+            "name": "internal",
+            "root": "subpackages/internal/"
+        },
+        {
+            "name": "main",
+            "root": "subpackages/main/"
+        },
+        {
+            "name": "atlas",
+            "root": "subpackages/atlas/"
+        },
+        {
+            "name": "gui",
+            "root": "subpackages/gui/"
+        },
+        {
+            "name": "prefabs",
+            "root": "subpackages/prefabs/"
+        },
+        {
+            "name": "sound",
+            "root": "subpackages/sound/"
+        },
+        {
+            "name": "__ccWasmChunkSubpkg__",
+            "root": "cocos-js/chunks/"
+        }
+    ]
+}

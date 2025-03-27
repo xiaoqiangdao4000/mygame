@@ -22,7 +22,7 @@ export class gameStart extends Component {
             this.gamePrefab = resMgr.Instance.getAsset('prefabs', 'gameNode') as Prefab;
             gameStart.Instance = this;
             let level = tools.getLevel();
-            this.setLevel(level);
+            this.setLevelLabel(level);
             tools.playSound(SOUND.back_sound);
         }
         else {
@@ -31,7 +31,7 @@ export class gameStart extends Component {
         }
     }
 
-    setLevel(level) {
+    setLevelLabel(level) {
         this.rankLabel.string = '最高纪录:' + level;
         this.btnLabel.string = '第' + level + '关';
         tools.saveLevel();

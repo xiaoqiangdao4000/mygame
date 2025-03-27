@@ -72,7 +72,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             let level = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).getLevel();
-            this.setLevel(level);
+            this.setLevelLabel(level);
             (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
@@ -84,7 +84,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           }
         }
 
-        setLevel(level) {
+        setLevelLabel(level) {
           this.rankLabel.string = '最高纪录:' + level;
           this.btnLabel.string = '第' + level + '关';
           (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
@@ -106,7 +106,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           this.gameNode = instantiate(this.gamePrefab);
           this.gameNode.parent = this.node.parent;
           this.gameNode.active = true;
-          console.log('this.gameNode = ', this.gameNode.getPosition());
           this.hide();
         }
 

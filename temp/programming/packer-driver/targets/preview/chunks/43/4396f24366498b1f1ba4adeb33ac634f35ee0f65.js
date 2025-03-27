@@ -80,6 +80,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         property
       } = _decorator);
 
+      //const { systemEvent } = cc;
       _export("mjNode", mjNode = (_dec = ccclass('mjNode'), _dec2 = property(Prefab), _dec3 = property(ProgressBar), _dec4 = property(Label), _dec5 = property(Node), _dec6 = property({
         type: [Node]
       }), _dec(_class = (_class2 = (_class3 = class mjNode extends Component {
@@ -103,6 +104,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.tips_toushi_label = null;
           this.gameContinueBtn = null;
           this.gameRestBtn = null;
+          this.gameNextBtn = null;
           this.isCanClick = false;
           //是否可以点击
           this.desktopItems = [];
@@ -131,7 +133,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.tips_addtime_label = this.gameTipsNode.getChildByName('tips_addtime_label').getComponent(Label);
           this.tips_toushi_label = this.gameTipsNode.getChildByName('tips_toushi_label').getComponent(Label);
           this.gameContinueBtn = this.gameTipsNode.getChildByName('gameContinueBtn');
+          this.gameNextBtn = this.gameTipsNode.getChildByName('gameNextBtn');
           this.gameRestBtn = this.gameTipsNode.getChildByName('gameRestBtn');
+          this.node.on('clickmj', this.onClickMj, this);
           (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).getData();
@@ -139,8 +143,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         start() {
-          this.node.on('clickmj', this.onClickMj, this);
-
           for (var i = 0; i < this.tabNodes.length; i++) {
             var pos = {
               x: 0,
@@ -163,25 +165,24 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.isCanClick = true;
           this.gameState = (_crd && GAMESTATE === void 0 ? (_reportPossibleCrUseOfGAMESTATE({
             error: Error()
-          }), GAMESTATE) : GAMESTATE).game_start;
-          this.cleanMj();
-          this.time = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+          }), GAMESTATE) : GAMESTATE).game_start; //清理桌面牌，物品栏
+
+          this.cleanMj(); //设置牌数量
+
+          if ((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), tools) : tools).level * 10 + 30;
-          this.allTime = this.time;
-          this.timeLabel.string = '第' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+          }), tools) : tools).level == 1) {
+            this.desktopItemCount = 24;
+          } else if ((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), tools) : tools).level + '关 ' + '倒计时:' + this.time + 's';
-          this.timeProgressBar.progress = this.time / this.allTime;
-          this.gameTipsNode.active = false;
-          (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
-            error: Error()
-          }), gameStart) : gameStart).Instance.hide();
-          this.desktopItemCount = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-            error: Error()
-          }), tools) : tools).level * (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-            error: Error()
-          }), tools) : tools).picNum;
+          }), tools) : tools).level == 2) {
+            this.desktopItemCount = 45;
+          } else {
+            this.desktopItemCount = 45 + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              error: Error()
+            }), tools) : tools).level * 3;
+          }
+
           (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).cardBackNow = 0;
@@ -189,12 +190,32 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), tools) : tools).cardBackTotal = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), tools) : tools).level;
+          }), tools) : tools).level + 2; //设置关卡时间，当前牌的数量+30S
+
+          this.setLevelTime(this.desktopItemCount + 10); //隐藏 提示面板，开始界面
+
+          this.gameTipsNode.active = false;
+          (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
+            error: Error()
+          }), gameStart) : gameStart).Instance.hide(); //更新按钮状态
+
+          this.updataBtn(); //随机发牌动画
+
           (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
-          }), tools) : tools).randomMjAnim();
-          this.updataBtn();
+          }), tools) : tools).randomMjAnim(); //开始发牌
+
           this.initDesktopMj();
+        } //设置关卡时间
+
+
+        setLevelTime(time) {
+          this.allTime = time;
+          this.time = this.allTime;
+          this.timeLabel.string = '第' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).level + '关 ' + '倒计时:' + this.time + 's';
+          this.timeProgressBar.progress = this.time / this.allTime;
         } //清理桌面牌，物品栏
 
 
@@ -206,18 +227,34 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
         onBtnClick(event, customEventData) {
-          //游戏开始
-          if (customEventData == 'gameStart') {
-            this.gameShowTips((_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
-              error: Error()
-            }), GAMETIPS) : GAMETIPS).game_hide);
-          } else if (customEventData == 'gameRest') //重新开始
+          // if (customEventData == 'gameStart') // //游戏开始
+          // {
+          //     this.gameShowTips(GAMETIPS.game_hide);
+          // }
+          // else 
+          if (customEventData == 'gameContiune') //继续游戏
             {
-              this.gameShowTips((_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
-              }), GAMETIPS) : GAMETIPS).game_rest);
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+                error: Error()
+              }), SOUND) : SOUND).click_sound);
+              this.contiuneGame();
+            } else if (customEventData == 'gameRest') //重新开始
+            {
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+                error: Error()
+              }), SOUND) : SOUND).click_sound);
+              this.startGame();
             } else if (customEventData == 'gameNext') //下一关
             {
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+                error: Error()
+              }), SOUND) : SOUND).click_sound);
               this.startGame();
             } else if (customEventData == 'gameBack') //返回到开始界面
             {
@@ -225,11 +262,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 error: Error()
               }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
                 error: Error()
-              }), SOUND) : SOUND).click_sound); // this.gameShowTips(2);
-
+              }), SOUND) : SOUND).click_sound);
               (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
                 error: Error()
-              }), gameStart) : gameStart).Instance.setLevel((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              }), gameStart) : gameStart).Instance.setLevelLabel((_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).level);
               (_crd && gameStart === void 0 ? (_reportPossibleCrUseOfgameStart({
@@ -269,7 +305,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 this.touShi();
                 this.setBtnState('gameToushiBtn', false, '透视X' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                   error: Error()
-                }), tools) : tools).touShi); //this.updataBtn();
+                }), tools) : tools).touShi);
               }
             } else if (customEventData == 'music') //音乐
             {
@@ -693,7 +729,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), GAMETIPS) : GAMETIPS).game_success);
           }
-        } //显示过关成功，失败，提示 typeId = 0 失败，1成功，
+        } //继续游戏
+
+
+        contiuneGame() {
+          (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+            error: Error()
+          }), SOUND) : SOUND).click_sound);
+          this.gameTipsNode.active = false;
+          this.schedule(this.countdown, 1);
+          this.isCanClick = true;
+        } //显示:过关成功，失败，提示 
 
 
         gameShowTips(typeId) {
@@ -703,29 +751,48 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           if (typeId == (_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
             error: Error()
-          }), GAMETIPS) : GAMETIPS).game_hide) //隐藏
+          }), GAMETIPS) : GAMETIPS).game_hide) //隐藏面板
             {
-              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-                error: Error()
-              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
-                error: Error()
-              }), SOUND) : SOUND).click_sound);
               this.gameTipsNode.active = false;
-              this.startGame();
             } else if (typeId == (_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
             error: Error()
-          }), GAMETIPS) : GAMETIPS).game_rest) //重新开始
+          }), GAMETIPS) : GAMETIPS).game_contiune) //继续面板
             {
-              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+              this.isCanClick = false;
+              this.gameState = (_crd && GAMESTATE === void 0 ? (_reportPossibleCrUseOfGAMESTATE({
                 error: Error()
-              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+              }), GAMESTATE) : GAMESTATE).game_inGame;
+              this.gameTipsNode.active = true;
+              this.tips_title_label.string = '游戏暂停中';
+              this.gameContinueBtn.active = true;
+              this.gameRestBtn.active = false;
+              this.gameNextBtn.active = false;
+              this.updataBtn();
+              this.tips_xipai_label.string = '洗 牌: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
-              }), SOUND) : SOUND).click_sound);
-              this.gameTipsNode.active = false;
-              this.startGame();
+              }), tools) : tools).xiPai;
+              this.tips_chehui_label.string = '撤 回: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).cheHui;
+              this.tips_addtime_label.string = '加 时: ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).addTime + 's';
+              this.tips_toushi_label.string = '透 视: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).touShi;
+              spos = new Vec3(-700, 125.474, 0);
+              epos = new Vec3(0, 125.474, 0);
+              this.gameTipsNode.setPosition(spos);
+              tween(this.gameTipsNode).to(0.5, {
+                position: epos
+              }, {
+                // 这里以node的位置信息坐标缓动的目标 
+                easing: "quartIn" // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+
+              }).start();
             } else if (typeId == (_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
             error: Error()
-          }), GAMETIPS) : GAMETIPS).gmae_fail) //失败
+          }), GAMETIPS) : GAMETIPS).gmae_fail) //失败面板
             {
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
@@ -740,9 +807,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.tips_title_label.string = '闯关失败，再接再厉!';
               this.gameContinueBtn.active = false;
               this.gameRestBtn.active = true;
-              spos = new Vec3(-700, 125.474, 0);
-              epos = new Vec3(0, 125.474, 0);
-              this.gameTipsNode.setPosition(spos);
+              this.gameNextBtn.active = false;
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).saveLevel();
@@ -762,6 +827,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.tips_toushi_label.string = '透 视: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).touShi;
+              spos = new Vec3(-700, 125.474, 0);
+              epos = new Vec3(0, 125.474, 0);
+              this.gameTipsNode.setPosition(spos);
               tween(this.gameTipsNode).to(0.5, {
                 position: epos
               }, {
@@ -771,7 +839,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }).start();
             } else if (typeId == (_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
             error: Error()
-          }), GAMETIPS) : GAMETIPS).game_success) //成功
+          }), GAMETIPS) : GAMETIPS).game_success) //成功面板
             {
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
@@ -784,20 +852,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }), GAMESTATE) : GAMESTATE).game_end;
               this.gameTipsNode.active = true;
               this.tips_title_label.string = '恭喜，闯关成功!';
-              this.gameContinueBtn.active = true;
+              this.gameContinueBtn.active = false;
               this.gameRestBtn.active = false;
-              spos = new Vec3(-700, 125.474, 0);
-              epos = new Vec3(0, 125.474, 0);
+              this.gameNextBtn.active = true;
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).level += 1; //当前游戏关卡等级
 
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
-              }), tools) : tools).saveLevel();
+              }), tools) : tools).addTime += 10;
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
-              }), tools) : tools).addTime += 10;
+              }), tools) : tools).saveLevel();
               this.setBtnState('gameAddTimeBtn', true, '加时' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).addTime + 's');
@@ -813,9 +880,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }), tools) : tools).cheHui++;
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
-              }), tools) : tools).addTime += 10;
-              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-                error: Error()
               }), tools) : tools).touShi++;
               this.tips_xipai_label.string = '洗 牌: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
@@ -829,6 +893,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.tips_toushi_label.string = '透 视: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).touShi;
+              spos = new Vec3(-700, 125.474, 0);
+              epos = new Vec3(0, 125.474, 0);
+              this.gameTipsNode.setPosition(spos);
               tween(this.gameTipsNode).to(0.5, {
                 position: epos
               }, {
