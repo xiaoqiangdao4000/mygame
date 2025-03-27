@@ -1358,13 +1358,13 @@
     "value": {
       "depends": [
         "41a9f89a-53ce-4fc1-86f3-0efe6b421b4b@f9941",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78@4425c",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78@5700d",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@69f6c",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@0cc78",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@96cda",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78@8ec54"
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@8ec54",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@4425c",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@5700d"
       ],
       "dependScripts": [
         "88827971-b6fe-43f5-9aa0-0dd386f91fea"
@@ -1608,6 +1608,29 @@
     "value": {
       "depends": [
         "61c11695-2396-40aa-a7b9-5c6062cf7cf3@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7363df5e-b29b-47bb-be2f-017f0ceaba5e": {
+    "url": "db://assets/gameBundle/gui/name.png",
+    "value": {},
+    "versionCode": 1
+  },
+  "7363df5e-b29b-47bb-be2f-017f0ceaba5e@6c48a": {
+    "url": "db://assets/gameBundle/gui/name.png@6c48a",
+    "value": {
+      "depends": [
+        "7363df5e-b29b-47bb-be2f-017f0ceaba5e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7363df5e-b29b-47bb-be2f-017f0ceaba5e@f9941": {
+    "url": "db://assets/gameBundle/gui/name.png@f9941",
+    "value": {
+      "depends": [
+        "7363df5e-b29b-47bb-be2f-017f0ceaba5e@6c48a"
       ]
     },
     "versionCode": 1
