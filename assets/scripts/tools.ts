@@ -147,7 +147,7 @@ export default class tools {
         }
         else if (sound == SOUND.sendCard_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'sendCard') as AudioClip;
-            AudioMgr.Instance.playEffectCanBreak(audioClip);
+            AudioMgr.Instance.playEffect(audioClip);
         }
         else if (sound == SOUND.time_sound) {
             let audioClip = resMgr.Instance.getAsset('sound', 'time') as AudioClip;

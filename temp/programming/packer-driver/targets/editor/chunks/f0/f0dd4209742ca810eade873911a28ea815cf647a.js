@@ -133,7 +133,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             }), resMgr) : resMgr).Instance.getAsset('sound', 'sendCard');
             (_crd && AudioMgr === void 0 ? (_reportPossibleCrUseOfAudioMgr({
               error: Error()
-            }), AudioMgr) : AudioMgr).Instance.playEffectCanBreak(audioClip);
+            }), AudioMgr) : AudioMgr).Instance.playEffect(audioClip);
           } else if (sound == SOUND.time_sound) {
             let audioClip = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
               error: Error()

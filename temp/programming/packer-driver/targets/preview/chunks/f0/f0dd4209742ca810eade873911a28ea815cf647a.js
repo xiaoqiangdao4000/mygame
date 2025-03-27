@@ -137,7 +137,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
             (_crd && AudioMgr === void 0 ? (_reportPossibleCrUseOfAudioMgr({
               error: Error()
-            }), AudioMgr) : AudioMgr).Instance.playEffectCanBreak(_audioClip4);
+            }), AudioMgr) : AudioMgr).Instance.playEffect(_audioClip4);
           } else if (sound == SOUND.time_sound) {
             var _audioClip5 = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
               error: Error()

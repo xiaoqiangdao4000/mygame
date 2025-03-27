@@ -579,7 +579,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           mycard.initMj(this.randomIndex, this.desktopItems.length, (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).animType, function () {
-            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            if (self.desktopCuritem % 2 == 0) (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
               error: Error()
@@ -746,8 +746,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         gameShowTips(typeId) {
           this.unschedule(this.countdown);
-          var spos = new Vec3(-700, 125.474, 0);
-          var epos = new Vec3(0, 125.474, 0);
+          var spos = new Vec3(-700, 30, 0);
+          var epos = new Vec3(0, 30, 0);
 
           if (typeId == (_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
             error: Error()
@@ -780,8 +780,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.tips_toushi_label.string = '透 视: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).touShi;
-              spos = new Vec3(-700, 125.474, 0);
-              epos = new Vec3(0, 125.474, 0);
+              spos = new Vec3(-700, 30, 0);
+              epos = new Vec3(0, 30, 0);
               this.gameTipsNode.setPosition(spos);
               tween(this.gameTipsNode).to(0.5, {
                 position: epos
@@ -827,8 +827,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.tips_toushi_label.string = '透 视: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).touShi;
-              spos = new Vec3(-700, 125.474, 0);
-              epos = new Vec3(0, 125.474, 0);
+              spos = new Vec3(-700, 30, 0);
+              epos = new Vec3(0, 30, 0);
               this.gameTipsNode.setPosition(spos);
               tween(this.gameTipsNode).to(0.5, {
                 position: epos
@@ -893,8 +893,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.tips_toushi_label.string = '透 视: X ' + (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).touShi;
-              spos = new Vec3(-700, 125.474, 0);
-              epos = new Vec3(0, 125.474, 0);
+              spos = new Vec3(-700, 30, 0);
+              epos = new Vec3(0, 30, 0);
               this.gameTipsNode.setPosition(spos);
               tween(this.gameTipsNode).to(0.5, {
                 position: epos

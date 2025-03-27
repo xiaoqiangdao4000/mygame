@@ -542,8 +542,8 @@ export class mjNode extends Component {
     gameShowTips(typeId) {
 
         this.unschedule(this.countdown);
-        let spos = new Vec3(-700, 125.474, 0);
-        let epos = new Vec3(0, 125.474, 0);
+        let spos = new Vec3(-700, 30, 0);
+        let epos = new Vec3(0, 30, 0);
 
         if (typeId == GAMETIPS.game_hide) //隐藏面板
         {
@@ -563,8 +563,8 @@ export class mjNode extends Component {
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
             this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
             this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
-            spos = new Vec3(-700, 125.474, 0);
-            epos = new Vec3(0, 125.474, 0);
+            spos = new Vec3(-700, 30, 0);
+            epos = new Vec3(0, 30, 0);
             this.gameTipsNode.setPosition(spos);
             tween(this.gameTipsNode)
                 .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
@@ -589,8 +589,8 @@ export class mjNode extends Component {
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
             this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
             this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
-            spos = new Vec3(-700, 125.474, 0);
-            epos = new Vec3(0, 125.474, 0);
+            spos = new Vec3(-700, 30, 0);
+            epos = new Vec3(0, 30, 0);
             this.gameTipsNode.setPosition(spos);
             tween(this.gameTipsNode)
                 .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
@@ -621,8 +621,8 @@ export class mjNode extends Component {
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
             this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
             this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
-            spos = new Vec3(-700, 125.474, 0);
-            epos = new Vec3(0, 125.474, 0);
+            spos = new Vec3(-700, 30, 0);
+            epos = new Vec3(0, 30, 0);
             this.gameTipsNode.setPosition(spos);
             tween(this.gameTipsNode)
                 .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
