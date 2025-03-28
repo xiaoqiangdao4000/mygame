@@ -2652,3 +2652,34 @@
 2025-3-28 17:10:26-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
 2025-3-28 17:10:59-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameNode.prefabbackground: #aaff85; color: #000;color: #000;
 2025-3-28 17:10:59-debug: asset-db:reimport-asset47e65697-8589-419b-91a9-fb9c6ff27703 (10ms)
+2025-3-28 17:11:51-debug: refresh db internal success
+2025-3-28 17:11:51-debug: refresh db assets success
+2025-3-28 17:11:51-debug: Run asset db hook engine-extends:afterRefresh ...
+2025-3-28 17:11:51-debug: Run asset db hook engine-extends:afterRefresh success!
+2025-3-28 17:11:51-debug: asset-db:refresh-all-database (30ms)
+2025-3-28 17:11:51-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2025-3-28 17:16:17-debug: refresh db internal success
+2025-3-28 17:16:17-debug: refresh db assets success
+2025-3-28 17:16:17-debug: Run asset db hook engine-extends:afterRefresh ...
+2025-3-28 17:16:17-debug: Run asset db hook engine-extends:afterRefresh success!
+2025-3-28 17:16:17-debug: asset-db:refresh-all-database (34ms)
+2025-3-28 17:16:17-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2025-3-28 17:17:41-debug: start refresh asset from /Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameTips.prefab...
+2025-3-28 17:17:41-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameTips.prefabbackground: #aaff85; color: #000;color: #000;
+2025-3-28 17:17:41-debug: refresh asset /Users/zzx/Desktop/mygame/assets/gameBundle/prefabs success
+2025-3-28 17:17:41-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/prefabsbackground: #aaff85; color: #000;color: #000;
+2025-3-28 17:17:52-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameNode.prefabbackground: #aaff85; color: #000;color: #000;
+2025-3-28 17:17:52-debug: asset-db:reimport-asset47e65697-8589-419b-91a9-fb9c6ff27703 (7ms)
+2025-3-28 17:18:32-debug: start refresh asset from /Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts...
+2025-3-28 17:18:32-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/gameTips.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-28 17:18:32-debug: refresh asset /Users/zzx/Desktop/mygame/assets/scripts success
+2025-3-28 17:18:32-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scriptsbackground: #aaff85; color: #000;color: #000;
+2025-3-28 17:24:33-debug: refresh db internal success
+2025-3-28 17:24:33-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/gameTips.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-28 17:24:33-debug: %cImport%c: /Users/zzx/Desktop/mygame/assets/scripts/mjNode.tsbackground: #aaff85; color: #000;color: #000;
+2025-3-28 17:24:33-debug: refresh db assets success
+2025-3-28 17:24:33-debug: Run asset db hook engine-extends:afterRefresh ...
+2025-3-28 17:24:33-debug: Run asset db hook engine-extends:afterRefresh success!
+2025-3-28 17:24:33-debug: asset-db:refresh-all-database (55ms)
+2025-3-28 17:24:33-debug: asset-db:worker-effect-data-processing (1ms)
+2025-3-28 17:24:33-debug: asset-db-hook-engine-extends-afterRefresh (1ms)

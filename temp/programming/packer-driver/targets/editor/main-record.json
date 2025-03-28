@@ -724,7 +724,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 9663790.31131,
+      "mTimestamp": 10667098.85496,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -854,7 +854,7 @@
           }
         },
         {
-          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts",
           "resolved": "__unresolved_9",
           "loc": {
             "start": {
@@ -863,49 +863,63 @@
             },
             "end": {
               "line": 5,
-              "column": 1460
+              "column": 1462
+            }
+          }
+        },
+        {
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts",
+          "resolved": "__unresolved_10",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1478
+            },
+            "end": {
+              "line": 5,
+              "column": 1537
             }
           }
         },
         {
           "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts",
-          "resolved": "__unresolved_10",
+          "resolved": "__unresolved_11",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1476
+              "column": 1553
             },
             "end": {
               "line": 5,
-              "column": 1535
+              "column": 1612
             }
           }
         },
         {
           "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts",
-          "resolved": "__unresolved_11",
+          "resolved": "__unresolved_12",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1551
+              "column": 1628
             },
             "end": {
               "line": 5,
-              "column": 1610
+              "column": 1687
             }
           }
         },
         {
           "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts",
-          "resolved": "__unresolved_12",
+          "resolved": "__unresolved_13",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1626
+              "column": 1703
             },
             "end": {
               "line": 5,
-              "column": 1684
+              "column": 1761
             }
           }
         }
@@ -972,6 +986,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts"
           },
           "messages": []
         },
@@ -2908,7 +2929,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
       "mTimestamp": {
-        "mtime": 1743156465135.4524,
+        "mtime": 1743157194836.9766,
         "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
       },
       "chunkId": "1e3b7946781e8cadf1879c0857073b236b3508b9",
@@ -4238,6 +4259,58 @@
             "end": {
               "line": 1,
               "column": 83
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts": {
+      "mTimestamp": {
+        "mtime": 1743157471583.6748,
+        "uuid": "0453db57-2b34-4c35-9b50-5c9bc8a57d65"
+      },
+      "chunkId": "b55f156395f09bc72ceb1dd0e7b00b3d1b7f5776",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 51
+            },
+            "end": {
+              "line": 1,
+              "column": 55
             }
           }
         }

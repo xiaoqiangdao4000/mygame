@@ -114,7 +114,7 @@
       "time": 1741959457284.884
     },
     "/Users/zzx/Desktop/mygame/assets/scripts": {
-      "time": 1743146652537.3772,
+      "time": 1743157112021.618,
       "uuid": "e3d3438c-fb7b-4889-9edc-93a64d25460c"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts": {
@@ -126,7 +126,7 @@
       "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
-      "time": 1743156465135.4524,
+      "time": 1743157194836.9766,
       "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts": {
@@ -313,7 +313,7 @@
       "time": 1742560159398.9287
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs": {
-      "time": 1743146652534.5908,
+      "time": 1743157061574.6821,
       "uuid": "12e5d28d-7d63-4f4b-b336-1d00903b4cf1"
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/sound.meta": {
@@ -690,7 +690,7 @@
       "uuid": "47e65697-8589-419b-91a9-fb9c6ff27703"
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameNode.prefab": {
-      "time": 1743156659477.623,
+      "time": 1743157072147.343,
       "uuid": "47e65697-8589-419b-91a9-fb9c6ff27703"
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameNode.prefab.meta": {
@@ -716,6 +716,20 @@
     "/Users/zzx/Desktop/mygame/assets/gameBundle/gui/alpha.png": {
       "time": 1743152428986.055,
       "uuid": "b9d1c7c3-ce6e-4549-b027-5ea804a4eb50"
+    },
+    "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameTips.prefab.meta": {
+      "time": 1743157061578.3613
+    },
+    "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameTips.prefab": {
+      "time": 1743157061576.4626,
+      "uuid": "7f977512-2cc4-446a-bc33-2ce5db6449b4"
+    },
+    "/Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts.meta": {
+      "time": 1743157112022.7764
+    },
+    "/Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts": {
+      "time": 1743157471583.6748,
+      "uuid": "0453db57-2b34-4c35-9b50-5c9bc8a57d65"
     }
   },
   "missing": {

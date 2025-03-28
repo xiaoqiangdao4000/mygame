@@ -35,8 +35,6 @@ export class mjNode extends Component {
     gameRestBtn: Node = null;
     gameNextBtn: Node = null;
 
-    static Instance: mjNode = null;
-
     isCanClick = false;         //是否可以点击
     desktopItems = [];          //桌面麻将
     desktopCuritem = 0;         //当前数量

@@ -51,8 +51,8 @@
       "0_1",
       "0_7",
       "0_8",
-      "0_10_0",
-      "0_17"
+      "0_17",
+      "0_10_0"
     ]
   },
   "59dadc82-2aa5-4799-abe0-a513fedd8ba8": {
@@ -76,6 +76,14 @@
     "animationUuid": "",
     "expandLevels": [
       "0"
+    ]
+  },
+  "7f977512-2cc4-446a-bc33-2ce5db6449b4": {
+    "assetUuid": "7f977512-2cc4-446a-bc33-2ce5db6449b4",
+    "animationUuid": "",
+    "expandLevels": [
+      "0",
+      "0_0"
     ]
   }
 }
