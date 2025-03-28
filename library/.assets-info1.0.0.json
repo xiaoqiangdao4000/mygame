@@ -114,15 +114,15 @@
       "time": 1741959457284.884
     },
     "/Users/zzx/Desktop/mygame/assets/scripts": {
-      "time": 1743157112021.618,
+      "time": 1743167747495.4207,
       "uuid": "e3d3438c-fb7b-4889-9edc-93a64d25460c"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts": {
-      "time": 1742971998378.7917,
+      "time": 1743168134491.0474,
       "uuid": "298c64db-251e-4f24-a1e7-b98e9c863880"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts": {
-      "time": 1743146652535.8088,
+      "time": 1743167104645.6277,
       "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
@@ -134,7 +134,7 @@
       "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/tools.ts": {
-      "time": 1743156214434.7258,
+      "time": 1743165555500.5918,
       "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts.meta": {
@@ -386,14 +386,14 @@
       "time": 1742552061973.7415
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/gameLanch.ts": {
-      "time": 1742972006300.038,
+      "time": 1743168437183.8467,
       "uuid": "36d96c96-16af-4164-914c-59c8c45154d4"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts.meta": {
       "time": 1742552064268.785
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts": {
-      "time": 1743057735454.138,
+      "time": 1743168178997.3142,
       "uuid": "0b7cd3c8-fcb2-4e6d-ba23-c0c45d04845d"
     },
     "/Users/zzx/Desktop/mygame/assets/gui.meta": {
@@ -466,7 +466,7 @@
       "time": 1742389824404.5925
     },
     "/Users/zzx/Desktop/mygame/assets/scene/main.scene": {
-      "time": 1743156599236.2869,
+      "time": 1743167726620.185,
       "uuid": "df672520-9755-4d63-978e-4a7ae276a322"
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/game.prefab.meta": {
@@ -690,7 +690,7 @@
       "uuid": "47e65697-8589-419b-91a9-fb9c6ff27703"
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameNode.prefab": {
-      "time": 1743157072147.343,
+      "time": 1743167211343.5935,
       "uuid": "47e65697-8589-419b-91a9-fb9c6ff27703"
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameNode.prefab.meta": {
@@ -721,15 +721,22 @@
       "time": 1743157061578.3613
     },
     "/Users/zzx/Desktop/mygame/assets/gameBundle/prefabs/gameTips.prefab": {
-      "time": 1743157061576.4626,
+      "time": 1743167050806.853,
       "uuid": "7f977512-2cc4-446a-bc33-2ce5db6449b4"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts.meta": {
       "time": 1743157112022.7764
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts": {
-      "time": 1743157471583.6748,
+      "time": 1743166720641.41,
       "uuid": "0453db57-2b34-4c35-9b50-5c9bc8a57d65"
+    },
+    "/Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts.meta": {
+      "time": 1743167747496.5002
+    },
+    "/Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts": {
+      "time": 1743168492656.607,
+      "uuid": "6bb247fe-206c-4a76-bcc2-af95a22fc132"
     }
   },
   "missing": {

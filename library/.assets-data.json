@@ -1858,12 +1858,19 @@
         "dd35ed1f-7951-4953-a3e4-8397cc408b78",
         "b9d1c7c3-ce6e-4549-b027-5ea804a4eb50@f9941"
       ],
-      "dependScripts": []
+      "dependScripts": [
+        "0453db57-2b34-4c35-9b50-5c9bc8a57d65"
+      ]
     },
     "versionCode": 1
   },
   "0453db57-2b34-4c35-9b50-5c9bc8a57d65": {
     "url": "db://assets/scripts/gameTips.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "6bb247fe-206c-4a76-bcc2-af95a22fc132": {
+    "url": "db://assets/scripts/gameLoadingNode.ts",
     "value": {},
     "versionCode": 1
   }

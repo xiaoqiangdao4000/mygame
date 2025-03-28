@@ -11,24 +11,37 @@ export class gameStart extends Component {
     @property(Label)
     btnLabel: Label = null;
 
+    //游戏Node
     gamePrefab: Prefab;
     gameNode: Node = null;
+
+    //tips游戏提示
+    gameTipsPrefab: Prefab;
+
 
     static Instance: gameStart = null;
 
     onLoad() {
         if (gameStart.Instance === null) {
-            console.log('初始化gameStart单列!')
-            this.gamePrefab = resMgr.Instance.getAsset('prefabs', 'gameNode') as Prefab;
             gameStart.Instance = this;
-            let level = tools.getLevel();
-            this.setLevelLabel(level);
-            tools.playSound(SOUND.back_sound);
+            console.log('初始化gameStart单列!');
         }
         else {
             this.destroy();
             return;
         }
+    }
+
+    start(): void {
+        tools.playSound(SOUND.back_sound);
+        this.gamePrefab = resMgr.Instance.getAsset('prefabs', 'gameNode') as Prefab;
+        this.gameTipsPrefab = resMgr.Instance.getAsset('prefabs', 'gameTips') as Prefab;
+        let node = instantiate(this.gameTipsPrefab);
+        node.parent = this.node.parent;
+        node.active = false;
+
+        let level = tools.getLevel();
+        this.setLevelLabel(level);
     }
 
     setLevelLabel(level) {

@@ -3,7 +3,7 @@ System.register(["cc"], function (_export, _context) {
 
   var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, assetManager, Component, resMgr, _crd;
 
-  _export("resMgr", void 0);
+  _export("default", void 0);
 
   return {
     setters: [function (_cc) {
@@ -20,7 +20,7 @@ System.register(["cc"], function (_export, _context) {
 
       __checkObsolete__(['_decorator', 'AssetManager', 'assetManager', 'Component', 'error', 'Node']);
 
-      _export("resMgr", resMgr = class resMgr extends Component {
+      _export("default", resMgr = class resMgr extends Component {
         constructor() {
           super(...arguments);
           this.totalAb = 0;

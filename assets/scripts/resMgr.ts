@@ -1,6 +1,6 @@
 import { _decorator, AssetManager, assetManager, Component, error, Node } from 'cc';
 
-export class resMgr extends Component {
+export default class resMgr extends Component {
     static Instance: resMgr = null;
 
     private totalAb: number = 0;     //ab包数量

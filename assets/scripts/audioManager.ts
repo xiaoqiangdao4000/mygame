@@ -2,7 +2,7 @@ import { _decorator, AudioClip, AudioSource, Component, director, Node, resource
 const { ccclass, property } = _decorator;
 
 @ccclass('AudioMgr')
-export class AudioMgr {
+export default class AudioMgr {
 
     //设计成单例
     private static _instance: AudioMgr;
@@ -135,7 +135,7 @@ export class AudioMgr {
         }
         if (sound instanceof AudioClip) {
             this._audioSource2.stop();
-            this._audioSource2.clip = sound; 
+            this._audioSource2.clip = sound;
             this._audioSource2.play();
             this._audioSource2.loop = false;
             this._audioSource2.volume = this._volume;

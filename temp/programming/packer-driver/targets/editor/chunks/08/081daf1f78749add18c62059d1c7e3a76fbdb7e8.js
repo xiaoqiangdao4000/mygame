@@ -228,7 +228,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         // },
         prefabs: {
           assetType: Prefab,
-          urls: ['gameStart', 'mjcard', 'gameNode']
+          urls: ['gameTips', 'gameStart', 'mjcard', 'gameNode']
         },
         sound: {
           assetType: AudioClip,

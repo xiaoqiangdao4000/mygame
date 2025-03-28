@@ -73,6 +73,7 @@ export default class tools {
         prefabs: {
             assetType: Prefab,
             urls: [
+                'gameTips',
                 'gameStart',
                 'mjcard',
                 'gameNode',

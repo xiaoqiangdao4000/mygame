@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Label, _dec, _class, _class2, _crd, ccclass, property, gameTips;
+  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Label, Node, _dec, _class, _class2, _crd, ccclass, property, gameTips;
 
   return {
     setters: [function (_cc) {
@@ -11,13 +11,14 @@ System.register(["cc"], function (_export, _context) {
       _decorator = _cc._decorator;
       Component = _cc.Component;
       Label = _cc.Label;
+      Node = _cc.Node;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "0453dtXKzRMNZtQXJvIpX1l", "gameTips", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'Label', 'Node']);
+      __checkObsolete__(['_decorator', 'Component', 'EventTouch', 'Label', 'Node']);
 
       ({
         ccclass,
@@ -35,11 +36,10 @@ System.register(["cc"], function (_export, _context) {
           this.gameContinueBtn = null;
           this.gameRestBtn = null;
           this.gameNextBtn = null;
+          this.gameBackBtn = null;
         }
 
-        onLoad() {}
-
-        start() {
+        onLoad() {
           if (gameTips.Instance === null) {
             console.log('初始化gameTips单列!');
             gameTips.Instance = this;
@@ -47,10 +47,9 @@ System.register(["cc"], function (_export, _context) {
             this.destroy();
             return;
           }
-        } //按钮点击事件
+        }
 
-
-        onBtnClick(event, customEventData) {
+        start() {
           var frame = this.node.getChildByName('frame');
           this.tips_title_label = frame.getChildByName('tips_title_label').getComponent(Label);
           this.tips_xipai_label = frame.getChildByName('tips_xipai_label').getComponent(Label);
@@ -60,6 +59,29 @@ System.register(["cc"], function (_export, _context) {
           this.gameContinueBtn = frame.getChildByName('gameContinueBtn');
           this.gameNextBtn = frame.getChildByName('gameNextBtn');
           this.gameRestBtn = frame.getChildByName('gameRestBtn');
+          this.gameBackBtn = frame.getChildByName('gameBackBtn');
+          this.gameContinueBtn.on(Node.EventType.TOUCH_START, this.onBtnClick, this);
+          this.gameNextBtn.on(Node.EventType.TOUCH_START, this.onBtnClick, this);
+          this.gameRestBtn.on(Node.EventType.TOUCH_START, this.onBtnClick, this);
+          this.gameBackBtn.on(Node.EventType.TOUCH_START, this.onBtnClick, this);
+        } //按钮点击事件
+
+
+        onBtnClick(event) {
+          if (event.target.name == 'gameContinueBtn') //继续游戏
+            {
+              console.log('gameContinueBtn');
+            } else if (event.target.name == 'gameNextBtn') //下一关
+            {
+              console.log('gameNextBtn');
+            } else if (event.target.name == 'gameRestBtn') //重新开始
+            {
+              console.log('gameRestBtn');
+            } else if (event.target.name == 'gameBackBtn') //返回主界面
+            {
+              console.log('gameBackBtn');
+              this.node.parent.emit('clickmj', event.target);
+            }
         }
 
         update(deltaTime) {}

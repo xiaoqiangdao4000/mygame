@@ -346,7 +346,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 10667269.077285,
+      "mTimestamp": 21688138.195182,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -462,7 +462,7 @@
           }
         },
         {
-          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts",
           "resolved": "__unresolved_8",
           "loc": {
             "start": {
@@ -471,12 +471,12 @@
             },
             "end": {
               "line": 12,
-              "column": 69
+              "column": 75
             }
           }
         },
         {
-          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts",
           "resolved": "__unresolved_9",
           "loc": {
             "start": {
@@ -485,12 +485,12 @@
             },
             "end": {
               "line": 13,
-              "column": 68
+              "column": 69
             }
           }
         },
         {
-          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts",
           "resolved": "__unresolved_10",
           "loc": {
             "start": {
@@ -499,12 +499,12 @@
             },
             "end": {
               "line": 14,
-              "column": 66
+              "column": 68
             }
           }
         },
         {
-          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts",
           "resolved": "__unresolved_11",
           "loc": {
             "start": {
@@ -518,7 +518,7 @@
           }
         },
         {
-          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts",
           "resolved": "__unresolved_12",
           "loc": {
             "start": {
@@ -532,7 +532,7 @@
           }
         },
         {
-          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts",
           "resolved": "__unresolved_13",
           "loc": {
             "start": {
@@ -541,6 +541,20 @@
             },
             "end": {
               "line": 17,
+              "column": 66
+            }
+          }
+        },
+        {
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts",
+          "resolved": "__unresolved_14",
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 7
+            },
+            "end": {
+              "line": 18,
               "column": 65
             }
           }
@@ -601,6 +615,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLanch.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts"
           },
           "messages": []
         },
@@ -2389,7 +2410,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts": {
       "mTimestamp": {
-        "mtime": 1742971998378.7917,
+        "mtime": 1743168134491.0474,
         "uuid": "298c64db-251e-4f24-a1e7-b98e9c863880"
       },
       "chunkId": "dfb43eaf57a9eb781920893bfd9a9484b3c92c02",
@@ -2441,7 +2462,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts": {
       "mTimestamp": {
-        "mtime": 1743146652535.8088,
+        "mtime": 1743167104645.6277,
         "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
       },
       "chunkId": "1a743102ec6f0466d7ce963c97d80152d07f58da",
@@ -2813,7 +2834,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts": {
       "mTimestamp": {
-        "mtime": 1743156214434.7258,
+        "mtime": 1743165555500.5918,
         "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
       },
       "chunkId": "081daf1f78749add18c62059d1c7e3a76fbdb7e8",
@@ -3494,7 +3515,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLanch.ts": {
       "mTimestamp": {
-        "mtime": 1742972006300.038,
+        "mtime": 1743168437183.8467,
         "uuid": "36d96c96-16af-4164-914c-59c8c45154d4"
       },
       "chunkId": "d04e7104cf078a255943a5b753edd199ceddf9a7",
@@ -3528,25 +3549,25 @@
           "loc": {
             "start": {
               "line": 2,
-              "column": 23
+              "column": 19
             },
             "end": {
               "line": 2,
-              "column": 33
+              "column": 29
             }
           }
         },
         {
-          "value": "./tools",
+          "value": "./gameLoadingNode",
           "resolved": "__unresolved_2",
           "loc": {
             "start": {
-              "line": 3,
-              "column": 18
+              "line": 4,
+              "column": 32
             },
             "end": {
-              "line": 3,
-              "column": 27
+              "line": 4,
+              "column": 51
             }
           }
         }
@@ -3591,7 +3612,7 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts"
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts"
           },
           "messages": []
         }
@@ -3599,7 +3620,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts": {
       "mTimestamp": {
-        "mtime": 1743057735454.138,
+        "mtime": 1743168178997.3142,
         "uuid": "0b7cd3c8-fcb2-4e6d-ba23-c0c45d04845d"
       },
       "chunkId": "d34ec8940242d5fb599e252cb709025d8fe9c03e",
@@ -3912,7 +3933,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts": {
       "mTimestamp": {
-        "mtime": 1743157471583.6748,
+        "mtime": 1743166720641.41,
         "uuid": "0453db57-2b34-4c35-9b50-5c9bc8a57d65"
       },
       "chunkId": "b55f156395f09bc72ceb1dd0e7b00b3d1b7f5776",
@@ -3928,11 +3949,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 51
+              "column": 63
             },
             "end": {
               "line": 1,
-              "column": 55
+              "column": 67
             }
           }
         }
@@ -3957,6 +3978,111 @@
           "resolved": {
             "type": "module",
             "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts": {
+      "mTimestamp": {
+        "mtime": 1743168492656.607,
+        "uuid": "6bb247fe-206c-4a76-bcc2-af95a22fc132"
+      },
+      "chunkId": "c5d64b535ee30f09515c3c55e19403ad48dc2940",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 81
+            },
+            "end": {
+              "line": 1,
+              "column": 85
+            }
+          }
+        },
+        {
+          "value": "./tools",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 18
+            },
+            "end": {
+              "line": 2,
+              "column": 27
+            }
+          }
+        },
+        {
+          "value": "./resMgr",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 19
+            },
+            "end": {
+              "line": 3,
+              "column": 29
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts"
           },
           "messages": []
         }

@@ -58,30 +58,42 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
           _initializerDefineProperty(this, "btnLabel", _descriptor2, this);
 
+          //游戏Node
           this.gamePrefab = void 0;
           this.gameNode = null;
+          //tips游戏提示
+          this.gameTipsPrefab = void 0;
         }
 
         onLoad() {
           if (gameStart.Instance === null) {
-            console.log('初始化gameStart单列!');
-            this.gamePrefab = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
-              error: Error()
-            }), resMgr) : resMgr).Instance.getAsset('prefabs', 'gameNode');
             gameStart.Instance = this;
-            var level = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-              error: Error()
-            }), tools) : tools).getLevel();
-            this.setLevelLabel(level);
-            (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
-              error: Error()
-            }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
-              error: Error()
-            }), SOUND) : SOUND).back_sound);
+            console.log('初始化gameStart单列!');
           } else {
             this.destroy();
             return;
           }
+        }
+
+        start() {
+          (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+            error: Error()
+          }), SOUND) : SOUND).back_sound);
+          this.gamePrefab = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
+            error: Error()
+          }), resMgr) : resMgr).Instance.getAsset('prefabs', 'gameNode');
+          this.gameTipsPrefab = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
+            error: Error()
+          }), resMgr) : resMgr).Instance.getAsset('prefabs', 'gameTips');
+          var node = instantiate(this.gameTipsPrefab);
+          node.parent = this.node.parent;
+          node.active = false;
+          var level = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+            error: Error()
+          }), tools) : tools).getLevel();
+          this.setLevelLabel(level);
         }
 
         setLevelLabel(level) {
