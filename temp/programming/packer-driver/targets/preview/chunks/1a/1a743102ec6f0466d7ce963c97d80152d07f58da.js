@@ -59,7 +59,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           _initializerDefineProperty(this, "btnLabel", _descriptor2, this);
 
           this.gamePrefab = void 0;
-          this.gameNode = void 0;
+          this.gameNode = null;
         }
 
         onLoad() {
@@ -72,7 +72,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             var level = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).getLevel();
-            this.setLevel(level);
+            this.setLevelLabel(level);
             (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
               error: Error()
             }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
@@ -84,7 +84,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           }
         }
 
-        setLevel(level) {
+        setLevelLabel(level) {
           this.rankLabel.string = '最高纪录:' + level;
           this.btnLabel.string = '第' + level + '关';
           (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
@@ -106,7 +106,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           this.gameNode = instantiate(this.gamePrefab);
           this.gameNode.parent = this.node.parent;
           this.gameNode.active = true;
-          console.log('this.gameNode = ', this.gameNode.getPosition());
           this.hide();
         }
 
@@ -122,12 +121,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "btnLabel", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function initializer() {
+          return null;
+        }
       })), _class2)) || _class));
 
       _cclegacy._RF.pop();

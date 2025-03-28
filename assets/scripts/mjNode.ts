@@ -51,14 +51,15 @@ export class mjNode extends Component {
 
     onLoad() {
         console.log('初始化游戏类');
-        this.tips_title_label = this.gameTipsNode.getChildByName('tips_title_label').getComponent(Label);
-        this.tips_xipai_label = this.gameTipsNode.getChildByName('tips_xipai_label').getComponent(Label);
-        this.tips_chehui_label = this.gameTipsNode.getChildByName('tips_chehui_label').getComponent(Label);
-        this.tips_addtime_label = this.gameTipsNode.getChildByName('tips_addtime_label').getComponent(Label);
-        this.tips_toushi_label = this.gameTipsNode.getChildByName('tips_toushi_label').getComponent(Label);
-        this.gameContinueBtn = this.gameTipsNode.getChildByName('gameContinueBtn');
-        this.gameNextBtn = this.gameTipsNode.getChildByName('gameNextBtn');
-        this.gameRestBtn = this.gameTipsNode.getChildByName('gameRestBtn');
+        let frame = this.gameTipsNode.getChildByName('frame');
+        this.tips_title_label = frame.getChildByName('tips_title_label').getComponent(Label);
+        this.tips_xipai_label = frame.getChildByName('tips_xipai_label').getComponent(Label);
+        this.tips_chehui_label = frame.getChildByName('tips_chehui_label').getComponent(Label);
+        this.tips_addtime_label = frame.getChildByName('tips_addtime_label').getComponent(Label);
+        this.tips_toushi_label = frame.getChildByName('tips_toushi_label').getComponent(Label);
+        this.gameContinueBtn = frame.getChildByName('gameContinueBtn');
+        this.gameNextBtn = frame.getChildByName('gameNextBtn');
+        this.gameRestBtn = frame.getChildByName('gameRestBtn');
         this.node.on('clickmj', this.onClickMj, this);
         tools.getData();
         this.updataBtn();
@@ -139,8 +140,12 @@ export class mjNode extends Component {
         //     this.gameShowTips(GAMETIPS.game_hide);
         // }
         // else 
-
-        if (customEventData == 'gameContiune') //继续游戏
+        if (customEventData == 'gameSetingBtn') //设置按钮
+        {
+            tools.playSound(SOUND.click_sound);
+            this.gameShowTips(GAMETIPS.game_seting);
+        }
+        else if (customEventData == 'gameContiune') //继续游戏
         {
             tools.playSound(SOUND.click_sound);
             this.contiuneGame();
@@ -542,12 +547,20 @@ export class mjNode extends Component {
     gameShowTips(typeId) {
 
         this.unschedule(this.countdown);
-        let spos = new Vec3(-700, 30, 0);
-        let epos = new Vec3(0, 30, 0);
+        // let spos = new Vec3(-700, 30, 0);
+        // let epos = new Vec3(0, 30, 0);
 
         if (typeId == GAMETIPS.game_hide) //隐藏面板
         {
             this.gameTipsNode.active = false;
+        }
+        else if (typeId == GAMETIPS.game_seting) //设置面板
+        {
+            this.gameTipsNode.active = true;
+            this.tips_title_label.string = '菜  单';
+            this.gameContinueBtn.active = true;
+            this.gameRestBtn.active = false;
+            this.gameNextBtn.active = false;
         }
         else if (typeId == GAMETIPS.game_contiune)  //继续面板
         {
@@ -563,14 +576,14 @@ export class mjNode extends Component {
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
             this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
             this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
-            spos = new Vec3(-700, 30, 0);
-            epos = new Vec3(0, 30, 0);
-            this.gameTipsNode.setPosition(spos);
-            tween(this.gameTipsNode)
-                .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
-                    easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
-                })
-                .start();
+            // spos = new Vec3(-700, 30, 0);
+            // epos = new Vec3(0, 30, 0);
+            // this.gameTipsNode.setPosition(spos);
+            // tween(this.gameTipsNode)
+            //     .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
+            //         easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+            //     })
+            //     .start();
         }
         else if (typeId == GAMETIPS.gmae_fail) //失败面板
         {
@@ -589,14 +602,14 @@ export class mjNode extends Component {
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
             this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
             this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
-            spos = new Vec3(-700, 30, 0);
-            epos = new Vec3(0, 30, 0);
-            this.gameTipsNode.setPosition(spos);
-            tween(this.gameTipsNode)
-                .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
-                    easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
-                })
-                .start();
+            // spos = new Vec3(-700, 30, 0);
+            // epos = new Vec3(0, 30, 0);
+            // this.gameTipsNode.setPosition(spos);
+            // tween(this.gameTipsNode)
+            //     .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
+            //         easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+            //     })
+            //     .start();
         }
         else if (typeId == GAMETIPS.game_success) //成功面板
         {
@@ -621,14 +634,14 @@ export class mjNode extends Component {
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
             this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
             this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
-            spos = new Vec3(-700, 30, 0);
-            epos = new Vec3(0, 30, 0);
-            this.gameTipsNode.setPosition(spos);
-            tween(this.gameTipsNode)
-                .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
-                    easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
-                })
-                .start();
+            // spos = new Vec3(-700, 30, 0);
+            // epos = new Vec3(0, 30, 0);
+            // this.gameTipsNode.setPosition(spos);
+            // tween(this.gameTipsNode)
+            //     .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
+            //         easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
+            //     })
+            //     .start();
         }
     }
 
