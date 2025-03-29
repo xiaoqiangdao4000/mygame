@@ -17,9 +17,6 @@ export class gameStart extends Component {
     gamePrefab: Prefab;
     gameNode: Node = null;
 
-    //tips游戏提示
-    gameTipsPrefab: Prefab;
-
     onLoad() {
         if (gameStart.Instance === null) {
             gameStart.Instance = this;
@@ -34,11 +31,6 @@ export class gameStart extends Component {
     start(): void {
         tools.playSound(SOUND.back_sound);
         this.gamePrefab = resMgr.Instance.getAsset('prefabs', 'gameNode') as Prefab;
-        this.gameTipsPrefab = resMgr.Instance.getAsset('prefabs', 'gameTips') as Prefab;
-        let node = instantiate(this.gameTipsPrefab);
-        node.parent = this.node.parent;
-        node.active = false;
-
         let level = tools.getLevel();
         this.setLevelLabel(level);
     }

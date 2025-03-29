@@ -61,8 +61,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           //游戏Node
           this.gamePrefab = void 0;
           this.gameNode = null;
-          //tips游戏提示
-          this.gameTipsPrefab = void 0;
         }
 
         onLoad() {
@@ -84,12 +82,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           this.gamePrefab = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
             error: Error()
           }), resMgr) : resMgr).Instance.getAsset('prefabs', 'gameNode');
-          this.gameTipsPrefab = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
-            error: Error()
-          }), resMgr) : resMgr).Instance.getAsset('prefabs', 'gameTips');
-          let node = instantiate(this.gameTipsPrefab);
-          node.parent = this.node.parent;
-          node.active = false;
           let level = (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
             error: Error()
           }), tools) : tools).getLevel();

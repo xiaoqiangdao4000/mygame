@@ -1,0 +1,75 @@
+[
+    1,
+    [
+        "61wRaVI5ZAqqe5XGBiz3zz@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "dating_PHB1",
+            "rect": {
+                "x": 1967,
+                "y": 171,
+                "width": 48,
+                "height": 43
+            },
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "originalSize": {
+                "width": 48,
+                "height": 43
+            },
+            "rotated": false,
+            "capInsets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "vertices": {
+                "rawPosition": [],
+                "indexes": [],
+                "uv": [],
+                "nuv": [],
+                "minPos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "maxPos": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            "packable": true,
+            "pixelsToUnit": 100,
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "meshType": 0
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]
