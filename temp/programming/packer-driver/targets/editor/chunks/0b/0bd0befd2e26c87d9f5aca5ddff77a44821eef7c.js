@@ -27,7 +27,7 @@ System.register(["cc"], function (_export, _context) {
         property
       } = _decorator);
 
-      _export("AudioMgr", AudioMgr = (_dec = ccclass('AudioMgr'), _dec(_class = (_class2 = class AudioMgr {
+      _export("default", AudioMgr = (_dec = ccclass('AudioMgr'), _dec(_class = (_class2 = class AudioMgr {
         static get Instance() {
           if (!this._instance) {
             this._instance = new AudioMgr();

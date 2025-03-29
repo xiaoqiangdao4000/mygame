@@ -1,6 +1,6 @@
 import { Asset, AudioClip, Constructor, Prefab } from "cc";
-import { AudioMgr } from "./audioManager";
-import { resMgr } from "./resMgr";
+import resMgr from "./resMgr";
+import AudioMgr from "./audioManager";
 export type AssetType<T = Asset> = Constructor<T>;
 export type LoadCompleteCallback<T> = (error: Error | null, asset: T) => void;
 export enum SOUND {
@@ -24,7 +24,6 @@ export enum GAMETIPS {
     game_success,
     gmae_fail,
     game_hide,
-    game_contiune,
     game_seting,
 }
 
@@ -41,6 +40,9 @@ export default class tools {
     static cheHui = 3;      //撤回次数
     static addTime = 30;    //加时30s
     static touShi = 3;      //透视
+
+    static gameMusic = true;
+    static gameSound = true;
 
     // static levelData =
     //     [

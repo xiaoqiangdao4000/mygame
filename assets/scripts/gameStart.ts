@@ -1,10 +1,12 @@
 import { _decorator, Component, instantiate, Label, Node, Prefab } from 'cc';
-import { resMgr } from './resMgr';
+import resMgr from './resMgr';
 import tools, { SOUND } from './tools';
 const { ccclass, property } = _decorator;
 
 @ccclass('gameStart')
 export class gameStart extends Component {
+    static Instance: gameStart = null;
+
     @property(Label)
     rankLabel: Label = null;
 
@@ -17,9 +19,6 @@ export class gameStart extends Component {
 
     //tips游戏提示
     gameTipsPrefab: Prefab;
-
-
-    static Instance: gameStart = null;
 
     onLoad() {
         if (gameStart.Instance === null) {

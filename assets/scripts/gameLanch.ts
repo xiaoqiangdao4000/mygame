@@ -1,6 +1,6 @@
 import { _decorator, Component, instantiate, Label, Prefab, Sprite, tween } from 'cc';
 import resMgr from './resMgr';
-import tools from './tools';
+
 import { gameLoadingNode } from './gameLoadingNode';
 const { ccclass, property } = _decorator;
 

@@ -3,7 +3,7 @@ const { ccclass, property } = _decorator;
 import tools, { GAMESTATE, GAMETIPS, SOUND } from './tools'
 import { gameStart } from './gameStart';
 import { mjcard } from './mjcard';
-import { AudioMgr } from './audioManager';
+import AudioMgr from './audioManager';
 //const { systemEvent } = cc;
 
 @ccclass('mjNode')
@@ -31,6 +31,10 @@ export class mjNode extends Component {
     tips_chehui_label: Label = null;
     tips_addtime_label: Label = null;
     tips_toushi_label: Label = null;
+    tips_music_label: Label = null;
+    tips_sound_label: Label = null;
+    tips_music_node: Node = null;
+    tips_sound_node: Node = null;
     gameContinueBtn: Node = null;
     gameRestBtn: Node = null;
     gameNextBtn: Node = null;
@@ -55,6 +59,10 @@ export class mjNode extends Component {
         this.tips_chehui_label = frame.getChildByName('tips_chehui_label').getComponent(Label);
         this.tips_addtime_label = frame.getChildByName('tips_addtime_label').getComponent(Label);
         this.tips_toushi_label = frame.getChildByName('tips_toushi_label').getComponent(Label);
+        this.tips_music_node = frame.getChildByName('music_label');
+        this.tips_music_label = this.tips_music_node.getChildByName('Button').getChildByName('Label').getComponent(Label);
+        this.tips_sound_node = frame.getChildByName('sound_label');
+        this.tips_sound_label = this.tips_sound_node.getChildByName('Button').getChildByName('Label').getComponent(Label);
         this.gameContinueBtn = frame.getChildByName('gameContinueBtn');
         this.gameNextBtn = frame.getChildByName('gameNextBtn');
         this.gameRestBtn = frame.getChildByName('gameRestBtn');
@@ -133,17 +141,39 @@ export class mjNode extends Component {
     //按钮点击事件
     onBtnClick(event: Event, customEventData: string) {
 
-        // if (customEventData == 'gameStart') // //游戏开始
-        // {
-        //     this.gameShowTips(GAMETIPS.game_hide);
-        // }
-        // else 
-        if (customEventData == 'gameSetingBtn') //设置按钮
+        if (customEventData == 'gameMusic') //音乐
+        {
+            if (tools.gameMusic) {
+                AudioMgr.Instance.pauseBgm();
+                tools.gameMusic = false;
+                this.tips_music_label.string = '关';
+            }
+            else {
+                AudioMgr.Instance.resumeBgm();
+                tools.gameMusic = true;
+                this.tips_music_label.string = '开';
+            }
+        }
+        else if (customEventData == 'gameSound') //音效
+        {
+            if (tools.gameSound) {
+                AudioMgr.Instance.setMenu(false);
+                tools.gameSound = false;
+                this.tips_sound_label.string = '关';
+            }
+            else {
+                AudioMgr.Instance.setMenu(true);
+                tools.gameSound = true;
+                this.tips_sound_label.string = '开';
+            }
+        }
+        else if (customEventData == 'gameSetingBtn') //设置按钮
         {
             tools.playSound(SOUND.click_sound);
+            if (this.gameState == GAMESTATE.game_start) return;
             this.gameShowTips(GAMETIPS.game_seting);
         }
-        else if (customEventData == 'gameContiune') //继续游戏
+        else if (customEventData == 'gameContinue') //继续游戏
         {
             tools.playSound(SOUND.click_sound);
             this.contiuneGame();
@@ -545,8 +575,6 @@ export class mjNode extends Component {
     gameShowTips(typeId) {
 
         this.unschedule(this.countdown);
-        // let spos = new Vec3(-700, 30, 0);
-        // let epos = new Vec3(0, 30, 0);
 
         if (typeId == GAMETIPS.game_hide) //隐藏面板
         {
@@ -556,32 +584,15 @@ export class mjNode extends Component {
         {
             this.gameTipsNode.active = true;
             this.tips_title_label.string = '菜  单';
+            this.tips_music_node.active = true;
+            this.tips_sound_node.active = true;
             this.gameContinueBtn.active = true;
             this.gameRestBtn.active = false;
             this.gameNextBtn.active = false;
-        }
-        else if (typeId == GAMETIPS.game_contiune)  //继续面板
-        {
-            this.isCanClick = false;
-            this.gameState = GAMESTATE.game_inGame;
-            this.gameTipsNode.active = true;
-            this.tips_title_label.string = '游戏暂停中';
-            this.gameContinueBtn.active = true;
-            this.gameRestBtn.active = false;
-            this.gameNextBtn.active = false;
-            this.updataBtn();
-            this.tips_xipai_label.string = '洗 牌: X ' + tools.xiPai;
-            this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
-            this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
-            this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
-            // spos = new Vec3(-700, 30, 0);
-            // epos = new Vec3(0, 30, 0);
-            // this.gameTipsNode.setPosition(spos);
-            // tween(this.gameTipsNode)
-            //     .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
-            //         easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
-            //     })
-            //     .start();
+            this.tips_xipai_label.node.active = false;
+            this.tips_chehui_label.node.active = false;
+            this.tips_addtime_label.node.active = false;
+            this.tips_toushi_label.node.active = false;
         }
         else if (typeId == GAMETIPS.gmae_fail) //失败面板
         {
@@ -593,6 +604,12 @@ export class mjNode extends Component {
             this.gameContinueBtn.active = false;
             this.gameRestBtn.active = true;
             this.gameNextBtn.active = false;
+            this.tips_xipai_label.node.active = true;
+            this.tips_chehui_label.node.active = true;
+            this.tips_addtime_label.node.active = true;
+            this.tips_toushi_label.node.active = true;
+            this.tips_music_node.active = false;
+            this.tips_sound_node.active = false;
             tools.saveLevel();
             tools.savaData();
             this.updataBtn();
@@ -600,14 +617,6 @@ export class mjNode extends Component {
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
             this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
             this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
-            // spos = new Vec3(-700, 30, 0);
-            // epos = new Vec3(0, 30, 0);
-            // this.gameTipsNode.setPosition(spos);
-            // tween(this.gameTipsNode)
-            //     .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
-            //         easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
-            //     })
-            //     .start();
         }
         else if (typeId == GAMETIPS.game_success) //成功面板
         {
@@ -632,14 +641,12 @@ export class mjNode extends Component {
             this.tips_chehui_label.string = '撤 回: X ' + tools.cheHui;
             this.tips_addtime_label.string = '加 时: ' + tools.addTime + 's';
             this.tips_toushi_label.string = '透 视: X ' + tools.touShi;
-            // spos = new Vec3(-700, 30, 0);
-            // epos = new Vec3(0, 30, 0);
-            // this.gameTipsNode.setPosition(spos);
-            // tween(this.gameTipsNode)
-            //     .to(0.5, { position: epos }, {  // 这里以node的位置信息坐标缓动的目标 
-            //         easing: "quartIn",          // 缓动函数，可以使用已有的，也可以传入自定义的函数。      
-            //     })
-            //     .start();
+            this.tips_xipai_label.node.active = true;
+            this.tips_chehui_label.node.active = true;
+            this.tips_addtime_label.node.active = true;
+            this.tips_toushi_label.node.active = true;
+            this.tips_music_node.active = false;
+            this.tips_sound_node.active = false;
         }
     }
 

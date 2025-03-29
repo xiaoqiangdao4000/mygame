@@ -1,200 +1,182 @@
-3-28-2025 14:26:45 - log: Load engine in /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine
-3-28-2025 14:26:45 - log: Profile changed: engine (modules.includeModules: 2d,animation,audio,base,custom-pipeline,gfx-webgl,gfx-webgl2,intersection-2d,physics-2d-box2d,profiler,tween,ui,video,webview)
-3-28-2025 14:26:45 - log: Register native engine in /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/native
-3-28-2025 14:26:46 - log: Request namespace: device-list
-3-28-2025 14:26:54 - log: [Scene] meshopt wasm decoder initialized
-3-28-2025 14:26:54 - log: [Scene] [box2d]:box2d wasm lib loaded.
-3-28-2025 14:26:54 - log: [Scene] [bullet]:bullet wasm lib loaded.
-3-28-2025 14:26:54 - log: [Scene] [PHYSICS]: using builtin.
-3-28-2025 14:26:55 - log: [Scene] Cocos Creator v3.8.5
-3-28-2025 14:26:55 - log: [Scene] Using custom pipeline: Builtin
-3-28-2025 14:26:55 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to box2d.
-3-28-2025 14:27:53 - error: Client network socket disconnected before secure TLS connection was establishedError: Client network socket disconnected before secure TLS connection was established
-    at Function.from (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/extension-sdk/node_modules/axios/lib/core/AxiosError.js:89:14)
-    at RedirectableRequest.handleRequestError (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/extension-sdk/node_modules/axios/lib/adapters/http.js:610:25)
-    at RedirectableRequest.emit (node:events:531:35)
-    at RedirectableRequest.emit (node:domain:488:12)
-    at ClientRequest.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/extension-sdk/node_modules/follow-redirects/index.js:38:24)
-    at ClientRequest.emit (node:events:531:35)
-    at ClientRequest.emit (node:domain:488:12)
-    at TLSSocket.socketErrorListener (node:_http_client:500:9)
-    at TLSSocket.emit (node:events:519:28)
-    at TLSSocket.emit (node:domain:488:12)
-    at Axios.request (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/extension-sdk/node_modules/axios/lib/core/Axios.js:45:41)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at apiQueryExtensionList (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/extension-sdk/sdk/manager/api/extension.js:6:20)
-    at forceUpdate (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/modules/editor-extensions/extensions/extension/dist/browser/force-update.ccc:1:1333)
-3-28-2025 15:55:40 - warn: [Assets] Input file contains unsupported image formatError: Input file contains unsupported image format
-3-28-2025 15:55:40 - warn: [Assets] resizeThumbnail failed for db://assets/gameBundle/atlas/mj_card.plist@54958Warn: [Assets] resizeThumbnail failed for db://assets/gameBundle/atlas/mj_card.plist@54958
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at NewConsole.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/console.ccc:1:1510)
-    at AssetHandlerManager.generateThumbnail (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/manager/asset-handler-manager.ccc:1:10412)
-    at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/asset-db/dist/worker/ipc.ccc:1:530)
-3-28-2025 16:04:27 - error: [Scene] Can't add component 'cc.UITransform' because alpha already contains the same component.Error: Can't add component 'cc.UITransform' because alpha already contains the same component.
-    at Node._checkMultipleComp (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:64755:19)
-    at Node.addComponent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:68087:18)
-    at NodeManager.createComponent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/node/index.ccc:1:12195)
-    at PrefabSceneFacade.createComponent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/general-scene-facade.ccc:1:11455)
-    at SceneFacadeManager.createComponent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:14006)
-    at step (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:1:732)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:401
+2025-3-29 21:04:54 - log: Load engine in C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine
+2025-3-29 21:04:55 - log: Profile changed: engine (modules.includeModules: 2d,animation,audio,base,custom-pipeline,gfx-webgl,gfx-webgl2,intersection-2d,physics-2d-box2d,profiler,tween,ui,video,webview)
+2025-3-29 21:04:55 - log: Register native engine in C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\native
+2025-3-29 21:04:55 - log: Request namespace: device-list
+2025-3-29 21:05:04 - warn: Request timeout, aborting...
+2025-3-29 21:05:04 - warn: Failed to connect to login server: socket hang up
+2025-3-29 21:05:07 - log: [Scene] meshopt wasm decoder initialized
+2025-3-29 21:05:07 - log: [Scene] [bullet]:bullet wasm lib loaded.
+2025-3-29 21:05:07 - log: [Scene] [box2d]:box2d wasm lib loaded.
+2025-3-29 21:05:07 - log: [Scene] [PHYSICS]: using builtin.
+2025-3-29 21:05:07 - log: [Scene] Cocos Creator v3.8.5
+2025-3-29 21:05:07 - log: [Scene] Using custom pipeline: Builtin
+2025-3-29 21:05:07 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to box2d.
+2025-3-29 21:05:26 - warn: [Scene] Node [ProgressBar] is a prefab child of prefabInstance [gameTips], it's not allowed to delete in current context, you can delete it in it's prefabAsset or         do it after unlink prefab from root nodeError: [Scene] Node [ProgressBar] is a prefab child of prefabInstance [gameTips], it's not allowed to delete in current context, you can delete it in it's prefabAsset or         do it after unlink prefab from root node
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at PrefabManager.filterChildOfAssetOfPrefabInstance (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\prefab\index.ccc:1:3283)
+    at PrefabManager.filterChildOfPrefabAssetWhenRemoveNode (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\prefab\index.ccc:1:3928)
+    at PrefabSceneFacade.removeNode (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\facade\general-scene-facade.ccc:1:10107)
+    at PrefabSceneFacade.removeNode (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\facade\prefab-scene-facade.ccc:1:3170)
+    at SceneFacadeManager.removeNode (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\facade\scene-facade-manager.ccc:1:12495)
+    at step (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\ipc\web\ipc.ccc:1:732)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\ipc\web\ipc.ccc:2:401
     at new Promise (<anonymous>)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:338
-    at IpcRenderer.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/webview.ccc:1:1004)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\ipc\web\ipc.ccc:2:338
+    at IpcRenderer.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\ipc\web\webview.ccc:1:1004)
     at IpcRenderer.emit (node:events:519:28)
     at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
-3-28-2025 17:04:47 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: /file:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts: Unexpected token (558:8)
+2025-3-29 21:37:10 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: C:Program Files (x86)CocosDashboardile:C:UserszzxDesktopmygameassetsscriptsmjNode.ts: Missing semicolon. (62:29)
 
-  556 |         }
-  557 |         else if(typeId == GAMETIPS.game_seting)
-> 558 |         else if (typeId == GAMETIPS.game_contiune)  //继续面板
-      |         ^
-  559 |         {
-  560 |             this.isCanClick = false;
-  561 |             this.gameState = GAMESTATE.game_inGame;
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/c3/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20%2Ffile%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%3A%20Unexpected%20token%20(558%3A8)%0A%0A%20%20556%20%7C%20%20%20%20%20%20%20%20%20%7D%0A%20%20557%20%7C%20%20%20%20%20%20%20%20%20else%20if(typeId%20%3D%3D%20GAMETIPS.game_seting)%0A%3E%20558%20%7C%20%20%20%20%20%20%20%20%20else%20if%20(typeId%20%3D%3D%20GAMETIPS.game_contiune)%20%20%2F%2F%E7%BB%A7%E7%BB%AD%E9%9D%A2%E6%9D%BF%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%5E%0A%20%20559%20%7C%20%20%20%20%20%20%20%20%20%7B%0A%20%20560%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20this.isCanClick%20%3D%20false%3B%0A%20%20561%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20this.gameState%20%3D%20GAMESTATE.game_inGame%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: /file:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts: Unexpected token (558:8)
+  60 |         this.tips_toushi_label = frame.getChildByName('tips_toushi_label').getComponent(Label);
+  61 |         this.tips_music_label = frame.getChildByName()
+> 62 |         this.tips_sound_label: Label = null;
+     |                              ^
+  63 |         this.gameContinueBtn = frame.getChildByName('gameContinueBtn');
+  64 |         this.gameNextBtn = frame.getChildByName('gameNextBtn');
+  65 |         this.gameRestBtn = frame.getChildByName('gameRestBtn');
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/00/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FC%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20C%3A%5CProgram%20Files%20(x86)%5CCocosDashboard%5Cfile%3A%5CC%3A%5CUsers%5Czzx%5CDesktop%5Cmygame%5Cassets%5Cscripts%5CmjNode.ts%3A%20Missing%20semicolon.%20(62%3A29)%0A%0A%20%2060%20%7C%20%20%20%20%20%20%20%20%20this.tips_toushi_label%20%3D%20frame.getChildByName('tips_toushi_label').getComponent(Label)%3B%0A%20%2061%20%7C%20%20%20%20%20%20%20%20%20this.tips_music_label%20%3D%20frame.getChildByName()%0A%3E%2062%20%7C%20%20%20%20%20%20%20%20%20this.tips_sound_label%3A%20Label%20%3D%20null%3B%0A%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%2063%20%7C%20%20%20%20%20%20%20%20%20this.gameContinueBtn%20%3D%20frame.getChildByName('gameContinueBtn')%3B%0A%20%2064%20%7C%20%20%20%20%20%20%20%20%20this.gameNextBtn%20%3D%20frame.getChildByName('gameNextBtn')%3B%0A%20%2065%20%7C%20%20%20%20%20%20%20%20%20this.gameRestBtn%20%3D%20frame.getChildByName('gameRestBtn')%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: C:Program Files (x86)CocosDashboardile:C:UserszzxDesktopmygameassetsscriptsmjNode.ts: Missing semicolon. (62:29)
 
-  556 |         }
-  557 |         else if(typeId == GAMETIPS.game_seting)
-> 558 |         else if (typeId == GAMETIPS.game_contiune)  //继续面板
-  561 |             this.gameState = GAMESTATE.game_inGame;
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/c3/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20%2Ffile%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%3A%20Unexpected%20token%20(558%3A8)%0A%0A%20%20556%20%7C%20%20%20%20%20%20%20%20%20%7D%0A%20%20557%20%7C%20%20%20%20%20%20%20%20%20else%20if(typeId%20%3D%3D%20GAMETIPS.game_seting)%0A%3E%20558%20%7C%20%20%20%20%20%20%20%20%20else%20if%20(typeId%20%3D%3D%20GAMETIPS.game_contiune)%20%20%2F%2F%E7%BB%A7%E7%BB%AD%E9%9D%A2%E6%9D%BF%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%5E%0A%20%20559%20%7C%20%20%20%20%20%20%20%20%20%7B%0A%20%20560%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20this.isCanClick%20%3D%20false%3B%0A%20%20561%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20this.gameState%20%3D%20GAMESTATE.game_inGame%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)
-    at Logger._logHandler (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:487)
-    at Logger.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1414)
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at ScriptManager._handleImportException (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:5408)
-    at Executor.importExceptionHandler [as _importExceptionHandler] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:3604)
-    at Executor._onModuleLoaded (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:401:22)
-    at SystemJS.onload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:99:18)
-    at triggerOnload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:270:10)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:538:7)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)
-3-28-2025 17:04:47 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at Object.classFinder (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:982)
-    at _Deserializer.classFinder [as _classFinder] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163942:34)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52666:30)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52689:20)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-3-28-2025 17:04:47 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at Object.classFinder (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:982)
-    at _Deserializer.classFinder [as _classFinder] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163942:34)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52666:30)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52689:20)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-3-28-2025 17:04:47 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
+  60 |         this.tips_toushi_label = frame.getChildByName('tips_toushi_label').getComponent(Label);
+  61 |         this.tips_music_label = frame.getChildByName()
+> 62 |         this.tips_sound_label: Label = null;
+  65 |         this.gameRestBtn = frame.getChildByName('gameRestBtn');
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/00/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FC%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20C%3A%5CProgram%20Files%20(x86)%5CCocosDashboard%5Cfile%3A%5CC%3A%5CUsers%5Czzx%5CDesktop%5Cmygame%5Cassets%5Cscripts%5CmjNode.ts%3A%20Missing%20semicolon.%20(62%3A29)%0A%0A%20%2060%20%7C%20%20%20%20%20%20%20%20%20this.tips_toushi_label%20%3D%20frame.getChildByName('tips_toushi_label').getComponent(Label)%3B%0A%20%2061%20%7C%20%20%20%20%20%20%20%20%20this.tips_music_label%20%3D%20frame.getChildByName()%0A%3E%2062%20%7C%20%20%20%20%20%20%20%20%20this.tips_sound_label%3A%20Label%20%3D%20null%3B%0A%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%2063%20%7C%20%20%20%20%20%20%20%20%20this.gameContinueBtn%20%3D%20frame.getChildByName('gameContinueBtn')%3B%0A%20%2064%20%7C%20%20%20%20%20%20%20%20%20this.gameNextBtn%20%3D%20frame.getChildByName('gameNextBtn')%3B%0A%20%2065%20%7C%20%20%20%20%20%20%20%20%20this.gameRestBtn%20%3D%20frame.getChildByName('gameRestBtn')%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+    at Logger._logHandler (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\log.ccc:1:487)
+    at Logger.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:458)
+    at console.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:1414)
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at ScriptManager._handleImportException (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:5408)
+    at Executor.importExceptionHandler [as _importExceptionHandler] (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3604)
+    at Executor._onModuleLoaded (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:401:22)
+    at SystemJS.onload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:99:18)
+    at triggerOnload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:270:10)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:538:7)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+2025-3-29 21:37:10 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at Object.classFinder (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:982)
+    at _Deserializer.classFinder [as _classFinder] (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:117745:34)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52497:30)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52520:20)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+2025-3-29 21:37:11 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at Object.classFinder (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:982)
+    at _Deserializer.classFinder [as _classFinder] (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:117745:34)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52497:30)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52520:20)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+2025-3-29 21:37:11 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
 Node path: "should_hide_in_hierarchy/gameNode/mjNode"
 Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
 Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
@@ -203,10 +185,10 @@ Node path: "should_hide_in_hierarchy/gameNode/mjNode"
 Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
 Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
 
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at report (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:25)
-    at reportByWalker (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:127)
-3-28-2025 17:04:47 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at report (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:25)
+    at reportByWalker (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:127)
+2025-3-29 21:37:11 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
 Node path: "gameNode/mjNode"
 Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
 Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
@@ -215,300 +197,356 @@ Node path: "gameNode/mjNode"
 Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
 Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
 
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at report (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:25)
-    at reportByWalker (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:127)
-3-28-2025 17:17:41 - warn: [Scene] Reference "0" of "gameTips" to external scene object "mjNode" can not be saved in prefab asset.Error: [Scene] Reference "0" of "gameTips" to external scene object "mjNode" can not be saved in prefab asset.
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:3207
-    at visitObjTypeReferences (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1563)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:2779
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1195)
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1258)
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1258)
-    at Object.checkAndStripNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:2536)
-    at PrefabUtil.getPrefabForSerialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/utils.ccc:1:4893)
-    at PrefabUtil.generatePrefabDataFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/utils.ccc:1:5423)
-    at NodeOperation.createPrefabAssetFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:18701)
-    at PrefabManager.createPrefabAssetFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/index.ccc:1:1017)
-    at PrefabSceneFacade.createPrefab (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/prefab-scene-facade.ccc:1:3286)
-    at SceneFacadeManager.createPrefab (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:24566)
-    at step (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:1:732)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:401
-    at new Promise (<anonymous>)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:338
-    at IpcRenderer.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/webview.ccc:1:1004)
-    at IpcRenderer.emit (node:events:519:28)
-    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
-3-28-2025 17:17:41 - warn: [Scene] Reference "0" of "gameTips" to external scene object "mjNode" can not be saved in prefab asset.Error: [Scene] Reference "0" of "gameTips" to external scene object "mjNode" can not be saved in prefab asset.
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:3207
-    at visitObjTypeReferences (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1563)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:2779
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1195)
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1258)
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1258)
-    at Object.checkAndStripNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:2536)
-    at PrefabUtil.getPrefabForSerialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/utils.ccc:1:4893)
-    at PrefabUtil.generatePrefabDataFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/utils.ccc:1:5423)
-    at NodeOperation.createPrefabAssetFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:18701)
-    at PrefabManager.createPrefabAssetFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/index.ccc:1:1017)
-    at PrefabSceneFacade.createPrefab (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/prefab-scene-facade.ccc:1:3286)
-    at SceneFacadeManager.createPrefab (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:24566)
-    at step (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:1:732)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:401
-    at new Promise (<anonymous>)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:338
-    at IpcRenderer.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/webview.ccc:1:1004)
-    at IpcRenderer.emit (node:events:519:28)
-    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
-3-28-2025 17:17:41 - warn: [Scene] Reference "0" of "gameTips" to external scene object "mjNode" can not be saved in prefab asset.Error: [Scene] Reference "0" of "gameTips" to external scene object "mjNode" can not be saved in prefab asset.
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:3207
-    at visitObjTypeReferences (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1563)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:2779
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1195)
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1258)
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1258)
-    at Object.checkAndStripNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:2536)
-    at PrefabUtil.getPrefabForSerialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/utils.ccc:1:4893)
-    at PrefabUtil.generatePrefabDataFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/utils.ccc:1:5423)
-    at NodeOperation.createPrefabAssetFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:18701)
-    at PrefabManager.createPrefabAssetFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/index.ccc:1:1017)
-    at PrefabSceneFacade.createPrefab (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/prefab-scene-facade.ccc:1:3286)
-    at SceneFacadeManager.createPrefab (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:24566)
-    at step (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:1:732)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:401
-    at new Promise (<anonymous>)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:338
-    at IpcRenderer.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/webview.ccc:1:1004)
-    at IpcRenderer.emit (node:events:519:28)
-    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
-3-28-2025 17:17:41 - warn: [Scene] Reference "0" of "gameTips" to external scene object "mjNode" can not be saved in prefab asset.Error: [Scene] Reference "0" of "gameTips" to external scene object "mjNode" can not be saved in prefab asset.
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:3207
-    at visitObjTypeReferences (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1563)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:2779
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1195)
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1258)
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1258)
-    at Object.checkAndStripNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:2536)
-    at PrefabUtil.getPrefabForSerialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/utils.ccc:1:4893)
-    at PrefabUtil.generatePrefabDataFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/utils.ccc:1:5423)
-    at NodeOperation.createPrefabAssetFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/node.ccc:1:18701)
-    at PrefabManager.createPrefabAssetFromNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/index.ccc:1:1017)
-    at PrefabSceneFacade.createPrefab (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/prefab-scene-facade.ccc:1:3286)
-    at SceneFacadeManager.createPrefab (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:24566)
-    at step (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:1:732)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:401
-    at new Promise (<anonymous>)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:338
-    at IpcRenderer.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/webview.ccc:1:1004)
-    at IpcRenderer.emit (node:events:519:28)
-    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
-3-28-2025 17:17:52 - warn: [Scene] Reference "gameTipsNode" of "mjNode<mjNode>" to external scene object "gameTips" can not be saved in prefab asset.Error: [Scene] Reference "gameTipsNode" of "mjNode<mjNode>" to external scene object "gameTips" can not be saved in prefab asset.
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:3207
-    at visitObjTypeReferences (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1598)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:2779
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1195)
-    at walkNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:1258)
-    at Object.checkAndStripNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/utils/prefab.ccc:1:2536)
-    at PrefabUtil.getPrefabForSerialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/prefab/utils.ccc:1:4893)
-    at PrefabSceneProxy.serialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scene/proxy/prefab-scene-proxy.ccc:1:4718)
-    at PrefabSceneProxy.save (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scene/proxy/prefab-scene-proxy.ccc:1:5077)
-    at PrefabSceneProxy.checkClose (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scene/proxy/prefab-scene-proxy.ccc:1:2642)
-    at PrefabSceneProxy.open (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scene/proxy/prefab-scene-proxy.ccc:1:802)
-    at PrefabSceneFacade.openScene (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/prefab-scene-facade.ccc:1:1358)
-    at SceneFacadeManager.openScene (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:7178)
-3-28-2025 19:35:44 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: /file:/Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts: Unexpected token (46:4)
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at report (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:25)
+    at reportByWalker (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:127)
+2025-3-29 21:37:41 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: C:Program Files (x86)CocosDashboardile:C:UserszzxDesktopmygameassetsscriptsmjNode.ts: Missing semicolon. (62:29)
 
-  44 |     onBtnClick(button: Button) {
-  45 |         if(button.name == '')
-> 46 |     }
-     |     ^
-  47 |
-  48 |     update(deltaTime: number) {
-  49 |
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/79/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameTips.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20%2Ffile%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameTips.ts%3A%20Unexpected%20token%20(46%3A4)%0A%0A%20%2044%20%7C%20%20%20%20%20onBtnClick(button%3A%20Button)%20%7B%0A%20%2045%20%7C%20%20%20%20%20%20%20%20%20if(button.name%20%3D%3D%20'')%0A%3E%2046%20%7C%20%20%20%20%20%7D%0A%20%20%20%20%20%7C%20%20%20%20%20%5E%0A%20%2047%20%7C%0A%20%2048%20%7C%20%20%20%20%20update(deltaTime%3A%20number)%20%7B%0A%20%2049%20%7C%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: /file:/Users/zzx/Desktop/mygame/assets/scripts/gameTips.ts: Unexpected token (46:4)
+  60 |         this.tips_toushi_label = frame.getChildByName('tips_toushi_label').getComponent(Label);
+  61 |         this.tips_music_label = frame.getChildByName('music_label').getChildByName()
+> 62 |         this.tips_sound_label: Label = null;
+     |                              ^
+  63 |         this.gameContinueBtn = frame.getChildByName('gameContinueBtn');
+  64 |         this.gameNextBtn = frame.getChildByName('gameNextBtn');
+  65 |         this.gameRestBtn = frame.getChildByName('gameRestBtn');
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/d3/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FC%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20C%3A%5CProgram%20Files%20(x86)%5CCocosDashboard%5Cfile%3A%5CC%3A%5CUsers%5Czzx%5CDesktop%5Cmygame%5Cassets%5Cscripts%5CmjNode.ts%3A%20Missing%20semicolon.%20(62%3A29)%0A%0A%20%2060%20%7C%20%20%20%20%20%20%20%20%20this.tips_toushi_label%20%3D%20frame.getChildByName('tips_toushi_label').getComponent(Label)%3B%0A%20%2061%20%7C%20%20%20%20%20%20%20%20%20this.tips_music_label%20%3D%20frame.getChildByName('music_label').getChildByName()%0A%3E%2062%20%7C%20%20%20%20%20%20%20%20%20this.tips_sound_label%3A%20Label%20%3D%20null%3B%0A%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%2063%20%7C%20%20%20%20%20%20%20%20%20this.gameContinueBtn%20%3D%20frame.getChildByName('gameContinueBtn')%3B%0A%20%2064%20%7C%20%20%20%20%20%20%20%20%20this.gameNextBtn%20%3D%20frame.getChildByName('gameNextBtn')%3B%0A%20%2065%20%7C%20%20%20%20%20%20%20%20%20this.gameRestBtn%20%3D%20frame.getChildByName('gameRestBtn')%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: C:Program Files (x86)CocosDashboardile:C:UserszzxDesktopmygameassetsscriptsmjNode.ts: Missing semicolon. (62:29)
 
-  44 |     onBtnClick(button: Button) {
-  45 |         if(button.name == '')
-> 46 |     }
-  49 |
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/79/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameTips.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20%2Ffile%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FgameTips.ts%3A%20Unexpected%20token%20(46%3A4)%0A%0A%20%2044%20%7C%20%20%20%20%20onBtnClick(button%3A%20Button)%20%7B%0A%20%2045%20%7C%20%20%20%20%20%20%20%20%20if(button.name%20%3D%3D%20'')%0A%3E%2046%20%7C%20%20%20%20%20%7D%0A%20%20%20%20%20%7C%20%20%20%20%20%5E%0A%20%2047%20%7C%0A%20%2048%20%7C%20%20%20%20%20update(deltaTime%3A%20number)%20%7B%0A%20%2049%20%7C%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:517:30)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)
-    at Logger._logHandler (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/startup/log.ccc:1:487)
-    at Logger.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:458)
-    at console.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@base/electron-logger/lib/renderer.ccc:1:1414)
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at ScriptManager._handleImportException (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:5408)
-    at Executor.importExceptionHandler [as _importExceptionHandler] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:3604)
-    at Executor._onModuleLoaded (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:401:22)
-    at SystemJS.onload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:99:18)
-    at triggerOnload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:270:10)
-    at doExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:538:7)
-    at postOrderExec (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:508:21)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/static/executor/systemjs-bridge/out/index.js:440:12
-    at file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
-    at Object.execute (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
-    at Executor._importPrerequisiteModules (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:358:13)
-    at Executor.reload (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@editor/lib-programming/src/executor/index.ts:235:13)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1787
-    at GlobalEnv.processQueue (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:2184)
-    at GlobalEnv.record (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scripts.ccc:1:1955)
-3-28-2025 19:35:44 - warn: [Scene] Missing class: 0453dtXKzRMNZtQXJvIpX1lError: [Scene] Missing class: 0453dtXKzRMNZtQXJvIpX1l
-    at console.warn (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at Object.classFinder (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:982)
-    at _Deserializer.classFinder [as _classFinder] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163942:34)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52666:30)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at _Deserializer._deserializeArray (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52648:40)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52626:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52799:36)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer._deserializeAndAssignField (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52787:38)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52388:15)
-    at _Deserializer._deserializeFireClass (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52770:11)
-    at _Deserializer._deserializeInto (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52712:18)
-    at _Deserializer._deserializeTypeTaggedObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52684:18)
-    at _Deserializer._deserializeObject (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52620:29)
-    at _Deserializer.deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52592:42)
-    at deserializeDynamic (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:52442:30)
-    at deserialize (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:53292:13)
-    at deserializeAsset (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:163955:15)
-    at parseImport (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166168:22)
-    at Parser.parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166250:11)
-    at parse (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:165698:20)
-    at Pipeline._flow (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166533:11)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:166543:22)
-3-28-2025 19:35:44 - error: [Scene] Script "0453dtXKzRMNZtQXJvIpX1l" attached to "gameTips" is missing or invalid. Detailed information:
-Node path: "should_hide_in_hierarchy/gameTips"
-Script UUID: "0453db57-2b34-4c35-9b50-5c9bc8a57d65"
-Class ID: "0453dtXKzRMNZtQXJvIpX1l"
-Error: [Scene] Script "0453dtXKzRMNZtQXJvIpX1l" attached to "gameTips" is missing or invalid. Detailed information:
-Node path: "should_hide_in_hierarchy/gameTips"
-Script UUID: "0453db57-2b34-4c35-9b50-5c9bc8a57d65"
-Class ID: "0453dtXKzRMNZtQXJvIpX1l"
+  60 |         this.tips_toushi_label = frame.getChildByName('tips_toushi_label').getComponent(Label);
+  61 |         this.tips_music_label = frame.getChildByName('music_label').getChildByName()
+> 62 |         this.tips_sound_label: Label = null;
+  65 |         this.gameRestBtn = frame.getChildByName('gameRestBtn');
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/d3/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FC%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20C%3A%5CProgram%20Files%20(x86)%5CCocosDashboard%5Cfile%3A%5CC%3A%5CUsers%5Czzx%5CDesktop%5Cmygame%5Cassets%5Cscripts%5CmjNode.ts%3A%20Missing%20semicolon.%20(62%3A29)%0A%0A%20%2060%20%7C%20%20%20%20%20%20%20%20%20this.tips_toushi_label%20%3D%20frame.getChildByName('tips_toushi_label').getComponent(Label)%3B%0A%20%2061%20%7C%20%20%20%20%20%20%20%20%20this.tips_music_label%20%3D%20frame.getChildByName('music_label').getChildByName()%0A%3E%2062%20%7C%20%20%20%20%20%20%20%20%20this.tips_sound_label%3A%20Label%20%3D%20null%3B%0A%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%2063%20%7C%20%20%20%20%20%20%20%20%20this.gameContinueBtn%20%3D%20frame.getChildByName('gameContinueBtn')%3B%0A%20%2064%20%7C%20%20%20%20%20%20%20%20%20this.gameNextBtn%20%3D%20frame.getChildByName('gameNextBtn')%3B%0A%20%2065%20%7C%20%20%20%20%20%20%20%20%20this.gameRestBtn%20%3D%20frame.getChildByName('gameRestBtn')%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+    at Logger._logHandler (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\log.ccc:1:487)
+    at Logger.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:458)
+    at console.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:1414)
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at ScriptManager._handleImportException (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:5408)
+    at Executor.importExceptionHandler [as _importExceptionHandler] (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3604)
+    at Executor._onModuleLoaded (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:401:22)
+    at SystemJS.onload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:99:18)
+    at triggerOnload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:270:10)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:538:7)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+2025-3-29 21:37:41 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at Object.classFinder (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:982)
+    at _Deserializer.classFinder [as _classFinder] (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:117745:34)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52497:30)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52520:20)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+2025-3-29 21:37:41 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at Object.classFinder (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:982)
+    at _Deserializer.classFinder [as _classFinder] (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:117745:34)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52497:30)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52520:20)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+2025-3-29 21:37:41 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
+Node path: "should_hide_in_hierarchy/gameNode/mjNode"
+Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
+Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
+Error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
+Node path: "should_hide_in_hierarchy/gameNode/mjNode"
+Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
+Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
 
-    at console.error (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/@sentry/src/instrument/console.ts:40:20)
-    at report (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:25)
-    at reportByWalker (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/engine/dist/editor-extends/missing-reporter/missing-class-reporter.ccc:7:127)
-3-28-2025 20:07:00 - info: [PreviewInEditor] 预览环境初始化完毕
-3-28-2025 20:07:01 - log: [PreviewInEditor] meshopt wasm decoder initialized
-3-28-2025 20:07:01 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
-3-28-2025 20:07:01 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
-3-28-2025 20:07:01 - log: [PreviewInEditor] [PHYSICS]: using builtin.
-3-28-2025 20:07:01 - log: [PreviewInEditor] Cocos Creator v3.8.5
-3-28-2025 20:07:01 - log: [PreviewInEditor] Using custom pipeline: Builtin
-3-28-2025 20:07:01 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
-3-28-2025 20:07:02 - log: [PreviewInEditor] 初始化gameLauch单列!
-3-28-2025 20:07:02 - log: [PreviewInEditor] 初始化resMgr单列!
-3-28-2025 20:07:02 - log: [PreviewInEditor] Bundle--load 成功:prefabs
-3-28-2025 20:07:02 - log: [PreviewInEditor] Bundle--load 成功:sound
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = sendCard--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = click--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = time--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = gameStart--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = clear--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = gameLost--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = gameWin--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = mjcard--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = gameTips--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = gameStart--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = gameNode--成功
-3-28-2025 20:07:02 - log: [PreviewInEditor] load res  = back--成功
-3-28-2025 20:07:03 - log: [PreviewInEditor] 初始化gameStart单列!
-3-28-2025 20:07:03 - log: [PreviewInEditor] 初始化声音管理模块
-3-28-2025 20:07:03 - log: [PreviewInEditor] 初始化gameTips单列!
-3-28-2025 20:07:19 - log: [PreviewInEditor] 初始化游戏类
-3-28-2025 20:07:19 - error: [PreviewInEditor] Cannot read properties of null (reading 'getChildByName')TypeError: Cannot read properties of null (reading 'getChildByName')
-    at mjNode.onLoad (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/1e/file:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts:52:39)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:64411:132)
-    at OneOffInvoker.eval [as _invoke] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:62331:9)
-    at OneOffInvoker.invoke (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:62445:16)
-    at NodeActivator.activateNode (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:64462:27)
-    at Node._onHierarchyChangedBase (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:68460:46)
-    at Node._onHierarchyChanged (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:68899:16)
-    at Node.setParent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:67616:16)
-    at Node.set parent [as parent] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:67376:16)
-    at gameStart.onBtnClick (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/1a/file:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts:60:9)
-    at EventHandler.emit (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:84731:19)
-    at Function.emitEvents (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:84695:19)
-    at Button._onTouchEnded (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:73414:35)
-    at CallbacksInvoker.emit (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:122814:28)
-    at NodeEventProcessor.dispatchEvent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:65245:33)
-    at Node.dispatchEvent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:68322:32)
-    at NodeEventProcessor._handleTouchEnd (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:65596:16)
-    at NodeEventProcessor._handleEventTouch (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:65547:29)
-    at PointerEventDispatcher.dispatchEventTouch (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:122358:41)
-    at PointerEventDispatcher.dispatchEvent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:122278:25)
-    at Input._emitEvent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:25492:31)
-    at Input._dispatchEventTouch (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:25623:18)
-    at Input._simulateEventTouch (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:25477:16)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:25531:20)
-    at Eventified.emit (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:122816:19)
-    at MouseInputSource.eval [as _handleMouseUp] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:252572:31)
-    at MouseInputSource.dispatchMouseUpEvent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:252462:16)
-    at Input._dispatchMouseUpEvent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:25331:179)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/preview-scene-facade.ccc:1:2918
-    at Operation._emitMouseEvent (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/operation/index.ccc:1:2999)
-    at /Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/ipc.ccc:2:630
-    at IpcRenderer.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/ipc/web/webview.ccc:1:1004)
-    at IpcRenderer.emit (node:events:519:28)
-    at Object.onMessage (node:electron/js2c/renderer_init:2:8837)
-3-28-2025 20:07:19 - log: [PreviewInEditor] 游戏开始--- 1
-3-28-2025 20:07:19 - error: [PreviewInEditor] Cannot set properties of null (setting 'active')TypeError: Cannot set properties of null (setting 'active')
-    at mjNode.startGame (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/1e/file:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts:105:9)
-    at mjNode.start (file:///Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/1e/file:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts:75:14)
-    at eval (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:62499:16)
-    at OneOffInvoker.eval [as _invoke] (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:62331:9)
-    at OneOffInvoker.invoke (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:62445:16)
-    at ComponentScheduler.startPhase (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:62673:29)
-    at Director.tick (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:21551:35)
-    at Game._updateCallback (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:22603:22)
-    at updateCallback (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:88792:20)
-    at sentryWrapped (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/node_modules/src/helpers.ts:100:17)
-3-28-2025 20:07:46 - info: [PreviewInEditor] 预览环境初始化完毕
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at report (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:25)
+    at reportByWalker (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:127)
+2025-3-29 21:37:41 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
+Node path: "gameNode/mjNode"
+Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
+Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
+Error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
+Node path: "gameNode/mjNode"
+Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
+Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
+
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at report (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:25)
+    at reportByWalker (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:127)
+2025-3-29 21:38:00 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: C:Program Files (x86)CocosDashboardile:C:UserszzxDesktopmygameassetsscriptsmjNode.ts: Missing semicolon. (62:29)
+
+  60 |         this.tips_toushi_label = frame.getChildByName('tips_toushi_label').getComponent(Label);
+  61 |         this.tips_music_label = frame.getChildByName('music_label').getChildByName('Button').getChildByName()
+> 62 |         this.tips_sound_label: Label = null;
+     |                              ^
+  63 |         this.gameContinueBtn = frame.getChildByName('gameContinueBtn');
+  64 |         this.gameNextBtn = frame.getChildByName('gameNextBtn');
+  65 |         this.gameRestBtn = frame.getChildByName('gameRestBtn');
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/8f/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FC%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20C%3A%5CProgram%20Files%20(x86)%5CCocosDashboard%5Cfile%3A%5CC%3A%5CUsers%5Czzx%5CDesktop%5Cmygame%5Cassets%5Cscripts%5CmjNode.ts%3A%20Missing%20semicolon.%20(62%3A29)%0A%0A%20%2060%20%7C%20%20%20%20%20%20%20%20%20this.tips_toushi_label%20%3D%20frame.getChildByName('tips_toushi_label').getComponent(Label)%3B%0A%20%2061%20%7C%20%20%20%20%20%20%20%20%20this.tips_music_label%20%3D%20frame.getChildByName('music_label').getChildByName('Button').getChildByName()%0A%3E%2062%20%7C%20%20%20%20%20%20%20%20%20this.tips_sound_label%3A%20Label%20%3D%20null%3B%0A%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%2063%20%7C%20%20%20%20%20%20%20%20%20this.gameContinueBtn%20%3D%20frame.getChildByName('gameContinueBtn')%3B%0A%20%2064%20%7C%20%20%20%20%20%20%20%20%20this.gameNextBtn%20%3D%20frame.getChildByName('gameNextBtn')%3B%0A%20%2065%20%7C%20%20%20%20%20%20%20%20%20this.gameRestBtn%20%3D%20frame.getChildByName('gameRestBtn')%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: C:Program Files (x86)CocosDashboardile:C:UserszzxDesktopmygameassetsscriptsmjNode.ts: Missing semicolon. (62:29)
+
+  60 |         this.tips_toushi_label = frame.getChildByName('tips_toushi_label').getComponent(Label);
+  61 |         this.tips_music_label = frame.getChildByName('music_label').getChildByName('Button').getChildByName()
+> 62 |         this.tips_sound_label: Label = null;
+  65 |         this.gameRestBtn = frame.getChildByName('gameRestBtn');
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/8f/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FC%3A%2FUsers%2Fzzx%2FDesktop%2Fmygame%2Fassets%2Fscripts%2FmjNode.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20C%3A%5CProgram%20Files%20(x86)%5CCocosDashboard%5Cfile%3A%5CC%3A%5CUsers%5Czzx%5CDesktop%5Cmygame%5Cassets%5Cscripts%5CmjNode.ts%3A%20Missing%20semicolon.%20(62%3A29)%0A%0A%20%2060%20%7C%20%20%20%20%20%20%20%20%20this.tips_toushi_label%20%3D%20frame.getChildByName('tips_toushi_label').getComponent(Label)%3B%0A%20%2061%20%7C%20%20%20%20%20%20%20%20%20this.tips_music_label%20%3D%20frame.getChildByName('music_label').getChildByName('Button').getChildByName()%0A%3E%2062%20%7C%20%20%20%20%20%20%20%20%20this.tips_sound_label%3A%20Label%20%3D%20null%3B%0A%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%2063%20%7C%20%20%20%20%20%20%20%20%20this.gameContinueBtn%20%3D%20frame.getChildByName('gameContinueBtn')%3B%0A%20%2064%20%7C%20%20%20%20%20%20%20%20%20this.gameNextBtn%20%3D%20frame.getChildByName('gameNextBtn')%3B%0A%20%2065%20%7C%20%20%20%20%20%20%20%20%20this.gameRestBtn%20%3D%20frame.getChildByName('gameRestBtn')%3B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+    at Logger._logHandler (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\log.ccc:1:487)
+    at Logger.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:458)
+    at console.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:1414)
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at ScriptManager._handleImportException (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:5408)
+    at Executor.importExceptionHandler [as _importExceptionHandler] (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3604)
+    at Executor._onModuleLoaded (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:401:22)
+    at SystemJS.onload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:99:18)
+    at triggerOnload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:270:10)
+    at doExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:538:7)
+    at postOrderExec (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/Users/zzx/Desktop/mygame/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+2025-3-29 21:38:00 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at Object.classFinder (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:982)
+    at _Deserializer.classFinder [as _classFinder] (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:117745:34)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52497:30)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52520:20)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+2025-3-29 21:38:00 - warn: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7Error: [Scene] Missing class: 5e1aas6J3hBqpb9rkSPiEl7
+    at console.warn (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at Object.classFinder (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:982)
+    at _Deserializer.classFinder [as _classFinder] (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:117745:34)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52497:30)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52520:20)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52618:38)
+    at _Deserializer._deserializeArray (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52479:40)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52457:29)
+    at _Deserializer._deserializeAndAssignField (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52630:36)
+    at eval (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52219:15)
+    at _Deserializer._deserializeFireClass (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52601:11)
+    at _Deserializer._deserializeInto (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52543:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52515:18)
+    at _Deserializer._deserializeObject (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:52451:29)
+2025-3-29 21:38:01 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
+Node path: "should_hide_in_hierarchy/gameNode/mjNode"
+Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
+Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
+Error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
+Node path: "should_hide_in_hierarchy/gameNode/mjNode"
+Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
+Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
+
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at report (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:25)
+    at reportByWalker (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:127)
+2025-3-29 21:38:01 - error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
+Node path: "gameNode/mjNode"
+Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
+Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
+Error: [Scene] Script "5e1aas6J3hBqpb9rkSPiEl7" attached to "mjNode" is missing or invalid. Detailed information:
+Node path: "gameNode/mjNode"
+Script UUID: "5e1aab3a-2778-41aa-96fd-ae448f88497b"
+Class ID: "5e1aas6J3hBqpb9rkSPiEl7"
+
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at report (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:25)
+    at reportByWalker (C:\ProgramData\cocos\editors\Creator\3.8.5\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:127)

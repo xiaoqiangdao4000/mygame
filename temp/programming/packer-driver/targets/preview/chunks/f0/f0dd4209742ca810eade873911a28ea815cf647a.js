@@ -1,14 +1,14 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, AudioClip, Prefab, AudioMgr, resMgr, tools, _crd, SOUND, GAMESTATE, GAMETIPS;
-
-  function _reportPossibleCrUseOfAudioMgr(extras) {
-    _reporterNs.report("AudioMgr", "./audioManager", _context.meta, extras);
-  }
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, AudioClip, Prefab, resMgr, AudioMgr, tools, _crd, SOUND, GAMESTATE, GAMETIPS;
 
   function _reportPossibleCrUseOfresMgr(extras) {
     _reporterNs.report("resMgr", "./resMgr", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfAudioMgr(extras) {
+    _reporterNs.report("AudioMgr", "./audioManager", _context.meta, extras);
   }
 
   _export("default", void 0);
@@ -23,9 +23,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       AudioClip = _cc.AudioClip;
       Prefab = _cc.Prefab;
     }, function (_unresolved_2) {
-      AudioMgr = _unresolved_2.AudioMgr;
+      resMgr = _unresolved_2.default;
     }, function (_unresolved_3) {
-      resMgr = _unresolved_3.resMgr;
+      AudioMgr = _unresolved_3.default;
     }],
     execute: function () {
       _crd = true;
@@ -57,7 +57,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         GAMETIPS[GAMETIPS["game_success"] = 0] = "game_success";
         GAMETIPS[GAMETIPS["gmae_fail"] = 1] = "gmae_fail";
         GAMETIPS[GAMETIPS["game_hide"] = 2] = "game_hide";
-        GAMETIPS[GAMETIPS["game_contiune"] = 3] = "game_contiune";
+        GAMETIPS[GAMETIPS["game_seting"] = 3] = "game_seting";
         return GAMETIPS;
       }({}));
 
@@ -207,6 +207,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       //加时30s
       tools.touShi = 3;
       //透视
+      tools.gameMusic = true;
+      tools.gameSound = true;
       // static levelData =
       //     [
       //         //等级，牌数量，时间
@@ -234,7 +236,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         // },
         prefabs: {
           assetType: Prefab,
-          urls: ['gameStart', 'mjcard', 'gameNode']
+          urls: ['gameTips', 'gameStart', 'mjcard', 'gameNode']
         },
         sound: {
           assetType: AudioClip,

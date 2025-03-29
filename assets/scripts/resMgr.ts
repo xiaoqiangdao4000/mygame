@@ -1,4 +1,4 @@
-import { _decorator, AssetManager, assetManager, Component, error, Node } from 'cc';
+import { _decorator, AssetManager, assetManager, Component } from 'cc';
 
 export default class resMgr extends Component {
     static Instance: resMgr = null;

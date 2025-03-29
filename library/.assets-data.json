@@ -580,6 +580,7 @@
         "de372a8d-e19e-4c4f-af8d-3a5a5bc629ef@f9941"
       ],
       "dependScripts": [
+        "6bb247fe-206c-4a76-bcc2-af95a22fc132",
         "36d96c96-16af-4164-914c-59c8c45154d4"
       ]
     },
@@ -1542,13 +1543,14 @@
         "450189f4-8ffb-45cd-84e1-c7f47fbdac01",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@2146e",
         "dd35ed1f-7951-4953-a3e4-8397cc408b78@54958",
+        "d3db085c-01c1-45d9-8005-9cf19a4838b9@f9941",
+        "dd35ed1f-7951-4953-a3e4-8397cc408b78@5700d",
+        "b9d1c7c3-ce6e-4549-b027-5ea804a4eb50@f9941",
         "5db5647f-6e1e-4450-8b0d-30aaad6a7aa9@f9941",
-        "7f977512-2cc4-446a-bc33-2ce5db6449b4",
         "dd2add37-286b-4fcc-ae83-9a119ef1223e@f9941"
       ],
       "dependScripts": [
-        "5e1aab3a-2778-41aa-96fd-ae448f88497b",
-        "CC3eba29-7abb-723a-f7ab-ae275e2277e8"
+        "5e1aab3a-2778-41aa-96fd-ae448f88497b"
       ]
     },
     "versionCode": 1
@@ -1851,17 +1853,7 @@
   },
   "7f977512-2cc4-446a-bc33-2ce5db6449b4": {
     "url": "db://assets/gameBundle/prefabs/gameTips.prefab",
-    "value": {
-      "depends": [
-        "d3db085c-01c1-45d9-8005-9cf19a4838b9@f9941",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78@4425c",
-        "dd35ed1f-7951-4953-a3e4-8397cc408b78",
-        "b9d1c7c3-ce6e-4549-b027-5ea804a4eb50@f9941"
-      ],
-      "dependScripts": [
-        "0453db57-2b34-4c35-9b50-5c9bc8a57d65"
-      ]
-    },
+    "value": {},
     "versionCode": 1
   },
   "0453db57-2b34-4c35-9b50-5c9bc8a57d65": {

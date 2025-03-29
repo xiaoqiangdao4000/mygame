@@ -26,8 +26,8 @@ export class gameLoadingNode extends Component {
 
     //先加载资源
     startLoad() {
-        this.loadingSprite = this.node.getChildByName('gameLoading').getChildByName('loading1').getComponent(Sprite);
-        this.loadingLabel = this.node.getChildByName('gameLoading').getChildByName('loadingStr').getComponent(Label);
+        this.loadingSprite = this.node.getChildByName('loading1').getComponent(Sprite);
+        this.loadingLabel = this.node.getChildByName('loadingStr').getComponent(Label);
         this.loadingSprite.fillRange = 0;
         this.loadingLabel.string = '资源加载:开始加载';
 
@@ -57,8 +57,8 @@ export class gameLoadingNode extends Component {
 
         //加载开始界面
         let prefab = resMgr.Instance.getAsset('prefabs', 'gameStart') as Prefab;
-        let gameStart = instantiate(prefab);
-        gameStart.parent = this.node;
+        let node = instantiate(prefab);
+        node.parent = this.node.parent;
 
     }
 
