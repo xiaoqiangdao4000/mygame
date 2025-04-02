@@ -35,5 +35,22 @@
         }
       }
     }
+  },
+  "splash-setting": {
+    "logo": {
+      "type": "custom",
+      "image": "project://settings/logo.png"
+    },
+    "background": {
+      "color": {
+        "x": 1,
+        "y": 1,
+        "z": 1,
+        "w": 1
+      },
+      "type": "default",
+      "image": "project://settings/slogan.png"
+    },
+    "displayRatio": 2
   }
 }

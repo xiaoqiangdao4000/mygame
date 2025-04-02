@@ -64,8 +64,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
 
         startLoad() {
-          this.loadingSprite = this.node.getChildByName('gameLoading').getChildByName('loading1').getComponent(Sprite);
-          this.loadingLabel = this.node.getChildByName('gameLoading').getChildByName('loadingStr').getComponent(Label);
+          this.loadingSprite = this.node.getChildByName('loading1').getComponent(Sprite);
+          this.loadingLabel = this.node.getChildByName('loadingStr').getComponent(Label);
           this.loadingSprite.fillRange = 0;
           this.loadingLabel.string = '资源加载:开始加载'; //加载资源
 
@@ -95,8 +95,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           let prefab = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
             error: Error()
           }), resMgr) : resMgr).Instance.getAsset('prefabs', 'gameStart');
-          let gameStart = instantiate(prefab);
-          gameStart.parent = this.node;
+          let node = instantiate(prefab);
+          node.parent = this.node.parent;
         } //隐藏资源加载界面
 
 

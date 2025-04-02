@@ -18,7 +18,7 @@ System.register(["cc"], function (_export, _context) {
 
       _cclegacy._RF.push({}, "0b7cdPI/LJObbojwMRdBIRd", "resMgr", undefined);
 
-      __checkObsolete__(['_decorator', 'AssetManager', 'assetManager', 'Component', 'error', 'Node']);
+      __checkObsolete__(['_decorator', 'AssetManager', 'assetManager', 'Component']);
 
       _export("default", resMgr = class resMgr extends Component {
         constructor(...args) {
