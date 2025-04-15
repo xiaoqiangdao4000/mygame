@@ -1,4 +1,4 @@
-import { _decorator, Button, color, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3 } from 'cc';
+import { _decorator, Button, color, Component, Game, game, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 import tools, { GAMESTATE, GAMETIPS, SOUND } from './tools'
 import { gameStart } from './gameStart';
@@ -69,6 +69,16 @@ export class mjNode extends Component {
         this.node.on('clickmj', this.onClickMj, this);
         tools.getData();
         this.updataBtn();
+
+        var self = this;
+        game.on(Game.EVENT_HIDE, function () {
+            self.gameShowTips(GAMETIPS.game_seting);
+            console.log('游戏进入后台')
+        });
+
+        game.on(Game.EVENT_SHOW, function () {
+            console.log('游戏进入前台')
+        });
     }
 
     start() {
@@ -137,6 +147,8 @@ export class mjNode extends Component {
         this.desktopItems = [];
         this.tabItem = [];
     }
+
+
 
     //按钮点击事件
     onBtnClick(event: Event, customEventData: string) {

@@ -236,7 +236,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         // },
         prefabs: {
           assetType: Prefab,
-          urls: ['gameTips', 'gameStart', 'mjcard', 'gameNode']
+          urls: ['gameStart', 'mjcard', 'gameNode']
         },
         sound: {
           assetType: AudioClip,

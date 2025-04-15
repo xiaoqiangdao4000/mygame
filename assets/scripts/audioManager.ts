@@ -189,6 +189,8 @@ export default class AudioMgr {
     resumeBgm() {
         this._audioSource.play();
     }
+
+    
 }
 
 

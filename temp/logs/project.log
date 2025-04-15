@@ -32,3 +32,8 @@
     at BuildTask.getPreviewSettings (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/builder/dist/worker/builder/index.ccc:1:9311)
     at getPreviewSettings (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/builder/dist/worker/index.ccc:1:6165)
     at Ipc.<anonymous> (/Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/app.asar/builtin/builder/dist/worker/msg-util.ccc:1:210)
+4-15-2025 14:24:39 - info: [Window] Download the Vue Devtools extension for a better development experience:
+https://github.com/vuejs/vue-devtools
+4-15-2025 14:24:39 - info: [Window] You are running Vue in development mode.
+Make sure to turn on production mode when deploying for production.
+See more tips at https://vuejs.org/guide/deployment.html

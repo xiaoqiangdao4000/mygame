@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, resMgr, gameLoadingNode, _dec, _class, _class2, _crd, ccclass, property, gameLauch;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, resMgr, _cc, gameLoadingNode, _dec, _class, _class2, _crd, cc, ccclass, property, gameLauch;
 
   function _reportPossibleCrUseOfresMgr(extras) {
     _reporterNs.report("resMgr", "./resMgr", _context.meta, extras);
@@ -14,12 +14,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
-    }, function (_cc) {
-      _cclegacy = _cc.cclegacy;
-      __checkObsolete__ = _cc.__checkObsolete__;
-      __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
-      _decorator = _cc._decorator;
-      Component = _cc.Component;
+    }, function (_cc2) {
+      _cclegacy = _cc2.cclegacy;
+      __checkObsolete__ = _cc2.__checkObsolete__;
+      __checkObsoleteInNamespace__ = _cc2.__checkObsoleteInNamespace__;
+      _decorator = _cc2._decorator;
+      Component = _cc2.Component;
+      _cc = _cc2;
     }, function (_unresolved_2) {
       resMgr = _unresolved_2.default;
     }, function (_unresolved_3) {
@@ -30,8 +31,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
       _cclegacy._RF.push({}, "36d96yWFq9BZJFMWcjEUVTU", "gameLanch", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Label', 'Prefab', 'Sprite', 'tween']);
+      __checkObsolete__(['_decorator', 'Component', 'game', 'instantiate', 'Label', 'Prefab', 'Sprite', 'tween']);
 
+      cc = __checkObsoleteInNamespace__(_cc);
       ({
         ccclass,
         property
@@ -59,7 +61,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
           this.node.addComponent(_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
             error: Error()
-          }), resMgr) : resMgr);
+          }), resMgr) : resMgr); // game.on(cc.Game.EVENT_HIDE, function () {
+          //     console.log('游戏进入后台')
+          // });
+          // game.on(cc.Game.EVENT_SHOW, function () {
+          //     console.log('游戏进入前台')
+          // });
         }
 
         start() {

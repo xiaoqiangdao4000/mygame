@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Button, color, Component, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3, tools, GAMESTATE, GAMETIPS, SOUND, gameStart, AudioMgr, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _crd, ccclass, property, mjNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Button, color, Component, Game, game, instantiate, Intersection2D, Label, Node, Prefab, ProgressBar, Rect, Sprite, tween, Vec3, tools, GAMESTATE, GAMETIPS, SOUND, gameStart, AudioMgr, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _crd, ccclass, property, mjNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -48,6 +48,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       Button = _cc.Button;
       color = _cc.color;
       Component = _cc.Component;
+      Game = _cc.Game;
+      game = _cc.game;
       instantiate = _cc.instantiate;
       Intersection2D = _cc.Intersection2D;
       Label = _cc.Label;
@@ -73,7 +75,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
       _cclegacy._RF.push({}, "5e1aas6J3hBqpb9rkSPiEl7", "mjNode", undefined);
 
-      __checkObsolete__(['_decorator', 'Button', 'color', 'Component', 'instantiate', 'Intersection2D', 'Label', 'Node', 'Prefab', 'ProgressBar', 'Rect', 'Sprite', 'tween', 'Vec3']);
+      __checkObsolete__(['_decorator', 'Button', 'color', 'Component', 'Game', 'game', 'instantiate', 'Intersection2D', 'Label', 'Node', 'Prefab', 'ProgressBar', 'Rect', 'Sprite', 'tween', 'Vec3']);
 
       ({
         ccclass,
@@ -149,6 +151,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), tools) : tools).getData();
           this.updataBtn();
+          var self = this;
+          game.on(Game.EVENT_HIDE, function () {
+            self.gameShowTips((_crd && GAMETIPS === void 0 ? (_reportPossibleCrUseOfGAMETIPS({
+              error: Error()
+            }), GAMETIPS) : GAMETIPS).game_seting);
+            console.log('游戏进入后台');
+          });
+          game.on(Game.EVENT_SHOW, function () {
+            console.log('游戏进入前台');
+          });
         }
 
         start() {
