@@ -16,7 +16,7 @@
   },
   "compileType": "game",
   "libVersion": "2.25.3",
-  "appid": "wx6ac3f5090a6b99c5",
+  "appid": "wx494cae4c1ff3e79b",
   "projectname": "myGameMj",
   "condition": {},
   "packOptions": {
@@ -26,6 +26,5 @@
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  },
-  "isGameTourist": true
+  }
 }

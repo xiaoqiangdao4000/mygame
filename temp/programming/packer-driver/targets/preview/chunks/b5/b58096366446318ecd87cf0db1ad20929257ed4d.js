@@ -61,6 +61,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           //游戏Node
           this.gamePrefab = void 0;
           this.gameNode = null;
+          //openContextNode
+          this.openContextNode = null;
         }
 
         onLoad() {
@@ -79,6 +81,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
             error: Error()
           }), SOUND) : SOUND).back_sound);
+          this.openContextNode = this.node.getChildByName('openContext');
+          this.openContextNode.active = false;
           this.gamePrefab = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
             error: Error()
           }), resMgr) : resMgr).Instance.getAsset('prefabs', 'gameNode');
@@ -107,10 +111,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             }), tools) : tools).saveLevel();
           }
 
-          this.gameNode = instantiate(this.gamePrefab);
-          this.gameNode.parent = this.node.parent;
-          this.gameNode.active = true;
-          this.hide();
+          if (data == "startGame") {
+            this.gameNode = instantiate(this.gamePrefab);
+            this.gameNode.parent = this.node.parent;
+            this.gameNode.active = true;
+            this.hide();
+          } else if (data == "rankBtn") {
+            this.openContextNode.active = true;
+          }
         }
 
         hide() {

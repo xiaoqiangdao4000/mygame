@@ -16,14 +16,14 @@
   },
   "BuildTaskManager": {
     "taskMap": {
-      "1743091371709": {
+      "1750494003091": {
         "type": "build",
-        "id": "1743091371709",
+        "id": "1750494003091",
         "progress": 1,
         "state": "success",
         "stage": "build",
-        "message": "2025-3-29 22:28:09 build success in 17 s!",
-        "detailMessage": "// ---- build task wechatgame：onAfterBuild ----\r",
+        "message": "2025-6-24 20:37:37 build success in 22 s!",
+        "detailMessage": "// ---- build task cocos-service：onAfterBuild ----\r",
         "options": {
           "name": "myGameMj",
           "server": "",
@@ -67,7 +67,7 @@
           "packAutoAtlas": true,
           "startScene": "df672520-9755-4d63-978e-4a7ae276a322",
           "outputName": "wechatgame",
-          "taskName": "wechatgame",
+          "taskName": "wechatgame-001",
           "scenes": [
             {
               "url": "db://assets/scene/main.scene",
@@ -77,9 +77,9 @@
           "wasmCompressionMode": false,
           "packages": {},
           "__version__": "1.3.9",
-          "logDest": "project://temp/builder/log/wechatgame2025-3-27 23-02.log"
+          "logDest": "project://temp/builder/log/wechatgame2025-6-21 15-20.log"
         },
-        "time": "2025-3-29 22:27:51",
+        "time": "2025-6-24 20:37:15",
         "dirty": false
       }
     }

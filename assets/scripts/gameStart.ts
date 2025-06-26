@@ -17,6 +17,9 @@ export class gameStart extends Component {
     gamePrefab: Prefab;
     gameNode: Node = null;
 
+    //openContextNode
+    openContextNode: Node = null;
+
     onLoad() {
         if (gameStart.Instance === null) {
             gameStart.Instance = this;
@@ -30,6 +33,8 @@ export class gameStart extends Component {
 
     start(): void {
         tools.playSound(SOUND.back_sound);
+        this.openContextNode = this.node.getChildByName('openContext');
+        this.openContextNode.active = false;
         this.gamePrefab = resMgr.Instance.getAsset('prefabs', 'gameNode') as Prefab;
         let level = tools.getLevel();
         this.setLevelLabel(level);
@@ -47,10 +52,17 @@ export class gameStart extends Component {
             tools.level = 1;
             tools.saveLevel();
         }
-        this.gameNode = instantiate(this.gamePrefab);
-        this.gameNode.parent = this.node.parent;
-        this.gameNode.active = true;
-        this.hide();
+
+        if (data == "startGame") {
+            this.gameNode = instantiate(this.gamePrefab);
+            this.gameNode.parent = this.node.parent;
+            this.gameNode.active = true;
+            this.hide();
+        }
+        else if (data == "rankBtn") {
+            this.openContextNode.active = true;
+        }
+
     }
 
     hide() {
