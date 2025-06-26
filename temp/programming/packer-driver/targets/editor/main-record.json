@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 16249.489,
+      "mTimestamp": 7758.976473,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -724,11 +724,11 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 290327775.8709,
+      "mTimestamp": 3525605.854653,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
-          "value": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts",
+          "value": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts",
           "resolved": "__unresolved_0",
           "loc": {
             "start": {
@@ -737,203 +737,203 @@
             },
             "end": {
               "line": 5,
-              "column": 174
+              "column": 205
             }
           }
         },
         {
-          "value": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts",
+          "value": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts",
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
               "line": 5,
-              "column": 190
+              "column": 221
             },
             "end": {
               "line": 5,
-              "column": 334
+              "column": 396
             }
           }
         },
         {
-          "value": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts",
+          "value": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts",
           "resolved": "__unresolved_2",
           "loc": {
             "start": {
               "line": 5,
-              "column": 350
+              "column": 412
             },
             "end": {
               "line": 5,
-              "column": 498
+              "column": 591
             }
           }
         },
         {
-          "value": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts",
+          "value": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts",
           "resolved": "__unresolved_3",
           "loc": {
             "start": {
               "line": 5,
-              "column": 514
+              "column": 607
             },
             "end": {
               "line": 5,
-              "column": 659
+              "column": 783
             }
           }
         },
         {
-          "value": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts",
+          "value": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts",
           "resolved": "__unresolved_4",
           "loc": {
             "start": {
               "line": 5,
-              "column": 675
+              "column": 799
             },
             "end": {
               "line": 5,
-              "column": 814
+              "column": 969
             }
           }
         },
         {
-          "value": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts",
+          "value": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts",
           "resolved": "__unresolved_5",
           "loc": {
             "start": {
               "line": 5,
-              "column": 830
+              "column": 985
             },
             "end": {
               "line": 5,
-              "column": 962
+              "column": 1148
             }
           }
         },
         {
-          "value": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/OpenContext.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/OpenContext.ts",
           "resolved": "__unresolved_6",
           "loc": {
             "start": {
               "line": 5,
-              "column": 978
+              "column": 1164
             },
             "end": {
               "line": 5,
-              "column": 1045
+              "column": 1228
             }
           }
         },
         {
-          "value": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts",
           "resolved": "__unresolved_7",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1061
+              "column": 1244
             },
             "end": {
               "line": 5,
-              "column": 1129
+              "column": 1309
             }
           }
         },
         {
-          "value": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameLanch.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLanch.ts",
           "resolved": "__unresolved_8",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1145
+              "column": 1325
             },
             "end": {
               "line": 5,
-              "column": 1210
+              "column": 1387
             }
           }
         },
         {
-          "value": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts",
           "resolved": "__unresolved_9",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1226
+              "column": 1403
             },
             "end": {
               "line": 5,
-              "column": 1297
+              "column": 1471
             }
           }
         },
         {
-          "value": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts",
           "resolved": "__unresolved_10",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1313
+              "column": 1487
             },
             "end": {
               "line": 5,
-              "column": 1378
+              "column": 1549
             }
           }
         },
         {
-          "value": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts",
           "resolved": "__unresolved_11",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1394
+              "column": 1565
             },
             "end": {
               "line": 5,
-              "column": 1456
+              "column": 1624
             }
           }
         },
         {
-          "value": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts",
           "resolved": "__unresolved_12",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1472
+              "column": 1640
             },
             "end": {
               "line": 5,
-              "column": 1534
+              "column": 1699
             }
           }
         },
         {
-          "value": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts",
           "resolved": "__unresolved_13",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1550
+              "column": 1715
             },
             "end": {
               "line": 5,
-              "column": 1612
+              "column": 1774
             }
           }
         },
         {
-          "value": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts",
+          "value": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts",
           "resolved": "__unresolved_14",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1628
+              "column": 1790
             },
             "end": {
               "line": 5,
-              "column": 1689
+              "column": 1848
             }
           }
         }
@@ -943,105 +943,105 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts"
+            "url": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts"
+            "url": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts"
+            "url": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts"
+            "url": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts"
+            "url": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/ProgramData/cocos/editors/Creator/3.8.5/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts"
+            "url": "file:///Applications/CocosCreator/Creator/Creator/3.8.5/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/OpenContext.ts"
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/OpenContext.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts"
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameLanch.ts"
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLanch.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts"
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts"
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts"
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts"
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts"
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts"
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts"
           },
           "messages": []
         }
@@ -1610,7 +1610,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1750490602765,
+      "mTimestamp": 1750940913544,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -2788,7 +2788,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/audioManager.ts": {
       "mTimestamp": {
-        "mtime": 1744373752344.3394,
+        "mtime": 1750940857343.3784,
         "uuid": "298c64db-251e-4f24-a1e7-b98e9c863880"
       },
       "chunkId": "dfb43eaf57a9eb781920893bfd9a9484b3c92c02",
@@ -2840,7 +2840,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/gameStart.ts": {
       "mTimestamp": {
-        "mtime": 1743405039225.5098,
+        "mtime": 1750944255474.5823,
         "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
       },
       "chunkId": "1a743102ec6f0466d7ce963c97d80152d07f58da",
@@ -2860,11 +2860,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 72
+              "column": 80
             },
             "end": {
               "line": 1,
-              "column": 76
+              "column": 84
             }
           }
         },
@@ -2950,7 +2950,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/mjNode.ts": {
       "mTimestamp": {
-        "mtime": 1744614275301.58,
+        "mtime": 1750940857346.038,
         "uuid": "5e1aab3a-2778-41aa-96fd-ae448f88497b"
       },
       "chunkId": "1e3b7946781e8cadf1879c0857073b236b3508b9",
@@ -3076,7 +3076,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/mjcard.ts": {
       "mTimestamp": {
-        "mtime": 1742972006302.1755,
+        "mtime": 1750940857346.806,
         "uuid": "fc62eaf0-74ea-47bc-b509-e3a487ff4779"
       },
       "chunkId": "d9a5e3f9516b8c6eeae843734f33fa214af1fc8b",
@@ -3212,7 +3212,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts": {
       "mTimestamp": {
-        "mtime": 1744614665536.5364,
+        "mtime": 1750940857348.2444,
         "uuid": "8a205a03-5cf1-4044-884a-318513e32e4f"
       },
       "chunkId": "081daf1f78749add18c62059d1c7e3a76fbdb7e8",
@@ -3893,7 +3893,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLanch.ts": {
       "mTimestamp": {
-        "mtime": 1744614076006.1274,
+        "mtime": 1750940857344.1204,
         "uuid": "36d96c96-16af-4164-914c-59c8c45154d4"
       },
       "chunkId": "d04e7104cf078a255943a5b753edd199ceddf9a7",
@@ -4008,7 +4008,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/resMgr.ts": {
       "mTimestamp": {
-        "mtime": 1743405039227.2732,
+        "mtime": 1750940857347.369,
         "uuid": "0b7cd3c8-fcb2-4e6d-ba23-c0c45d04845d"
       },
       "chunkId": "d34ec8940242d5fb599e252cb709025d8fe9c03e",
@@ -4383,7 +4383,7 @@
     },
     "file:///Users/zzx/Desktop/mygame/assets/scripts/gameLoadingNode.ts": {
       "mTimestamp": {
-        "mtime": 1743405039224.6992,
+        "mtime": 1750940857344.6658,
         "uuid": "6bb247fe-206c-4a76-bcc2-af95a22fc132"
       },
       "chunkId": "c5d64b535ee30f09515c3c55e19403ad48dc2940",
@@ -4742,6 +4742,110 @@
           "resolved": {
             "type": "module",
             "url": "file:///C:/Users/zzx/Desktop/mygame/assets/scripts/tools.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/zzx/Desktop/mygame/assets/scripts/OpenContext.ts": {
+      "mTimestamp": {
+        "mtime": 1750944436303.219,
+        "uuid": "2d8b1f7a-1f24-4ac5-a538-41ce7089ee70"
+      },
+      "chunkId": "e8f7bccadae1dbd3f39eec5e734f83c930f6f0ae",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 49
+            },
+            "end": {
+              "line": 1,
+              "column": 53
+            }
+          }
+        },
+        {
+          "value": "cc/env",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 23
+            },
+            "end": {
+              "line": 2,
+              "column": 31
+            }
+          }
+        },
+        {
+          "value": "./tools",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 18
+            },
+            "end": {
+              "line": 3,
+              "column": 27
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "external",
+            "specifierOrURL": "cc/env"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/zzx/Desktop/mygame/assets/scripts/tools.ts"
           },
           "messages": []
         }

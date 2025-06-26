@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Label, resMgr, tools, SOUND, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _class3, _crd, ccclass, property, gameStart;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Label, Node, resMgr, tools, SOUND, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _class3, _crd, ccclass, property, gameStart;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -32,6 +32,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       Component = _cc.Component;
       instantiate = _cc.instantiate;
       Label = _cc.Label;
+      Node = _cc.Node;
     }, function (_unresolved_2) {
       resMgr = _unresolved_2.default;
     }, function (_unresolved_3) {
@@ -43,14 +44,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
       _cclegacy._RF.push({}, "88827lxtv5D9ZqgDdOG+R/q", "gameStart", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Label', 'Node', 'Prefab']);
+      __checkObsolete__(['_decorator', 'Button', 'Component', 'instantiate', 'Label', 'Node', 'Prefab']);
 
       ({
         ccclass,
         property
       } = _decorator);
 
-      _export("gameStart", gameStart = (_dec = ccclass('gameStart'), _dec2 = property(Label), _dec3 = property(Label), _dec(_class = (_class2 = (_class3 = class gameStart extends Component {
+      _export("gameStart", gameStart = (_dec = ccclass('gameStart'), _dec2 = property(Label), _dec3 = property(Label), _dec4 = property(Node), _dec5 = property(Node), _dec(_class = (_class2 = (_class3 = class gameStart extends Component {
         constructor() {
           super(...arguments);
 
@@ -61,6 +62,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           //游戏Node
           this.gamePrefab = void 0;
           this.gameNode = null;
+
+          //开始界面
+          _initializerDefineProperty(this, "main_node", _descriptor3, this);
+
+          //排行榜界面
+          _initializerDefineProperty(this, "rule_node", _descriptor4, this);
+
+          this.openRankNode = false;
         }
 
         onLoad() {
@@ -107,10 +116,36 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             }), tools) : tools).saveLevel();
           }
 
-          this.gameNode = instantiate(this.gamePrefab);
-          this.gameNode.parent = this.node.parent;
-          this.gameNode.active = true;
-          this.hide();
+          if (data == "startGame") {
+            this.gameNode = instantiate(this.gamePrefab);
+            this.gameNode.parent = this.node.parent;
+            this.gameNode.active = true;
+            this.hide();
+          } else if (data == "rankBtn") {
+            //显示排行榜
+            if (this.openRankNode == false) {
+              (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                error: Error()
+              }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+                error: Error()
+              }), SOUND) : SOUND).click_sound);
+              this.openRankNode = true;
+              this.main_node.active = false;
+              this.rule_node.active = true;
+              this.node.getChildByName('rankBtn').getChildByName('Label').getComponent(Label).string = '关闭排行榜';
+            } else //关闭排行榜
+              {
+                (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
+                  error: Error()
+                }), tools) : tools).playSound((_crd && SOUND === void 0 ? (_reportPossibleCrUseOfSOUND({
+                  error: Error()
+                }), SOUND) : SOUND).click_sound);
+                this.openRankNode = false;
+                this.main_node.active = true;
+                this.rule_node.active = false;
+                this.node.getChildByName('rankBtn').getChildByName('Label').getComponent(Label).string = '显示排行榜';
+              }
+          }
         }
 
         hide() {
@@ -129,6 +164,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           return null;
         }
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "btnLabel", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "main_node", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "rule_node", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,

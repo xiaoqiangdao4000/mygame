@@ -1,4 +1,4 @@
-import { _decorator, Component, instantiate, Label, Node, Prefab } from 'cc';
+import { _decorator, Button, Component, instantiate, Label, Node, Prefab } from 'cc';
 import resMgr from './resMgr';
 import tools, { SOUND } from './tools';
 const { ccclass, property } = _decorator;
@@ -17,8 +17,14 @@ export class gameStart extends Component {
     gamePrefab: Prefab;
     gameNode: Node = null;
 
-    //openContextNode
-    openContextNode: Node = null;
+    //开始界面
+    @property(Node)
+    main_node: Node = null;
+
+    //排行榜界面
+    @property(Node)
+    rule_node: Node = null;
+    openRankNode = false;
 
     onLoad() {
         if (gameStart.Instance === null) {
@@ -33,8 +39,6 @@ export class gameStart extends Component {
 
     start(): void {
         tools.playSound(SOUND.back_sound);
-        this.openContextNode = this.node.getChildByName('openContext');
-        this.openContextNode.active = false;
         this.gamePrefab = resMgr.Instance.getAsset('prefabs', 'gameNode') as Prefab;
         let level = tools.getLevel();
         this.setLevelLabel(level);
@@ -60,7 +64,22 @@ export class gameStart extends Component {
             this.hide();
         }
         else if (data == "rankBtn") {
-            this.openContextNode.active = true;
+            //显示排行榜
+            if (this.openRankNode == false) {
+                tools.playSound(SOUND.click_sound);
+                this.openRankNode = true;
+                this.main_node.active = false;
+                this.rule_node.active = true;
+                this.node.getChildByName('rankBtn').getChildByName('Label').getComponent(Label).string = '关闭排行榜';
+            }
+            else //关闭排行榜
+            {
+                tools.playSound(SOUND.click_sound);
+                this.openRankNode = false;
+                this.main_node.active = true;
+                this.rule_node.active = false;
+                this.node.getChildByName('rankBtn').getChildByName('Label').getComponent(Label).string = '显示排行榜';
+            }
         }
 
     }

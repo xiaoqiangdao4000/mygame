@@ -28,7 +28,7 @@ export class OpenContext extends Component {
 
     protected onEnable(): void {
         this.setUserLevel();
-
+        console.log('上报请求排行榜数据.....');
     }
 
     setUserLevel() {
@@ -37,7 +37,6 @@ export class OpenContext extends Component {
             var openContext = wx.getOpenDataContext(); // 调用微信接口获取子域句柄，使用时需要检查
             let testLevel = tools.getLevel(); // 测试数据
             //  this._openContext.postMessage({ type: 'engine', event: 'level' });
-
 
             window['wx'].setUserCloudStorage({
                 KVDataList: [{ key: 'level', value: String(testLevel) }],
@@ -57,8 +56,6 @@ export class OpenContext extends Component {
                 }
             });
         }
-
-
     }
 
     //开始按钮
