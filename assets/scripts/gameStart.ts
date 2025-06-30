@@ -90,6 +90,10 @@ export class gameStart extends Component {
 
     show() {
         this.node.active = true;
+        this.openRankNode = false;
+        this.main_node.active = true;
+        this.rule_node.active = false;
+        this.node.getChildByName('rankBtn').getChildByName('Label').getComponent(Label).string = '显示排行榜';
     }
 
 }

@@ -163,7 +163,7 @@
       "uuid": "e4afe4e9-50ea-4716-930d-8fe09e6fc7ac"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts": {
-      "time": 1750491875557.0686,
+      "time": 1750945354348.0376,
       "uuid": "e3d3438c-fb7b-4889-9edc-93a64d25460c"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\audioManager.ts": {
@@ -171,7 +171,7 @@
       "uuid": "298c64db-251e-4f24-a1e7-b98e9c863880"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\gameStart.ts": {
-      "time": 1750690668193.9424,
+      "time": 1750947501578.324,
       "uuid": "88827971-b6fe-43f5-9aa0-0dd386f91fea"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\mjcard.ts": {
@@ -511,7 +511,7 @@
       "uuid": "2b010b11-d45f-4430-b075-964eec1a239e"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs": {
-      "time": 1749968068790.2805,
+      "time": 1750945354297.9133,
       "uuid": "12e5d28d-7d63-4f4b-b336-1d00903b4cf1"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\sound": {
@@ -573,7 +573,7 @@
       "uuid": "de372a8d-e19e-4c4f-af8d-3a5a5bc629ef"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scene\\main.scene": {
-      "time": 1750693716682.1099,
+      "time": 1750947540262.6416,
       "uuid": "df672520-9755-4d63-978e-4a7ae276a322"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\atlas\\mj_card.plist": {
@@ -589,7 +589,7 @@
       "uuid": "dd2add37-286b-4fcc-ae83-9a119ef1223e"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\gameStart.prefab": {
-      "time": 1750939343425.7776,
+      "time": 1750947536510.862,
       "uuid": "823197b1-3bd7-451b-99ff-f6c1debdc910"
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\gameBundle\\prefabs\\mjcard.prefab": {
@@ -762,7 +762,7 @@
       "time": 1750491875568.0127
     },
     "C:\\Users\\zzx\\Desktop\\mygame\\assets\\scripts\\OpenContext.ts": {
-      "time": 1750774835869.1267,
+      "time": 1750945354331.181,
       "uuid": "2d8b1f7a-1f24-4ac5-a538-41ce7089ee70"
     },
     "/Users/zzx/Desktop/mygame/assets/scripts/OpenContext.ts": {

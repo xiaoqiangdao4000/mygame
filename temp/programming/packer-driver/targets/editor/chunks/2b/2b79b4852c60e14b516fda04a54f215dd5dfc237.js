@@ -51,6 +51,7 @@ System.register(["__unresolved_0", "cc", "cc/env", "__unresolved_1"], function (
 
         onEnable() {
           this.setUserLevel();
+          console.log('上报请求排行榜数据.....');
         }
 
         setUserLevel() {
