@@ -35,6 +35,7 @@ export class mjNode extends Component {
     tips_sound_label: Label = null;
     tips_music_node: Node = null;
     tips_sound_node: Node = null;
+    tips_author_node: Node = null;
     gameContinueBtn: Node = null;
     gameRestBtn: Node = null;
     gameNextBtn: Node = null;
@@ -63,6 +64,7 @@ export class mjNode extends Component {
         this.tips_music_label = this.tips_music_node.getChildByName('Button').getChildByName('Label').getComponent(Label);
         this.tips_sound_node = frame.getChildByName('sound_label');
         this.tips_sound_label = this.tips_sound_node.getChildByName('Button').getChildByName('Label').getComponent(Label);
+        this.tips_author_node = frame.getChildByName('author_label');
         this.gameContinueBtn = frame.getChildByName('gameContinueBtn');
         this.gameNextBtn = frame.getChildByName('gameNextBtn');
         this.gameRestBtn = frame.getChildByName('gameRestBtn');
@@ -598,6 +600,7 @@ export class mjNode extends Component {
             this.tips_title_label.string = '菜  单';
             this.tips_music_node.active = true;
             this.tips_sound_node.active = true;
+            this.tips_author_node.active = true;
             this.gameContinueBtn.active = true;
             this.gameRestBtn.active = false;
             this.gameNextBtn.active = false;
@@ -622,6 +625,7 @@ export class mjNode extends Component {
             this.tips_toushi_label.node.active = true;
             this.tips_music_node.active = false;
             this.tips_sound_node.active = false;
+            this.tips_author_node.active = false;
             tools.saveLevel();
             tools.savaData();
             this.updataBtn();
@@ -659,6 +663,7 @@ export class mjNode extends Component {
             this.tips_toushi_label.node.active = true;
             this.tips_music_node.active = false;
             this.tips_sound_node.active = false;
+            this.tips_author_node.active = false;
         }
     }
 

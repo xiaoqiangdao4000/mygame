@@ -154,6 +154,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
         show() {
           this.node.active = true;
+          this.openRankNode = false;
+          this.main_node.active = true;
+          this.rule_node.active = false;
+          this.node.getChildByName('rankBtn').getChildByName('Label').getComponent(Label).string = '显示排行榜';
         }
 
       }, _class3.Instance = null, _class3), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "rankLabel", [_dec2], {
