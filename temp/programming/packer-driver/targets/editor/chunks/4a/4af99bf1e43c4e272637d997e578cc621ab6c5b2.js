@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "cc/env"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Label, Sprite, tween, tools, resMgr, _dec, _class, _class2, _crd, ccclass, property, gameLoadingNode;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Label, Sprite, tween, tools, resMgr, WECHAT, _dec, _class, _class2, _crd, ccclass, property, gameLoadingNode;
 
   function _reportPossibleCrUseOftools(extras) {
     _reporterNs.report("tools", "./tools", _context.meta, extras);
@@ -28,6 +28,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       tools = _unresolved_2.default;
     }, function (_unresolved_3) {
       resMgr = _unresolved_3.default;
+    }, function (_ccEnv) {
+      WECHAT = _ccEnv.WECHAT;
     }],
     execute: function () {
       _crd = true;
@@ -89,7 +91,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
 
         enterStartScene() {
-          //隐藏资源加载界面
+          if (WECHAT) {
+            // @ts-ignore
+            wx.showShareMenu({
+              withShareTicket: true,
+              menus: ['shareAppMessage', 'shareTimeline']
+            });
+          } //隐藏资源加载界面
+
+
           this.hideLoadingNode(); //加载开始界面
 
           let prefab = (_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({

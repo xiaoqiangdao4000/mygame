@@ -108,6 +108,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.tips_sound_label = null;
           this.tips_music_node = null;
           this.tips_sound_node = null;
+          this.tips_author_node = null;
           this.gameContinueBtn = null;
           this.gameRestBtn = null;
           this.gameNextBtn = null;
@@ -143,6 +144,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.tips_music_label = this.tips_music_node.getChildByName('Button').getChildByName('Label').getComponent(Label);
           this.tips_sound_node = frame.getChildByName('sound_label');
           this.tips_sound_label = this.tips_sound_node.getChildByName('Button').getChildByName('Label').getComponent(Label);
+          this.tips_author_node = frame.getChildByName('author_label');
           this.gameContinueBtn = frame.getChildByName('gameContinueBtn');
           this.gameNextBtn = frame.getChildByName('gameNextBtn');
           this.gameRestBtn = frame.getChildByName('gameRestBtn');
@@ -814,6 +816,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.tips_title_label.string = '菜  单';
               this.tips_music_node.active = true;
               this.tips_sound_node.active = true;
+              this.tips_author_node.active = true;
               this.gameContinueBtn.active = true;
               this.gameRestBtn.active = false;
               this.gameNextBtn.active = false;
@@ -845,6 +848,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.tips_toushi_label.node.active = true;
               this.tips_music_node.active = false;
               this.tips_sound_node.active = false;
+              this.tips_author_node.active = false;
               (_crd && tools === void 0 ? (_reportPossibleCrUseOftools({
                 error: Error()
               }), tools) : tools).saveLevel();
@@ -926,6 +930,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.tips_toushi_label.node.active = true;
               this.tips_music_node.active = false;
               this.tips_sound_node.active = false;
+              this.tips_author_node.active = false;
             }
         } //更新道具按钮
 

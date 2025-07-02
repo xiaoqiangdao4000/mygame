@@ -1,6 +1,7 @@
 import { _decorator, Component, instantiate, Label, Prefab, Sprite, tween } from 'cc';
 import tools from './tools';
 import resMgr from './resMgr';
+import { WECHAT } from 'cc/env';
 const { ccclass, property } = _decorator;
 
 @ccclass('gameLoadingNode')
@@ -51,6 +52,14 @@ export class gameLoadingNode extends Component {
 
     //进入开始界面
     enterStartScene() {
+
+        if (WECHAT) {
+            // @ts-ignore
+            wx.showShareMenu({
+                withShareTicket: true,
+                menus: ['shareAppMessage', 'shareTimeline']
+            })
+        }
 
         //隐藏资源加载界面
         this.hideLoadingNode();

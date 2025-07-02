@@ -27,15 +27,6 @@ export class gameLauch extends Component {
 
         //资源管理系统
         this.node.addComponent(resMgr);
-
-        // game.on(cc.Game.EVENT_HIDE, function () {
-        //     console.log('游戏进入后台')
-        // });
-
-        // game.on(cc.Game.EVENT_SHOW, function () {
-        //     console.log('游戏进入前台')
-        // });
-
     }
 
     start() {

@@ -61,12 +61,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
           this.node.addComponent(_crd && resMgr === void 0 ? (_reportPossibleCrUseOfresMgr({
             error: Error()
-          }), resMgr) : resMgr); // game.on(cc.Game.EVENT_HIDE, function () {
-          //     console.log('游戏进入后台')
-          // });
-          // game.on(cc.Game.EVENT_SHOW, function () {
-          //     console.log('游戏进入前台')
-          // });
+          }), resMgr) : resMgr);
         }
 
         start() {
